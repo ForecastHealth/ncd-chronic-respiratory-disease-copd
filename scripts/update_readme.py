@@ -27,7 +27,7 @@ def calculate_ratios(data, baseline_scenario='baseline'):
     return baseline_hyls
 
 def main():
-    avenir_results = load_avenir_results('data/asthma_avenir_results_formatted.json')
+    avenir_results = load_avenir_results('data/avenir_results_formatted.json')
     with open('results.json', 'r') as file:
         data = json.load(file)
 
@@ -41,7 +41,7 @@ def main():
             key = (country, scenario)
             avenir_hyl_formatted = format_hyl(avenir_results[key]) if key in avenir_results else "N/A"
             ratio = "{:.6f}".format(details['HYL'] / avenir_results[key]) if key in avenir_results else "N/A"
-            vs_baseline = "{:.6f}".format(details['HYL'] / baseline_hyls[country]) if country in baseline_hyls and scenario != 'CRNullAsthma' else "1.00"
+            vs_baseline = "{:.6f}".format(details['HYL'] / baseline_hyls[country]) if country in baseline_hyls and scenario != 'CRNullCOPD' else "1.00"
             markdown_table += f"| {country} | {scenario} | {details['STATUS_CODE']} | {hyl_formatted} | {avenir_hyl_formatted} | {ratio} | {vs_baseline} |\n"
 
     with open('README.md', 'r') as file:

@@ -12,8 +12,8 @@ import pandas as pd
 
 RUN_ENDPOINT = "https://api.forecasthealth.org/run/appendix_3"
 QUERY_ENDPOINT = "https://api.forecasthealth.org/query"
-MODEL_FILEPATH = "asthma_baseline.json"
-SCENARIOS = ["baseline", "null", "cr1", "cr3"]
+MODEL_FILEPATH = "copd_baseline.json"
+SCENARIOS = ["baseline", "null", "cr2", "cr4"]
 RESULTS_FILEPATH = "results.json"
 QUERY = """
 SELECT strftime("%Y", timestamp) AS year,
@@ -46,47 +46,39 @@ def change_country(botech: dict, iso3: str):
 def convert_scenario(botech: dict, scenario: str):
     if scenario == "baseline":
         for node in botech["nodes"]:
-            if node["id"] == "LowDoseBeclom_Coverage":
+            if node["id"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "HighDoseBeclom_Coverage":
+            if node["id"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "AsthmaOralPrednisolone_Coverage":
-                node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "InhaledShortActingBeta_Coverage":
+            if node["id"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
 
     elif scenario == "null":
         for node in botech["nodes"]:
-            if node["id"] == "LowDoseBeclom_Coverage":
+            if node["id"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.00
-            if node["id"] == "HighDoseBeclom_Coverage":
+            if node["id"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.00
-            if node["id"] == "AsthmaOralPrednisolone_Coverage":
-                node["generate_array"]["parameters"]["value"] = 0.00
-            if node["id"] == "InhaledShortActingBeta_Coverage":
+            if node["id"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.00
 
-    elif scenario == "cr1":
+    elif scenario == "cr2":
         for node in botech["nodes"]:
-            if node["id"] == "LowDoseBeclom_Coverage":
+            if node["id"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "HighDoseBeclom_Coverage":
+            if node["id"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "AsthmaOralPrednisolone_Coverage":
+            if node["id"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.95
-            if node["id"] == "InhaledShortActingBeta_Coverage":
-                node["generate_array"]["parameters"]["value"] = 0.05
 
-    elif scenario == "cr3":
+    elif scenario == "cr4":
         for node in botech["nodes"]:
-            if node["id"] == "LowDoseBeclom_Coverage":
+            if node["id"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.95
-            if node["id"] == "HighDoseBeclom_Coverage":
+            if node["id"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.95
-            if node["id"] == "AsthmaOralPrednisolone_Coverage":
+            if node["id"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "InhaledShortActingBeta_Coverage":
-                node["generate_array"]["parameters"]["value"] = 0.95
 
     else:
         raise KeyError(f"{scenario} is not recognised")
