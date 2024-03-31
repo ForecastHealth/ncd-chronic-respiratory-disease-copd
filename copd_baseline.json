@@ -13,8 +13,8 @@
   "nodes": [
     {
       "id": "lrstce6u",
-      "x": 110.02,
-      "y": -14.45,
+      "x": 110.05,
+      "y": -14.48,
       "label": "COPDEpsd Mortality",
       "node_type": "surrogate",
       "color": "#7038E1",
@@ -27,8 +27,8 @@
     },
     {
       "id": "lrwzsau5",
-      "x": 41.55,
-      "y": -28.41,
+      "x": 41.58,
+      "y": -28.43,
       "label": "COPDEpsd HYL",
       "node_type": "surrogate",
       "color": "#7038E1",
@@ -42,8 +42,8 @@
     },
     {
       "id": "lrso81aw",
-      "x": 112.67,
-      "y": 9.53,
+      "x": 112.7,
+      "y": 9.5,
       "label": "COPDEpsd_CFR",
       "color": "#06B4E1",
       "generate_array": {
@@ -58,8 +58,8 @@
     },
     {
       "id": "lrwz1ikj",
-      "x": -18.97,
-      "y": -68.43,
+      "x": -18.94,
+      "y": -68.46,
       "label": "Disability_Effect_Transform",
       "description": "Removing each effect from 1",
       "color": "#06B4E1",
@@ -73,8 +73,8 @@
     },
     {
       "id": "Deceased",
-      "x": 148.1,
-      "y": -36.08,
+      "x": 148.13,
+      "y": -36.11,
       "label": "Deceased",
       "description": "The state of being dead",
       "node_type": "state",
@@ -84,8 +84,8 @@
     },
     {
       "id": "COPDEpsd",
-      "x": 105.73,
-      "y": -39.23,
+      "x": 105.76,
+      "y": -39.26,
       "label": "COPDEpsd",
       "ageing": true,
       "color": "#E5EF73",
@@ -93,8 +93,8 @@
     },
     {
       "id": "lrso71jf",
-      "x": 88.94,
-      "y": -103.84,
+      "x": 88.96,
+      "y": -103.87,
       "label": "Healthy_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
@@ -108,8 +108,8 @@
     },
     {
       "id": "lrso7mga",
-      "x": 9.89,
-      "y": -106.12,
+      "x": 9.92,
+      "y": -106.15,
       "label": "COPD_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
@@ -124,8 +124,8 @@
     },
     {
       "id": "Births",
-      "x": 113,
-      "y": -64.75,
+      "x": 113.03,
+      "y": -64.78,
       "label": "Births",
       "description": "Store of the number of births in the population",
       "node_type": "function",
@@ -136,8 +136,8 @@
     },
     {
       "id": "lrste7nj",
-      "x": 79.25,
-      "y": -26.71,
+      "x": 79.28,
+      "y": -26.74,
       "label": "DsFreeSus HYL",
       "node_type": "surrogate",
       "color": "#7038E1",
@@ -151,8 +151,8 @@
     },
     {
       "id": "Disability",
-      "x": 54.68,
-      "y": -8.08,
+      "x": 54.71,
+      "y": -8.11,
       "label": "Healthy Years Lived",
       "description": "A store of disability adjusted life years",
       "node_type": "state",
@@ -162,8 +162,8 @@
     },
     {
       "id": "DsFreeSus",
-      "x": 145.14,
-      "y": -60.87,
+      "x": 144.18,
+      "y": -59.92,
       "label": "DsFreeSus",
       "description": "State holding the balance of the healthy population",
       "node_type": "state",
@@ -182,8 +182,8 @@
     },
     {
       "id": "lrst7n8a",
-      "x": -35.69,
-      "y": 14.59,
+      "x": -35.66,
+      "y": 14.56,
       "color": "#06B4E1",
       "flush": true,
       "label": "IpratropiumInhaler_Disability_Effect",
@@ -196,8 +196,8 @@
     },
     {
       "id": "lrst7nh0",
-      "x": -37.44,
-      "y": 9.39,
+      "x": -37.41,
+      "y": 9.36,
       "color": "#06B4E1",
       "flush": true,
       "label": "OralPrednisolone_Disability_Effect",
@@ -210,8 +210,8 @@
     },
     {
       "id": "lrst14z6",
-      "x": -39.98,
-      "y": 78,
+      "x": -39.95,
+      "y": 77.97,
       "label": "OralPrednisolone_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -224,8 +224,8 @@
     },
     {
       "id": "lrst0woc",
-      "x": -40.86,
-      "y": 73.27,
+      "x": -40.83,
+      "y": 73.24,
       "label": "InhaledSalbutamol_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -238,8 +238,8 @@
     },
     {
       "id": "lrst1pq2",
-      "x": -40.6,
-      "y": 83.14,
+      "x": -40.57,
+      "y": 83.11,
       "label": "IpratropiumInhaler_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -252,8 +252,8 @@
     },
     {
       "id": "lrst79uc",
-      "x": -41.02,
-      "y": 4.34,
+      "x": -40.99,
+      "y": 4.31,
       "color": "#06B4E1",
       "flush": true,
       "label": "InhaledSalbutamol_Disability_Effect",
@@ -266,8 +266,8 @@
     },
     {
       "id": "lrsnjr1s",
-      "x": -36.07,
-      "y": -40.73,
+      "x": -36.04,
+      "y": -40.76,
       "color": "#06B4E1",
       "label": "IpratropiumInhaler_Disability_Impact",
       "generate_array": {
@@ -280,8 +280,8 @@
     },
     {
       "id": "lrsnjnt3",
-      "x": -39.67,
-      "y": -45.78,
+      "x": -39.64,
+      "y": -45.81,
       "color": "#06B4E1",
       "label": "OralPrednisolone_Disability_Impact",
       "generate_array": {
@@ -294,8 +294,8 @@
     },
     {
       "id": "lrsnjkmt",
-      "x": -43.67,
-      "y": -51.1,
+      "x": -43.64,
+      "y": -51.13,
       "color": "#06B4E1",
       "label": "InhaledSalbutamol_Disability_Impact",
       "generate_array": {
@@ -308,8 +308,8 @@
     },
     {
       "id": "lrso24ss",
-      "x": -58.1,
-      "y": 140.68,
+      "x": -58.07,
+      "y": 140.65,
       "label": "IpratropiumInhaler_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -322,8 +322,8 @@
     },
     {
       "id": "lrsnhyyd",
-      "x": -56.16,
-      "y": 145.18,
+      "x": -56.13,
+      "y": 145.15,
       "label": "IpratropiumInhaler_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
@@ -336,8 +336,8 @@
     },
     {
       "id": "lrsngpv8",
-      "x": -77.55,
-      "y": 126.46,
+      "x": -77.52,
+      "y": 126.43,
       "label": "OralPrednisolone_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -350,8 +350,8 @@
     },
     {
       "id": "lrso28l8",
-      "x": -76.33,
-      "y": 130.41,
+      "x": -76.3,
+      "y": 130.38,
       "label": "OralPrednisolone_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
@@ -364,8 +364,8 @@
     },
     {
       "id": "lrsnalk2",
-      "x": -100.85,
-      "y": 110.83,
+      "x": -100.82,
+      "y": 110.8,
       "label": "InhaledSalbutamol_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -378,8 +378,8 @@
     },
     {
       "id": "lrso22do",
-      "x": -99.71,
-      "y": 116.02,
+      "x": -99.68,
+      "y": 115.99,
       "label": "InhaledSalbutamol_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
@@ -392,8 +392,8 @@
     },
     {
       "id": "lrsni0s5",
-      "x": -128.41,
-      "y": 14.9,
+      "x": -128.38,
+      "y": 14.87,
       "label": "IpratropiumInhaler_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -406,8 +406,8 @@
     },
     {
       "id": "lrsngte4",
-      "x": -128.67,
-      "y": 9.01,
+      "x": -128.64,
+      "y": 8.98,
       "label": "OralPrednisolone_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -420,8 +420,8 @@
     },
     {
       "id": "lrsnavq2",
-      "x": -129.25,
-      "y": 3.62,
+      "x": -129.22,
+      "y": 3.59,
       "label": "InhaledSalbutamol_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -434,8 +434,8 @@
     },
     {
       "id": "cigutJvD",
-      "x": 14.82,
-      "y": -88.41,
+      "x": 14.85,
+      "y": -88.43,
       "label": "COPD_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -448,8 +448,8 @@
     },
     {
       "id": "2yj2qyPv",
-      "x": 77.21,
-      "y": -88.61,
+      "x": 77.24,
+      "y": -88.64,
       "label": "Healthy_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -462,8 +462,8 @@
     },
     {
       "id": "wdcNK6r7",
-      "x": 42.41,
-      "y": -77.49,
+      "x": 42.44,
+      "y": -77.52,
       "label": "Combined_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -476,8 +476,8 @@
     },
     {
       "id": "OxzcOhs4",
-      "x": 42.62,
-      "y": -65.55,
+      "x": 42.65,
+      "y": -65.58,
       "label": "Combined_DW",
       "color": "#06B4E1",
       "generate_array": {
@@ -490,8 +490,8 @@
     },
     {
       "id": "btLpjBIQ",
-      "x": 43.03,
-      "y": -54.64,
+      "x": 43.06,
+      "y": -54.67,
       "label": "Modified_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -632,7 +632,7 @@
         }
       },
       "order": 4,
-      "label": "DsFreeSus -> COPDEpsd"
+      "label": "Incidence DsFreeSus -> COPDEpsd"
     },
     {
       "id": "eBRm4kvr",
@@ -692,7 +692,7 @@
         }
       },
       "order": 3,
-      "label": "DsFreeSus -> COPDEpsd"
+      "label": "Prevalence DsFreeSus -> COPDEpsd"
     },
     {
       "id": "cpORh46w",
@@ -1007,7 +1007,7 @@
       "value_to_target_operator": "add",
       "requires_source_balance": true,
       "remove_value_from_source": false,
-      "label": "DsFreeSus -> DsFreeSus Disability"
+      "label": "DsFreeSus -> DsFreeSus HYL"
     },
     {
       "id": "nvUzLVjD",
@@ -1149,7 +1149,8 @@
     {
       "id": "wpXhLEit",
       "source": "2yj2qyPv",
-      "target": "lrste7nj"
+      "target": "lrste7nj",
+      "label": "Healthy_HYL -> DsFreeSus HYL"
     },
     {
       "id": "NCs51br5",
@@ -1220,6 +1221,521 @@
         }
       },
       "label": "Disability_Effect_Transform -> Combined_DW"
+    }
+  ],
+  "subroutines": [
+    {
+      "method": "generate_balance",
+      "batch": false,
+      "narration": "Generate the Population for DsFreeSus",
+      "included_source_nodes": [
+        "DsFreeSus"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Allocate Prevalence to COPDEpsd",
+      "included_edges": [
+        "HmI3Gkua"
+      ]
+    },
+    {
+      "method": "generate_balance",
+      "batch": false,
+      "narration": "Generate the base values of the surrogate nodes",
+      "included_source_nodes": [
+        "lrstce6u",
+        "lrste7nj",
+        "lrwzsau5"
+      ]
+    },
+    {
+      "method": "generate_balance",
+      "batch": false,
+      "narration": "Generate the base values of the nodes that use constants",
+      "included_source_nodes": [
+        "lrst14z6",
+        "lrst0woc",
+        "lrst1pq2",
+        "lrst7n8a",
+        "lrst7nh0",
+        "lrst79uc",
+        "cigutJvD",
+        "lrwz1ikj",
+        "wdcNK6r7",
+        "2yj2qyPv",
+        "btLpjBIQ"
+      ]
+    },
+    {
+      "method": "generate_balance",
+      "batch": false,
+      "narration": "Generate the values of the constants",
+      "included_source_nodes": [
+        "lrsnjr1s",
+        "lrsnjnt3",
+        "lrsnjkmt",
+        "lrsni0s5",
+        "lrsngte4",
+        "lrsnavq2",
+        "lrso24ss",
+        "lrsngpv8",
+        "lrsnalk2",
+        "lrsnhyyd",
+        "lrso28l8",
+        "lrso22do",
+        "lrso71jf",
+        "lrso7mga",
+        "lrso81aw"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Coverage",
+      "included_edges": [
+        "cpORh46w",
+        "g71GXNvq",
+        "TjND1e9T",
+        "2cqXSWkb",
+        "6aVqOh7C",
+        "9Fe9k1UV"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Disability Effects",
+      "included_edges": [
+        "lZsxgkeD",
+        "QFKsJ7KA",
+        "2UnmNJH5",
+        "plB7iwsy",
+        "u3I26S1y",
+        "ydn35Gq6",
+        "LIyy1ky9",
+        "R4Vwfikm",
+        "MnpPqwz9"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Remove disability effects from 1.0",
+      "included_edges": [
+        "rSVQNns4",
+        "tgy0fCCF",
+        "EfuyA2u1"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Healthy and COPD HYL",
+      "included_edges": [
+        "qWTVoxqS",
+        "Sayp6xhP"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Combined HYL",
+      "included_edges": [
+        "fmnbjGOh",
+        "6Ei2mkxO"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Combined DW",
+      "included_edges": [
+        "NCs51br5"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Modify Combined DW with intervention effects",
+      "included_edges": [
+        "s2aCngF5"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Modified HYL",
+      "included_edges": [
+        "VmiA6H36"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate DsFreeSus Disability Surrogate",
+      "included_edges": [
+        "wpXhLEit"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate COPD HYL Surrogate",
+      "included_edges": [
+        "ynJLmSBG"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Add CFR to Surrogate",
+      "included_edges": [
+        "FlHvd7e4"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Record Births to Birth Node",
+      "included_edges": [
+        "6dXmRQ7e",
+        "eBRm4kvr"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Main Routine (Incidence Occurs)",
+      "included_edges": [
+        "dlGB2RD6"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Record HYL",
+      "included_edges": [
+        "Lvoz10h5",
+        "5djuaIfD"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Migration of Populations",
+      "included_edges": [
+        "3gSm1z84",
+        "WALgwDoi"
+      ]
+    },
+    {
+      "method": "age",
+      "batch": false,
+      "narration": "Age the Populations",
+      "included_source_nodes": [
+        "DsFreeSus",
+        "COPDEpsd"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "People Die",
+      "included_edges": [
+        "MfWskKJT",
+        "XNyqqSsC"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Women give birth",
+      "included_edges": [
+        "JPGqVn1u",
+        "k3JrWa6h"
+      ]
+    },
+    {
+      "method": "flush",
+      "batch": false,
+      "narration": "Flush unneeded values"
+    }
+  ],
+  "subgraph_routines": [
+    {
+      "method": "generate_balance",
+      "only_include_ordered_nodes": false,
+      "narration": "Generate the population of DsFreeSus",
+      "nodes_to_include": [
+        "DsFreeSus"
+      ]
+    },
+    {
+      "method": "generate_balance",
+      "only_include_ordered_nodes": false,
+      "narration": "Generate the base values of the surrogate nodes",
+      "nodes_to_include": [
+        "DsFreeSus Disability",
+        "COPDEpsd Disability"
+      ]
+    },
+    {
+      "method": "generate_balance",
+      "only_include_ordered_nodes": false,
+      "narration": "Generate the base values of the function nodes for constants",
+      "nodes_to_include": [
+        "OralPrednisolone_Calculated_Coverage",
+        "InhaledSalbutamol_Calculated_Coverage",
+        "IpratropiumInhaler_Calculated_Coverage",
+        "OralPrednisolone_Disability_Effect",
+        "InhaledSalbutamol_Disability_Effect",
+        "IpratropiumInhaler_Disability_Effect",
+        "COPD_Blended_Disability",
+        "Disability_Effect_Transform",
+        "Blended_Disability_Transform"
+      ]
+    },
+    {
+      "method": "generate_balance",
+      "only_include_ordered_nodes": false,
+      "narration": "Generate the values of the constants",
+      "nodes_to_include": [
+        "OralPrednisolone_Disability_Impact",
+        "InhaledSalbutamol_Disability_Impact",
+        "IpratropiumInhaler_Disability_Impact",
+        "OralPrednisolone_PIN",
+        "InhaledSalbutamol_PIN",
+        "IpratropiumInhaler_PIN",
+        "OralPrednisolone_Coverage",
+        "InhaledSalbutamol_Coverage",
+        "IpratropiumInhaler_Coverage",
+        "OralPrednisolone_StartingCoverage",
+        "InhaledSalbutamol_StartingCoverage",
+        "IpratropiumInhaler_StartingCoverage",
+        "Healthy_Disability",
+        "COPD_Disability",
+        "COPDEpsd_CFR"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Calculate Coverage",
+      "nodes_and_edges_to_include": {
+        "OralPrednisolone_Coverage": [
+          "OralPrednisolone_Calculated_Coverage"
+        ],
+        "OralPrednisolone_StartingCoverage": [
+          "OralPrednisolone_Calculated_Coverage"
+        ],
+        "InhaledSalbutamol_Coverage": [
+          "InhaledSalbutamol_Calculated_Coverage"
+        ],
+        "InhaledSalbutamol_StartingCoverage": [
+          "InhaledSalbutamol_Calculated_Coverage"
+        ],
+        "IpratropiumInhaler_Coverage": [
+          "IpratropiumInhaler_Calculated_Coverage"
+        ],
+        "IpratropiumInhaler_StartingCoverage": [
+          "IpratropiumInhaler_Calculated_Coverage"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Calculate Disability Effects",
+      "nodes_and_edges_to_include": {
+        "OralPrednisolone_PIN": [
+          "OralPrednisolone_Disability_Effect"
+        ],
+        "InhaledSalbutamol_PIN": [
+          "InhaledSalbutamol_Disability_Effect"
+        ],
+        "IpratropiumInhaler_PIN": [
+          "IpratropiumInhaler_Disability_Effect"
+        ],
+        "OralPrednisolone_Disability_Impact": [
+          "OralPrednisolone_Disability_Effect"
+        ],
+        "InhaledSalbutamol_Disability_Impact": [
+          "InhaledSalbutamol_Disability_Effect"
+        ],
+        "IpratropiumInhaler_Disability_Impact": [
+          "IpratropiumInhaler_Disability_Effect"
+        ],
+        "OralPrednisolone_Calculated_Coverage": [
+          "OralPrednisolone_Disability_Effect"
+        ],
+        "InhaledSalbutamol_Calculated_Coverage": [
+          "InhaledSalbutamol_Disability_Effect"
+        ],
+        "IpratropiumInhaler_Calculated_Coverage": [
+          "IpratropiumInhaler_Disability_Effect"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Remove Disability Effects from 1.0",
+      "nodes_and_edges_to_include": {
+        "OralPrednisolone_Disability_Effect": [
+          "Disability_Effect_Transform"
+        ],
+        "InhaledSalbutamol_Disability_Effect": [
+          "Disability_Effect_Transform"
+        ],
+        "IpratropiumInhaler_Disability_Effect": [
+          "Disability_Effect_Transform"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Calculate Blended Disability",
+      "nodes_and_edges_to_include": {
+        "COPD_Disability": [
+          "COPD_Blended_Disability"
+        ],
+        "Healthy_Disability": [
+          "COPD_Blended_Disability"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Transform blended disability",
+      "nodes_and_edges_to_include": {
+        "COPD_Blended_Disability": [
+          "Blended_Disability_Transform"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Calculate COPDEpsd Disability Surrogate",
+      "nodes_and_edges_to_include": {
+        "Blended_Disability_Transform": [
+          "COPDEpsd Disability"
+        ],
+        "Disability_Effect_Transform": [
+          "COPDEpsd Disability"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Calculate DsFreeSus Disability Surrogate",
+      "nodes_and_edges_to_include": {
+        "Healthy_Disability": [
+          "DsFreeSus Disability"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Calculate Mortality Surrogate",
+      "nodes_and_edges_to_include": {
+        "COPDEpsd_CFR": [
+          "COPDEpsd Mortality"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Record Births to Birth Node",
+      "nodes_and_edges_to_include": {
+        "DsFreeSus": [
+          "Births"
+        ],
+        "COPDEpsd": [
+          "Births"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "narration": "Main Routine",
+      "nodes_and_edges_to_include": {
+        "DsFreeSus": [
+          "COPDEpsd"
+        ],
+        "COPDEpsd": [
+          "DsFreeSus"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "narration": "Record Disability",
+      "nodes_and_edges_to_include": {
+        "DsFreeSus": [
+          "DsFreeSus Disability"
+        ],
+        "COPDEpsd": [
+          "COPDEpsd Disability"
+        ],
+        "Deceased": [
+          "Disability"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "narration": "Migration of Populations",
+      "nodes_and_edges_to_include": {
+        "DsFreeSus": [
+          "DsFreeSus"
+        ],
+        "COPDEpsd": [
+          "COPDEpsd"
+        ]
+      }
+    },
+    {
+      "method": "age",
+      "narration": "Age the populations",
+      "nodes_to_include": [
+        "DsFreeSus",
+        "COPDEpsd"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "narration": "People die",
+      "nodes_and_edges_to_include": {
+        "DsFreeSus": [
+          "Deceased"
+        ],
+        "COPDEpsd": [
+          "COPDEpsd Mortality"
+        ]
+      }
+    },
+    {
+      "method": "push_balance_to_edges",
+      "only_include_ordered_nodes": false,
+      "narration": "Women give birth",
+      "nodes_and_edges_to_include": {
+        "Births": [
+          "DsFreeSus"
+        ]
+      }
+    },
+    {
+      "method": "flush",
+      "narration": "Flush unneeded values",
+      "only_include_ordered_nodes": false
     }
   ]
 }
