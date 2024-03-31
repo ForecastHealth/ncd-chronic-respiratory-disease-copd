@@ -10,6 +10,17 @@
     "startYear": 2020,
     "endYear": 2120
   },
+  "equilibrium": {
+    "index": 20,
+    "node_with_population": "DsFreeSus",
+    "nodes_to_receive_population": [
+      "COPDEpsd"
+    ],
+    "subroutine_to_appear_after": "Generate the population for DsFreeSus",
+    "subroutines_to_remove": [
+      "Allocate prevalence to COPDEpsd"
+    ]
+  }
   "nodes": [
     {
       "id": "lrstce6u",
