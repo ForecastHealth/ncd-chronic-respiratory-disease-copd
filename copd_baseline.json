@@ -20,7 +20,7 @@
     "subroutines_to_remove": [
       "Allocate prevalence to COPDEpsd"
     ]
-  }
+  },
   "nodes": [
     {
       "id": "lrstce6u",
