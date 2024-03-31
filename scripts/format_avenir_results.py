@@ -1,11 +1,12 @@
 import pandas as pd
 
-INPUT_FILEPATH = "./data/asthma_avenir_results.csv"
-OUTPUT_FILEPATH = "./data/asthma_avenir_results_formatted.json"
+DISEASE = "copd"
+INPUT_FILEPATH = f"./data/{DISEASE}_avenir_results.csv"
+OUTPUT_FILEPATH = f"./data/{DISEASE}_avenir_results_formatted.json"
 SCENARIO_NAME_MAP = {
-    "CRNullAsthma": "null",
-    "CR1": "cr1",
-    "CR3": "cr3"
+    "Null": "null",
+    "CR2": "cr2",
+    "CR4": "cr4"
 }
 
 
@@ -14,7 +15,7 @@ def main():
     required_columns = [2, 13, 14, 15]
 
     records = []
-    scenarios = ['CRNullAsthma', 'CR1', 'CR3']
+    scenarios = ['Null', 'CR2', 'CR4']
 
     for _, row in df.iterrows():
         if not isinstance(row[2], float):
