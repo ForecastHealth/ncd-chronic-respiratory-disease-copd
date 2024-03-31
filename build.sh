@@ -1,2 +1,2 @@
-cp asthma_baseline.json ./docs/asthma_baseline.json
-cp ASTHMA.md ./docs/index.md
+cp copd_baseline.json ./docs/copd_baseline.json
+cp COPD.md ./docs/index.md

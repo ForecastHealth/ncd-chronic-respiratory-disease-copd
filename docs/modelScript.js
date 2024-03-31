@@ -3,8 +3,8 @@ import {
     INTERVENTIONS,
     DEFAULT_COVERAGE,
     NULL_COVERAGE_CHANGES,
-    CR1_COVERAGE_CHANGES,
-    CR3_COVERAGE_CHANGES,
+    CR2_COVERAGE_CHANGES,
+    CR4_COVERAGE_CHANGES,
     RESULTS_QUERY
 } from './constants.js'
 
@@ -51,10 +51,10 @@ function handleInterventionChange() {
     resetCoverages();
     if (interventionSelection == "NULL") {
         applyCoverageChanges(NULL_COVERAGE_CHANGES);
-    } else if (interventionSelection === 'CR1') {
-        applyCoverageChanges(CR1_COVERAGE_CHANGES);
-    } else if (interventionSelection === 'CR3') {
-        applyCoverageChanges(CR3_COVERAGE_CHANGES);
+    } else if (interventionSelection === 'CR2') {
+        applyCoverageChanges(CR2_COVERAGE_CHANGES);
+    } else if (interventionSelection === 'CR4') {
+        applyCoverageChanges(CR4_COVERAGE_CHANGES);
     };
     toggleFormDisable();
 }
@@ -91,7 +91,7 @@ function applyCoverageChanges(changes) {
 
 window.runModel = function() {
     const iso3 = document.getElementById('selectCountry').value
-    fetch('asthma_baseline.json')
+    fetch('copd_baseline.json')
         .then(response => response.json())
         .then(data => {
             const botech = data;
