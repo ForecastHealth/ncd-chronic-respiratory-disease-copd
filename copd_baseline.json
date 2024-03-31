@@ -23,7 +23,8 @@
         "parameters": {
           "value": 0
         }
-      }
+      },
+      "flush": true
     },
     {
       "id": "lrwzsau5",
@@ -80,7 +81,8 @@
       "node_type": "state",
       "balance_type": "array",
       "color": "#FB6375",
-      "order": 3
+      "order": 3,
+      "flush": true
     },
     {
       "id": "COPDEpsd",
