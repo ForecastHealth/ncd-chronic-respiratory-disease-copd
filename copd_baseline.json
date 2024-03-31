@@ -51,7 +51,7 @@
         "data_fetcher_label": "fhdb",
         "method": "epidemiology",
         "parameters": {
-          "country": "ARG",
+          "country": "AFG",
           "disease": "COPD",
           "measure": "deaths"
         }
@@ -104,7 +104,7 @@
         "data_fetcher_label": "fhdb",
         "method": "healthy_disability",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         }
       }
     },
@@ -119,7 +119,7 @@
         "data_fetcher_label": "copd",
         "method": "get_observation",
         "parameters": {
-          "country": "ARG",
+          "country": "AFG",
           "observation": "COPDEpsd -> Disability"
         }
       }
@@ -175,7 +175,7 @@
         "data_fetcher_label": "fhdb",
         "method": "population",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         },
         "fetch_once": true
       },
@@ -518,7 +518,7 @@
         "data_fetcher_label": "fhdb",
         "method": "migration",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         }
       },
       "order": 0,
@@ -538,7 +538,7 @@
         "data_fetcher_label": "fhdb",
         "method": "fertility",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         }
       },
       "label": "DsFreeSus -> Births"
@@ -556,7 +556,7 @@
         "data_fetcher_label": "fhdb",
         "method": "sex_ratio",
         "parameters": {
-          "country": "ARG",
+          "country": "AFG",
           "sex": "m"
         }
       },
@@ -582,7 +582,7 @@
         "data_fetcher_label": "fhdb",
         "method": "sex_ratio",
         "parameters": {
-          "country": "ARG",
+          "country": "AFG",
           "sex": "f"
         }
       },
@@ -609,7 +609,7 @@
         "data_fetcher_label": "fhdb",
         "method": "mortality",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         }
       },
       "label": "DsFreeSus -> Deceased"
@@ -627,7 +627,7 @@
         "data_fetcher_label": "fhdb",
         "method": "epidemiology",
         "parameters": {
-          "country": "ARG",
+          "country": "AFG",
           "disease": "COPD",
           "measure": "incidence"
         }
@@ -649,7 +649,7 @@
         "data_fetcher_label": "fhdb",
         "method": "fertility",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         }
       },
       "label": "COPDEpsd -> Births"
@@ -667,7 +667,7 @@
         "data_fetcher_label": "fhdb",
         "method": "migration",
         "parameters": {
-          "country": "ARG"
+          "country": "AFG"
         }
       },
       "order": 0,
@@ -687,7 +687,7 @@
         "data_fetcher_label": "fhdb",
         "method": "epidemiology",
         "parameters": {
-          "country": "ARG",
+          "country": "AFG",
           "disease": "COPD",
           "measure": "prevalence"
         }
