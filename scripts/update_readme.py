@@ -15,7 +15,7 @@ def load_avenir_results(filename):
     return avenir_results
 
 def format_hyl(value):
-    return "{:,}".format(int(value))
+    return "{:,}".format(int(value.replace(',', '')))
 
 def calculate_ratios(data, baseline_scenario='baseline'):
     # Calculate baseline HYLs for comparison.
