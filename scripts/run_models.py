@@ -46,38 +46,38 @@ def change_country(botech: dict, iso3: str):
 def convert_scenario(botech: dict, scenario: str):
     if scenario == "baseline":
         for node in botech["nodes"]:
-            if node["id"] == "InhaledSalbutamol_Coverage":
+            if node["label"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "IpratropiumInhaler_Coverage":
+            if node["label"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "OralPrednisolone_Coverage":
+            if node["label"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
 
     elif scenario == "null":
         for node in botech["nodes"]:
-            if node["id"] == "InhaledSalbutamol_Coverage":
+            if node["label"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.00
-            if node["id"] == "IpratropiumInhaler_Coverage":
+            if node["label"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.00
-            if node["id"] == "OralPrednisolone_Coverage":
+            if node["label"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.00
 
     elif scenario == "cr2":
         for node in botech["nodes"]:
-            if node["id"] == "InhaledSalbutamol_Coverage":
+            if node["label"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "IpratropiumInhaler_Coverage":
+            if node["label"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
-            if node["id"] == "OralPrednisolone_Coverage":
+            if node["label"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.95
 
     elif scenario == "cr4":
         for node in botech["nodes"]:
-            if node["id"] == "InhaledSalbutamol_Coverage":
+            if node["label"] == "InhaledSalbutamol_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.95
-            if node["id"] == "IpratropiumInhaler_Coverage":
+            if node["label"] == "IpratropiumInhaler_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.95
-            if node["id"] == "OralPrednisolone_Coverage":
+            if node["label"] == "OralPrednisolone_Coverage":
                 node["generate_array"]["parameters"]["value"] = 0.05
 
     else:
