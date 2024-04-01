@@ -6,6 +6,7 @@ render them as a markdown table,
 append that table to the bottom of the README.md
 """
 import json
+DISEASE = "copd"
 
 def load_avenir_results(filename):
     with open(filename, 'r') as file:
@@ -15,7 +16,9 @@ def load_avenir_results(filename):
     return avenir_results
 
 def format_hyl(value):
-    return "{:,}".format(int(value.replace(',', '')))
+    if isinstance(value, str):
+        value = value.replace(',', '')
+    return "{:,}".format(int(value))
 
 def calculate_ratios(data, baseline_scenario='baseline'):
     # Calculate baseline HYLs for comparison.
@@ -27,7 +30,7 @@ def calculate_ratios(data, baseline_scenario='baseline'):
     return baseline_hyls
 
 def main():
-    avenir_results = load_avenir_results('data/avenir_results_formatted.json')
+    avenir_results = load_avenir_results(f'data/{DISEASE}_avenir_results_formatted.json')
     with open('results.json', 'r') as file:
         data = json.load(file)
 

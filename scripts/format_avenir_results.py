@@ -20,10 +20,15 @@ def main():
     for _, row in df.iterrows():
         if not isinstance(row[2], float):
             for index, scenario in enumerate(scenarios, start=1):
+                hyl = row[required_columns[index]]
+                if isinstance(hyl, str):
+                    hyl = hyl.replace(',', '')
+                if pd.isna(hyl):
+                    hyl = 0
                 records.append({
                     'ISO3': row[2],
                     'scenario': SCENARIO_NAME_MAP[scenario],
-                    'HYL': row[required_columns[index]],
+                    'HYL': int(hyl),
                 } 
             )
 
