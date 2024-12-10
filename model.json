@@ -86,7 +86,6 @@
       "node_type": "STATE",
       "balance_type": "array",
       "color": "#FB6375",
-      "order": 3,
       "flush": true
     },
     {
@@ -96,7 +95,6 @@
       "label": "COPDEpsd",
       "ageing": true,
       "color": "#E5EF73",
-      "order": 1,
       "node_type": "STATE"
     },
     {
@@ -139,7 +137,6 @@
       "label": "Births",
       "description": "Store of the number of births in the population",
       "balance_type": "array",
-      "order": 2,
       "flush": true,
       "color": "#EB7FEF"
     },
@@ -177,7 +174,6 @@
       "description": "State holding the balance of the healthy population",
       "node_type": "STATE",
       "balance_type": "array",
-      "order": 0,
       "ageing": true,
       "generate_array": {
         "data_fetcher_label": "fhdb",
@@ -552,14 +548,12 @@
           "country": "AFG"
         }
       },
-      "order": 0,
       "label": "DsFreeSus -> DsFreeSus"
     },
     {
       "id": "6dXmRQ7e",
       "source": "DsFreeSus",
       "target": "Births",
-      "order": 1,
       "description": "Project the number of births using the population and ASFR",
       "edge_type": "projection",
       "requires_source_balance": true,
@@ -597,7 +591,6 @@
           0
         ]
       },
-      "order": 0,
       "label": "Births -> DsFreeSus"
     },
     {
@@ -623,14 +616,12 @@
           0
         ]
       },
-      "order": 0,
       "label": "Births -> DsFreeSus"
     },
     {
       "id": "MfWskKJT",
       "source": "DsFreeSus",
       "target": "Deceased",
-      "order": 2,
       "description": "Transition people into the mortality state",
       "edge_type": "transition",
       "requires_source_balance": true,
@@ -663,14 +654,12 @@
           "measure": "incidence"
         }
       },
-      "order": 4,
       "label": "Incidence DsFreeSus -> COPDEpsd"
     },
     {
       "id": "eBRm4kvr",
       "source": "COPDEpsd",
       "target": "Births",
-      "order": 1,
       "description": "Project the number of births using the population and ASFR",
       "edge_type": "projection",
       "requires_source_balance": true,
@@ -701,7 +690,6 @@
           "country": "AFG"
         }
       },
-      "order": 0,
       "label": "COPDEpsd -> COPDEpsd"
     },
     {
@@ -723,7 +711,6 @@
           "measure": "prevalence"
         }
       },
-      "order": 3,
       "label": "Prevalence DsFreeSus -> COPDEpsd"
     },
     {
