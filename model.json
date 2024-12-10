@@ -159,7 +159,7 @@
       "y": -9.16,
       "label": "Healthy Years Lived",
       "description": "A store of disability adjusted life years",
-      "node_type": "FUNCTION",
+      "node_type": "STATE",
       "balance_type": "array",
       "color": "#FFB255",
       "flush": true
