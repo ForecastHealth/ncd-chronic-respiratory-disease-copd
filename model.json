@@ -1,22 +1,23 @@
 {
   "metadata": {
     "user": "appendix_3",
+    "name": "NCD Rebuild - COPD Disease Model",
     "intervention": "copd",
     "scenario": "baseline",
     "country": "AFG",
     "version": "1.0"
   },
   "runtime": {
-    "startYear": 2020,
-    "endYear": 2120
+    "startYear": 2024,
+    "endYear": 2050
   },
   "nodes": [
     {
       "id": "lrstce6u",
-      "x": 121.28,
+      "x": 121.27,
       "y": -17.78,
       "label": "COPDEpsd Mortality",
-      "node_type": "surrogate",
+      "node_type": "SURROGATE",
       "color": "#7038E1",
       "generate_array": {
         "method": "single_value",
@@ -28,10 +29,10 @@
     },
     {
       "id": "lrwzsau5",
-      "x": 40.81,
+      "x": 40.8,
       "y": -29.49,
       "label": "COPDEpsd HYL",
-      "node_type": "surrogate",
+      "node_type": "SURROGATE",
       "color": "#7038E1",
       "generate_array": {
         "method": "single_value",
@@ -43,7 +44,7 @@
     },
     {
       "id": "lrso81aw",
-      "x": 109.49,
+      "x": 109.48,
       "y": 4.78,
       "label": "COPDEpsd_CFR",
       "color": "#06B4E1",
@@ -56,11 +57,12 @@
           "measure": "deaths"
         }
       },
-      "flush": true
+      "flush": true,
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrwz1ikj",
-      "x": -1.23,
+      "x": -1.24,
       "y": -32.77,
       "label": "Disability_Effect_Transform",
       "description": "Removing each effect from 1",
@@ -71,15 +73,16 @@
         "parameters": {
           "value": 1
         }
-      }
+      },
+      "node_type": "FUNCTION"
     },
     {
       "id": "Deceased",
-      "x": 147.35,
+      "x": 147.34,
       "y": -37.17,
       "label": "Deceased",
       "description": "The state of being dead",
-      "node_type": "state",
+      "node_type": "STATE",
       "balance_type": "array",
       "color": "#FB6375",
       "order": 3,
@@ -87,16 +90,17 @@
     },
     {
       "id": "COPDEpsd",
-      "x": 104.98,
+      "x": 104.97,
       "y": -40.32,
       "label": "COPDEpsd",
       "ageing": true,
       "color": "#E5EF73",
-      "order": 1
+      "order": 1,
+      "node_type": "STATE"
     },
     {
       "id": "lrso71jf",
-      "x": 83.66,
+      "x": 83.65,
       "y": -107.81,
       "label": "Healthy_Disability_Weight",
       "color": "#06B4E1",
@@ -107,11 +111,12 @@
         "parameters": {
           "country": "AFG"
         }
-      }
+      },
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrso7mga",
-      "x": 9.14,
+      "x": 9.13,
       "y": -109.75,
       "label": "COPD_Disability_Weight",
       "color": "#06B4E1",
@@ -123,11 +128,12 @@
           "country": "AFG",
           "observation": "COPDEpsd -> Disability"
         }
-      }
+      },
+      "node_type": "CONSTANT"
     },
     {
       "id": "Births",
-      "x": 112.25,
+      "x": 112.48,
       "y": -65.84,
       "label": "Births",
       "description": "Store of the number of births in the population",
@@ -138,10 +144,10 @@
     },
     {
       "id": "lrste7nj",
-      "x": 77.04,
+      "x": 77.03,
       "y": -29.24,
       "label": "DsFreeSus HYL",
-      "node_type": "surrogate",
+      "node_type": "SURROGATE",
       "color": "#7038E1",
       "generate_array": {
         "method": "single_value",
@@ -153,22 +159,22 @@
     },
     {
       "id": "Disability",
-      "x": 53.93,
+      "x": 53.92,
       "y": -9.16,
       "label": "Healthy Years Lived",
       "description": "A store of disability adjusted life years",
-      "node_type": "state",
+      "node_type": "FUNCTION",
       "balance_type": "array",
       "color": "#FFB255",
       "flush": true
     },
     {
       "id": "DsFreeSus",
-      "x": 143.4,
+      "x": 143.39,
       "y": -60.97,
       "label": "DsFreeSus",
       "description": "State holding the balance of the healthy population",
-      "node_type": "state",
+      "node_type": "STATE",
       "balance_type": "array",
       "order": 0,
       "ageing": true,
@@ -184,7 +190,7 @@
     },
     {
       "id": "lrst7n8a",
-      "x": -36.44,
+      "x": -36.45,
       "y": 13.5,
       "color": "#06B4E1",
       "flush": true,
@@ -194,11 +200,12 @@
         "parameters": {
           "value": 1
         }
-      }
+      },
+      "node_type": "FUNCTION"
     },
     {
       "id": "lrst7nh0",
-      "x": -38.19,
+      "x": -38.2,
       "y": 8.3,
       "color": "#06B4E1",
       "flush": true,
@@ -208,11 +215,12 @@
         "parameters": {
           "value": 1
         }
-      }
+      },
+      "node_type": "FUNCTION"
     },
     {
       "id": "lrst14z6",
-      "x": -38.88,
+      "x": -38.89,
       "y": 75.88,
       "label": "OralPrednisolone_Calculated_Coverage",
       "generate_array": {
@@ -222,11 +230,12 @@
         }
       },
       "color": "#06B4E1",
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "lrst0woc",
-      "x": -45.73,
+      "x": -45.74,
       "y": 72.18,
       "label": "InhaledSalbutamol_Calculated_Coverage",
       "generate_array": {
@@ -236,11 +245,12 @@
         }
       },
       "color": "#06B4E1",
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "lrst1pq2",
-      "x": -33.94,
+      "x": -33.95,
       "y": 81.23,
       "label": "IpratropiumInhaler_Calculated_Coverage",
       "generate_array": {
@@ -250,11 +260,12 @@
         }
       },
       "color": "#06B4E1",
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "lrst79uc",
-      "x": -41.77,
+      "x": -41.78,
       "y": 3.25,
       "color": "#06B4E1",
       "flush": true,
@@ -264,11 +275,12 @@
         "parameters": {
           "value": 1
         }
-      }
+      },
+      "node_type": "FUNCTION"
     },
     {
       "id": "lrsnjr1s",
-      "x": -36.82,
+      "x": -36.83,
       "y": -41.82,
       "color": "#06B4E1",
       "label": "IpratropiumInhaler_Disability_Impact",
@@ -278,11 +290,12 @@
         "parameters": {
           "value": -0.169
         }
-      }
+      },
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsnjnt3",
-      "x": -40.42,
+      "x": -40.43,
       "y": -46.87,
       "color": "#06B4E1",
       "label": "OralPrednisolone_Disability_Impact",
@@ -292,11 +305,12 @@
         "parameters": {
           "value": -0.337
         }
-      }
+      },
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsnjkmt",
-      "x": -44.42,
+      "x": -44.43,
       "y": -52.19,
       "color": "#06B4E1",
       "label": "InhaledSalbutamol_Disability_Impact",
@@ -306,11 +320,12 @@
         "parameters": {
           "value": -0.148
         }
-      }
+      },
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrso24ss",
-      "x": -58.85,
+      "x": -58.86,
       "y": 139.59,
       "label": "IpratropiumInhaler_Coverage",
       "generate_array": {
@@ -320,11 +335,12 @@
         }
       },
       "color": "#06B4E1",
-      "flush": true
+      "flush": true,
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsnhyyd",
-      "x": -56.91,
+      "x": -56.92,
       "y": 144.09,
       "label": "IpratropiumInhaler_StartingCoverage",
       "generate_array": {
@@ -334,11 +350,12 @@
           "value": -0.05
         }
       },
-      "color": "#06B4E1"
+      "color": "#06B4E1",
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsngpv8",
-      "x": -78.3,
+      "x": -78.31,
       "y": 125.37,
       "label": "OralPrednisolone_Coverage",
       "generate_array": {
@@ -348,11 +365,12 @@
         }
       },
       "color": "#06B4E1",
-      "flush": true
+      "flush": true,
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrso28l8",
-      "x": -76.91,
+      "x": -76.92,
       "y": 129.5,
       "label": "OralPrednisolone_StartingCoverage",
       "generate_array": {
@@ -362,11 +380,12 @@
           "value": -0.05
         }
       },
-      "color": "#06B4E1"
+      "color": "#06B4E1",
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsnalk2",
-      "x": -101.6,
+      "x": -101.61,
       "y": 109.74,
       "label": "InhaledSalbutamol_Coverage",
       "generate_array": {
@@ -376,11 +395,12 @@
         }
       },
       "color": "#06B4E1",
-      "flush": true
+      "flush": true,
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrso22do",
-      "x": -100.46,
+      "x": -100.47,
       "y": 114.93,
       "label": "InhaledSalbutamol_StartingCoverage",
       "generate_array": {
@@ -390,11 +410,12 @@
           "value": -0.05
         }
       },
-      "color": "#06B4E1"
+      "color": "#06B4E1",
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsni0s5",
-      "x": -129.16,
+      "x": -129.17,
       "y": 13.81,
       "label": "IpratropiumInhaler_PIN",
       "generate_array": {
@@ -404,11 +425,12 @@
           "value": 0.21
         }
       },
-      "color": "#06B4E1"
+      "color": "#06B4E1",
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsngte4",
-      "x": -129.42,
+      "x": -129.43,
       "y": 7.92,
       "label": "OralPrednisolone_PIN",
       "generate_array": {
@@ -418,11 +440,12 @@
           "value": 0.12
         }
       },
-      "color": "#06B4E1"
+      "color": "#06B4E1",
+      "node_type": "CONSTANT"
     },
     {
       "id": "lrsnavq2",
-      "x": -130,
+      "x": -130.01,
       "y": 2.53,
       "label": "InhaledSalbutamol_PIN",
       "generate_array": {
@@ -432,11 +455,12 @@
           "value": 1
         }
       },
-      "color": "#06B4E1"
+      "color": "#06B4E1",
+      "node_type": "CONSTANT"
     },
     {
       "id": "cigutJvD",
-      "x": 14.07,
+      "x": 14.06,
       "y": -89.49,
       "label": "COPD_HYL",
       "color": "#06B4E1",
@@ -446,11 +470,12 @@
           "value": 1
         }
       },
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "2yj2qyPv",
-      "x": 77.77,
+      "x": 77.76,
       "y": -87.27,
       "label": "Healthy_HYL",
       "color": "#06B4E1",
@@ -460,11 +485,12 @@
           "value": 1
         }
       },
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "wdcNK6r7",
-      "x": 41.81,
+      "x": 41.8,
       "y": -76.95,
       "label": "Combined_HYL",
       "color": "#06B4E1",
@@ -474,11 +500,12 @@
           "value": 1
         }
       },
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "OxzcOhs4",
-      "x": 41.38,
+      "x": 41.37,
       "y": -62.75,
       "label": "Combined_DW",
       "color": "#06B4E1",
@@ -488,11 +515,12 @@
           "value": 1
         }
       },
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     },
     {
       "id": "btLpjBIQ",
-      "x": 41.11,
+      "x": 41.1,
       "y": -49.05,
       "label": "Modified_HYL",
       "color": "#06B4E1",
@@ -502,7 +530,8 @@
           "value": 1
         }
       },
-      "flush": true
+      "flush": true,
+      "node_type": "FUNCTION"
     }
   ],
   "links": [
