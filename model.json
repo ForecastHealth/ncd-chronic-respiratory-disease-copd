@@ -2,11 +2,9 @@
   "metadata": {
     "user": "appendix_3",
     "name": "NCD Rebuild - COPD Disease Model",
-    "intervention": "copd",
-    "scenario": "baseline",
-    "country": "AFG",
-    "version": "1.0",
-    "description": "The rebuild of the Spectrum COPD Disease Model"
+    "description": "The rebuild of the Spectrum COPD Disease Model",
+    "file_id": "COPD",
+    "version": "2.5"
   },
   "runtime": {
     "startYear": 2024,
@@ -342,9 +340,10 @@
       "label": "IpratropiumInhaler_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
+        "postprocessing": {"negative": true},
         "method": "single_value",
         "parameters": {
-          "value": -0.05
+          "value": 0.05
         }
       },
       "color": "#06B4E1",
@@ -373,8 +372,9 @@
       "generate_array": {
         "fetch_once": true,
         "method": "single_value",
+        "postprocessing": {"negative": true},
         "parameters": {
-          "value": -0.05
+          "value": 0.05
         }
       },
       "color": "#06B4E1",
@@ -403,8 +403,9 @@
       "generate_array": {
         "fetch_once": true,
         "method": "single_value",
+        "postprocessing": {"negative": true},
         "parameters": {
-          "value": -0.05
+          "value": 0.05
         }
       },
       "color": "#06B4E1",
