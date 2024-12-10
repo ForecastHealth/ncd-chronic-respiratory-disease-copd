@@ -5,7 +5,8 @@
     "intervention": "copd",
     "scenario": "baseline",
     "country": "AFG",
-    "version": "1.0"
+    "version": "1.0",
+    "description": "The rebuild of the Spectrum COPD Disease Model"
   },
   "runtime": {
     "startYear": 2024,
