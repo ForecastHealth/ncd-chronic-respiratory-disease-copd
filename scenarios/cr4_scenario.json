@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Appendix 3 - CR1 Scenario",
-    "description": "Acute treatment of asthma exacerbations with inhaled bronchodilators and oral steroids",
+    "description": "Long-term management of COPD with inhaled bronchodilator",
     "authors": [],
     "date_created": "2024-12-10 13:04"
   },
@@ -34,7 +34,7 @@
       ]
     },
     "Inhaled Salbutamol Target Coverage": {
-      "value": 0.05,
+      "value": 0.95,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.value"
@@ -62,7 +62,7 @@
       ]
     },
     "Ipratropium Inhaler Target Coverage": {
-      "value": 0.05,
+      "value": 0.95,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.value"
