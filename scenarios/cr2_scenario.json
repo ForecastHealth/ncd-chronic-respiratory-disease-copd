@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "name": "Appendix 3 - CR1 Scenario",
-    "description": "Acute treatment of asthma exacerbations with inhaled bronchodilators and oral steroids",
+    "name": "Appendix 3 - CR2 Scenario",
+    "description": "Acute treatment of COPD exacerbations with inhaled bronchodilators and oral steroids",
     "authors": [],
     "date_created": "2024-12-10 13:04"
   },
@@ -90,7 +90,7 @@
       ]
     },
     "Oral Prednisolone Target Coverage": {
-      "value": 0.05,
+      "value": 0.95,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.value"
