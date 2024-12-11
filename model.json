@@ -7,14 +7,14 @@
     "version": "2.5"
   },
   "runtime": {
-    "startYear": 2024,
-    "endYear": 2050
+    "startYear": 2020,
+    "endYear": 2040
   },
   "nodes": [
     {
       "id": "lrstce6u",
-      "x": 121.27,
-      "y": -17.78,
+      "x": 116.3,
+      "y": -13.75,
       "label": "COPDEpsd Mortality",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -28,8 +28,8 @@
     },
     {
       "id": "lrwzsau5",
-      "x": 40.8,
-      "y": -29.49,
+      "x": 27.04,
+      "y": -25.66,
       "label": "COPDEpsd HYL",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -43,8 +43,8 @@
     },
     {
       "id": "lrso81aw",
-      "x": 109.48,
-      "y": 4.78,
+      "x": 115.76,
+      "y": 2.68,
       "label": "COPDEpsd_CFR",
       "color": "#06B4E1",
       "generate_array": {
@@ -61,8 +61,8 @@
     },
     {
       "id": "lrwz1ikj",
-      "x": -1.24,
-      "y": -32.77,
+      "x": -15,
+      "y": -28.94,
       "label": "Disability_Effect_Transform",
       "description": "Removing each effect from 1",
       "color": "#06B4E1",
@@ -77,8 +77,8 @@
     },
     {
       "id": "Deceased",
-      "x": 147.34,
-      "y": -37.17,
+      "x": 134.19,
+      "y": -34.98,
       "label": "Deceased",
       "description": "The state of being dead",
       "node_type": "STATE",
@@ -88,8 +88,8 @@
     },
     {
       "id": "COPDEpsd",
-      "x": 104.97,
-      "y": -40.32,
+      "x": 96.12,
+      "y": -34.45,
       "label": "COPDEpsd",
       "ageing": true,
       "color": "#E5EF73",
@@ -97,8 +97,8 @@
     },
     {
       "id": "lrso71jf",
-      "x": 83.65,
-      "y": -107.81,
+      "x": 69.89,
+      "y": -103.98,
       "label": "Healthy_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
@@ -113,8 +113,8 @@
     },
     {
       "id": "lrso7mga",
-      "x": 9.13,
-      "y": -109.75,
+      "x": -4.63,
+      "y": -105.92,
       "label": "COPD_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
@@ -130,8 +130,8 @@
     },
     {
       "id": "Births",
-      "x": 112.48,
-      "y": -65.84,
+      "x": 96.47,
+      "y": -62.62,
       "label": "Births",
       "description": "Store of the number of births in the population",
       "balance_type": "array",
@@ -140,8 +140,8 @@
     },
     {
       "id": "lrste7nj",
-      "x": 77.03,
-      "y": -29.24,
+      "x": 63.27,
+      "y": -25.41,
       "label": "DsFreeSus HYL",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -155,8 +155,8 @@
     },
     {
       "id": "Disability",
-      "x": 53.92,
-      "y": -9.16,
+      "x": 40.16,
+      "y": -5.33,
       "label": "Healthy Years Lived",
       "description": "A store of disability adjusted life years",
       "node_type": "STATE",
@@ -166,8 +166,8 @@
     },
     {
       "id": "DsFreeSus",
-      "x": 143.39,
-      "y": -60.97,
+      "x": 133.11,
+      "y": -62.66,
       "label": "DsFreeSus",
       "description": "State holding the balance of the healthy population",
       "node_type": "STATE",
@@ -185,8 +185,8 @@
     },
     {
       "id": "lrst7n8a",
-      "x": -36.45,
-      "y": 13.5,
+      "x": -50.21,
+      "y": 17.33,
       "color": "#06B4E1",
       "flush": true,
       "label": "IpratropiumInhaler_Disability_Effect",
@@ -200,8 +200,8 @@
     },
     {
       "id": "lrst7nh0",
-      "x": -38.2,
-      "y": 8.3,
+      "x": -51.96,
+      "y": 12.13,
       "color": "#06B4E1",
       "flush": true,
       "label": "OralPrednisolone_Disability_Effect",
@@ -215,8 +215,8 @@
     },
     {
       "id": "lrst14z6",
-      "x": -38.89,
-      "y": 75.88,
+      "x": -52.65,
+      "y": 79.71,
       "label": "OralPrednisolone_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -230,8 +230,8 @@
     },
     {
       "id": "lrst0woc",
-      "x": -45.74,
-      "y": 72.18,
+      "x": -59.5,
+      "y": 76.01,
       "label": "InhaledSalbutamol_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -245,8 +245,8 @@
     },
     {
       "id": "lrst1pq2",
-      "x": -33.95,
-      "y": 81.23,
+      "x": -47.71,
+      "y": 85.06,
       "label": "IpratropiumInhaler_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -260,8 +260,8 @@
     },
     {
       "id": "lrst79uc",
-      "x": -41.78,
-      "y": 3.25,
+      "x": -55.54,
+      "y": 7.08,
       "color": "#06B4E1",
       "flush": true,
       "label": "InhaledSalbutamol_Disability_Effect",
@@ -275,8 +275,8 @@
     },
     {
       "id": "lrsnjr1s",
-      "x": -36.83,
-      "y": -41.82,
+      "x": -50.59,
+      "y": -37.99,
       "color": "#06B4E1",
       "label": "IpratropiumInhaler_Disability_Impact",
       "generate_array": {
@@ -290,8 +290,8 @@
     },
     {
       "id": "lrsnjnt3",
-      "x": -40.43,
-      "y": -46.87,
+      "x": -54.19,
+      "y": -43.04,
       "color": "#06B4E1",
       "label": "OralPrednisolone_Disability_Impact",
       "generate_array": {
@@ -305,8 +305,8 @@
     },
     {
       "id": "lrsnjkmt",
-      "x": -44.43,
-      "y": -52.19,
+      "x": -58.19,
+      "y": -48.36,
       "color": "#06B4E1",
       "label": "InhaledSalbutamol_Disability_Impact",
       "generate_array": {
@@ -320,8 +320,8 @@
     },
     {
       "id": "lrso24ss",
-      "x": -58.86,
-      "y": 139.59,
+      "x": -72.62,
+      "y": 143.42,
       "label": "IpratropiumInhaler_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -335,12 +335,14 @@
     },
     {
       "id": "lrsnhyyd",
-      "x": -56.92,
-      "y": 144.09,
+      "x": -70.68,
+      "y": 147.92,
       "label": "IpratropiumInhaler_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
-        "postprocessing": {"negative": true},
+        "postprocessing": {
+          "negative": true
+        },
         "method": "single_value",
         "parameters": {
           "value": 0.05
@@ -351,8 +353,8 @@
     },
     {
       "id": "lrsngpv8",
-      "x": -78.31,
-      "y": 125.37,
+      "x": -92.07,
+      "y": 129.2,
       "label": "OralPrednisolone_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -366,13 +368,15 @@
     },
     {
       "id": "lrso28l8",
-      "x": -76.92,
-      "y": 129.5,
+      "x": -90.68,
+      "y": 133.33,
       "label": "OralPrednisolone_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
         "method": "single_value",
-        "postprocessing": {"negative": true},
+        "postprocessing": {
+          "negative": true
+        },
         "parameters": {
           "value": 0.05
         }
@@ -382,8 +386,8 @@
     },
     {
       "id": "lrsnalk2",
-      "x": -101.61,
-      "y": 109.74,
+      "x": -115.37,
+      "y": 113.57,
       "label": "InhaledSalbutamol_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -397,13 +401,15 @@
     },
     {
       "id": "lrso22do",
-      "x": -100.47,
-      "y": 114.93,
+      "x": -114.23,
+      "y": 118.76,
       "label": "InhaledSalbutamol_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
         "method": "single_value",
-        "postprocessing": {"negative": true},
+        "postprocessing": {
+          "negative": true
+        },
         "parameters": {
           "value": 0.05
         }
@@ -413,8 +419,8 @@
     },
     {
       "id": "lrsni0s5",
-      "x": -129.17,
-      "y": 13.81,
+      "x": -142.93,
+      "y": 17.64,
       "label": "IpratropiumInhaler_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -428,8 +434,8 @@
     },
     {
       "id": "lrsngte4",
-      "x": -129.43,
-      "y": 7.92,
+      "x": -143.19,
+      "y": 11.75,
       "label": "OralPrednisolone_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -443,8 +449,8 @@
     },
     {
       "id": "lrsnavq2",
-      "x": -130.01,
-      "y": 2.53,
+      "x": -143.77,
+      "y": 6.36,
       "label": "InhaledSalbutamol_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -458,8 +464,8 @@
     },
     {
       "id": "cigutJvD",
-      "x": 14.06,
-      "y": -89.49,
+      "x": 0.3,
+      "y": -85.66,
       "label": "COPD_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -473,8 +479,8 @@
     },
     {
       "id": "2yj2qyPv",
-      "x": 77.76,
-      "y": -87.27,
+      "x": 64,
+      "y": -83.44,
       "label": "Healthy_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -488,8 +494,8 @@
     },
     {
       "id": "wdcNK6r7",
-      "x": 41.8,
-      "y": -76.95,
+      "x": 28.04,
+      "y": -73.12,
       "label": "Combined_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -503,8 +509,8 @@
     },
     {
       "id": "OxzcOhs4",
-      "x": 41.37,
-      "y": -62.75,
+      "x": 27.61,
+      "y": -58.92,
       "label": "Combined_DW",
       "color": "#06B4E1",
       "generate_array": {
@@ -518,8 +524,8 @@
     },
     {
       "id": "btLpjBIQ",
-      "x": 41.1,
-      "y": -49.05,
+      "x": 27.34,
+      "y": -45.22,
       "label": "Modified_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -530,6 +536,39 @@
       },
       "flush": true,
       "node_type": "FUNCTION"
+    },
+    {
+      "id": "Mn5YBbsp",
+      "x": 254.01,
+      "y": -61.15,
+      "label": "COPDEpsd_Incidence_Rate",
+      "color": "#06B4E1",
+      "node_type": "CONSTANT",
+      "generate_array": {
+        "data_fetcher_label": "fhdb",
+        "method": "epidemiology",
+        "parameters": {
+          "country": "AFG",
+          "disease": "COPD",
+          "measure": "incidence"
+        }
+      },
+      "flush": true
+    },
+    {
+      "id": "cXtHHFW2",
+      "x": 192.05,
+      "y": -61.35,
+      "label": "COPDEpsd Incidence",
+      "node_type": "SURROGATE",
+      "color": "#7038E1",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "flush": true
     }
   ],
   "links": [
@@ -636,26 +675,6 @@
         }
       },
       "label": "DsFreeSus -> Deceased"
-    },
-    {
-      "id": "dlGB2RD6",
-      "source": "DsFreeSus",
-      "target": "COPDEpsd",
-      "description": "Progression of COPD episode",
-      "edge_type": "transition",
-      "requires_source_balance": true,
-      "remove_value_from_source": true,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "data_fetcher_label": "fhdb",
-        "method": "epidemiology",
-        "parameters": {
-          "country": "AFG",
-          "disease": "COPD",
-          "measure": "incidence"
-        }
-      },
-      "label": "Incidence DsFreeSus -> COPDEpsd"
     },
     {
       "id": "eBRm4kvr",
@@ -1268,6 +1287,45 @@
         }
       },
       "label": "Background Mortality COPDEpsd"
+    },
+    {
+      "id": "uSWdM5kH",
+      "source": "Mn5YBbsp",
+      "target": "cXtHHFW2",
+      "edge_type": "projection",
+      "requires_source_balance": true,
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "label": "COPDEpsd_Incidence_Rate -> COPDEpsd Incidence"
+    },
+    {
+      "id": "5Ol05axR",
+      "source": "DsFreeSus",
+      "target": "cXtHHFW2",
+      "edge_type": "transition",
+      "set_by_surrogate": true,
+      "label": "DsFreeSus -> COPDEpsd Incidence"
+    },
+    {
+      "id": "2jjgV7Dx",
+      "source": "cXtHHFW2",
+      "target": "COPDEpsd",
+      "requires_source_balance": true,
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "label": "COPDEpsd Incidence -> COPDEpsd"
     }
   ],
   "subroutines": [
@@ -1294,7 +1352,8 @@
       "included_source_nodes": [
         "lrstce6u",
         "lrste7nj",
-        "lrwzsau5"
+        "lrwzsau5",
+        "cXtHHFW2"
       ]
     },
     {
@@ -1335,7 +1394,16 @@
         "lrso22do",
         "lrso71jf",
         "lrso7mga",
-        "lrso81aw"
+        "lrso81aw",
+        "Mn5YBbsp"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Calculate Incidence Surrogate",
+      "included_edges": [
+        "uSWdM5kH"
       ]
     },
     {
@@ -1457,7 +1525,7 @@
       "batch": false,
       "narration": "Main Routine (Incidence Occurs)",
       "included_edges": [
-        "dlGB2RD6"
+        "5Ol05axR"
       ]
     },
     {
