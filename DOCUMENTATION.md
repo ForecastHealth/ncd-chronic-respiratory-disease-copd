@@ -1,5 +1,5 @@
+
 # The COPD Model, and its Scenarios
-This document describes the COPD state-transition model, and the scenarios which are run using it.
 
 ##  The COPD Model and its design
 ### COPD Models creates three scenarios: Null_COPD, CR2, and CR4
@@ -39,19 +39,21 @@ While treatments are always present in the structure of the COPD model, their co
 **NOTE** - These figures imply a modification of effect sizes.
 E.g. `InhaledSalbutamol` reduces the Disability of `COPDEpsd` by 14.8% (-0.148).
 
-- InhaledSalbutamol
-    - Disability: -0.148
-- IpratropiumInhaler
-    - Disability:-0.169
-- OralPrednisolone
-    - Disability:-0.337
+| Treatment | Impact on Disability |
+|-----------|-------------------|
+| InhaledSalbutamol | -0.148 |
+| IpratropiumInhaler | -0.169 |
+| OralPrednisolone | -0.337 |
 
 ### Population in Need (PIN)
 **NOTE** - Refers to the proportion of people in `COPDEpsd` who are "in need" of this treatment.
 e.g. 30% of `COPDEpsd` are "in need" of `OralPrednisolone`
-- InhaledSalbutamol: 1.0 (100% PIN)
-- IpratropiumInhaler: 0.21
-- OralPrednisolone: 0.337
+
+| Treatment | Population in Need |
+|-----------|-------------------|
+| InhaledSalbutamol | 1.0 (100% PIN) |
+| IpratropiumInhaler | 0.21 |
+| OralPrednisolone | 0.337 |
 
 ### The Model has two key components
 The COPD model is large, but can be broken down into two components.
