@@ -1,5 +1,13 @@
-
 # The COPD Model, and its Scenarios
+
+## Interventions Table
+
+| Category                   | Code | Name                                                                                                        |
+|----------------------------|------|-------------------------------------------------------------------------------------------------------------|
+| Chronic respiratory diseases | CR2  | Acute treatment of COPD exacerbations with inhaled bronchodilators and oral steroids                       |
+| Chronic respiratory diseases | CR4  | Long-term management of COPD with inhaled bronchodilator                                                  |
+
+---
 
 ##  The COPD Model and its design
 ### COPD Models creates three scenarios: Null_COPD, CR2, and CR4
