@@ -53,9 +53,7 @@ def main():
                 print(f"Missing path for parameter '{param_name}': {p}")
 
     if not missing_paths_found:
-        # If you want to indicate success when everything matches:
-        # print("All scenario paths exist in the model.")
-        pass
+        print("No errors detected. All scenario paths exist in the model.")
 
 if __name__ == '__main__':
     main()
