@@ -2941,6 +2941,34 @@
     {
       "id": "tJkWGHk3",
       "source": "cXtHHFW2",
+      "target": "8kLiklUp",
+      "requires_source_balance": true,
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "sS2uov2j",
+      "source": "cXtHHFW2",
+      "target": "jWfqJ3Yv",
+      "requires_source_balance": true,
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "ee0hmMQf",
+      "source": "cXtHHFW2",
       "target": "U37bYeyB",
       "requires_source_balance": true,
       "remove_value_from_source": false,
