@@ -13,8 +13,8 @@
   "nodes": [
     {
       "id": "lrstce6u",
-      "x": 69.42,
-      "y": 42.49,
+      "x": 89.6,
+      "y": 68.71,
       "label": "COPDEpsd Mortality",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -28,8 +28,8 @@
     },
     {
       "id": "lrwzsau5",
-      "x": -19.84,
-      "y": 30.58,
+      "x": -35.46,
+      "y": 23.3,
       "label": "COPDEpsd HYL",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -43,8 +43,8 @@
     },
     {
       "id": "lrso81aw",
-      "x": 68.88,
-      "y": 58.92,
+      "x": 90.91,
+      "y": 84.91,
       "label": "COPDEpsd_CFR",
       "color": "#06B4E1",
       "generate_array": {
@@ -61,8 +61,8 @@
     },
     {
       "id": "lrwz1ikj",
-      "x": -61.88,
-      "y": 27.3,
+      "x": -77.5,
+      "y": 20.02,
       "label": "Disability_Effect_Transform",
       "description": "Removing each effect from 1",
       "color": "#06B4E1",
@@ -77,9 +77,9 @@
     },
     {
       "id": "Deceased",
-      "x": 87.31,
-      "y": 21.26,
-      "label": "Deceased",
+      "x": 168.48,
+      "y": 26.23,
+      "label": "Deceased-DsFreeSus",
       "description": "The state of being dead",
       "node_type": "STATE",
       "balance_type": "array",
@@ -88,8 +88,8 @@
     },
     {
       "id": "COPDEpsd",
-      "x": 49.24,
-      "y": 21.79,
+      "x": 33.62,
+      "y": 14.51,
       "label": "COPDEpsd",
       "ageing": true,
       "color": "#E5EF73",
@@ -97,8 +97,8 @@
     },
     {
       "id": "lrso71jf",
-      "x": 23.01,
-      "y": -47.74,
+      "x": 7.39,
+      "y": -55.02,
       "label": "Healthy_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
@@ -113,8 +113,8 @@
     },
     {
       "id": "lrso7mga",
-      "x": -51.51,
-      "y": -49.68,
+      "x": -67.13,
+      "y": -56.96,
       "label": "COPD_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
@@ -130,8 +130,8 @@
     },
     {
       "id": "Births",
-      "x": 49.59,
-      "y": -6.38,
+      "x": 33.97,
+      "y": -13.66,
       "label": "Births",
       "description": "Store of the number of births in the population",
       "balance_type": "array",
@@ -140,8 +140,8 @@
     },
     {
       "id": "lrste7nj",
-      "x": 16.39,
-      "y": 30.83,
+      "x": 0.77,
+      "y": 23.55,
       "label": "DsFreeSus HYL",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -155,8 +155,8 @@
     },
     {
       "id": "Disability",
-      "x": -6.72,
-      "y": 50.91,
+      "x": -22.34,
+      "y": 43.63,
       "label": "Healthy Years Lived",
       "description": "A store of disability adjusted life years",
       "node_type": "STATE",
@@ -166,8 +166,8 @@
     },
     {
       "id": "DsFreeSus",
-      "x": 86.23,
-      "y": -6.42,
+      "x": 70.61,
+      "y": -13.7,
       "label": "DsFreeSus",
       "description": "State holding the balance of the healthy population",
       "node_type": "STATE",
@@ -185,8 +185,8 @@
     },
     {
       "id": "lrst7n8a",
-      "x": -97.09,
-      "y": 73.57,
+      "x": -112.71,
+      "y": 66.29,
       "color": "#06B4E1",
       "flush": true,
       "label": "IpratropiumInhaler_Disability_Effect",
@@ -200,8 +200,8 @@
     },
     {
       "id": "lrst7nh0",
-      "x": -98.84,
-      "y": 68.37,
+      "x": -114.46,
+      "y": 61.09,
       "color": "#06B4E1",
       "flush": true,
       "label": "OralPrednisolone_Disability_Effect",
@@ -215,8 +215,8 @@
     },
     {
       "id": "lrst14z6",
-      "x": -99.53,
-      "y": 135.95,
+      "x": -115.15,
+      "y": 128.67,
       "label": "OralPrednisolone_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -230,8 +230,8 @@
     },
     {
       "id": "lrst0woc",
-      "x": -106.38,
-      "y": 132.25,
+      "x": -122,
+      "y": 124.97,
       "label": "InhaledSalbutamol_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -245,8 +245,8 @@
     },
     {
       "id": "lrst1pq2",
-      "x": -94.59,
-      "y": 141.3,
+      "x": -110.21,
+      "y": 134.02,
       "label": "IpratropiumInhaler_Calculated_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -260,8 +260,8 @@
     },
     {
       "id": "lrst79uc",
-      "x": -102.42,
-      "y": 63.32,
+      "x": -118.04,
+      "y": 56.04,
       "color": "#06B4E1",
       "flush": true,
       "label": "InhaledSalbutamol_Disability_Effect",
@@ -275,8 +275,8 @@
     },
     {
       "id": "lrsnjr1s",
-      "x": -97.47,
-      "y": 18.25,
+      "x": -113.09,
+      "y": 10.97,
       "color": "#06B4E1",
       "label": "IpratropiumInhaler_Disability_Impact",
       "generate_array": {
@@ -290,8 +290,8 @@
     },
     {
       "id": "lrsnjnt3",
-      "x": -101.07,
-      "y": 13.2,
+      "x": -116.69,
+      "y": 5.92,
       "color": "#06B4E1",
       "label": "OralPrednisolone_Disability_Impact",
       "generate_array": {
@@ -305,8 +305,8 @@
     },
     {
       "id": "lrsnjkmt",
-      "x": -105.07,
-      "y": 7.88,
+      "x": -120.69,
+      "y": 0.6,
       "color": "#06B4E1",
       "label": "InhaledSalbutamol_Disability_Impact",
       "generate_array": {
@@ -320,8 +320,8 @@
     },
     {
       "id": "lrso24ss",
-      "x": -119.5,
-      "y": 199.66,
+      "x": -135.12,
+      "y": 192.38,
       "label": "IpratropiumInhaler_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -335,8 +335,8 @@
     },
     {
       "id": "lrsnhyyd",
-      "x": -117.56,
-      "y": 204.16,
+      "x": -133.18,
+      "y": 196.88,
       "label": "IpratropiumInhaler_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
@@ -353,8 +353,8 @@
     },
     {
       "id": "lrsngpv8",
-      "x": -138.95,
-      "y": 185.44,
+      "x": -154.57,
+      "y": 178.16,
       "label": "OralPrednisolone_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -368,8 +368,8 @@
     },
     {
       "id": "lrso28l8",
-      "x": -137.56,
-      "y": 189.57,
+      "x": -153.18,
+      "y": 182.29,
       "label": "OralPrednisolone_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
@@ -386,8 +386,8 @@
     },
     {
       "id": "lrsnalk2",
-      "x": -162.25,
-      "y": 169.81,
+      "x": -177.87,
+      "y": 162.53,
       "label": "InhaledSalbutamol_Coverage",
       "generate_array": {
         "method": "single_value",
@@ -401,8 +401,8 @@
     },
     {
       "id": "lrso22do",
-      "x": -161.11,
-      "y": 175,
+      "x": -176.73,
+      "y": 167.72,
       "label": "InhaledSalbutamol_StartingCoverage",
       "generate_array": {
         "fetch_once": true,
@@ -419,8 +419,8 @@
     },
     {
       "id": "lrsni0s5",
-      "x": -189.81,
-      "y": 73.88,
+      "x": -205.43,
+      "y": 66.6,
       "label": "IpratropiumInhaler_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -434,8 +434,8 @@
     },
     {
       "id": "lrsngte4",
-      "x": -190.07,
-      "y": 67.99,
+      "x": -205.69,
+      "y": 60.71,
       "label": "OralPrednisolone_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -449,8 +449,8 @@
     },
     {
       "id": "lrsnavq2",
-      "x": -190.65,
-      "y": 62.6,
+      "x": -206.27,
+      "y": 55.32,
       "label": "InhaledSalbutamol_PIN",
       "generate_array": {
         "fetch_once": true,
@@ -464,8 +464,8 @@
     },
     {
       "id": "cigutJvD",
-      "x": -46.58,
-      "y": -29.42,
+      "x": -62.2,
+      "y": -36.7,
       "label": "COPD_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -479,8 +479,8 @@
     },
     {
       "id": "2yj2qyPv",
-      "x": 17.12,
-      "y": -27.2,
+      "x": 1.5,
+      "y": -34.48,
       "label": "Healthy_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -494,8 +494,8 @@
     },
     {
       "id": "wdcNK6r7",
-      "x": -18.84,
-      "y": -16.88,
+      "x": -34.46,
+      "y": -24.16,
       "label": "Combined_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -509,8 +509,8 @@
     },
     {
       "id": "OxzcOhs4",
-      "x": -19.27,
-      "y": -2.68,
+      "x": -34.89,
+      "y": -9.96,
       "label": "Combined_DW",
       "color": "#06B4E1",
       "generate_array": {
@@ -524,8 +524,8 @@
     },
     {
       "id": "btLpjBIQ",
-      "x": -19.54,
-      "y": 11.02,
+      "x": -35.16,
+      "y": 3.74,
       "label": "Modified_HYL",
       "color": "#06B4E1",
       "generate_array": {
@@ -539,8 +539,8 @@
     },
     {
       "id": "Mn5YBbsp",
-      "x": 207.13,
-      "y": -4.91,
+      "x": 191.51,
+      "y": -12.19,
       "label": "COPDEpsd_Incidence_Rate",
       "color": "#06B4E1",
       "node_type": "CONSTANT",
@@ -557,8 +557,8 @@
     },
     {
       "id": "cXtHHFW2",
-      "x": 145.17,
-      "y": -5.11,
+      "x": 129.55,
+      "y": -12.39,
       "label": "COPDEpsd Incidence",
       "node_type": "SURROGATE",
       "color": "#7038E1",
@@ -572,8 +572,8 @@
     },
     {
       "id": "BXOLckIN",
-      "x": 21.01,
-      "y": 36.27,
+      "x": 5.39,
+      "y": 28.99,
       "label": "paf-denom-t",
       "generate_array": {
         "method": "single_value",
@@ -585,8 +585,8 @@
     },
     {
       "id": "oGP2Nze1",
-      "x": 74.82,
-      "y": 34.93,
+      "x": 59.2,
+      "y": 27.65,
       "label": "paf-denom-0",
       "generate_array": {
         "method": "single_value",
@@ -598,8 +598,8 @@
     },
     {
       "id": "PjHF9FHh",
-      "x": 34.4,
-      "y": 94.27,
+      "x": 18.78,
+      "y": 86.99,
       "label": "rf-all",
       "flush": true,
       "generate_array": {
@@ -611,8 +611,8 @@
     },
     {
       "id": "j8mr17a2",
-      "x": 37.27,
-      "y": 62.49,
+      "x": 21.65,
+      "y": 55.21,
       "label": "paf-tobacco-delta",
       "flush": true,
       "generate_array": {
@@ -624,8 +624,8 @@
     },
     {
       "id": "zxPMOyBk",
-      "x": 90.19,
-      "y": 57.29,
+      "x": 27.22,
+      "y": 39.85,
       "label": "paf-tobacco-0",
       "generate_array": {
         "method": "single_value",
@@ -637,8 +637,8 @@
     },
     {
       "id": "o1hbxc1R",
-      "x": 89.27,
-      "y": 13.79,
+      "x": 73.65,
+      "y": 6.51,
       "label": "excess-risk-0-tobacco",
       "generate_array": {
         "method": "single_value",
@@ -650,8 +650,8 @@
     },
     {
       "id": "h6Dd182n",
-      "x": 5.06,
-      "y": 53.49,
+      "x": -10.56,
+      "y": 46.21,
       "label": "paf-tobacco-t",
       "generate_array": {
         "method": "single_value",
@@ -663,8 +663,8 @@
     },
     {
       "id": "xFQ7WDDN",
-      "x": 5.71,
-      "y": 17.76,
+      "x": -9.91,
+      "y": 10.48,
       "label": "excess-risk-t-tobacco",
       "generate_array": {
         "method": "single_value",
@@ -676,8 +676,8 @@
     },
     {
       "id": "UJon4r9l",
-      "x": 47.43,
-      "y": -4.72,
+      "x": 31.81,
+      "y": -12,
       "label": "relative-risk-tobacco-copd",
       "node_type": "CONSTANT",
       "color": "#E5EF73",
@@ -695,8 +695,8 @@
     },
     {
       "id": "HvEhBiqV",
-      "x": 91.15,
-      "y": -18.2,
+      "x": 75.53,
+      "y": -25.48,
       "label": "prevalence-0-tobacco",
       "color": "#E5EF73",
       "flush": false,
@@ -713,8 +713,8 @@
     },
     {
       "id": "OujFYFdY",
-      "x": 5.33,
-      "y": -17.15,
+      "x": -10.29,
+      "y": -24.43,
       "label": "prevalence-t-tobacco",
       "generate_array": {
         "method": "single_value",
@@ -728,8 +728,8 @@
     },
     {
       "id": "DsMKQaMl",
-      "x": 6.01,
-      "y": -35.3,
+      "x": -9.61,
+      "y": -42.58,
       "label": "total-prevalence-reduction-tobacco",
       "generate_array": {
         "method": "single_value",
@@ -743,8 +743,8 @@
     },
     {
       "id": "yeUjLivi",
-      "x": -38.04,
-      "y": -52.42,
+      "x": -53.66,
+      "y": -59.7,
       "label": "effect-size-tobacco-protect",
       "flush": true,
       "generate_array": {
@@ -758,8 +758,8 @@
     },
     {
       "id": "Rw3STfqr",
-      "x": -41.49,
-      "y": -65.72,
+      "x": -57.11,
+      "y": -73,
       "label": "delta-coverage-tobacco-protect",
       "generate_array": {
         "method": "single_value",
@@ -773,8 +773,8 @@
     },
     {
       "id": "f2zVbmFC",
-      "x": -44.6,
-      "y": -91.19,
+      "x": -60.22,
+      "y": -98.47,
       "label": "target-coverage-tobacco-protect",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -788,8 +788,8 @@
     },
     {
       "id": "kmOgayPc",
-      "x": -47.01,
-      "y": -96.4,
+      "x": -62.63,
+      "y": -103.68,
       "label": "baseline-coverage-tobacco-protect",
       "generate_array": {
         "postprocessing": {
@@ -806,8 +806,8 @@
     },
     {
       "id": "dhCjk23F",
-      "x": -6.56,
-      "y": -57.96,
+      "x": -22.18,
+      "y": -65.24,
       "label": "effect-size-tobacco-quitbrief",
       "flush": true,
       "generate_array": {
@@ -821,8 +821,8 @@
     },
     {
       "id": "c6rmN2fs",
-      "x": -0.9,
-      "y": -75.94,
+      "x": -16.52,
+      "y": -83.22,
       "label": "delta-coverage-tobacco-quitbrief",
       "generate_array": {
         "method": "single_value",
@@ -836,8 +836,8 @@
     },
     {
       "id": "Go1VxQNw",
-      "x": 0.83,
-      "y": -100.78,
+      "x": -14.79,
+      "y": -108.06,
       "label": "target-coverage-tobacco-quitbrief",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -851,8 +851,8 @@
     },
     {
       "id": "iSPWJd93",
-      "x": 1.4,
-      "y": -106.45,
+      "x": -14.22,
+      "y": -113.73,
       "label": "baseline-coverage-tobacco-quitbrief",
       "generate_array": {
         "postprocessing": {
@@ -869,8 +869,8 @@
     },
     {
       "id": "UW8uObpi",
-      "x": 30.91,
-      "y": -62.96,
+      "x": 15.29,
+      "y": -70.24,
       "label": "effect-size-tobacco-quitcessation",
       "flush": true,
       "generate_array": {
@@ -884,8 +884,8 @@
     },
     {
       "id": "b1QqmB9J",
-      "x": 36.58,
-      "y": -80.48,
+      "x": 20.96,
+      "y": -87.76,
       "label": "delta-coverage-tobacco-quitcessation",
       "generate_array": {
         "method": "single_value",
@@ -899,8 +899,8 @@
     },
     {
       "id": "ACrnBpRW",
-      "x": 57.47,
-      "y": -113.17,
+      "x": 41.85,
+      "y": -120.45,
       "label": "target-coverage-tobacco-quitcessation",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -914,8 +914,8 @@
     },
     {
       "id": "exp5DafX",
-      "x": 56.65,
-      "y": -119.3,
+      "x": 41.03,
+      "y": -126.58,
       "label": "baseline-coverage-tobacco-quitcessation",
       "generate_array": {
         "postprocessing": {
@@ -932,8 +932,8 @@
     },
     {
       "id": "c7kD60U5",
-      "x": 57.77,
-      "y": -57.58,
+      "x": 42.15,
+      "y": -64.86,
       "label": "effect-size-tobacco-warnlabel",
       "flush": true,
       "generate_array": {
@@ -947,8 +947,8 @@
     },
     {
       "id": "CpV9O9hQ",
-      "x": 91.6,
-      "y": -84.79,
+      "x": 75.98,
+      "y": -92.07,
       "label": "delta-coverage-tobacco-warnlabel",
       "generate_array": {
         "method": "single_value",
@@ -962,8 +962,8 @@
     },
     {
       "id": "Sr0tR2ig",
-      "x": 94.48,
-      "y": -127.41,
+      "x": 78.86,
+      "y": -134.69,
       "label": "target-coverage-tobacco-warnlabel",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -977,8 +977,8 @@
     },
     {
       "id": "jVgKAsq8",
-      "x": 95.74,
-      "y": -132.84,
+      "x": 80.12,
+      "y": -140.12,
       "label": "baseline-coverage-tobacco-warnlabel",
       "generate_array": {
         "postprocessing": {
@@ -995,8 +995,8 @@
     },
     {
       "id": "RFyZaSPm",
-      "x": 85.32,
-      "y": -51.96,
+      "x": 69.7,
+      "y": -59.24,
       "label": "effect-size-tobacco-massmedia",
       "flush": true,
       "generate_array": {
@@ -1010,8 +1010,8 @@
     },
     {
       "id": "z8dEXLS9",
-      "x": 126.07,
-      "y": -79.41,
+      "x": 110.45,
+      "y": -86.69,
       "label": "delta-coverage-tobacco-massmedia",
       "generate_array": {
         "method": "single_value",
@@ -1025,8 +1025,8 @@
     },
     {
       "id": "lFeWKUSt",
-      "x": 147.32,
-      "y": -113.36,
+      "x": 131.7,
+      "y": -120.64,
       "label": "target-coverage-tobacco-massmedia",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -1040,8 +1040,8 @@
     },
     {
       "id": "kH5YhKYM",
-      "x": 148.09,
-      "y": -118.33,
+      "x": 132.47,
+      "y": -125.61,
       "label": "baseline-coverage-tobacco-massmedia",
       "generate_array": {
         "postprocessing": {
@@ -1058,8 +1058,8 @@
     },
     {
       "id": "cahejWW9",
-      "x": 124.74,
-      "y": -46.64,
+      "x": 109.12,
+      "y": -53.92,
       "label": "effect-size-tobacco-ban",
       "flush": true,
       "generate_array": {
@@ -1073,8 +1073,8 @@
     },
     {
       "id": "llX00Ofj",
-      "x": 169.63,
-      "y": -74.46,
+      "x": 154.01,
+      "y": -81.74,
       "label": "delta-coverage-tobacco-ban",
       "generate_array": {
         "method": "single_value",
@@ -1088,8 +1088,8 @@
     },
     {
       "id": "a6OhDhjp",
-      "x": 199.49,
-      "y": -102.24,
+      "x": 183.87,
+      "y": -109.52,
       "label": "target-coverage-tobacco-ban",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -1103,8 +1103,8 @@
     },
     {
       "id": "zUseZJKK",
-      "x": 198.27,
-      "y": -106.39,
+      "x": 182.65,
+      "y": -113.67,
       "label": "baseline-coverage-tobacco-ban",
       "generate_array": {
         "postprocessing": {
@@ -1121,8 +1121,8 @@
     },
     {
       "id": "wdoGuxrz",
-      "x": -76.78,
-      "y": -44.55,
+      "x": -92.4,
+      "y": -51.83,
       "label": "effect-size-tobacco-tax",
       "flush": true,
       "generate_array": {
@@ -1138,8 +1138,8 @@
     },
     {
       "id": "bdg7vh5J",
-      "x": -80.36,
-      "y": -59.64,
+      "x": -95.98,
+      "y": -66.92,
       "label": "delta-coverage-tobacco-protect",
       "generate_array": {
         "method": "single_value",
@@ -1153,8 +1153,8 @@
     },
     {
       "id": "BTDc3bch",
-      "x": -81.34,
-      "y": -79.34,
+      "x": -96.96,
+      "y": -86.62,
       "label": "target-coverage-tobacco-tax",
       "node_type": "CONSTANT",
       "color": "#06B4E1",
@@ -1168,8 +1168,8 @@
     },
     {
       "id": "lFMuQmak",
-      "x": -77.94,
-      "y": -73.78,
+      "x": -93.56,
+      "y": -81.06,
       "label": "baseline-coverage-tobacco-tax",
       "generate_array": {
         "postprocessing": {
@@ -1182,6 +1182,57 @@
       },
       "color": "#06B4E1",
       "node_type": "CONSTANT",
+      "flush": true
+    },
+    {
+      "id": "igyhM1ma",
+      "x": 232.3,
+      "y": 98.7,
+      "color": "#FFB255",
+      "label": "DALYs",
+      "flush": true
+    },
+    {
+      "id": "BdJB5CiG",
+      "x": 181.09,
+      "y": 67.13,
+      "color": "#FFB255",
+      "label": "YLL-COPDEpsd",
+      "flush": true
+    },
+    {
+      "id": "DSVPggeh",
+      "x": 209.81,
+      "y": 53.8,
+      "color": "#FFB255",
+      "label": "YLL-DsFreeSus",
+      "flush": true
+    },
+    {
+      "id": "UKfKgMd7",
+      "x": 159.52,
+      "y": 118.32,
+      "color": "#FFB255",
+      "label": "YLD-COPDEpsd",
+      "flush": true
+    },
+    {
+      "id": "Yav8dlAY",
+      "x": 157.52,
+      "y": 107.31,
+      "color": "#FFB255",
+      "label": "YLD-DsFreeSus",
+      "flush": true
+    },
+    {
+      "id": "q0kGTdmQ",
+      "x": 139.21,
+      "y": 45.93,
+      "label": "Deceased-COPEpsd",
+      "description": "The state of being dead",
+      "node_type": "STATE",
+      "balance_type": "array",
+      "color": "#FB6375",
       "flush": true
     }
   ],
@@ -1717,7 +1768,7 @@
     {
       "id": "0xQNQRAT",
       "source": "lrstce6u",
-      "target": "Deceased",
+      "target": "q0kGTdmQ",
       "requires_source_balance": true,
       "remove_value_from_source": false,
       "value_to_target_operator": "add",
@@ -1887,7 +1938,7 @@
     {
       "id": "cz2LeDKw",
       "source": "COPDEpsd",
-      "target": "Deceased",
+      "target": "q0kGTdmQ",
       "description": "Transition people into the mortality state",
       "edge_type": "transition",
       "requires_source_balance": true,
@@ -2614,6 +2665,176 @@
         }
       },
       "label": "baseline-coverage-tobacco-tax -> delta-coverage-tobacco-tax"
+    },
+    {
+      "id": "Ki96tupa",
+      "source": "BdJB5CiG",
+      "target": "igyhM1ma",
+      "value_to_target_operator": "add",
+      "remove_value_from_source": false,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "I5KhJeeN",
+      "source": "DSVPggeh",
+      "target": "igyhM1ma",
+      "value_to_target_operator": "add",
+      "remove_value_from_source": false,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "SFYPt8Al",
+      "source": "UKfKgMd7",
+      "target": "igyhM1ma",
+      "value_to_target_operator": "add",
+      "remove_value_from_source": false,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "5zPdYBgw",
+      "source": "Yav8dlAY",
+      "target": "igyhM1ma",
+      "value_to_target_operator": "add",
+      "remove_value_from_source": false,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "vreXoNZj",
+      "source": "Deceased",
+      "target": "DSVPggeh",
+      "value_to_target_operator": "add",
+      "remove_value_from_source": false,
+      "trigger": {
+        "method": "inflow",
+        "parameters": {
+          "value_to_use": "inflow"
+        }
+      },
+      "generate_array": {
+        "method": "subset",
+        "parameters": {
+          "slice_indices": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              80
+            ]
+          ],
+          "method": "single_value",
+          "parameters": {
+            "value": 0.1
+          },
+          "fill_value": 0
+        }
+      }
+    },
+    {
+      "id": "nILTBj4D",
+      "source": "q0kGTdmQ",
+      "target": "BdJB5CiG",
+      "value_to_target_operator": "add",
+      "remove_value_from_source": false,
+      "trigger": {
+        "method": "inflow",
+        "parameters": {
+          "value_to_use": "inflow"
+        }
+      },
+      "generate_array": {
+        "method": "subset",
+        "parameters": {
+          "slice_indices": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              80
+            ]
+          ],
+          "method": "single_value",
+          "parameters": {
+            "value": 0.1
+          },
+          "fill_value": 0
+        }
+      }
+    },
+    {
+      "id": "IlufIA1L",
+      "source": "DsFreeSus",
+      "target": "Yav8dlAY",
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "kgTS8XSv",
+      "source": "lrso71jf",
+      "target": "Yav8dlAY",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "id": "YSoRbOKl",
+      "source": "COPDEpsd",
+      "target": "UKfKgMd7",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add"
+    },
+    {
+      "id": "gCrgZvg7",
+      "source": "OxzcOhs4",
+      "target": "UKfKgMd7",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
     }
   ],
   "subroutines": [
@@ -2946,6 +3167,24 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "narration": "Add prevalence to YLD nodes",
+      "included_edges": [
+        "IlufIA1L",
+        "YSoRbOKl"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Multiply YLDs by Disability Weights",
+      "included_edges": [
+        "kgTS8XSv",
+        "gCrgZvg7"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
       "narration": "Calculate Modified HYL",
       "included_edges": [
         "VmiA6H36"
@@ -3039,11 +3278,29 @@
       ]
     },
     {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "included_edges": [
+        "Ki96tupa",
+        "I5KhJeeN",
+        "SFYPt8Al",
+        "5zPdYBgw"
+      ]
+    },
+    {
       "method": "echo",
       "batch": false,
       "narration": "Record Healthy Years Lived",
       "included_source_nodes": [
-        "Disability"
+        "Disability",
+        "Deceased",
+        "q0kGTdmQ",
+        "DsFreeSus",
+        "BdJB5CiG",
+        "DSVPggeh",
+        "UKfKgMd7",
+        "Yav8dlAY",
+        "igyhM1ma"
       ]
     },
     {
