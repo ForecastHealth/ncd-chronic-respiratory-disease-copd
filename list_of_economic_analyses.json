@@ -32,14 +32,6 @@
         "denominator_label": "Healthy Years Lived"
     },
     {
-        "name": "COPD_T3 - AFG",
-        "description": "Enact and enforce comprehensive bans on tobacco advertising, promotion and sponsorship - AFG",
-        "baseline_scenario_label": "Appendix 3 - Tobacco Null Scenario - AFG",
-        "comparator_scenario_label": "Appendix 3 - Tobacco T3 Scenario - AFG",
-        "numerator_label": "costs",
-        "denominator_label": "Healthy Years Lived"
-    },
-    {
         "name": "COPD_T6 - AFG",
         "description": "Provision of cost-covered effective population-wide support (including brief advice, national toll-free quit line services and mCessation) for tobacco cessation to all tobacco users - AFG",
         "baseline_scenario_label": "Appendix 3 - Tobacco Null Scenario - AFG",
@@ -52,14 +44,6 @@
         "description": "Provision of cost-covered effective pharmacological interventions to all tobacco users who want to quit - AFG",
         "baseline_scenario_label": "Appendix 3 - Tobacco Null Scenario - AFG",
         "comparator_scenario_label": "Appendix 3 - Tobacco T7 Scenario - AFG",
-        "numerator_label": "costs",
-        "denominator_label": "Healthy Years Lived"
-    },
-    {
-        "name": "COPD_T4 - AFG",
-        "description": "Eliminate exposure to second-hand tobacco smoke in all indoor workplaces, public places, public transport - AFG",
-        "baseline_scenario_label": "Appendix 3 - Tobacco Null Scenario - AFG",
-        "comparator_scenario_label": "Appendix 3 - Tobacco T4 Scenario - AFG",
         "numerator_label": "costs",
         "denominator_label": "Healthy Years Lived"
     },
