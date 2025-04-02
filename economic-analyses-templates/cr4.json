@@ -1,8 +1,8 @@
 {
     "name": "CR4",
     "description": "Long-term management of COPD with inhaled bronchodilator",
-    "baseline_name": "Appendix 3 - COPD Null Scenario",
-    "comparator_name": "Appendix 3 - CR4 Scenario",
+    "baseline_name": "copd_null_scenario",
+    "comparator_name": "copd_cr4_scenario",
     "numerator": "costs",
     "denominator": "Healthy Years Lived"
 }
