@@ -283,7 +283,7 @@
         "fetch_once": true,
         "method": "single_value",
         "parameters": {
-          "value": -0.169
+          "value": 0.169
         }
       },
       "node_type": "CONSTANT"
@@ -298,7 +298,7 @@
         "fetch_once": true,
         "method": "single_value",
         "parameters": {
-          "value": -0.337
+          "value": 0.337
         }
       },
       "node_type": "CONSTANT"
@@ -313,7 +313,7 @@
         "fetch_once": true,
         "method": "single_value",
         "parameters": {
-          "value": -0.148
+          "value": 0.148
         }
       },
       "node_type": "CONSTANT"
