@@ -36,7 +36,7 @@
     },
     "Inhaled Salbutamol Target Coverage": {
       "category": "Coverage",
-      "value": 0.05,
+      "value": 0.0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.value"
@@ -68,7 +68,7 @@
     },
     "Ipratropium Inhaler Target Coverage": {
       "category": "Coverage",
-      "value": 0.05,
+      "value": 0.0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.value"

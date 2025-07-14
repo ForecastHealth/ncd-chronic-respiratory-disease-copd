@@ -100,7 +100,7 @@
     },
     "Oral Prednisolone Target Coverage": {
       "category": "Coverage",
-      "value": 0.05,
+      "value": 0.0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.value"
