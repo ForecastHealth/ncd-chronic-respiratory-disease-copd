@@ -3328,11 +3328,14 @@
       ]
     },
     {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Main Routine (Incidence Occurs)",
+      "method": "synchronous_transfer",
+      "batch": true,
+      "narration": "Main Routine",
       "included_edges": [
-        "5Ol05axR"
+        "5Ol05axR",
+        "MfWskKJT",
+        "cz2LeDKw",
+        "XNyqqSsC"
       ]
     },
     {
@@ -3391,16 +3394,6 @@
       "included_source_nodes": [
         "DsFreeSus",
         "COPDEpsd"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "People Die",
-      "included_edges": [
-        "MfWskKJT",
-        "XNyqqSsC",
-        "cz2LeDKw"
       ]
     },
     {
