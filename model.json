@@ -1946,7 +1946,7 @@
     {
       "id": "s2aCngF5",
       "source": "lrwz1ikj",
-      "target": "OxzcOhs4",
+      "target": "lrso7mga",
       "edge_type": "projection",
       "requires_source_balance": true,
       "remove_value_from_source": false,
@@ -1957,7 +1957,10 @@
           "value": 1
         }
       },
-      "label": "Disability_Effect_Transform -> Combined_DW"
+      "label": "Disability_Effect_Transform -> COPD_Disability_Weight",
+      "postprocessing": {
+        "inverse": true
+      }
     },
     {
       "id": "cz2LeDKw",
