@@ -36,6 +36,7 @@
       ]
     },
     "Inhaled Salbutamol Baseline Coverage": {
+      "category": "Coverage",
       "value": 0.05,
       "description": "The baseline coverage for the intervention",
       "paths": [
@@ -43,6 +44,7 @@
       ]
     },
     "Inhaled Salbutamol Target Coverage": {
+      "category": "Coverage",
       "value": 0.05,
       "description": "The target coverage for the intervention",
       "paths": [
@@ -50,6 +52,7 @@
       ]
     },
     "Inhaled Salbutamol Population In Need": {
+      "category": "Population in Need",
       "value": 1,
       "description": "The proportion of persons with asthma who require the intervention",
       "paths": [
@@ -57,6 +60,7 @@
       ]
     },
     "Inhaled Salbutamol Disability Impact": {
+      "category": "Intervention Effects",
       "value": 0.148,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
@@ -64,6 +68,7 @@
       ]
     },
     "Ipratropium Inhaler Baseline Coverage": {
+      "category": "Coverage",
       "value": 0.05,
       "description": "The baseline coverage for the intervention",
       "paths": [
@@ -71,6 +76,7 @@
       ]
     },
     "Ipratropium Inhaler Target Coverage": {
+      "category": "Coverage",
       "value": 0.05,
       "description": "The target coverage for the intervention",
       "paths": [
@@ -78,6 +84,7 @@
       ]
     },
     "Ipratropium Inhaler Population In Need": {
+      "category": "Population in Need",
       "value": 0.21,
       "description": "The proportion of persons with asthma who require the intervention",
       "paths": [
@@ -85,6 +92,7 @@
       ]
     },
     "Ipratropium Inhaler Disability Impact": {
+      "category": "Intervention Effects",
       "value": 0.169,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
@@ -92,6 +100,7 @@
       ]
     },
     "Oral Prednisolone Baseline Coverage": {
+      "category": "Coverage",
       "value": 0.05,
       "description": "The baseline coverage for the intervention",
       "paths": [
@@ -99,6 +108,7 @@
       ]
     },
     "Oral Prednisolone Target Coverage": {
+      "category": "Coverage",
       "value": 0.05,
       "description": "The target coverage for the intervention",
       "paths": [
@@ -106,6 +116,7 @@
       ]
     },
     "Oral Prednisolone Population In Need": {
+      "category": "Population in Need",
       "value": 0.12,
       "description": "The proportion of persons with asthma who require the intervention",
       "paths": [
@@ -113,6 +124,7 @@
       ]
     },
     "Oral Prednisolone Disability Impact": {
+      "category": "Intervention Effects",
       "value": 0.337,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
