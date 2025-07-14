@@ -3280,6 +3280,14 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "narration": "Modify Combined DW with intervention effects",
+      "included_edges": [
+        "s2aCngF5"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
       "narration": "Calculate Healthy and COPD HYL",
       "included_edges": [
         "qWTVoxqS",
@@ -3301,14 +3309,6 @@
       "narration": "Calculate Combined DW",
       "included_edges": [
         "NCs51br5"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Modify Combined DW with intervention effects",
-      "included_edges": [
-        "s2aCngF5"
       ]
     },
     {
