@@ -2986,6 +2986,11 @@
   ],
   "subroutines": [
     {
+      "method": "flush",
+      "batch": false,
+      "narration": "Flush unneeded values"
+    },
+    {
       "method": "generate_balance",
       "batch": false,
       "narration": "All Constants and Functions are initialised",
@@ -3466,11 +3471,6 @@
         "8kLiklUp",
         "jWfqJ3Yv"
       ]
-    },
-    {
-      "method": "flush",
-      "batch": false,
-      "narration": "Flush unneeded values"
     }
   ],
   "equilibrium": {
