@@ -1,8 +1,0 @@
-{
-    "name": "CR2",
-    "description": "Acute treatment of COPD exacerbations with inhaled bronchodilators and oral steroids",
-    "baseline_name": "copd_null_scenario",
-    "comparator_name": "copd_cr2_scenario",
-    "numerator": "costs",
-    "denominator": "Healthy Years Lived"
-}
