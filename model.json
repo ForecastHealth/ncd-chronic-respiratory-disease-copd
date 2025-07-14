@@ -2758,24 +2758,9 @@
         }
       },
       "generate_array": {
-        "method": "subset",
-        "parameters": {
-          "slice_indices": [
-            [
-              0,
-              2
-            ],
-            [
-              0,
-              80
-            ]
-          ],
-          "method": "single_value",
-          "parameters": {
-            "value": 1
-          },
-          "fill_value": 0
-        }
+        "data_fetcher_label": "fhdb",
+        "method": "yll_weights",
+        "parameters": {}
       }
     },
     {
@@ -2791,24 +2776,9 @@
         }
       },
       "generate_array": {
-        "method": "subset",
-        "parameters": {
-          "slice_indices": [
-            [
-              0,
-              2
-            ],
-            [
-              0,
-              80
-            ]
-          ],
-          "method": "single_value",
-          "parameters": {
-            "value": 1
-          },
-          "fill_value": 0
-        }
+        "data_fetcher_label": "fhdb",
+        "method": "yll_weights",
+        "parameters": {}
       }
     },
     {
