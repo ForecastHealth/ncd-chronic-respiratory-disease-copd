@@ -57,7 +57,7 @@
       ]
     },
     "Inhaled Salbutamol Disability Impact": {
-      "value": -0.148,
+      "value": 0.148,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsnjkmt')].generate_array.parameters.value"
@@ -85,7 +85,7 @@
       ]
     },
     "Ipratropium Inhaler Disability Impact": {
-      "value": -0.169,
+      "value": 0.169,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsnjr1s')].generate_array.parameters.value"
@@ -113,7 +113,7 @@
       ]
     },
     "Oral Prednisolone Disability Impact": {
-      "value": -0.337,
+      "value": 0.337,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsnjnt3')].generate_array.parameters.value"
