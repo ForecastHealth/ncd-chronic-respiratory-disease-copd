@@ -1692,7 +1692,10 @@
           "value": 1
         }
       },
-      "label": "OralPrednisolone_Disability_Effect -> Disability_Effect_Transform"
+      "label": "OralPrednisolone_Disability_Effect -> Disability_Effect_Transform",
+      "postprocessing": {
+        "negative": true
+      }
     },
     {
       "id": "tgy0fCCF",
@@ -1708,7 +1711,10 @@
           "value": 1
         }
       },
-      "label": "InhaledSalbutamol_Disability_Effect -> Disability_Effect_Transform"
+      "label": "InhaledSalbutamol_Disability_Effect -> Disability_Effect_Transform",
+      "postprocessing": {
+        "negative": true
+      }
     },
     {
       "id": "EfuyA2u1",
@@ -1724,7 +1730,10 @@
           "value": 1
         }
       },
-      "label": "IpratropiumInhaler_Disability_Effect -> Disability_Effect_Transform"
+      "label": "IpratropiumInhaler_Disability_Effect -> Disability_Effect_Transform",
+      "postprocessing": {
+        "negative": true
+      }
     },
     {
       "id": "Lvoz10h5",
@@ -1957,10 +1966,7 @@
           "value": 1
         }
       },
-      "label": "Disability_Effect_Transform -> Combined_DW",
-      "postprocessing": {
-        "inverse": true
-      }
+      "label": "Disability_Effect_Transform -> Combined_DW"
     },
     {
       "id": "cz2LeDKw",
