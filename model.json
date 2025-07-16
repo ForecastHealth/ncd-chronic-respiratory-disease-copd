@@ -1946,7 +1946,7 @@
     {
       "id": "s2aCngF5",
       "source": "lrwz1ikj",
-      "target": "lrso7mga",
+      "target": "OxzcOhs4",
       "edge_type": "projection",
       "requires_source_balance": true,
       "remove_value_from_source": false,
@@ -1957,7 +1957,7 @@
           "value": 1
         }
       },
-      "label": "Disability_Effect_Transform -> COPD_Disability_Weight",
+      "label": "Disability_Effect_Transform -> Combined_DW",
       "postprocessing": {
         "inverse": true
       }
@@ -3255,14 +3255,6 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
-      "narration": "Modify Combined DW with intervention effects",
-      "included_edges": [
-        "s2aCngF5"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
       "narration": "Calculate Healthy and COPD HYL",
       "included_edges": [
         "qWTVoxqS",
@@ -3284,6 +3276,14 @@
       "narration": "Calculate Combined DW",
       "included_edges": [
         "NCs51br5"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Modify Combined DW with intervention effects",
+      "included_edges": [
+        "s2aCngF5"
       ]
     },
     {
