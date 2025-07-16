@@ -1,4 +1,4 @@
-# The NCD Asthma Disease Model
+# The NCD COPD Disease Model
 
 ## Appendix 3 Comparison Results
 
