@@ -1239,7 +1239,7 @@
       "id": "U37bYeyB",
       "x": 39.96,
       "y": 148.79,
-      "label": "PopReached-InhaledSalbutamol",
+      "label": "PopulationReached-InhaledSalbutamol",
       "color": "#FFB255",
       "flush": true
     },
@@ -1247,7 +1247,7 @@
       "id": "8kLiklUp",
       "x": 40.41,
       "y": 159.06,
-      "label": "PopReached-OralPrednisolone",
+      "label": "PopulationReached-OralPrednisolone",
       "color": "#FFB255",
       "flush": true
     },
@@ -1255,7 +1255,7 @@
       "id": "jWfqJ3Yv",
       "x": 40.59,
       "y": 170.7,
-      "label": "PopReached-IpratropiumInhaler",
+      "label": "PopulationReached-IpratropiumInhaler",
       "color": "#FFB255",
       "flush": true
     }
