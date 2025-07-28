@@ -687,7 +687,7 @@
         "data_fetcher_label": "risk_factors",
         "method": "relative_risk_631",
         "parameters": {
-          "disease": "COPD",
+          "disease": "copd",
           "risk_factor": "Tobacco"
         }
       }
