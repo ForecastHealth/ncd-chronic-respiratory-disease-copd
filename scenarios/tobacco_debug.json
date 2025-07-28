@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "label": "Tobacco Debug",
+    "description": "Where all tobacco interventions are exposed and no scale-up occurs by default.",
+    "authors": [],
+    "date_created": "2025-02-12 10:34"
+  },
+  "parameters": {
+    "Country": {
+      "hidden": true,
+      "value": "AFG",
+      "paths": [
+        "$.nodes[?(@.id=='lrso81aw')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='lrso71jf')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='lrso7mga')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='DsFreeSus')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='Mn5YBbsp')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='41XrI0td')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='HvEhBiqV')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='BMlvK43f')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='wdoGuxrz')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='9bm7Z0E8')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='xx922wnd')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='EOCVEnRg')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='Wahz7EG9')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='Gkx6f7za')].generate_array.parameters.country",
+        "$.links[?(@.id=='3gSm1z84')].generate_array.parameters.country",
+        "$.links[?(@.id=='6dXmRQ7e')].generate_array.parameters.country",
+        "$.links[?(@.id=='JPGqVn1u')].generate_array.parameters.country",
+        "$.links[?(@.id=='k3JrWa6h')].generate_array.parameters.country",
+        "$.links[?(@.id=='MfWskKJT')].generate_array.parameters.country",
+        "$.links[?(@.id=='eBRm4kvr')].generate_array.parameters.country",
+        "$.links[?(@.id=='WALgwDoi')].generate_array.parameters.country",
+        "$.links[?(@.id=='HmI3Gkua')].generate_array.parameters.country",
+        "$.links[?(@.id=='cz2LeDKw')].generate_array.parameters.country"
+      ]
+    },
+    "Target Coverage Tobacco Protect": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='f2zVbmFC')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Protect": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='kmOgayPc')].generate_array.parameters.value"
+      ]
+    },
+    "Target Coverage Tobacco Quitbrief": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='Go1VxQNw')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Quitbrief": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='iSPWJd93')].generate_array.parameters.value"
+      ]
+    },
+    "Target Coverage Tobacco Quitcessation": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='ACrnBpRW')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Quitcessation": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='exp5DafX')].generate_array.parameters.value"
+      ]
+    },
+    "Target Coverage Tobacco Warnlabel": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Warnlabel": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='jVgKAsq8')].generate_array.parameters.value"
+      ]
+    },
+    "Target Coverage Tobacco Massmedia": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='lFeWKUSt')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Massmedia": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='kH5YhKYM')].generate_array.parameters.value"
+      ]
+    },
+    "Target Coverage Tobacco Ban": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='a6OhDhjp')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Ban": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='zUseZJKK')].generate_array.parameters.value"
+      ]
+    },
+    "Target Coverage Tobacco Tax": {
+      "value": 0.05,
+      "description": "The target coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='BTDc3bch')].generate_array.parameters.value"
+      ]
+    },
+    "Baseline Coverage Tobacco Tax": {
+      "value": 0.05,
+      "description": "The baseline coverage for the intervention",
+      "paths": [
+        "$.nodes[?(@.id=='lFMuQmak')].generate_array.parameters.value"
+      ]
+    }
+  }
+}
