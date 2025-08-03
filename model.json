@@ -1139,7 +1139,7 @@
       "id": "bdg7vh5J",
       "x": -124,
       "y": -66.72,
-      "label": "price-change-tobacco-protect",
+      "label": "price-change-tobacco-tax",
       "generate_array": {
         "method": "single_value",
         "parameters": {
