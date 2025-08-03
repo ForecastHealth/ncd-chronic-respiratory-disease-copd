@@ -123,7 +123,7 @@
       "value": 0.0,
       "description": "The percentage increase in retail price of tobacco.",
       "paths": [
-        "$.nodes[?(@.id=='BTDc3bch')].generate_array.parameters.value"
+        "$.nodes[?(@.id=='bdg7vh5J')].generate_array.parameters.value"
       ]
     }
   }
