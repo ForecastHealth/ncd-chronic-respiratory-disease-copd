@@ -219,6 +219,14 @@
         "$.nodes[?(@.id=='zUseZJKK')].generate_array.parameters.value"
       ],
       "category": "Coverage"
+    },
+    "Price Increase Tobacco Tax": {
+      "value": 0.0,
+      "description": "The percentage increase in retail price of tobacco.",
+      "paths": [
+        "$.nodes[?(@.id=='bdg7vh5J')].generate_array.parameters.value"
+      ],
+      "category": "Coverage"
     }
   }
 }
