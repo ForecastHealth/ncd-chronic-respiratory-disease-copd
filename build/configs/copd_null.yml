@@ -1,7 +1,12 @@
 # Configuration for COPD Null Scenario
 metadata:
   label: "COPD - Null Scenario"
-  description: "Scenario with all interventions scaled to 0% coverage"
+  description: |
+    Scenario with all interventions scaled to 0% coverage, representing no intervention implementation.
+    This null scenario sets target coverage to zero for all COPD-specific interventions: Inhaled Salbutamol, Ipratropium Inhaler, and Oral Prednisolone.
+    Also sets coverage to zero for all tobacco control interventions including protection policies, cessation programs, warning labels, mass media campaigns, and advertising bans.
+    This scenario serves as a counterfactual baseline to measure the full impact of intervention packages by comparing against a state with no interventions.
+    Useful for calculating total health gains, deaths averted, and disability-adjusted life years (DALYs) prevented when interventions are implemented from zero coverage.
   authors: []
 
 # Components to include
