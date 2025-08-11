@@ -1,0 +1,36 @@
+# Configuration for COPD Null Scenario
+metadata:
+  label: "COPD - Null Scenario"
+  description: "Scenario with all interventions scaled to 0% coverage"
+  authors: []
+
+# Components to include
+components:
+  - copd_base.json
+  - copd_clinical_inhaled_salbutamol.json
+  - copd_clinical_ipratropium_inhaler.json
+  - copd_clinical_oral_prednisolone.json
+  - copd_tobacco_interventions.json
+
+# Set all target coverages to 0
+overrides:
+  "Inhaled Salbutamol Target Coverage":
+    value: 0
+  "Ipratropium Inhaler Target Coverage":
+    value: 0
+  "Oral Prednisolone Target Coverage":
+    value: 0
+  "Target Coverage Tobacco Protect":
+    value: 0
+  "Target Coverage Tobacco Quitbrief":
+    value: 0
+  "Target Coverage Tobacco Quitcessation":
+    value: 0
+  "Target Coverage Tobacco Warnlabel":
+    value: 0
+  "Target Coverage Tobacco Massmedia":
+    value: 0
+  "Target Coverage Tobacco Ban":
+    value: 0
+
+output: ../scenarios/copd_null.json

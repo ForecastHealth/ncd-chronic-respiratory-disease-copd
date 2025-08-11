@@ -1,0 +1,18 @@
+# Configuration for COPD Baseline Scenario
+metadata:
+  label: "COPD - Default Scenario"
+  description: "A scenario where there is no change in the coverage of any intervention"
+  authors: []
+
+# Components to include
+components:
+  - copd_base.json
+  - copd_clinical_inhaled_salbutamol.json
+  - copd_clinical_ipratropium_inhaler.json
+  - copd_clinical_oral_prednisolone.json
+  - copd_tobacco_interventions.json
+
+# No overrides needed for baseline
+overrides: {}
+
+output: ../scenarios/copd_baseline.json

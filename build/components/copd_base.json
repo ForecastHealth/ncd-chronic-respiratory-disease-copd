@@ -1,0 +1,24 @@
+{
+  "Country": {
+    "hidden": true,
+    "value": "AFG",
+    "paths": [
+      "$.nodes[?(@.id=='lrso81aw')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='lrso71jf')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='lrso7mga')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='DsFreeSus')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='Mn5YBbsp')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='HvEhBiqV')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='wdoGuxrz')].generate_array.parameters.country",
+      "$.links[?(@.id=='3gSm1z84')].generate_array.parameters.country",
+      "$.links[?(@.id=='6dXmRQ7e')].generate_array.parameters.country",
+      "$.links[?(@.id=='JPGqVn1u')].generate_array.parameters.country",
+      "$.links[?(@.id=='k3JrWa6h')].generate_array.parameters.country",
+      "$.links[?(@.id=='MfWskKJT')].generate_array.parameters.country",
+      "$.links[?(@.id=='eBRm4kvr')].generate_array.parameters.country",
+      "$.links[?(@.id=='WALgwDoi')].generate_array.parameters.country",
+      "$.links[?(@.id=='HmI3Gkua')].generate_array.parameters.country",
+      "$.links[?(@.id=='cz2LeDKw')].generate_array.parameters.country"
+    ]
+  }
+}
