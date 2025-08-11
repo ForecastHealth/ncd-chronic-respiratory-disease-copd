@@ -3,23 +3,22 @@
     "hidden": true,
     "value": "AFG",
     "paths": [
-      "$.nodes[?(@.id=='AsthmaEpsd_CFR')].generate_array.parameters.country",
-      "$.nodes[?(@.id=='Healthy_Disability')].generate_array.parameters.country",
-      "$.nodes[?(@.id=='Asthma_Disability')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='lrso81aw')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='lrso71jf')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='lrso7mga')].generate_array.parameters.country",
       "$.nodes[?(@.id=='DsFreeSus')].generate_array.parameters.country",
-      "$.nodes[?(@.id=='rXFK8r54')].generate_array.parameters.country",
+      "$.nodes[?(@.id=='Mn5YBbsp')].generate_array.parameters.country",
       "$.nodes[?(@.id=='HvEhBiqV')].generate_array.parameters.country",
       "$.nodes[?(@.id=='wdoGuxrz')].generate_array.parameters.country",
-      "$.links[?(@.id=='avvOYu19')].generate_array.parameters.country",
-      "$.links[?(@.id=='MCWFcR4e')].generate_array.parameters.country",
-      "$.links[?(@.id=='EXGS1xV6')].generate_array.parameters.country",
-      "$.links[?(@.id=='Yfenedx0')].generate_array.parameters.country",
-      "$.links[?(@.id=='09Q1rhSn')].generate_array.parameters.country",
-      "$.links[?(@.id=='Z6UVoLxv')].generate_array.parameters.country",
-      "$.links[?(@.id=='tGFmOvlz')].generate_array.parameters.country",
-      "$.links[?(@.id=='yCtPKnQ5')].generate_array.parameters.country",
-      "$.links[?(@.id=='kdE7JaZO')].generate_array.parameters.country",
-      "$.links[?(@.id=='z2MaEXxg')].generate_array.parameters.country"
+      "$.links[?(@.id=='3gSm1z84')].generate_array.parameters.country",
+      "$.links[?(@.id=='6dXmRQ7e')].generate_array.parameters.country",
+      "$.links[?(@.id=='JPGqVn1u')].generate_array.parameters.country",
+      "$.links[?(@.id=='k3JrWa6h')].generate_array.parameters.country",
+      "$.links[?(@.id=='MfWskKJT')].generate_array.parameters.country",
+      "$.links[?(@.id=='eBRm4kvr')].generate_array.parameters.country",
+      "$.links[?(@.id=='WALgwDoi')].generate_array.parameters.country",
+      "$.links[?(@.id=='HmI3Gkua')].generate_array.parameters.country",
+      "$.links[?(@.id=='cz2LeDKw')].generate_array.parameters.country"
     ]
   }
 }
