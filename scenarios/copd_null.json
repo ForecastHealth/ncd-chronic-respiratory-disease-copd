@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "label": "COPD - Default Scenario",
-    "description": "A scenario where there is no change in the coverage of any intervention",
+    "label": "COPD - Null Scenario",
+    "description": "Scenario with all interventions scaled to 0% coverage",
     "authors": [],
     "date_created": "2025-08-11 16:09"
   },
@@ -40,7 +40,7 @@
     },
     "Inhaled Salbutamol Target Coverage": {
       "category": "Coverage",
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_value",
@@ -91,7 +91,7 @@
     },
     "Ipratropium Inhaler Target Coverage": {
       "category": "Coverage",
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_value",
@@ -142,7 +142,7 @@
     },
     "Oral Prednisolone Target Coverage": {
       "category": "Coverage",
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.end_value",
@@ -192,7 +192,7 @@
       "category": "Coverage"
     },
     "Target Coverage Tobacco Protect": {
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='f2zVbmFC')].generate_array.parameters.end_value",
@@ -227,7 +227,7 @@
       "category": "Coverage"
     },
     "Target Coverage Tobacco Quitbrief": {
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='Go1VxQNw')].generate_array.parameters.end_value",
@@ -262,7 +262,7 @@
       "category": "Coverage"
     },
     "Target Coverage Tobacco Quitcessation": {
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='ACrnBpRW')].generate_array.parameters.end_value",
@@ -297,7 +297,7 @@
       "category": "Coverage"
     },
     "Target Coverage Tobacco Warnlabel": {
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.end_value",
@@ -332,7 +332,7 @@
       "category": "Coverage"
     },
     "Target Coverage Tobacco Massmedia": {
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='lFeWKUSt')].generate_array.parameters.end_value",
@@ -367,7 +367,7 @@
       "category": "Coverage"
     },
     "Target Coverage Tobacco Ban": {
-      "value": 0.05,
+      "value": 0,
       "description": "The target coverage for the intervention",
       "paths": [
         "$.nodes[?(@.id=='a6OhDhjp')].generate_array.parameters.end_value",

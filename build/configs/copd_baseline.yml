@@ -6,10 +6,10 @@ metadata:
 
 # Components to include
 components:
-  - copd_base.json
-  - copd_clinical_inhaled_salbutamol.json
-  - copd_clinical_ipratropium_inhaler.json
-  - copd_clinical_oral_prednisolone.json
+  - base.json
+  - copd_inhaled_salbutamol.json
+  - copd_ipratropium_inhaler.json
+  - copd_oral_prednisolone.json
   - tobacco_protect.json
   - tobacco_quitbrief.json
   - tobacco_quitcessation.json
