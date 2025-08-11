@@ -1,0 +1,34 @@
+{
+  "Ipratropium Inhaler Baseline Coverage": {
+    "category": "Coverage",
+    "value": 0.05,
+    "description": "The baseline coverage for the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsnhyyd')].generate_array.parameters.value"
+    ]
+  },
+  "Ipratropium Inhaler Target Coverage": {
+    "category": "Coverage",
+    "value": 0.05,
+    "description": "The target coverage for the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.value"
+    ]
+  },
+  "Ipratropium Inhaler Population In Need": {
+    "category": "Population in Need",
+    "value": 0.21,
+    "description": "The proportion of persons who require the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsni0s5')].generate_array.parameters.value"
+    ]
+  },
+  "Ipratropium Inhaler Disability Impact": {
+    "category": "Intervention Effects",
+    "value": 0.169,
+    "description": "The proportion by which the disability weight is reduced due to the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsnjr1s')].generate_array.parameters.value"
+    ]
+  }
+}

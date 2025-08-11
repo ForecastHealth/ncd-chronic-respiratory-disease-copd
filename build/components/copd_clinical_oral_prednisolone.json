@@ -1,0 +1,34 @@
+{
+  "Oral Prednisolone Baseline Coverage": {
+    "category": "Coverage",
+    "value": 0.05,
+    "description": "The baseline coverage for the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrso28l8')].generate_array.parameters.value"
+    ]
+  },
+  "Oral Prednisolone Target Coverage": {
+    "category": "Coverage",
+    "value": 0.05,
+    "description": "The target coverage for the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.value"
+    ]
+  },
+  "Oral Prednisolone Population In Need": {
+    "category": "Population in Need",
+    "value": 0.12,
+    "description": "The proportion of persons who require the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsngte4')].generate_array.parameters.value"
+    ]
+  },
+  "Oral Prednisolone Disability Impact": {
+    "category": "Intervention Effects",
+    "value": 0.337,
+    "description": "The proportion by which the disability weight is reduced due to the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsnjnt3')].generate_array.parameters.value"
+    ]
+  }
+}

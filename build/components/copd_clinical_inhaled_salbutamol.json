@@ -1,0 +1,34 @@
+{
+  "Inhaled Salbutamol Baseline Coverage": {
+    "category": "Coverage",
+    "value": 0.05,
+    "description": "The baseline coverage for the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrso22do')].generate_array.parameters.value"
+    ]
+  },
+  "Inhaled Salbutamol Target Coverage": {
+    "category": "Coverage",
+    "value": 0.05,
+    "description": "The target coverage for the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.value"
+    ]
+  },
+  "Inhaled Salbutamol Population In Need": {
+    "category": "Population in Need",
+    "value": 1,
+    "description": "The proportion of persons who require the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsnavq2')].generate_array.parameters.value"
+    ]
+  },
+  "Inhaled Salbutamol Disability Impact": {
+    "category": "Intervention Effects",
+    "value": 0.148,
+    "description": "The proportion by which the disability weight is reduced due to the intervention",
+    "paths": [
+      "$.nodes[?(@.id=='lrsnjkmt')].generate_array.parameters.value"
+    ]
+  }
+}
