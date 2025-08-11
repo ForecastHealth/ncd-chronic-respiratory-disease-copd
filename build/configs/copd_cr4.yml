@@ -1,7 +1,14 @@
 # Configuration for COPD CR4 Scenario
 metadata:
   label: "Appendix 3 - CR4 Scenario"
-  description: "Long-term management of COPD with inhaled bronchodilator"
+  description: |
+    Long-term management of COPD with inhaled bronchodilator maintenance therapy.
+    This scenario exposes the parameters for the Ipratropium Inhaler intervention.
+    This was the mapping for the CR4 Scenario in Appendix 3 simulations.
+    Ipratropium Inhaler reduces the disability weight of persons living with COPD by 16.9%, providing long-acting bronchodilation for maintenance therapy.
+    This intervention targets 21% of the COPD population who require ongoing bronchodilator therapy for symptom management and prevention of exacerbations.
+    The intervention maintains its baseline coverage of five percent in this scenario.
+    This should typically be run as a comparison scenario, with the baseline scenario being the COPD Baseline, or modified versions with different target coverage levels for long-term COPD management strategies.
   authors: []
 
 # Components to include (from build/components/)
