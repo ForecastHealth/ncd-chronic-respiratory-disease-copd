@@ -10,7 +10,13 @@ components:
   - copd_clinical_inhaled_salbutamol.json
   - copd_clinical_ipratropium_inhaler.json
   - copd_clinical_oral_prednisolone.json
-  - copd_tobacco_interventions.json
+  - tobacco_protect.json
+  - tobacco_quitbrief.json
+  - tobacco_quitcessation.json
+  - tobacco_warnlabel.json
+  - tobacco_massmedia.json
+  - tobacco_ban.json
+  - tobacco_tax.json
 
 # Set all target coverages to 0
 overrides:
