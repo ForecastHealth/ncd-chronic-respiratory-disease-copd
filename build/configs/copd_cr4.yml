@@ -1,0 +1,17 @@
+# Configuration for COPD CR4 Scenario
+metadata:
+  label: "Appendix 3 - CR4 Scenario"
+  description: "Long-term management of COPD with inhaled bronchodilator"
+  authors: []
+
+# Components to include (from build/components/)
+components:
+  - base.json
+  - copd_ipratropium_inhaler.json
+
+# Optional: Override specific parameter values
+# These will be applied after merging components
+overrides: {}
+
+# Output file path (relative to build directory)
+output: ../scenarios/copd_cr4_scenario.json
