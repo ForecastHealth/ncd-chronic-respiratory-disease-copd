@@ -324,9 +324,14 @@
       "y": 192.58,
       "label": "IpratropiumInhaler_Coverage",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "color": "#06B4E1",
@@ -357,9 +362,14 @@
       "y": 178.36,
       "label": "OralPrednisolone_Coverage",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "color": "#06B4E1",
@@ -390,9 +400,14 @@
       "y": 162.73,
       "label": "InhaledSalbutamol_Coverage",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "color": "#06B4E1",
@@ -778,9 +793,14 @@
       "node_type": "CONSTANT",
       "color": "#06B4E1",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "flush": true
@@ -841,9 +861,14 @@
       "node_type": "CONSTANT",
       "color": "#06B4E1",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "flush": true
@@ -904,9 +929,14 @@
       "node_type": "CONSTANT",
       "color": "#06B4E1",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "flush": true
@@ -967,9 +997,14 @@
       "node_type": "CONSTANT",
       "color": "#06B4E1",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "flush": true
@@ -1030,9 +1065,14 @@
       "node_type": "CONSTANT",
       "color": "#06B4E1",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "flush": true
@@ -1093,9 +1133,14 @@
       "node_type": "CONSTANT",
       "color": "#06B4E1",
       "generate_array": {
-        "method": "single_value",
+        "method": "linear_with_arbitrary_length",
         "parameters": {
-          "value": 0.05
+          "start_value": 0.05,
+          "end_value": 0.05,
+          "start_index": 1,
+          "end_index": 2,
+          "fill_before": 0.05,
+          "fill_after": 0.05
         }
       },
       "flush": true
