@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "label": "Appendix 3 - CR4 Scenario",
-    "description": "Long-term management of COPD with inhaled bronchodilator maintenance therapy.\nThis scenario exposes the parameters for the Ipratropium Inhaler intervention.\nThis was the mapping for the CR4 Scenario in Appendix 3 simulations.\nIpratropium Inhaler reduces the disability weight of persons living with COPD by 16.9%, providing long-acting bronchodilation for maintenance therapy.\nThis intervention targets 21% of the COPD population who require ongoing bronchodilator therapy for symptom management and prevention of exacerbations.\nThe intervention maintains its baseline coverage of five percent in this scenario.\nThis should typically be run as a comparison scenario, with the baseline scenario being the COPD Baseline, or modified versions with different target coverage levels for long-term COPD management strategies.\n",
+    "label": "Clinical Intervention - Inhaled Salbutamol",
+    "description": "Acute treatment of COPD exacerbations with inhaled bronchodilators.\nInhaled Salbutamol reduces the disability weight of persons living with COPD by 14.8%, providing bronchodilation for symptom relief.\nThis intervention increases target coverage from the baseline of five percent to ninety-five percent.\n",
     "authors": [],
-    "date_created": "2025-08-11 17:17"
+    "date_created": "2025-08-12 14:12"
   },
   "parameters": {
     "Country": {
@@ -28,55 +28,55 @@
         "$.links[?(@.id=='cz2LeDKw')].generate_array.parameters.country"
       ]
     },
-    "Ipratropium Inhaler Baseline Coverage": {
+    "Inhaled Salbutamol Baseline Coverage": {
       "category": "Coverage",
       "value": 0.05,
       "description": "The baseline coverage for the intervention",
       "paths": [
-        "$.nodes[?(@.id=='lrsnhyyd')].generate_array.parameters.value",
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.start_value",
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.fill_before"
+        "$.nodes[?(@.id=='lrso22do')].generate_array.parameters.value",
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.start_value",
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.fill_before"
       ]
     },
-    "Ipratropium Inhaler Target Coverage": {
+    "Inhaled Salbutamol Target Coverage": {
       "category": "Coverage",
       "value": 0.05,
       "description": "The target coverage for the intervention",
       "paths": [
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_value",
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.fill_after"
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_value",
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.fill_after"
       ]
     },
-    "Ipratropium Inhaler Scale-Up Start Year": {
-      "value": 1,
+    "Inhaled Salbutamol Scale-Up Start Year": {
+      "value": 0,
       "description": "The index when scale-up starts for this intervention, where 0 == the first year of the time horizon",
       "paths": [
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.start_index"
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.start_index"
       ],
       "category": "Coverage"
     },
-    "Ipratropium Inhaler Scale-Up Final Year": {
-      "value": 2,
+    "Inhaled Salbutamol Scale-Up Final Year": {
+      "value": 1,
       "description": "The index when scale-up ends for this intervention, where 0 == the first year of the time horizon",
       "paths": [
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_index"
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_index"
       ],
       "category": "Coverage"
     },
-    "Ipratropium Inhaler Population In Need": {
+    "Inhaled Salbutamol Population In Need": {
       "category": "Population in Need",
-      "value": 0.21,
+      "value": 1,
       "description": "The proportion of persons who require the intervention",
       "paths": [
-        "$.nodes[?(@.id=='lrsni0s5')].generate_array.parameters.value"
+        "$.nodes[?(@.id=='lrsnavq2')].generate_array.parameters.value"
       ]
     },
-    "Ipratropium Inhaler Disability Impact": {
+    "Inhaled Salbutamol Disability Impact": {
       "category": "Intervention Effects",
-      "value": 0.169,
+      "value": 0.148,
       "description": "The proportion by which the disability weight is reduced due to the intervention",
       "paths": [
-        "$.nodes[?(@.id=='lrsnjr1s')].generate_array.parameters.value"
+        "$.nodes[?(@.id=='lrsnjkmt')].generate_array.parameters.value"
       ]
     }
   }
