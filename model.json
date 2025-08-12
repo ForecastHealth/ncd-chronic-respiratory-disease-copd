@@ -3319,10 +3319,17 @@
       "narration": "Main Routine",
       "included_edges": [
         "5Ol05axR",
-        "MfWskKJT",
-        "cz2LeDKw",
         "XNyqqSsC"
       ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "narration": "Background Mortality",
+      "included_edges": [
+        "MfWskKJT",
+        "cz2LeDKw"
+      ],
+      "batch": false
     },
     {
       "method": "push_balance_to_edges",
