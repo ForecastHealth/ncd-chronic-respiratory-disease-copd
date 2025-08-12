@@ -440,9 +440,11 @@
       "label": "IpratropiumInhaler_PIN",
       "generate_array": {
         "fetch_once": true,
-        "method": "single_value",
+        "data_fetcher_label": "copd",
+        "method": "get_observation",
         "parameters": {
-          "value": 0.21
+          "country": "AFG",
+          "observation": "IpratropiumInhaler -> PIN"
         }
       },
       "color": "#06B4E1",
