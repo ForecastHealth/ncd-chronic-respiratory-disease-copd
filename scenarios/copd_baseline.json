@@ -3,7 +3,7 @@
     "label": "COPD - Baseline Scenario",
     "description": "A scenario where there is no change in the coverage of any intervention.\nThis baseline scenario includes all available COPD interventions at their default coverage levels of five percent.\nInterventions included are Inhaled Salbutamol (14.8% disability reduction), Ipratropium Inhaler (16.9% disability reduction for 21% of population), and Oral Prednisolone (33.7% disability reduction for 12% of population with severe exacerbations).\nAlso includes comprehensive tobacco control interventions (protection policies, cessation programs, warning labels, mass media campaigns, advertising bans, and taxation).\nThis baseline scenario is useful when you're interested in varying multiple interventions at the same time or establishing a reference point for comparison scenarios.\n",
     "authors": [],
-    "date_created": "2025-08-12 14:12"
+    "date_created": "2025-08-12 17:07"
   },
   "parameters": {
     "Country": {
@@ -113,14 +113,6 @@
         "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_index"
       ],
       "category": "Coverage"
-    },
-    "Ipratropium Inhaler Population In Need": {
-      "category": "Population in Need",
-      "value": 0.21,
-      "description": "The proportion of persons who require the intervention",
-      "paths": [
-        "$.nodes[?(@.id=='lrsni0s5')].generate_array.parameters.value"
-      ]
     },
     "Ipratropium Inhaler Disability Impact": {
       "category": "Intervention Effects",

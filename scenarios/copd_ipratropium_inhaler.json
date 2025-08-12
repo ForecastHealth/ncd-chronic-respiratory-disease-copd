@@ -3,7 +3,7 @@
     "label": "Clinical Intervention - Ipratropium Inhaler",
     "description": "Long-term management of COPD with inhaled bronchodilator maintenance therapy.\nIpratropium Inhaler reduces the disability weight of persons living with COPD by 16.9%, providing long-acting bronchodilation for maintenance therapy.\nThis intervention targets 21% of the COPD population who require ongoing bronchodilator therapy for symptom management and prevention of exacerbations.\nThis intervention increases target coverage from the baseline of five percent to ninety-five percent.\n",
     "authors": [],
-    "date_created": "2025-08-12 14:12"
+    "date_created": "2025-08-12 17:07"
   },
   "parameters": {
     "Country": {
@@ -62,14 +62,6 @@
         "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_index"
       ],
       "category": "Coverage"
-    },
-    "Ipratropium Inhaler Population In Need": {
-      "category": "Population in Need",
-      "value": 0.21,
-      "description": "The proportion of persons who require the intervention",
-      "paths": [
-        "$.nodes[?(@.id=='lrsni0s5')].generate_array.parameters.value"
-      ]
     },
     "Ipratropium Inhaler Disability Impact": {
       "category": "Intervention Effects",
