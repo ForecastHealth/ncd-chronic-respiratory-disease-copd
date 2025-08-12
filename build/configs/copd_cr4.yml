@@ -16,9 +16,10 @@ components:
   - base.json
   - copd_ipratropium_inhaler.json
 
-# Optional: Override specific parameter values
-# These will be applied after merging components
-overrides: {}
+# Override specific values for CR4 scenario
+overrides:
+  "Ipratropium Inhaler Target Coverage":
+    value: 0.95
 
 # Output file path (relative to build directory)
-output: ../scenarios/copd_cr4_scenario.json
+output: ../scenarios/copd_cr4.json
