@@ -34,14 +34,6 @@
     ],
     "category": "Coverage"
   },
-  "Ipratropium Inhaler Population In Need": {
-    "category": "Population in Need",
-    "value": 0.21,
-    "description": "The proportion of persons who require the intervention",
-    "paths": [
-      "$.nodes[?(@.id=='lrsni0s5')].generate_array.parameters.value"
-    ]
-  },
   "Ipratropium Inhaler Disability Impact": {
     "category": "Intervention Effects",
     "value": 0.169,
