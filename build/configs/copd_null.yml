@@ -15,13 +15,6 @@ components:
   - copd_inhaled_salbutamol.json
   - copd_ipratropium_inhaler.json
   - copd_oral_prednisolone.json
-  - tobacco_protect.json
-  - tobacco_quitbrief.json
-  - tobacco_quitcessation.json
-  - tobacco_warnlabel.json
-  - tobacco_massmedia.json
-  - tobacco_ban.json
-  - tobacco_tax.json
 
 # Set all target coverages to 0
 overrides:
@@ -30,18 +23,6 @@ overrides:
   "Ipratropium Inhaler Target Coverage":
     value: 0
   "Oral Prednisolone Target Coverage":
-    value: 0
-  "Target Coverage Tobacco Protect":
-    value: 0
-  "Target Coverage Tobacco Quitbrief":
-    value: 0
-  "Target Coverage Tobacco Quitcessation":
-    value: 0
-  "Target Coverage Tobacco Warnlabel":
-    value: 0
-  "Target Coverage Tobacco Massmedia":
-    value: 0
-  "Target Coverage Tobacco Ban":
     value: 0
 
 output: ../scenarios/copd_null.json
