@@ -1,0 +1,19 @@
+# Configuration for Ipratropium Inhaler Only
+metadata:
+  label: "Clinical Intervention - Ipratropium Inhaler"
+  description: |
+    Long-term management of COPD with inhaled bronchodilator maintenance therapy.
+    Ipratropium Inhaler reduces the disability weight of persons living with COPD by 16.9%, providing long-acting bronchodilation for maintenance therapy.
+    This intervention targets 21% of the COPD population who require ongoing bronchodilator therapy for symptom management and prevention of exacerbations.
+    This intervention increases target coverage from the baseline of five percent to ninety-five percent.
+  authors: []
+
+# Components to include
+components:
+  - base.json
+  - copd_ipratropium_inhaler.json
+
+# Override specific values for Ipratropium Inhaler scenario
+overrides: {}
+
+output: ../scenarios/copd_ipratropium_inhaler.json
