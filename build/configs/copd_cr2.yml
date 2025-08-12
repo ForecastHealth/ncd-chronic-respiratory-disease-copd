@@ -17,9 +17,12 @@ components:
   - copd_inhaled_salbutamol.json
   - copd_oral_prednisolone.json
 
-# Optional: Override specific parameter values
-# These will be applied after merging components
-overrides: {}
+# Override specific values for CR2 scenario
+overrides:
+  "Inhaled Salbutamol Target Coverage":
+    value: 0.95
+  "Oral Prednisolone Target Coverage":
+    value: 0.95
 
 # Output file path (relative to build directory)
-output: ../scenarios/copd_cr2_scenario.json
+output: ../scenarios/copd_cr2.json
