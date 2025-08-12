@@ -1,0 +1,18 @@
+# Configuration for Oral Prednisolone Only
+metadata:
+  label: "Clinical Intervention - Oral Prednisolone"
+  description: |
+    Acute treatment of COPD exacerbations with oral steroids.
+    Oral Prednisolone reduces the disability weight by 33.7% for severe COPD exacerbations, targeting 12% of the COPD population who experience acute worsening.
+    This intervention increases target coverage from the baseline of five percent to ninety-five percent.
+  authors: []
+
+# Components to include
+components:
+  - base.json
+  - copd_oral_prednisolone.json
+
+# Override specific values for Oral Prednisolone scenario
+overrides: {}
+
+output: ../scenarios/copd_oral_prednisolone.json
