@@ -119,7 +119,7 @@
       "label": "COPD_Disability_Weight",
       "color": "#06B4E1",
       "generate_array": {
-        "fetch_once": true,
+        "generate_once": true,
         "data_fetcher_label": "copd",
         "method": "get_observation",
         "parameters": {
@@ -127,7 +127,8 @@
           "observation": "COPDEpsd -> Disability"
         }
       },
-      "node_type": "CONSTANT"
+      "node_type": "CONSTANT",
+      "flush": true
     },
     {
       "id": "Births",
@@ -1969,7 +1970,7 @@
     {
       "id": "s2aCngF5",
       "source": "lrwz1ikj",
-      "target": "OxzcOhs4",
+      "target": "lrso7mga",
       "edge_type": "projection",
       "requires_source_balance": true,
       "remove_value_from_source": false,
@@ -1980,7 +1981,7 @@
           "value": 1
         }
       },
-      "label": "Disability_Effect_Transform -> Combined_DW"
+      "label": "Disability_Effect_Transform -> COPD_Disability_Weight"
     },
     {
       "id": "cz2LeDKw",
@@ -3243,6 +3244,14 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "narration": "Modify COPD disability weight with intervention effects",
+      "included_edges": [
+        "s2aCngF5"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
       "narration": "Calculate Healthy and COPD HYL",
       "included_edges": [
         "qWTVoxqS",
@@ -3264,14 +3273,6 @@
       "narration": "Calculate Combined DW",
       "included_edges": [
         "NCs51br5"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Modify Combined DW with intervention effects",
-      "included_edges": [
-        "s2aCngF5"
       ]
     },
     {
