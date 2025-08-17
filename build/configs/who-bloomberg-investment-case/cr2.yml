@@ -1,0 +1,37 @@
+# Configuration for COPD CR2 Scenario
+metadata:
+  label: "Appendix 3 - CR2 Scenario"
+  description: |
+    Acute treatment of COPD exacerbations with inhaled bronchodilators and oral steroids.
+    This scenario exposes the parameters for the Inhaled Salbutamol and Oral Prednisolone interventions.
+    This was the mapping for the CR2 Scenario in Appendix 3 simulations.
+    Inhaled Salbutamol reduces the disability weight of persons living with COPD by 14.8%, providing bronchodilation for symptom relief.
+    Oral Prednisolone reduces the disability weight by 33.7% for severe COPD exacerbations, targeting 12% of the COPD population who experience acute worsening.
+    Both interventions maintain their baseline coverage of five percent in this scenario.
+    This should typically be run as a comparison scenario, with the baseline scenario being the COPD Baseline, or modified versions with different target coverage levels for acute treatment protocols.
+  authors: []
+
+# Components to include (from build/components/)
+components:
+  - base.json
+  - runtime.json
+  - copd_inhaled_salbutamol.json
+  - copd_oral_prednisolone.json
+
+# Override specific values for CR2 scenario
+overrides:
+  "Start Year":
+    value: 2025
+  "End Year":
+    value: 2051
+  "Inhaled Salbutamol Target Coverage":
+    value: 0.95
+  "Inhaled Salbutamol Scale-Up Final Year":
+    value: 3
+  "Oral Prednisolone Target Coverage":
+    value: 0.95
+  "Oral Prednisolone Scale-Up Final Year":
+    value: 3
+
+# Output file path (relative to build directory)
+output: ../scenarios/who-bloomberg-investment-case/copd_cr2.json
