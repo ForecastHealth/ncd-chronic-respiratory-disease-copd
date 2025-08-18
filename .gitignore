@@ -1,4 +1,6 @@
 .env*
+.env.local
+
 tmp/
 
 # Byte-compiled / optimized / DLL files
