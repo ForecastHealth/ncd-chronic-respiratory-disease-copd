@@ -12,7 +12,7 @@ cd "$SCRIPT_DIR"
 
 # Default values
 COUNTRIES_FILE="./countries/list_of_pruned_countries.json"
-SCENARIOS_DIR="./scenarios"
+SCENARIOS_DIR="./scenarios/who-bloomberg-investment-case"
 MODEL_FILE="./model.json"
 ENVIRONMENT="appendix_3"
 MAX_INSTANCES=100  # Same as TUI default, adjust as needed
@@ -42,7 +42,7 @@ while [[ $# -gt 0 ]]; do
             echo "Usage: $0 [--scenarios scenario1,scenario2] [--force]"
             echo ""
             echo "Options:"
-            echo "  --scenarios   Comma-separated list of scenarios to run (default: all asthma and tobacco scenarios)"
+            echo "  --scenarios   Comma-separated list of scenarios to run (default: all COPD and tobacco scenarios)"
             echo "  --force       Force re-run of all validations"
             echo "  --help        Show this help message"
             exit 0
@@ -128,8 +128,8 @@ log_success "Prerequisites check completed"
 
 # Determine which scenarios to run
 if [ -z "$SELECTED_SCENARIOS" ]; then
-    # Default: run asthma_baseline, asthma_cr1, and all tobacco scenarios
-    SCENARIOS=(asthma_baseline asthma_cr1 tobacco_t1 tobacco_t2 tobacco_t3 tobacco_t4 tobacco_t5 tobacco_t6)
+    # Default: run copd_baseline, copd_cr2, copd_cr4, and all tobacco scenarios
+    SCENARIOS=(copd_baseline copd_cr2 copd_cr4 tobacco_t1 tobacco_t2 tobacco_t3 tobacco_t4 tobacco_t5 tobacco_t6)
     log_step "Using default scenarios: ${SCENARIOS[*]}"
 else
     # Parse comma-separated scenarios
