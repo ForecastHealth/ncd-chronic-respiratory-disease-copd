@@ -3,7 +3,7 @@
     "label": "Baseline Scenario",
     "description": "A scenario where there is no change in the coverage of any intervention.\nThis baseline scenario is useful when you're interested in varying multiple interventions at the same time.\n",
     "authors": [],
-    "date_created": "2025-08-18 16:53"
+    "date_created": "2025-08-19 20:36"
   },
   "parameters": {
     "Start Year": {
@@ -33,6 +33,9 @@
         "$.nodes[?(@.id=='Mn5YBbsp')].generate_array.parameters.country",
         "$.nodes[?(@.id=='HvEhBiqV')].generate_array.parameters.country",
         "$.nodes[?(@.id=='wdoGuxrz')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='HaYRxeQQ')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='lrsni0s5')].generate_array.parameters.country",
+        "$.nodes[?(@.id=='mrGezI4c')].generate_array.parameters.country",
         "$.links[?(@.id=='3gSm1z84')].generate_array.parameters.country",
         "$.links[?(@.id=='6dXmRQ7e')].generate_array.parameters.country",
         "$.links[?(@.id=='JPGqVn1u')].generate_array.parameters.country",
