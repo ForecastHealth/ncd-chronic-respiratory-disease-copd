@@ -3528,10 +3528,10 @@
       "batch": false,
       "narration": "Record ECHO values",
       "included_source_nodes": [
+        "DsFreeSus",
         "Disability",
         "Deceased",
         "q0kGTdmQ",
-        "DsFreeSus",
         "BdJB5CiG",
         "DSVPggeh",
         "UKfKgMd7",
