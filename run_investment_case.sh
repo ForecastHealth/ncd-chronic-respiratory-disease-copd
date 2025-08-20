@@ -12,7 +12,7 @@ cd "$SCRIPT_DIR"
 
 # Default values
 COUNTRIES_FILE="./countries/list_of_pruned_countries.json"
-SCENARIOS_DIR="./scenarios/who-bloomberg-investment-case"
+SCENARIOS_DIR="./scenarios"
 MODEL_FILE="./model.json"
 ENVIRONMENT="appendix_3"
 MAX_INSTANCES=100  # Same as TUI default, adjust as needed
