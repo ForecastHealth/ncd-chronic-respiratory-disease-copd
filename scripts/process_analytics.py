@@ -44,9 +44,11 @@ SCENARIO_TO_COST_TAG = {
     'asthma_cr1': 'CR1',
     'cr1_scenario': 'CR1',
     'cr2_scenario': 'CR2',
+    'copd_cr2': 'CR2',
     'asthma_cr3_scenario': 'CR3',
     'cr3_scenario': 'CR3',
     'cr4_scenario': 'CR4',
+    'copd_cr4': 'CR4',
     # Tobacco interventions
     't1_scenario': 'T1',
     'tobacco_t1': 'T1',
