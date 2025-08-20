@@ -16,7 +16,7 @@ components:
   - base.json
   - runtime.json
   - copd_inhaled_salbutamol.json
-  - copd_oral_prednisolone.json
+  - copd_ipratropium_inhaler.json
 
 # Override specific values for CR2 scenario
 overrides:
@@ -28,9 +28,9 @@ overrides:
     value: 0.95
   "Inhaled Salbutamol Scale-Up Final Year":
     value: 3
-  "Oral Prednisolone Target Coverage":
+  "Ipratropium Inhaler Target Coverage":
     value: 0.95
-  "Oral Prednisolone Scale-Up Final Year":
+  "Ipratropium Inhaler Scale-Up Final Year":
     value: 3
 
 # Output file path (relative to build directory)

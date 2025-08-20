@@ -15,7 +15,7 @@ metadata:
 components:
   - base.json
   - runtime.json
-  - copd_ipratropium_inhaler.json
+  - copd_oral_prednisolone.json
 
 # Override specific values for CR4 scenario
 overrides:
@@ -23,9 +23,9 @@ overrides:
     value: 2025
   "End Year":
     value: 2051
-  "Ipratropium Inhaler Target Coverage":
+  "Oral Prednisolone Target Coverage":
     value: 0.95
-  "Ipratropium Inhaler Scale-Up Final Year":
+  "Oral Prednisolone Scale-Up Final Year":
     value: 3
 
 # Output file path (relative to build directory)
