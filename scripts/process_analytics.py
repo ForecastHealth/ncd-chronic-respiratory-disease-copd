@@ -18,7 +18,7 @@ import country_metadata
 
 
 # Model source identifier
-MODEL_SOURCE = 'asthma'
+MODEL_SOURCE = 'copd'
 
 # Cost data mapping - maps scenario names to CSV tags
 SCENARIO_TO_COST_TAG = {
