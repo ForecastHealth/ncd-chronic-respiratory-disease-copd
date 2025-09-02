@@ -23,14 +23,7 @@ MODEL_SOURCE = 'copd'
 # Cost data mapping - maps scenario names to CSV tags
 SCENARIO_TO_COST_TAG = {
     'copd_cr2': 'CR2',
-    'copd_cr4': 'CR4',
-    # Tobacco interventions (if you have them)
-    'tobacco_t1': 'T1',
-    'tobacco_t2': 'T2',
-    'tobacco_t3': 'T3',
-    'tobacco_t4': 'T4',
-    'tobacco_t5': 'T5',
-    'tobacco_t6': 'T6',
+    'copd_cr4': 'CR4'
 }
 
 
