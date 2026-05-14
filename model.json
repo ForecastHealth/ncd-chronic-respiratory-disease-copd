@@ -1336,6 +1336,14 @@
       "label": "ResourcePopulationReached-IpratropiumInhaler",
       "color": "#6EE7B7",
       "flush": true
+    },
+    {
+      "id": "ResourcePopulationReached_OralPrednisolone",
+      "x": 65.53999999999999,
+      "y": 185.11,
+      "label": "ResourcePopulationReached-OralPrednisolone",
+      "color": "#6EE7B7",
+      "flush": true
     }
   ],
   "links": [
@@ -3087,6 +3095,48 @@
       "value_to_target_operator": "multiply"
     },
     {
+      "id": "ResourceAbs_OralPrednisolone_Base_1",
+      "source": "COPDEpsd",
+      "target": "ResourcePopulationReached_OralPrednisolone",
+      "label": "COPDEpsd -> ResourcePopulationReached-OralPrednisolone",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add"
+    },
+    {
+      "id": "ResourceAbs_OralPrednisolone_PIN",
+      "source": "lrsngte4",
+      "target": "ResourcePopulationReached_OralPrednisolone",
+      "label": "OralPrednisolone_PIN -> ResourcePopulationReached-OralPrednisolone",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "id": "ResourceAbs_OralPrednisolone_Coverage",
+      "source": "lrsngpv8",
+      "target": "ResourcePopulationReached_OralPrednisolone",
+      "label": "OralPrednisolone_Coverage -> ResourcePopulationReached-OralPrednisolone",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
+    },
+    {
       "id": "ResourceAbs_IpratropiumInhaler_Base_1",
       "source": "COPDEpsd",
       "target": "ResourcePopulationReached_IpratropiumInhaler",
@@ -3632,7 +3682,8 @@
       "narration": "Push disease populations to absolute resource population reached",
       "included_edges": [
         "ResourceAbs_InhaledSalbutamol_Base_1",
-        "ResourceAbs_IpratropiumInhaler_Base_1"
+        "ResourceAbs_IpratropiumInhaler_Base_1",
+        "ResourceAbs_OralPrednisolone_Base_1"
       ]
     },
     {
@@ -3643,7 +3694,9 @@
         "ResourceAbs_InhaledSalbutamol_PIN",
         "ResourceAbs_InhaledSalbutamol_Coverage",
         "ResourceAbs_IpratropiumInhaler_PIN",
-        "ResourceAbs_IpratropiumInhaler_Coverage"
+        "ResourceAbs_IpratropiumInhaler_Coverage",
+        "ResourceAbs_OralPrednisolone_PIN",
+        "ResourceAbs_OralPrednisolone_Coverage"
       ]
     },
     {
@@ -3666,7 +3719,8 @@
         "COPDEpsd",
         "DXhAVyOP",
         "ResourcePopulationReached_InhaledSalbutamol",
-        "ResourcePopulationReached_IpratropiumInhaler"
+        "ResourcePopulationReached_IpratropiumInhaler",
+        "ResourcePopulationReached_OralPrednisolone"
       ]
     }
   ]
