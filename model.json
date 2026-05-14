@@ -1320,6 +1320,22 @@
         },
         "fetch_once": true
       }
+    },
+    {
+      "id": "ResourcePopulationReached_InhaledSalbutamol",
+      "x": 65.09,
+      "y": 174.84,
+      "label": "ResourcePopulationReached-InhaledSalbutamol",
+      "color": "#6EE7B7",
+      "flush": true
+    },
+    {
+      "id": "ResourcePopulationReached_IpratropiumInhaler",
+      "x": 65.72,
+      "y": 196.75,
+      "label": "ResourcePopulationReached-IpratropiumInhaler",
+      "color": "#6EE7B7",
+      "flush": true
     }
   ],
   "links": [
@@ -3027,6 +3043,90 @@
           "value": 1
         }
       }
+    },
+    {
+      "id": "ResourceAbs_InhaledSalbutamol_Base_1",
+      "source": "COPDEpsd",
+      "target": "ResourcePopulationReached_InhaledSalbutamol",
+      "label": "COPDEpsd -> ResourcePopulationReached-InhaledSalbutamol",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add"
+    },
+    {
+      "id": "ResourceAbs_InhaledSalbutamol_PIN",
+      "source": "lrsnavq2",
+      "target": "ResourcePopulationReached_InhaledSalbutamol",
+      "label": "InhaledSalbutamol_PIN -> ResourcePopulationReached-InhaledSalbutamol",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "id": "ResourceAbs_InhaledSalbutamol_Coverage",
+      "source": "lrsnalk2",
+      "target": "ResourcePopulationReached_InhaledSalbutamol",
+      "label": "InhaledSalbutamol_Coverage -> ResourcePopulationReached-InhaledSalbutamol",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "id": "ResourceAbs_IpratropiumInhaler_Base_1",
+      "source": "COPDEpsd",
+      "target": "ResourcePopulationReached_IpratropiumInhaler",
+      "label": "COPDEpsd -> ResourcePopulationReached-IpratropiumInhaler",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "add"
+    },
+    {
+      "id": "ResourceAbs_IpratropiumInhaler_PIN",
+      "source": "lrsni0s5",
+      "target": "ResourcePopulationReached_IpratropiumInhaler",
+      "label": "IpratropiumInhaler_PIN -> ResourcePopulationReached-IpratropiumInhaler",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "id": "ResourceAbs_IpratropiumInhaler_Coverage",
+      "source": "lrso24ss",
+      "target": "ResourcePopulationReached_IpratropiumInhaler",
+      "label": "IpratropiumInhaler_Coverage -> ResourcePopulationReached-IpratropiumInhaler",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "remove_value_from_source": false,
+      "value_to_target_operator": "multiply"
     }
   ],
   "subroutines": [
@@ -3527,6 +3627,26 @@
       ]
     },
     {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Push disease populations to absolute resource population reached",
+      "included_edges": [
+        "ResourceAbs_InhaledSalbutamol_Base_1",
+        "ResourceAbs_IpratropiumInhaler_Base_1"
+      ]
+    },
+    {
+      "method": "push_balance_to_edges",
+      "batch": false,
+      "narration": "Modify absolute resource population reached by PIN and coverage",
+      "included_edges": [
+        "ResourceAbs_InhaledSalbutamol_PIN",
+        "ResourceAbs_InhaledSalbutamol_Coverage",
+        "ResourceAbs_IpratropiumInhaler_PIN",
+        "ResourceAbs_IpratropiumInhaler_Coverage"
+      ]
+    },
+    {
       "method": "echo",
       "batch": false,
       "narration": "Record ECHO values",
@@ -3544,7 +3664,9 @@
         "8kLiklUp",
         "jWfqJ3Yv",
         "COPDEpsd",
-        "DXhAVyOP"
+        "DXhAVyOP",
+        "ResourcePopulationReached_InhaledSalbutamol",
+        "ResourcePopulationReached_IpratropiumInhaler"
       ]
     }
   ]
