@@ -3556,7 +3556,7 @@
       ]
     },
     {
-      "method": "synchronous_transfer",
+      "method": "transition_system",
       "batch": true,
       "narration": "Main Routine",
       "included_edges": [
