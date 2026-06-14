@@ -2214,7 +2214,7 @@
     "description": "The rebuild of the Spectrum COPD Disease Model",
     "file_id": "COPD",
     "modular_composition": {
-      "manifest": "state/modular-compositions/ncd-copd/composition.manifest.v1.json",
+      "manifest": "modular-composition/composition.manifest.v1.json",
       "mode": "first_pass_executable_decomposition_without_math_change",
       "schema": "forecast-health.generated-modular-composition.v1"
     },
