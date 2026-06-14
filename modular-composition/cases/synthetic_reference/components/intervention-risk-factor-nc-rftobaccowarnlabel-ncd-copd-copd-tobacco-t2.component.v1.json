@@ -1,0 +1,225 @@
+{
+  "active_parameters": [
+    {
+      "category": "Coverage",
+      "name": "Baseline Coverage Tobacco Warnlabel",
+      "path_count": 3,
+      "paths": [
+        "$.nodes[?(@.id=='jVgKAsq8')].generate_array.parameters.value",
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.start_value",
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.fill_before"
+      ],
+      "value": 0.05
+    },
+    {
+      "category": "Coverage",
+      "name": "Target Coverage Tobacco Warnlabel",
+      "path_count": 2,
+      "paths": [
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.end_value",
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.fill_after"
+      ],
+      "value": 0.95
+    },
+    {
+      "category": "Coverage",
+      "name": "Scale-Up Start Year Tobacco Warnlabel",
+      "path_count": 1,
+      "paths": [
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.start_index"
+      ],
+      "value": 0
+    },
+    {
+      "category": "Coverage",
+      "name": "Scale-Up Final Year Tobacco Warnlabel",
+      "path_count": 1,
+      "paths": [
+        "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.end_index"
+      ],
+      "value": 1
+    }
+  ],
+  "acts_on_module": "tobacco-risk-factor",
+  "bound_parameter_path_count": 7,
+  "boundary_note": "This module records the runnable platform scenario as an upstream risk-factor intervention. It owns the scenario parameter changes and acts on the named risk-factor module before the disease model consumes the resulting risk-factor state.",
+  "component_id": "intervention-risk-factor-nc-rftobaccowarnlabel-ncd-copd-copd-tobacco-t2",
+  "declared_inputs": [
+    {
+      "description": "Risk-factor state before this intervention is applied.",
+      "input_id": "baseline_risk_factor_state",
+      "source_module": "tobacco-risk-factor"
+    },
+    {
+      "description": "Coverage value controlled by the scenario parameters owned by this intervention module.",
+      "input_id": "intervention_coverage"
+    },
+    {
+      "description": "Effect-size value controlled by the scenario parameters owned by this intervention module.",
+      "input_id": "intervention_effect_size"
+    }
+  ],
+  "family": "tobacco",
+  "internal_link_ids": [
+    "oILgH0K1",
+    "IDkgCCq4",
+    "R0QJqcit"
+  ],
+  "label": "Warning labels",
+  "links": [
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "oILgH0K1",
+      "label": "delta-coverage-tobacco-warnlabel -> effect-size",
+      "remove_value_from_source": false,
+      "source": "CpV9O9hQ",
+      "target": "c7kD60U5",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "IDkgCCq4",
+      "label": "target-coverage-tobacco-warnlabel -> delta-coverage-tobacco-warnlabel",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "Sr0tR2ig",
+      "target": "CpV9O9hQ",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "R0QJqcit",
+      "label": "baseline-coverage-tobacco-warnlabel -> delta-coverage-tobacco-warnlabel",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "jVgKAsq8",
+      "target": "CpV9O9hQ",
+      "value_to_target_operator": "add"
+    }
+  ],
+  "model": "ncd-copd",
+  "module_id": "intervention-risk-factor-nc-rftobaccowarnlabel-ncd-copd-copd-tobacco-t2",
+  "module_owned_parameter_paths": [
+    "$.nodes[?(@.id=='jVgKAsq8')].generate_array.parameters.value",
+    "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.start_value",
+    "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.fill_before",
+    "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.end_value",
+    "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.fill_after",
+    "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.start_index",
+    "$.nodes[?(@.id=='Sr0tR2ig')].generate_array.parameters.end_index"
+  ],
+  "module_type": "risk_factor_intervention",
+  "nodes": [
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 0.05
+        }
+      },
+      "id": "c7kD60U5",
+      "label": "effect-size-tobacco-warnlabel",
+      "node_type": "CONSTANT",
+      "x": 14.13,
+      "y": -64.66
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 0
+        }
+      },
+      "id": "CpV9O9hQ",
+      "label": "delta-coverage-tobacco-warnlabel",
+      "node_type": "FUNCTION",
+      "x": 47.96,
+      "y": -91.87
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "linear_with_arbitrary_length",
+        "parameters": {
+          "end_index": 2,
+          "end_value": 0.05,
+          "fill_after": 0.05,
+          "fill_before": 0.05,
+          "start_index": 1,
+          "start_value": 0.05
+        }
+      },
+      "id": "Sr0tR2ig",
+      "label": "target-coverage-tobacco-warnlabel",
+      "node_type": "CONSTANT",
+      "x": 50.84,
+      "y": -134.49
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 0.05
+        },
+        "postprocessing": {
+          "negative": true
+        }
+      },
+      "id": "jVgKAsq8",
+      "label": "baseline-coverage-tobacco-warnlabel",
+      "node_type": "CONSTANT",
+      "x": 52.1,
+      "y": -139.92
+    }
+  ],
+  "owned_node_ids": [
+    "c7kD60U5",
+    "CpV9O9hQ",
+    "Sr0tR2ig",
+    "jVgKAsq8"
+  ],
+  "published_output_contract": {
+    "consumer_path": "disease modules consume the changed upstream risk-factor surface through the composed model",
+    "kind": "changed_risk_factor_state"
+  },
+  "published_outputs": [
+    {
+      "node_id": "intervention-risk-factor-nc-rftobaccowarnlabel-ncd-copd-copd-tobacco-t2--changed-risk-factor-state",
+      "output_id": "changed_risk_factor_state",
+      "target_module": "tobacco-risk-factor"
+    }
+  ],
+  "runtime_role": "link_then_inject_bundle",
+  "scenario_id": "copd-tobacco-t2",
+  "scenario_parameter_count": 45,
+  "scenario_path": "/models/ncd-copd/scenarios/tobacco_t2.json",
+  "schema": "forecast-health.risk-factor-intervention-module.v1",
+  "signature_sha256": "2ef40c17b7d8dac9e72fc4cf71c6d97fee8718b95d96d64e9b0a7f56d1fa6261",
+  "source_component": "NC_RFTobaccoWarnLabel",
+  "source_inventory": "state/risk-factor-intervention-inventory.v1.json",
+  "source_status": "represented_in_manifest"
+}

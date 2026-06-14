@@ -1,0 +1,282 @@
+{
+  "boundary_note": "First-pass executable decomposition from current monolithic model labels. Cross-module links are retained as link contracts so the recomposed model remains runnable without changing model maths.",
+  "component_id": "intervention-inhaledsalbutamol",
+  "declared_inputs": [],
+  "internal_link_ids": [
+    "cpORh46w",
+    "g71GXNvq",
+    "QFKsJ7KA",
+    "R4Vwfikm",
+    "u3I26S1y",
+    "gO6Yvodp",
+    "RFqzZF5Z",
+    "ResourceAbs_InhaledSalbutamol_PIN",
+    "ResourceAbs_InhaledSalbutamol_Coverage"
+  ],
+  "links": [
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "cpORh46w",
+      "label": "InhaledSalbutamol_Coverage -> InhaledSalbutamol_Calculated_Coverage",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsnalk2",
+      "target": "lrst0woc",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "g71GXNvq",
+      "label": "InhaledSalbutamol_StartingCoverage -> InhaledSalbutamol_Calculated_Coverage",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrso22do",
+      "target": "lrst0woc",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "QFKsJ7KA",
+      "label": "InhaledSalbutamol_PIN -> InhaledSalbutamol_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsnavq2",
+      "target": "lrst79uc",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "R4Vwfikm",
+      "label": "InhaledSalbutamol_Calculated_Coverage -> InhaledSalbutamol_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrst0woc",
+      "target": "lrst79uc",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "u3I26S1y",
+      "label": "InhaledSalbutamol_Disability_Impact -> InhaledSalbutamol_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsnjkmt",
+      "target": "lrst79uc",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "gO6Yvodp",
+      "remove_value_from_source": false,
+      "source": "lrsnavq2",
+      "target": "U37bYeyB",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "RFqzZF5Z",
+      "remove_value_from_source": false,
+      "source": "lrst0woc",
+      "target": "U37bYeyB",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ResourceAbs_InhaledSalbutamol_PIN",
+      "label": "InhaledSalbutamol_PIN -> ResourcePopulationReached-InhaledSalbutamol",
+      "remove_value_from_source": false,
+      "source": "lrsnavq2",
+      "target": "ResourcePopulationReached_InhaledSalbutamol",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ResourceAbs_InhaledSalbutamol_Coverage",
+      "label": "InhaledSalbutamol_Coverage -> ResourcePopulationReached-InhaledSalbutamol",
+      "remove_value_from_source": false,
+      "source": "lrsnalk2",
+      "target": "ResourcePopulationReached_InhaledSalbutamol",
+      "value_to_target_operator": "multiply"
+    }
+  ],
+  "module_type": "generated_first_pass_boundary",
+  "nodes": [
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 0
+        }
+      },
+      "id": "lrst0woc",
+      "label": "InhaledSalbutamol_Calculated_Coverage",
+      "node_type": "FUNCTION",
+      "x": -150.02,
+      "y": 125.17
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "lrst79uc",
+      "label": "InhaledSalbutamol_Disability_Effect",
+      "node_type": "FUNCTION",
+      "x": -146.06,
+      "y": 56.24
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.148
+        }
+      },
+      "id": "lrsnjkmt",
+      "label": "InhaledSalbutamol_Disability_Impact",
+      "node_type": "CONSTANT",
+      "x": -148.71,
+      "y": 0.8
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "linear_with_arbitrary_length",
+        "parameters": {
+          "end_index": 2,
+          "end_value": 0.05,
+          "fill_after": 0.05,
+          "fill_before": 0.05,
+          "start_index": 1,
+          "start_value": 0.05
+        }
+      },
+      "id": "lrsnalk2",
+      "label": "InhaledSalbutamol_Coverage",
+      "node_type": "CONSTANT",
+      "x": -205.89,
+      "y": 162.73
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.05
+        },
+        "postprocessing": {
+          "negative": true
+        }
+      },
+      "id": "lrso22do",
+      "label": "InhaledSalbutamol_StartingCoverage",
+      "node_type": "CONSTANT",
+      "x": -204.75,
+      "y": 167.92
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "lrsnavq2",
+      "label": "InhaledSalbutamol_PIN",
+      "node_type": "CONSTANT",
+      "x": -234.29,
+      "y": 55.52
+    },
+    {
+      "color": "#FFB255",
+      "flush": true,
+      "id": "U37bYeyB",
+      "label": "PopulationReached-InhaledSalbutamol",
+      "x": 37.09,
+      "y": 146.84
+    },
+    {
+      "color": "#6EE7B7",
+      "flush": true,
+      "id": "ResourcePopulationReached_InhaledSalbutamol",
+      "label": "ResourcePopulationReached-InhaledSalbutamol",
+      "x": 65.09,
+      "y": 174.84
+    }
+  ],
+  "owned_node_ids": [
+    "lrst0woc",
+    "lrst79uc",
+    "lrsnjkmt",
+    "lrsnalk2",
+    "lrso22do",
+    "lrsnavq2",
+    "U37bYeyB",
+    "ResourcePopulationReached_InhaledSalbutamol"
+  ],
+  "published_outputs": [],
+  "runtime_role": "compiled_together",
+  "schema": "forecast-health.generated-module-component.v1"
+}

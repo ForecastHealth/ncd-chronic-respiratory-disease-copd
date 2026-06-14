@@ -1,0 +1,282 @@
+{
+  "boundary_note": "First-pass executable decomposition from current monolithic model labels. Cross-module links are retained as link contracts so the recomposed model remains runnable without changing model maths.",
+  "component_id": "intervention-oralprednisolone",
+  "declared_inputs": [],
+  "internal_link_ids": [
+    "TjND1e9T",
+    "2cqXSWkb",
+    "lZsxgkeD",
+    "LIyy1ky9",
+    "plB7iwsy",
+    "FNrIUP2V",
+    "WE3nlFuI",
+    "ResourceAbs_OralPrednisolone_PIN",
+    "ResourceAbs_OralPrednisolone_Coverage"
+  ],
+  "links": [
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "TjND1e9T",
+      "label": "OralPrednisolone_Coverage -> OralPrednisolone_Calculated_Coverage",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsngpv8",
+      "target": "lrst14z6",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "2cqXSWkb",
+      "label": "OralPrednisolone_StartingCoverage -> OralPrednisolone_Calculated_Coverage",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrso28l8",
+      "target": "lrst14z6",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "lZsxgkeD",
+      "label": "OralPrednisolone_PIN -> OralPrednisolone_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsngte4",
+      "target": "lrst7nh0",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "LIyy1ky9",
+      "label": "OralPrednisolone_Calculated_Coverage -> OralPrednisolone_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrst14z6",
+      "target": "lrst7nh0",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "plB7iwsy",
+      "label": "OralPrednisolone_Disability_Impact -> OralPrednisolone_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsnjnt3",
+      "target": "lrst7nh0",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "FNrIUP2V",
+      "remove_value_from_source": false,
+      "source": "lrsngte4",
+      "target": "8kLiklUp",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "WE3nlFuI",
+      "remove_value_from_source": false,
+      "source": "lrst14z6",
+      "target": "8kLiklUp",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ResourceAbs_OralPrednisolone_PIN",
+      "label": "OralPrednisolone_PIN -> ResourcePopulationReached-OralPrednisolone",
+      "remove_value_from_source": false,
+      "source": "lrsngte4",
+      "target": "ResourcePopulationReached_OralPrednisolone",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ResourceAbs_OralPrednisolone_Coverage",
+      "label": "OralPrednisolone_Coverage -> ResourcePopulationReached-OralPrednisolone",
+      "remove_value_from_source": false,
+      "source": "lrsngpv8",
+      "target": "ResourcePopulationReached_OralPrednisolone",
+      "value_to_target_operator": "multiply"
+    }
+  ],
+  "module_type": "generated_first_pass_boundary",
+  "nodes": [
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "lrst7nh0",
+      "label": "OralPrednisolone_Disability_Effect",
+      "node_type": "FUNCTION",
+      "x": -142.48,
+      "y": 61.29
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 0
+        }
+      },
+      "id": "lrst14z6",
+      "label": "OralPrednisolone_Calculated_Coverage",
+      "node_type": "FUNCTION",
+      "x": -145.63,
+      "y": 132.15
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.337
+        }
+      },
+      "id": "lrsnjnt3",
+      "label": "OralPrednisolone_Disability_Impact",
+      "node_type": "CONSTANT",
+      "x": -144.71,
+      "y": 6.12
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "linear_with_arbitrary_length",
+        "parameters": {
+          "end_index": 2,
+          "end_value": 0.05,
+          "fill_after": 0.05,
+          "fill_before": 0.05,
+          "start_index": 1,
+          "start_value": 0.05
+        }
+      },
+      "id": "lrsngpv8",
+      "label": "OralPrednisolone_Coverage",
+      "node_type": "CONSTANT",
+      "x": -182.59,
+      "y": 178.36
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.05
+        },
+        "postprocessing": {
+          "negative": true
+        }
+      },
+      "id": "lrso28l8",
+      "label": "OralPrednisolone_StartingCoverage",
+      "node_type": "CONSTANT",
+      "x": -181.2,
+      "y": 182.49
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.12
+        }
+      },
+      "id": "lrsngte4",
+      "label": "OralPrednisolone_PIN",
+      "node_type": "CONSTANT",
+      "x": -233.71,
+      "y": 60.91
+    },
+    {
+      "color": "#FFB255",
+      "flush": true,
+      "id": "8kLiklUp",
+      "label": "PopulationReached-OralPrednisolone",
+      "x": 37.54,
+      "y": 157.11
+    },
+    {
+      "color": "#6EE7B7",
+      "flush": true,
+      "id": "ResourcePopulationReached_OralPrednisolone",
+      "label": "ResourcePopulationReached-OralPrednisolone",
+      "x": 65.53999999999999,
+      "y": 185.11
+    }
+  ],
+  "owned_node_ids": [
+    "lrst7nh0",
+    "lrst14z6",
+    "lrsnjnt3",
+    "lrsngpv8",
+    "lrso28l8",
+    "lrsngte4",
+    "8kLiklUp",
+    "ResourcePopulationReached_OralPrednisolone"
+  ],
+  "published_outputs": [],
+  "runtime_role": "compiled_together",
+  "schema": "forecast-health.generated-module-component.v1"
+}

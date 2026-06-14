@@ -1,0 +1,284 @@
+{
+  "boundary_note": "First-pass executable decomposition from current monolithic model labels. Cross-module links are retained as link contracts so the recomposed model remains runnable without changing model maths.",
+  "component_id": "intervention-ipratropiuminhaler",
+  "declared_inputs": [],
+  "internal_link_ids": [
+    "9Fe9k1UV",
+    "6aVqOh7C",
+    "2UnmNJH5",
+    "MnpPqwz9",
+    "ydn35Gq6",
+    "OvOhBeTK",
+    "gwDbhWLO",
+    "ResourceAbs_IpratropiumInhaler_PIN",
+    "ResourceAbs_IpratropiumInhaler_Coverage"
+  ],
+  "links": [
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "9Fe9k1UV",
+      "label": "IpratropiumInhaler_StartingCoverage -> IpratropiumInhaler_Calculated_Coverage",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsnhyyd",
+      "target": "lrst1pq2",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "6aVqOh7C",
+      "label": "IpratropiumInhaler_Coverage -> IpratropiumInhaler_Calculated_Coverage",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrso24ss",
+      "target": "lrst1pq2",
+      "value_to_target_operator": "add"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "2UnmNJH5",
+      "label": "IpratropiumInhaler_PIN -> IpratropiumInhaler_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsni0s5",
+      "target": "lrst7n8a",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "MnpPqwz9",
+      "label": "IpratropiumInhaler_Calculated_Coverage -> IpratropiumInhaler_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrst1pq2",
+      "target": "lrst7n8a",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "edge_type": "projection",
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ydn35Gq6",
+      "label": "IpratropiumInhaler_Disability_Impact -> IpratropiumInhaler_Disability_Effect",
+      "remove_value_from_source": false,
+      "requires_source_balance": true,
+      "source": "lrsnjr1s",
+      "target": "lrst7n8a",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "OvOhBeTK",
+      "remove_value_from_source": false,
+      "source": "lrsni0s5",
+      "target": "jWfqJ3Yv",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "gwDbhWLO",
+      "remove_value_from_source": false,
+      "source": "lrst1pq2",
+      "target": "jWfqJ3Yv",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ResourceAbs_IpratropiumInhaler_PIN",
+      "label": "IpratropiumInhaler_PIN -> ResourcePopulationReached-IpratropiumInhaler",
+      "remove_value_from_source": false,
+      "source": "lrsni0s5",
+      "target": "ResourcePopulationReached_IpratropiumInhaler",
+      "value_to_target_operator": "multiply"
+    },
+    {
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "ResourceAbs_IpratropiumInhaler_Coverage",
+      "label": "IpratropiumInhaler_Coverage -> ResourcePopulationReached-IpratropiumInhaler",
+      "remove_value_from_source": false,
+      "source": "lrso24ss",
+      "target": "ResourcePopulationReached_IpratropiumInhaler",
+      "value_to_target_operator": "multiply"
+    }
+  ],
+  "module_type": "generated_first_pass_boundary",
+  "nodes": [
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "id": "lrst7n8a",
+      "label": "IpratropiumInhaler_Disability_Effect",
+      "node_type": "FUNCTION",
+      "x": -140.73,
+      "y": 66.49
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "single_value",
+        "parameters": {
+          "value": 0
+        }
+      },
+      "id": "lrst1pq2",
+      "label": "IpratropiumInhaler_Calculated_Coverage",
+      "node_type": "FUNCTION",
+      "x": -145.6,
+      "y": 137.77
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.169
+        }
+      },
+      "id": "lrsnjr1s",
+      "label": "IpratropiumInhaler_Disability_Impact",
+      "node_type": "CONSTANT",
+      "x": -141.11,
+      "y": 11.17
+    },
+    {
+      "color": "#06B4E1",
+      "flush": true,
+      "generate_array": {
+        "method": "linear_with_arbitrary_length",
+        "parameters": {
+          "end_index": 2,
+          "end_value": 0.05,
+          "fill_after": 0.05,
+          "fill_before": 0.05,
+          "start_index": 1,
+          "start_value": 0.05
+        }
+      },
+      "id": "lrso24ss",
+      "label": "IpratropiumInhaler_Coverage",
+      "node_type": "CONSTANT",
+      "x": -163.14,
+      "y": 192.58
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "method": "single_value",
+        "parameters": {
+          "value": 0.05
+        },
+        "postprocessing": {
+          "negative": true
+        }
+      },
+      "id": "lrsnhyyd",
+      "label": "IpratropiumInhaler_StartingCoverage",
+      "node_type": "CONSTANT",
+      "x": -161.2,
+      "y": 197.08
+    },
+    {
+      "color": "#06B4E1",
+      "generate_array": {
+        "data_fetcher_label": "copd",
+        "fetch_once": true,
+        "method": "get_observation",
+        "parameters": {
+          "country": "AUS",
+          "observation": "IpratropiumInhaler -> PIN"
+        }
+      },
+      "id": "lrsni0s5",
+      "label": "IpratropiumInhaler_PIN",
+      "node_type": "CONSTANT",
+      "x": -233.45,
+      "y": 66.8
+    },
+    {
+      "color": "#FFB255",
+      "flush": true,
+      "id": "jWfqJ3Yv",
+      "label": "PopulationReached-IpratropiumInhaler",
+      "x": 37.72,
+      "y": 168.75
+    },
+    {
+      "color": "#6EE7B7",
+      "flush": true,
+      "id": "ResourcePopulationReached_IpratropiumInhaler",
+      "label": "ResourcePopulationReached-IpratropiumInhaler",
+      "x": 65.72,
+      "y": 196.75
+    }
+  ],
+  "owned_node_ids": [
+    "lrst7n8a",
+    "lrst1pq2",
+    "lrsnjr1s",
+    "lrso24ss",
+    "lrsnhyyd",
+    "lrsni0s5",
+    "jWfqJ3Yv",
+    "ResourcePopulationReached_IpratropiumInhaler"
+  ],
+  "published_outputs": [],
+  "runtime_role": "compiled_together",
+  "schema": "forecast-health.generated-module-component.v1"
+}
