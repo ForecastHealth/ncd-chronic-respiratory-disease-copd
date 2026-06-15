@@ -1,0 +1,2376 @@
+{
+  "certification_statement": "This certificate records the scenario-country runs present in the source validation-run JSON. It is runtime execution evidence, not a claim that the model agrees with OneHealth Tool, Spectrum, or any other external comparator.",
+  "composition_record_id": "composition:ncd-copd:client-manifest-current:v1",
+  "country_certificates": [
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:44.785795+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "ef9c172570bf4c52d6d06454bd87d5c9a670983931deff1539dc3a347daa07fd",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 149613.88,
+          "2030": 180107.41,
+          "2040": 260805.65,
+          "2046": 323830.31,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38225264.37,
+          "2030": 43120073.14,
+          "2040": 53239937.61,
+          "2046": 59100027.53,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "0b8654e07315ddcdab2498f296f53de12d3cdfcc57bdc7ea6a70cacfad9035dd",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "bb3ba37d6acb802c1c81dc519fdd2e581cf397f473206da454211868636852e1",
+      "rust_duration_seconds": 0.21,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "44aba3983f2a488cad88ceb2d4cd227755779b89cdae00809394fb401a2080b0",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-cr2",
+      "scenario_name": "Appendix 3 - CR2 Scenario",
+      "started_at": "2026-06-02T20:38:56.387662+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:10.642809+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 140719.9,
+          "2030": 169523.41,
+          "2040": 245750.44,
+          "2046": 305361.03,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38234158.35,
+          "2030": 43130657.15,
+          "2040": 53254992.82,
+          "2046": 59118496.81,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "6bef9382502dc8549f4d0ede59ef2deb6dad6be53f546b71ebccf1b71b4901e0",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "289251a47a63f06b83480e9c6d6f7cc99feaf6045d267b4e4d51dcf52e7bedcb",
+      "rust_duration_seconds": 0.109,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "450fcf353228f4647e60efd9a3586e64ecb683482ce91cb60f3adb6fd052bda1",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-cr4",
+      "scenario_name": "Appendix 3 - CR4 Scenario",
+      "started_at": "2026-06-02T20:39:09.683025+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:26.886697+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43455151.11,
+          "2030": 49113888.38,
+          "2040": 60715172.43,
+          "2046": 67461363.27,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 469147.89,
+          "2030": 560283.0,
+          "2040": 799397.16,
+          "2046": 982895.1,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31004.7,
+          "2030": 36774.7,
+          "2040": 52512.12,
+          "2046": 64400.82,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4736.55,
+          "2030": 5882.46,
+          "2040": 8812.03,
+          "2046": 11167.11,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151522.32,
+          "2030": 181961.89,
+          "2040": 262670.1,
+          "2046": 325756.18,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195335.39,
+          "2030": 228282.93,
+          "2040": 312449.24,
+          "2046": 375683.28,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38223059.22,
+          "2030": 43117700.0,
+          "2040": 53237124.72,
+          "2046": 59096887.45,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "84f56cd580400cbafca1f978d0d9e390748aac289cca1cc57d8fdea4fe487630",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "eb05d08c9b107608636841f238d91d5ad0d35b5a46c4967d8bf311031d71d50c",
+      "rust_duration_seconds": 0.117,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "1aab310397c43198609c527129260239ab6fa75c894992d20b6a1598ad41749b",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "01K2RRSHWA0P1T2XS0V3T99P6E",
+      "scenario_name": "Appendix 3 - Tobacco 1 - Increase excise taxes and prices",
+      "started_at": "2026-06-02T20:39:25.275480+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:29.784402+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43454579.1,
+          "2030": 49113011.33,
+          "2040": 60713554.1,
+          "2046": 67459202.45,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 469702.35,
+          "2030": 561116.12,
+          "2040": 800889.72,
+          "2046": 984861.34,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31073.73,
+          "2030": 36856.76,
+          "2040": 52630.91,
+          "2046": 64547.4,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4741.61,
+          "2030": 5890.59,
+          "2040": 8828.31,
+          "2046": 11189.79,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151703.66,
+          "2030": 182236.79,
+          "2040": 263170.25,
+          "2046": 326421.08,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195558.88,
+          "2030": 228618.07,
+          "2040": 313041.26,
+          "2046": 376450.3,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222965.25,
+          "2030": 43117546.16,
+          "2040": 53236814.57,
+          "2046": 59096458.04,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "428be4f3a4bfa5acff81b1a37e448f505bec496625689c53c1b8b7a35878bf6b",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "ad5e75e2a685ad468aaaed6459113e511a5b3ac27f2fa813d3332cb19232bafd",
+      "rust_duration_seconds": 0.147,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "733c1602710d2a302163b8fcc6a0399ae1acf065f07f33bffa985173968facfc",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t2",
+      "scenario_name": "Appendix 3 - Tobacco 2 - Warning labels and standardized packaging",
+      "started_at": "2026-06-02T20:39:27.320796+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:31.536616+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43454059.51,
+          "2030": 49111925.83,
+          "2040": 60711121.27,
+          "2046": 67455796.37,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470212.68,
+          "2030": 562161.88,
+          "2040": 803160.81,
+          "2046": 987991.94,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31191.5,
+          "2030": 36996.45,
+          "2040": 52832.41,
+          "2046": 64795.73,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4745.73,
+          "2030": 5900.25,
+          "2040": 8852.14,
+          "2046": 11224.95,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151869.94,
+          "2030": 182579.85,
+          "2040": 263928.07,
+          "2046": 327476.68,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195752.91,
+          "2030": 229025.61,
+          "2040": 313926.07,
+          "2046": 377660.62,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222883.94,
+          "2030": 43117364.53,
+          "2040": 53236364.74,
+          "2046": 59095799.9,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "ba2a7bf84f0a92b3c0af1fddec8fecae704c1f75bbc1edb2b58f7bd870283f99",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "16ca49db8b11fc24741be83bb74909b017a63cef6c83f676f8ef93a068f8e427",
+      "rust_duration_seconds": 0.146,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "41f1d5057bb3a62b8b00d1367198170e3148ae378f002b71a8bc737f570aa171",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t3",
+      "scenario_name": "Appendix 3 - Tobacco 3 - Advertising and promotion bans",
+      "started_at": "2026-06-02T20:39:28.986219+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:34.262945+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43455109.33,
+          "2030": 49114119.23,
+          "2040": 60716037.75,
+          "2046": 67462679.97,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 469181.56,
+          "2030": 560048.73,
+          "2040": 798571.13,
+          "2046": 981665.03,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 30953.56,
+          "2030": 36714.22,
+          "2040": 52425.25,
+          "2046": 64293.96,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4737.42,
+          "2030": 5880.75,
+          "2040": 8803.99,
+          "2046": 11153.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151534.0,
+          "2030": 181886.7,
+          "2040": 262396.66,
+          "2046": 325343.44,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195360.73,
+          "2030": 228201.74,
+          "2040": 312137.09,
+          "2046": 375213.34,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38223048.22,
+          "2030": 43117731.53,
+          "2040": 53237273.77,
+          "2046": 59097129.97,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "74c090bbe6782b6776cef01c5bc6c2b562e76eff30b35c35d56612a99fb2a456",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "3b03f2a7b249c8114a5af3ae5068a7b29140b7807151ba50bffcc47a23e9a44b",
+      "rust_duration_seconds": 0.2,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "56bf88385bc8d2190366f27e56bd0c1b2937d25d7edb3539a3cfd1df77d0ded9",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t4",
+      "scenario_name": "Appendix 3 - Tobacco 4 - Smoke-free environments",
+      "started_at": "2026-06-02T20:39:31.217885+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:36.767094+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43454842.86,
+          "2030": 49113562.43,
+          "2040": 60714789.47,
+          "2046": 67460932.14,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 469443.29,
+          "2030": 560585.17,
+          "2040": 799736.46,
+          "2046": 983271.53,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31013.95,
+          "2030": 36785.85,
+          "2040": 52528.61,
+          "2046": 64421.33,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4739.53,
+          "2030": 5885.7,
+          "2040": 8816.21,
+          "2046": 11171.93,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151619.26,
+          "2030": 182062.64,
+          "2040": 262785.45,
+          "2046": 325885.06,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195460.33,
+          "2030": 228411.02,
+          "2040": 312591.63,
+          "2046": 375835.21,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38223006.52,
+          "2030": 43117638.37,
+          "2040": 53237042.98,
+          "2046": 59096792.26,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "dee717b228ccd3365faa141f109ff24ab04db099de7bd5fa540e884606611e46",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "5fb46ad7ea90c74ada0c57384a7ed077eb1b1d0fa55379424a908ef0aed582d1",
+      "rust_duration_seconds": 0.267,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "8ac6f79d5386f5abe920d0d4020c1f1ae21f34d99dd16bfa574891afa863d8e9",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t5",
+      "scenario_name": "Appendix 3 - Tobacco 5 - Mass media campaigns",
+      "started_at": "2026-06-02T20:39:33.235143+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:38.293960+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43454240.18,
+          "2030": 49112303.25,
+          "2040": 60711967.08,
+          "2046": 67456980.52,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470035.24,
+          "2030": 561798.28,
+          "2040": 802371.24,
+          "2046": 986903.57,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31150.55,
+          "2030": 36947.88,
+          "2040": 52762.35,
+          "2046": 64709.38,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4744.3,
+          "2030": 5896.89,
+          "2040": 8843.85,
+          "2046": 11212.72,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151812.12,
+          "2030": 182460.57,
+          "2040": 263664.6,
+          "2046": 327109.68,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195685.46,
+          "2030": 228883.95,
+          "2040": 313618.55,
+          "2046": 377239.98,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222912.21,
+          "2030": 43117427.69,
+          "2040": 53236521.13,
+          "2046": 59096028.71,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "dd1e34dc2cbd8a0f2c85cdb6cdd5518ec44657c8f2ffbed97cea931493ed1114",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "9f08750cc9e5ddd77e67fde64ebba3ff55171912f1cf3799d3e33ee4fdddd8f2",
+      "rust_duration_seconds": 0.143,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "65871130cda2d9351266886e452558af895badf5bc5c07263473de0431dcf6c3",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t6",
+      "scenario_name": "Appendix 3 - Tobacco 6 - Cessation support services",
+      "started_at": "2026-06-02T20:39:34.949099+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:41.001374+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "3118a2eb5dc3c5634dddecc6e80da2522ba045db17f9bc470ee2baa297baa02b",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43455740.91,
+          "2030": 49115439.19,
+          "2040": 60718997.56,
+          "2046": 67466824.54,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 468561.2,
+          "2030": 558777.0,
+          "2040": 795807.93,
+          "2046": 977855.55,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 30810.44,
+          "2030": 36544.43,
+          "2040": 52180.26,
+          "2046": 63992.04,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4732.43,
+          "2030": 5869.04,
+          "2040": 8775.03,
+          "2046": 11111.15,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 151331.96,
+          "2030": 181469.65,
+          "2040": 261474.85,
+          "2046": 324059.22,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 195124.47,
+          "2030": 227705.25,
+          "2040": 311058.42,
+          "2046": 373737.46,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38223147.04,
+          "2030": 43117952.35,
+          "2040": 53237820.98,
+          "2046": 59097930.77,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "bf9004d1d7665e1410b4d051370d20871959e0df6ccbb95c8c392728ff0d00ac",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "cf209c53bc3e0068e830889750bb2e006f8cf8cadca00fa01b33d5bdeb5a9dca",
+      "rust_duration_seconds": 0.131,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "759120de1d60ff04b1be57e21fce081f725545d5ae1715148cd106608a843351",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t7",
+      "scenario_name": "Appendix 3 - Tobacco 7 - Pharmacological cessation aids",
+      "started_at": "2026-06-02T20:39:37.403635+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:39.391026+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "3118a2eb5dc3c5634dddecc6e80da2522ba045db17f9bc470ee2baa297baa02b",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 152113.27,
+          "2030": 183081.72,
+          "2040": 265036.35,
+          "2046": 329020.27,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222764.98,
+          "2030": 43117098.83,
+          "2040": 53235706.91,
+          "2046": 59094837.57,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "a14bdd8f184a3012b1c5701d6e03629ee33a9a760ced5c557ca8f43d60622a35",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "ad34661258a2cc97283e8a30185548b2bad0609c2289b9e39b9cc9ae36da5a1c",
+      "rust_duration_seconds": 0.17,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "1d507deabeff9e29ca293a3899237803b4a0fd964f7cc721d4d1a64c0f0d2857",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-baseline",
+      "scenario_name": "COPD - Baseline Scenario",
+      "started_at": "2026-06-02T20:38:53.066399+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:09.574878+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 152885.09,
+          "2030": 184000.2,
+          "2040": 266342.83,
+          "2046": 330623.01,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38221993.16,
+          "2030": 43116180.35,
+          "2040": 53234400.43,
+          "2046": 59093234.83,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "22d94c48aeb439ccdca36dd273f2c95e965bed4822f2f8f66190a29b46bb1391",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "74dcbbeaa416321d2872b4d6a675351ad51115503f958286276261119b726558",
+      "rust_duration_seconds": 0.107,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "c77e308d77a0b8733dfe9b164e36de06adf7ad43361d62cc7d5f67a7e37b4666",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-null",
+      "scenario_name": "COPD - Null Scenario",
+      "started_at": "2026-06-02T20:38:51.268167+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:19.943372+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 152113.27,
+          "2030": 183081.72,
+          "2040": 265036.35,
+          "2046": 329020.27,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222764.98,
+          "2030": 43117098.83,
+          "2040": 53235706.91,
+          "2046": 59094837.57,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "a14bdd8f184a3012b1c5701d6e03629ee33a9a760ced5c557ca8f43d60622a35",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "e77216a6a112eaad4eef5a14e70b6b305ce11ec5aec78788acae3d8751d56e9f",
+      "rust_duration_seconds": 0.108,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "1d507deabeff9e29ca293a3899237803b4a0fd964f7cc721d4d1a64c0f0d2857",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-inhaled-salbutamol",
+      "scenario_name": "Clinical Intervention - Inhaled Salbutamol",
+      "started_at": "2026-06-02T20:39:18.973242+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:22.097581+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 152113.27,
+          "2030": 183081.72,
+          "2040": 265036.35,
+          "2046": 329020.27,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222764.98,
+          "2030": 43117098.83,
+          "2040": 53235706.91,
+          "2046": 59094837.57,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "a14bdd8f184a3012b1c5701d6e03629ee33a9a760ced5c557ca8f43d60622a35",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "963ec3e4e2bfd81059b61cf2e31cc7deb12a145feead94f41720a662221728f0",
+      "rust_duration_seconds": 0.11,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "1d507deabeff9e29ca293a3899237803b4a0fd964f7cc721d4d1a64c0f0d2857",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-ipratropium-inhaler",
+      "scenario_name": "Clinical Intervention - Ipratropium Inhaler",
+      "started_at": "2026-06-02T20:39:21.132501+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "a7cd9ecc927e3f969f7e415b716096f8a66514d220b5dd5019c1391ebc57e8ef",
+      "completed_at": "2026-06-02T20:39:24.810435+00:00",
+      "country": "AFG",
+      "country_name": "Afghanistan",
+      "data_bundle_sha256": "f3f5eb8cb6e3d437983a94413c089a64e5425c39c037f7c5dc162e4c9a212c21",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 43453299.32,
+          "2030": 49110338.06,
+          "2040": 60707563.8,
+          "2046": 67450816.21,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 470959.3,
+          "2030": 563691.45,
+          "2040": 806481.65,
+          "2046": 992569.21,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 31363.83,
+          "2030": 37200.83,
+          "2040": 53127.19,
+          "2046": 65158.98,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 4751.77,
+          "2030": 5914.39,
+          "2040": 8887.02,
+          "2046": 11276.4,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 152113.27,
+          "2030": 183081.72,
+          "2040": 265036.35,
+          "2046": 329020.27,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 196036.51,
+          "2030": 229621.11,
+          "2040": 315218.41,
+          "2046": 379428.11,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 38222764.98,
+          "2030": 43117098.83,
+          "2040": 53235706.91,
+          "2046": 59094837.57,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "a14bdd8f184a3012b1c5701d6e03629ee33a9a760ced5c557ca8f43d60622a35",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "3f135c9fd8eff11c65fe9274187a524b064ee034616bfd4ddd25e2c54e14f325",
+      "rust_duration_seconds": 0.147,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "1d507deabeff9e29ca293a3899237803b4a0fd964f7cc721d4d1a64c0f0d2857",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-oral-prednisolone",
+      "scenario_name": "Clinical Intervention - Oral Prednisolone",
+      "started_at": "2026-06-02T20:39:23.411441+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:27.487889+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 333762.99,
+          "2030": 398252.9,
+          "2040": 557111.37,
+          "2046": 674690.48,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115253112.72,
+          "2030": 129189899.09,
+          "2040": 156972083.1,
+          "2046": 173406433.28,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "3baae217e14e3124dd55c84f64b2da56942efaa4ebad04712e1552065b151ea8",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "b6ed6bdc24db6b27e0d6be2fa7983077f6506b70f5195ebfe664401d0fda5be4",
+      "rust_duration_seconds": 0.124,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "f9116fc6abe4731ec924fed86e73b248cea0152e8f15aa90cf28413f28f98808",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-cr2",
+      "scenario_name": "Appendix 3 - CR2 Scenario",
+      "started_at": "2026-06-02T20:38:53.120307+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:54.641718+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "9cb365eaf35ff4c748c550b2e5d18f568b8814b09f4c2f682773ceca64c5dbf7",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 310529.4,
+          "2030": 370866.66,
+          "2040": 519582.68,
+          "2046": 629828.91,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115276346.31,
+          "2030": 129217285.33,
+          "2040": 157009611.8,
+          "2046": 173451294.85,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "05b2233890601c47e4730af994f61eb45eae53d33c8be6bc8bd7f6c9601ff7a2",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "1769ed9a1bd0beb7abc34ee067e6eea2c41f09a179a4459b9b7f17164aede99d",
+      "rust_duration_seconds": 0.109,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "4578533f4fad6b71e978de237e76dd48704247fa31ab143ff3e62c4b97e6af27",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-cr4",
+      "scenario_name": "Appendix 3 - CR4 Scenario",
+      "started_at": "2026-06-02T20:39:02.056160+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:25.809621+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "d22874c54ef40454c102d80b706cb2ffe7a3402a5f3632ec01f9514b265ca554",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133297867.62,
+          "2030": 149492777.16,
+          "2040": 182078567.11,
+          "2046": 201589249.73,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 957942.39,
+          "2030": 1132415.08,
+          "2040": 1560671.65,
+          "2046": 1873062.77,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60626.22,
+          "2030": 71526.56,
+          "2040": 98347.45,
+          "2046": 118275.92,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11503.5,
+          "2030": 14485.41,
+          "2040": 21755.97,
+          "2046": 27485.37,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 338955.57,
+          "2030": 403798.55,
+          "2040": 563707.59,
+          "2046": 682101.95,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329029.54,
+          "2030": 384202.02,
+          "2040": 512135.32,
+          "2046": 604310.27,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247517.33,
+          "2030": 129183702.82,
+          "2040": 156964445.16,
+          "2046": 173397768.12,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "d5b4b35897aaf99ddef78e45797cae44010d4a82f98bec1a51b4fdd5cb4986d0",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "7299ffa32fcfaad9af6749104a52547ade8565cd79d35dd1870c8f605e29bb2d",
+      "rust_duration_seconds": 0.126,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "8c5ac3630e60f6d2b2354e4e8344f34a5c4189d0b45774f0c79c869f6df912d8",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "01K2RRSHWA0P1T2XS0V3T99P6E",
+      "scenario_name": "Appendix 3 - Tobacco 1 - Increase excise taxes and prices",
+      "started_at": "2026-06-02T20:39:24.280688+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:28.404063+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133297127.23,
+          "2030": 149491659.49,
+          "2040": 182076575.69,
+          "2046": 201586634.53,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 958643.75,
+          "2030": 1133442.43,
+          "2040": 1562436.26,
+          "2046": 1875344.25,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60718.43,
+          "2030": 71636.95,
+          "2040": 98504.43,
+          "2046": 118468.42,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11515.11,
+          "2030": 14503.42,
+          "2040": 21789.27,
+          "2046": 27530.3,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339213.72,
+          "2030": 404178.88,
+          "2040": 564367.22,
+          "2046": 682960.18,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329322.3,
+          "2030": 384632.72,
+          "2040": 512865.25,
+          "2046": 605244.3,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247371.75,
+          "2030": 129183465.75,
+          "2040": 156963987.01,
+          "2046": 173397147.57,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "ae5cf1399c2c777cc3f784523eeb0efa3c8e8a9c9f5c15d71a168c1de38245e9",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "1ecf667b925f6b8639db55d6026e3b805f275b0ae70b2846ae99926ba8444556",
+      "rust_duration_seconds": 0.172,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "495f0c96624433da34f3a48bf86cb1f317a515199d329990514cb93356333c7e",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t2",
+      "scenario_name": "Appendix 3 - Tobacco 2 - Warning labels and standardized packaging",
+      "started_at": "2026-06-02T20:39:26.274272+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:30.742227+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133296446.17,
+          "2030": 149490253.5,
+          "2040": 182073539.54,
+          "2046": 201582466.15,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 959303.4,
+          "2030": 1134762.25,
+          "2040": 1565162.77,
+          "2046": 1879015.82,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60876.16,
+          "2030": 71825.47,
+          "2040": 98771.75,
+          "2046": 118795.86,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11524.86,
+          "2030": 14525.57,
+          "2040": 21839.93,
+          "2046": 27602.06,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339456.52,
+          "2030": 404666.61,
+          "2040": 565384.92,
+          "2046": 684339.9,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329584.44,
+          "2030": 385170.01,
+          "2040": 513977.77,
+          "2046": 606734.32,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247246.17,
+          "2030": 129183182.94,
+          "2040": 156963308.63,
+          "2046": 173396178.07,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "25e251926932d1fc281d4a624ed18f305e6e130986ee9c2f60cf536e86489242",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "28e43aa546650f99aa6dc7b45114f92e62a046defac5c878e03770948b8cbfad",
+      "rust_duration_seconds": 0.164,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "6111e231fda411a2efbfc86f20ac6b380a8fd6c7658eb9174571b4e91f99babc",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t3",
+      "scenario_name": "Appendix 3 - Tobacco 3 - Advertising and promotion bans",
+      "started_at": "2026-06-02T20:39:28.063216+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:32.657599+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133297817.21,
+          "2030": 149493084.07,
+          "2040": 182079652.47,
+          "2046": 201590858.9,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 957975.46,
+          "2030": 1132105.15,
+          "2040": 1559673.41,
+          "2046": 1871623.67,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60558.65,
+          "2030": 71445.95,
+          "2040": 98233.57,
+          "2046": 118136.65,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11505.24,
+          "2030": 14481.0,
+          "2040": 21737.93,
+          "2046": 27457.57,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 338967.76,
+          "2030": 403684.73,
+          "2040": 563335.98,
+          "2046": 681562.1,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329056.38,
+          "2030": 384087.52,
+          "2040": 511735.99,
+          "2046": 603731.73,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247498.95,
+          "2030": 129183752.25,
+          "2040": 156964674.51,
+          "2046": 173398130.2,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "b28aae7b3d2b80668b3eb0dfdde5deb87081a802a5475fe6b0c5daa17a2faf05",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "270426ca136d1ae0e79f65f994aae8fe56c8e0f101f054af5ef09598dd710855",
+      "rust_duration_seconds": 0.129,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "0ce5581009f4d2ef30b0baa89d1bb8ecb18e882728c2a0308d756a4a335acbc3",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t4",
+      "scenario_name": "Appendix 3 - Tobacco 4 - Smoke-free environments",
+      "started_at": "2026-06-02T20:39:30.314064+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:34.660342+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133297471.09,
+          "2030": 149492369.43,
+          "2040": 182078108.94,
+          "2046": 201588739.63,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 958310.7,
+          "2030": 1132776.0,
+          "2040": 1561059.44,
+          "2046": 1873490.16,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60638.8,
+          "2030": 71541.76,
+          "2040": 98369.44,
+          "2046": 118303.09,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11510.19,
+          "2030": 14492.25,
+          "2040": 21763.69,
+          "2046": 27494.06,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339091.14,
+          "2030": 403932.62,
+          "2040": 563853.31,
+          "2046": 682263.46,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329189.82,
+          "2030": 384361.12,
+          "2040": 512302.74,
+          "2046": 604490.87,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247435.14,
+          "2030": 129183608.53,
+          "2040": 156964329.61,
+          "2046": 173397637.23,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "f9ac08b36edaf271064ab76dd2637a4b66648ca53ce68bd7beaf2bed448bf4e3",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "e70d71102837f83f46e1a3249db18a4e26d7a2c8ea6d0bcfd9801135df5c9378",
+      "rust_duration_seconds": 0.126,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "727f23fecabc8952af72a7b8803d905b699bb508d885bb9a514367c305684f2f",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t5",
+      "scenario_name": "Appendix 3 - Tobacco 5 - Mass media campaigns",
+      "started_at": "2026-06-02T20:39:32.082284+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:38.273444+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133296683.54,
+          "2030": 149490743.51,
+          "2040": 182074597.64,
+          "2046": 201583918.8,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 959073.49,
+          "2030": 1134302.27,
+          "2040": 1564212.57,
+          "2046": 1877736.27,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60821.19,
+          "2030": 71759.77,
+          "2040": 98678.58,
+          "2046": 118681.74,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11521.46,
+          "2030": 14517.85,
+          "2040": 21822.28,
+          "2046": 27577.05,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339371.9,
+          "2030": 404496.63,
+          "2040": 565030.24,
+          "2046": 683859.06,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329493.12,
+          "2030": 384982.84,
+          "2040": 513590.26,
+          "2046": 606215.34,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247289.94,
+          "2030": 129183281.51,
+          "2040": 156963545.04,
+          "2046": 173396515.92,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "d378a93525df0fd5cea109244127010b120804619988604abb0ce5ac375bfeea",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "0daa5b69844d67391f1a50fdbab8bdb11ef2ceda15eb6a0e497474b2864c4f8d",
+      "rust_duration_seconds": 0.133,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "08a15f6f23949ba44d40080dbbde070ecacaec89ad478d274783296cbb0593ce",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t6",
+      "scenario_name": "Appendix 3 - Tobacco 6 - Cessation support services",
+      "started_at": "2026-06-02T20:39:34.662393+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:38.624584+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "bf03adbbc70d34568cb54bf925e78cc99ae76c68308dcad2967feb22faec7233",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133298632.57,
+          "2030": 149494767.73,
+          "2040": 182083289.5,
+          "2046": 201595852.77,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 957185.72,
+          "2030": 1130524.66,
+          "2040": 1556407.65,
+          "2046": 1867225.77,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 60369.85,
+          "2030": 71220.25,
+          "2040": 97913.45,
+          "2046": 117744.54,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11493.58,
+          "2030": 14454.5,
+          "2040": 21677.23,
+          "2046": 27371.56,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 338677.11,
+          "2030": 403100.73,
+          "2040": 562117.07,
+          "2046": 679909.57,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 328741.68,
+          "2030": 383442.12,
+          "2040": 510398.73,
+          "2046": 601940.34,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247649.24,
+          "2030": 129184090.83,
+          "2040": 156965487.22,
+          "2046": 173399291.97,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "511c9a4d43cf3ff7745ce8828e74f53be81d6121dae0899c7cc7625b68b099ef",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "18742c6009f0105fbac0261a3574774f845fd349484013aaf5c321f4bccc7d0f",
+      "rust_duration_seconds": 0.152,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "0655b8a434876e8bf49e183530154d5a917faa24f561b34653234281098ae0e7",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-tobacco-t7",
+      "scenario_name": "Appendix 3 - Tobacco 7 - Pharmacological cessation aids",
+      "started_at": "2026-06-02T20:39:35.275692+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:23.050886+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "d22874c54ef40454c102d80b706cb2ffe7a3402a5f3632ec01f9514b265ca554",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339814.94,
+          "2030": 405386.49,
+          "2040": 566886.83,
+          "2046": 686376.02,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247060.77,
+          "2030": 129182765.5,
+          "2040": 156962307.64,
+          "2046": 173394747.74,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "b9da61ef0712d0ff18be457fcb6c1bc22a75281f4fa08a9811a22b6d2b52d16c",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "aff753e5e6f395fa120dff49a1fe62e3c50f2cc62759b5bde5141c42fcd3a6ce",
+      "rust_duration_seconds": 0.134,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "db9af4d14ca34329701ddda312e43494c19ec48cb28cb1e9bcaf89a71d9e0929",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-baseline",
+      "scenario_name": "COPD - Baseline Scenario",
+      "started_at": "2026-06-02T20:38:52.729824+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:18.863179+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "9647f4f6e59403df0421844f43eaf14908c52d8b92c3d9a35fe879cb5d2fbc57",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 341778.14,
+          "2030": 407700.57,
+          "2040": 570057.92,
+          "2046": 690166.72,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115245097.57,
+          "2030": 129180451.42,
+          "2040": 156959136.55,
+          "2046": 173390957.04,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "8580b27d854674f4946014b2d635ad74beb704fbf53199679b3d67873f82e368",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "8483114dd886942f76f2f3ff1449eba34e77380cb9964cb72716ce1a4ea25dee",
+      "rust_duration_seconds": 0.11,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "4005d63cd9e0af4e08e91f59c4f09df91eda6bf5c56ad78afac864fffdce2034",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-null",
+      "scenario_name": "COPD - Null Scenario",
+      "started_at": "2026-06-02T20:38:51.228471+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:48.721545+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "cdacfd36fbc1a5606f700d35ceeadba70135e84c425530954110bc25a0f0818a",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339814.94,
+          "2030": 405386.49,
+          "2040": 566886.83,
+          "2046": 686376.02,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247060.77,
+          "2030": 129182765.5,
+          "2040": 156962307.64,
+          "2046": 173394747.74,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "b9da61ef0712d0ff18be457fcb6c1bc22a75281f4fa08a9811a22b6d2b52d16c",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "5d265a0dfdbdb384ffa17a7ee906f1e96b3473a8c19f53592b07a5375c0ce9a1",
+      "rust_duration_seconds": 0.111,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "db9af4d14ca34329701ddda312e43494c19ec48cb28cb1e9bcaf89a71d9e0929",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-inhaled-salbutamol",
+      "scenario_name": "Clinical Intervention - Inhaled Salbutamol",
+      "started_at": "2026-06-02T20:39:10.748792+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:21.019466+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "9647f4f6e59403df0421844f43eaf14908c52d8b92c3d9a35fe879cb5d2fbc57",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339814.94,
+          "2030": 405386.49,
+          "2040": 566886.83,
+          "2046": 686376.02,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247060.77,
+          "2030": 129182765.5,
+          "2040": 156962307.64,
+          "2046": 173394747.74,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "b9da61ef0712d0ff18be457fcb6c1bc22a75281f4fa08a9811a22b6d2b52d16c",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "f3b081f66aad0bce1e0198cc5bee6f3d0ba57a651e55651dac6c091de8c735a9",
+      "rust_duration_seconds": 0.109,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "db9af4d14ca34329701ddda312e43494c19ec48cb28cb1e9bcaf89a71d9e0929",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-ipratropium-inhaler",
+      "scenario_name": "Clinical Intervention - Ipratropium Inhaler",
+      "started_at": "2026-06-02T20:39:20.052133+00:00",
+      "status": "pass"
+    },
+    {
+      "bundle_input_count": 1230,
+      "bundle_semantic_sha256": "6e867f5a098afc4feb6413bbbb25fc7adebdb70b45843a6a06772cbe77c92a92",
+      "completed_at": "2026-06-02T20:39:23.776368+00:00",
+      "country": "ETH",
+      "country_name": "Ethiopia",
+      "data_bundle_sha256": "d22874c54ef40454c102d80b706cb2ffe7a3402a5f3632ec01f9514b265ca554",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133295440.83,
+          "2030": 149488178.37,
+          "2040": 182069059.36,
+          "2046": 201576315.59,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 960277.1,
+          "2030": 1136710.2,
+          "2040": 1569186.3,
+          "2046": 1884433.91,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61109.02,
+          "2030": 72103.76,
+          "2040": 99166.29,
+          "2046": 119279.11,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11539.26,
+          "2030": 14558.26,
+          "2040": 21914.67,
+          "2046": 27707.9,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 339814.94,
+          "2030": 405386.49,
+          "2040": 566886.83,
+          "2046": 686376.02,
+          "metric": "Years lived with disability"
+        },
+        {
+          "2025": 329970.77,
+          "2030": 385961.56,
+          "2040": 515616.1,
+          "2046": 608928.29,
+          "metric": "Years of life lost"
+        },
+        {
+          "2025": 115247060.77,
+          "2030": 129182765.5,
+          "2040": 156962307.64,
+          "2046": 173394747.74,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "b9da61ef0712d0ff18be457fcb6c1bc22a75281f4fa08a9811a22b6d2b52d16c",
+      "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+      "model_slug": "ncd-copd",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 59120,
+      "run_signature_sha256": "e6748bcbc8eae56d4ec91f1fb1c998c95daa1347534a74ee4ec0f84d25f3c37a",
+      "rust_duration_seconds": 0.128,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "db9af4d14ca34329701ddda312e43494c19ec48cb28cb1e9bcaf89a71d9e0929",
+      "rust_runner_path": "/Users/rory/Documents/botech-rust/target/release/run_model",
+      "rust_runner_sha256": "36b27f65ee3ea17d9145c91cd4ff17931c08d7a0274e7549b5e5806ffb95c703",
+      "scenario_id": "copd-oral-prednisolone",
+      "scenario_name": "Clinical Intervention - Oral Prednisolone",
+      "started_at": "2026-06-02T20:39:22.250577+00:00",
+      "status": "pass"
+    }
+  ],
+  "country_scope": "default",
+  "created_at": "2026-06-02T20:49:23+00:00",
+  "failed": 0,
+  "generated_file_retention": "temporary materialised models, data bundles, and result CSVs are discarded after hashing and headline extraction",
+  "model_card_id": "model-card:ncd-copd:client-manifest-current:v1",
+  "passed": 28,
+  "reference_country": "ETH",
+  "reference_headline_metrics": [
+    {
+      "2025": 133295440.83,
+      "2030": 149488178.37,
+      "2040": 182069059.36,
+      "2046": 201576315.59,
+      "metric": "Population at risk"
+    },
+    {
+      "2025": 960277.1,
+      "2030": 1136710.2,
+      "2040": 1569186.3,
+      "2046": 1884433.91,
+      "metric": "COPD prevalence state"
+    },
+    {
+      "2025": 61109.02,
+      "2030": 72103.76,
+      "2040": 99166.29,
+      "2046": 119279.11,
+      "metric": "COPD incidence flow"
+    },
+    {
+      "2025": 11539.26,
+      "2030": 14558.26,
+      "2040": 21914.67,
+      "2046": 27707.9,
+      "metric": "COPD mortality flow"
+    },
+    {
+      "2025": 333762.99,
+      "2030": 398252.9,
+      "2040": 557111.37,
+      "2046": 674690.48,
+      "metric": "Years lived with disability"
+    },
+    {
+      "2025": 329970.77,
+      "2030": 385961.56,
+      "2040": 515616.1,
+      "2046": 608928.29,
+      "metric": "Years of life lost"
+    },
+    {
+      "2025": 115253112.72,
+      "2030": 129189899.09,
+      "2040": 156972083.1,
+      "2046": 173406433.28,
+      "metric": "Healthy years lived"
+    }
+  ],
+  "reference_scenario": "copd-cr2",
+  "row_count": 28,
+  "run_certificate_id": "run-certificate:ncd-copd:all-scenarios-default-20260602b:v1",
+  "run_certificate_signature_sha256": "6f4f92a8406991fc89297759c4c3c4ba2dc5f57098788028e2c1c25cb8f52e43",
+  "scenario_scope": "all",
+  "schema": "run-certificate.v1",
+  "source_run_file_sha256": "65c637e60967e15878c9a8df7fb5748936c7465d0a9f0be25c0345320e84902d",
+  "source_run_id": "all-scenarios-default-20260602b",
+  "source_run_semantic_sha256": "9255bc6b6fd10c7035ff6f7e509dfa34ece9a6cf87a12c93bdacf40a017ea946",
+  "status": "pass",
+  "status_definition": "pass means the Rust runner exited successfully and emitted result rows for the scenario-country run",
+  "title": "COPD Run Certificate",
+  "warnings": [
+    "This certificate records runtime execution evidence only. It does not compare model outputs with OneHealth Tool, Spectrum, Appendix 3 reference outputs, or another external comparator.",
+    "Generated data bundles are identified by hashes in the run JSON, but the hosted unified API/datafetcher source version that produced them is not pinned in this certificate."
+  ]
+}

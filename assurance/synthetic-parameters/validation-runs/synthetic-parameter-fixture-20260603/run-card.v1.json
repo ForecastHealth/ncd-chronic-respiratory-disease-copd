@@ -1,0 +1,124 @@
+{
+  "created_at": "2026-06-03T13:28:16+00:00",
+  "model_slug": "ncd-copd",
+  "reference_parameter_set_id": "reference-parameter-set:ncd-copd:synthetic-v1",
+  "runs": {
+    "current_reference_eth": {
+      "bundle_input_count": 270,
+      "data_bundle_mode": "unified_api",
+      "data_bundle_sha256": "249f6e5a2cd6baf423e6e7974e2f0e6c17557a758c9bd19769688529de2d168d",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 133570233.54,
+          "2030": 149757462.64,
+          "2040": 182359094.68,
+          "2046": null,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 962509.28,
+          "2030": 1139516.35,
+          "2040": 1572875.08,
+          "2046": null,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 61009.62,
+          "2030": 72088.09,
+          "2040": 99198.78,
+          "2046": null,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 11907.29,
+          "2030": 14195.56,
+          "2040": 21585.78,
+          "2046": null,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 115520197.34,
+          "2030": 129444604.33,
+          "2040": 157222033.68,
+          "2046": null,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "49f4714fba19c52f5a8862e2cbbad6221b3cc53a590f0adbd1a9dd39c0089ba8",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 12320,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "881c38d422aed3d74acb34d06f2fd5e13c6022d35ca8a25a1d92f87b4f5fa15b",
+      "status": "pass",
+      "stderr_tail": ""
+    },
+    "synthetic_reference": {
+      "bundle_input_count": 228,
+      "data_bundle_mode": "synthetic_reference_fixture",
+      "data_bundle_sha256": "e449b1834cc066f5a5b9f0367be7959d31d8451a0cf2ae0032dedda12cb2031c",
+      "generated_files_retained": false,
+      "headline_metrics": [
+        {
+          "2025": 0.0,
+          "2030": 0.0,
+          "2040": 0.0,
+          "2046": null,
+          "metric": "Population at risk"
+        },
+        {
+          "2025": 922773.29,
+          "2030": 617312.29,
+          "2040": 274853.93,
+          "2046": null,
+          "metric": "COPD prevalence state"
+        },
+        {
+          "2025": 0.0,
+          "2030": 0.0,
+          "2040": 0.0,
+          "2046": null,
+          "metric": "COPD incidence flow"
+        },
+        {
+          "2025": 77180.59,
+          "2030": 51633.44,
+          "2040": 23007.93,
+          "2046": null,
+          "metric": "COPD mortality flow"
+        },
+        {
+          "2025": 812081.08,
+          "2030": 543278.28,
+          "2040": 242085.59,
+          "2046": null,
+          "metric": "Healthy years lived"
+        }
+      ],
+      "materialized_model_sha256": "22f30edb2968be15873dc60c62f903b84636280273e1d3f192e8d4153fb777fa",
+      "result_columns": [
+        "value",
+        "event_number",
+        "timestamp",
+        "event_type",
+        "element_label",
+        "element_type"
+      ],
+      "result_rows": 12320,
+      "rust_exit_code": 0,
+      "rust_results_sha256": "aa2b8633e34368359034c85424c463b5762d75602a1d00ab8853b55786e5b19a",
+      "status": "pass",
+      "stderr_tail": ""
+    }
+  },
+  "scenario_registry_id": "scenario-registry:ncd-copd:reference-synthetic-v1",
+  "schema": "reference-parameter-validation-run.v1",
+  "signature_sha256": "70f268468dd6c7cfa656d1423c8d938904d51a0cfa508bbf5eb543e3d34683e7"
+}

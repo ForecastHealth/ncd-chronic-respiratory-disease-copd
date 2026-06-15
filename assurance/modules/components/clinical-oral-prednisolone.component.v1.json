@@ -1,0 +1,269 @@
+{
+  "component_id": "clinical-oral-prednisolone",
+  "component_signature_sha256": "8e39a2e92f8d23f338ee4b4e3d884c775c6d42b6d1819f209d7c6f9726d84600",
+  "contract_summary": "Intervention-specific graph and scenario boundary. The current executable graph applies any changed scenario parameters by materialising them into the monolithic model.",
+  "execution_mode": "compiled_together_current_graph_boundary",
+  "independently_executable_now": false,
+  "label": "Clinical Oral Prednisolone",
+  "limitations": [
+    "This is not yet a separately executable module. It is a component record for a boundary inside the current graph."
+  ],
+  "matched_links": {
+    "count": 0,
+    "sample": []
+  },
+  "matched_nodes": {
+    "count": 0,
+    "sample": []
+  },
+  "matched_scenario_parameters": [
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Oral Prednisolone Target Coverage",
+          "scenario_value": 0
+        }
+      ],
+      "label": "COPD - Null Scenario",
+      "scenario_id": "copd-null"
+    },
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Oral Prednisolone Target Coverage",
+          "scenario_value": 0.95
+        }
+      ],
+      "label": "Appendix 3 - CR2 Scenario",
+      "scenario_id": "copd-cr2"
+    }
+  ],
+  "matching_rule": "Case-insensitive match against node id, node label, node tags, link id, link label, link endpoints, generated data fetcher blocks, and scenario parameter names.",
+  "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+  "model_slug": "ncd-copd",
+  "outputs_or_handoffs": [
+    "Has scenario parameter changes relative to the baseline scenario in the client bundle."
+  ],
+  "patterns": [
+    "oral prednisolone",
+    "oral prednisolone"
+  ],
+  "role": "Clinical intervention",
+  "scenario_parameter_changes_relative_to_baseline": [
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Oral Prednisolone Target Coverage",
+          "scenario_value": 0
+        }
+      ],
+      "label": "COPD - Null Scenario",
+      "scenario_id": "copd-null"
+    },
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Oral Prednisolone Target Coverage",
+          "scenario_value": 0.95
+        }
+      ],
+      "label": "Appendix 3 - CR2 Scenario",
+      "scenario_id": "copd-cr2"
+    }
+  ],
+  "scenario_parameter_presence": [
+    {
+      "label": "COPD - Null Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-null"
+    },
+    {
+      "label": "COPD - Baseline Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-baseline"
+    },
+    {
+      "label": "Appendix 3 - CR2 Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-cr2"
+    },
+    {
+      "label": "Appendix 3 - CR4 Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-cr4"
+    },
+    {
+      "label": "Clinical Intervention - Inhaled Salbutamol",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-inhaled-salbutamol"
+    },
+    {
+      "label": "Clinical Intervention - Ipratropium Inhaler",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-ipratropium-inhaler"
+    },
+    {
+      "label": "Clinical Intervention - Oral Prednisolone",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-oral-prednisolone"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 1 - Increase excise taxes and prices",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "01K2RRSHWA0P1T2XS0V3T99P6E"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 2 - Warning labels and standardized packaging",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t2"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 3 - Advertising and promotion bans",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t3"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 4 - Smoke-free environments",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t4"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 5 - Mass media campaigns",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t5"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 6 - Cessation support services",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t6"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 7 - Pharmacological cessation aids",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Oral Prednisolone Baseline Coverage",
+        "Oral Prednisolone Target Coverage",
+        "Oral Prednisolone Scale-Up Start Year",
+        "Oral Prednisolone Scale-Up Final Year",
+        "Oral Prednisolone Population In Need",
+        "Oral Prednisolone Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t7"
+    }
+  ],
+  "schema": "ncd-module-component.v1",
+  "source_model": "public/models/ncd-copd/model.json",
+  "source_model_sha256": "d600016bdb6240e5e2f252af4cdf5ee8038e33b811b9fd02810ea7e526a91a8a"
+}

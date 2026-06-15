@@ -1,0 +1,281 @@
+{
+  "component_id": "demographic-substrate",
+  "component_signature_sha256": "6b5c6a9579561c8715d69cb24d792785566e85cd63e400b3dbfeabda60e04d03",
+  "contract_summary": "Population, births, deaths, ageing and demographic source data are embedded in the current executable graph.",
+  "execution_mode": "compiled_together_current_graph_boundary",
+  "independently_executable_now": false,
+  "label": "Demographic substrate",
+  "limitations": [
+    "The intended future direction is to use the shared demographic model as the substrate rather than keeping a disease-local demographic copy.",
+    "Matching scenario parameters are present in scenario files, but this component did not find changes relative to baseline."
+  ],
+  "matched_links": {
+    "count": 13,
+    "sample": [
+      {
+        "id": "3gSm1z84",
+        "label": "DsFreeSus -> DsFreeSus",
+        "source": "DsFreeSus",
+        "target": "DsFreeSus"
+      },
+      {
+        "id": "6dXmRQ7e",
+        "label": "DsFreeSus -> Births",
+        "source": "DsFreeSus",
+        "target": "Births"
+      },
+      {
+        "id": "JPGqVn1u",
+        "label": "Births -> DsFreeSus",
+        "source": "Births",
+        "target": "DsFreeSus"
+      },
+      {
+        "id": "k3JrWa6h",
+        "label": "Births -> DsFreeSus",
+        "source": "Births",
+        "target": "DsFreeSus"
+      },
+      {
+        "id": "MfWskKJT",
+        "label": "DsFreeSus -> Deceased",
+        "source": "DsFreeSus",
+        "target": "Deceased"
+      },
+      {
+        "id": "eBRm4kvr",
+        "label": "COPDEpsd -> Births",
+        "source": "COPDEpsd",
+        "target": "Births"
+      },
+      {
+        "id": "WALgwDoi",
+        "label": "COPDEpsd -> COPDEpsd",
+        "source": "COPDEpsd",
+        "target": "COPDEpsd"
+      },
+      {
+        "id": "HmI3Gkua",
+        "label": "Prevalence DsFreeSus -> COPDEpsd",
+        "source": "DsFreeSus",
+        "target": "COPDEpsd"
+      },
+      {
+        "id": "Lvoz10h5",
+        "label": "DsFreeSus -> DsFreeSus HYL",
+        "source": "DsFreeSus",
+        "target": "lrste7nj"
+      },
+      {
+        "id": "nvUzLVjD",
+        "label": "DsFreeSus HYL -> Healthy Years Lived",
+        "source": "lrste7nj",
+        "target": "Disability"
+      },
+      {
+        "id": "cz2LeDKw",
+        "label": "Background Mortality COPDEpsd",
+        "source": "COPDEpsd",
+        "target": "q0kGTdmQ"
+      },
+      {
+        "id": "5Ol05axR",
+        "label": "DsFreeSus -> COPDEpsd Incidence",
+        "source": "DsFreeSus",
+        "target": "cXtHHFW2"
+      },
+      {
+        "id": "IlufIA1L",
+        "label": null,
+        "source": "DsFreeSus",
+        "target": "Yav8dlAY"
+      }
+    ]
+  },
+  "matched_nodes": {
+    "count": 6,
+    "sample": [
+      {
+        "id": "Deceased",
+        "label": "Deceased-DsFreeSus",
+        "node_type": "STATE"
+      },
+      {
+        "id": "Births",
+        "label": "Births",
+        "node_type": null
+      },
+      {
+        "id": "lrste7nj",
+        "label": "DsFreeSus HYL",
+        "node_type": "SURROGATE"
+      },
+      {
+        "id": "DsFreeSus",
+        "label": "DsFreeSus",
+        "node_type": "STATE"
+      },
+      {
+        "id": "DSVPggeh",
+        "label": "YLL-DsFreeSus",
+        "node_type": null
+      },
+      {
+        "id": "Yav8dlAY",
+        "label": "YLD-DsFreeSus",
+        "node_type": null
+      }
+    ]
+  },
+  "matched_scenario_parameters": [],
+  "matching_rule": "Case-insensitive match against node id, node label, node tags, link id, link label, link endpoints, generated data fetcher blocks, and scenario parameter names.",
+  "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+  "model_slug": "ncd-copd",
+  "outputs_or_handoffs": [
+    "Uses or publishes in-graph node balances and generated values.",
+    "Uses or publishes in-graph edge values and transfer events."
+  ],
+  "patterns": [
+    "\\bdsfreesus\\b",
+    "\\bbirth",
+    "\\bfertility\\b",
+    "\\bmigration\\b",
+    "\\bsex ratio\\b",
+    "\\bdeceased-dsfreesus\\b",
+    "\\bbackground mortality\\b",
+    "\\bpopulation\\b"
+  ],
+  "role": "Population substrate",
+  "scenario_parameter_changes_relative_to_baseline": [],
+  "scenario_parameter_presence": [
+    {
+      "label": "COPD - Null Scenario",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-null"
+    },
+    {
+      "label": "COPD - Baseline Scenario",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-baseline"
+    },
+    {
+      "label": "Appendix 3 - CR2 Scenario",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-cr2"
+    },
+    {
+      "label": "Appendix 3 - CR4 Scenario",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-cr4"
+    },
+    {
+      "label": "Clinical Intervention - Inhaled Salbutamol",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-inhaled-salbutamol"
+    },
+    {
+      "label": "Clinical Intervention - Ipratropium Inhaler",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-ipratropium-inhaler"
+    },
+    {
+      "label": "Clinical Intervention - Oral Prednisolone",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-oral-prednisolone"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 1 - Increase excise taxes and prices",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "01K2RRSHWA0P1T2XS0V3T99P6E"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 2 - Warning labels and standardized packaging",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-tobacco-t2"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 3 - Advertising and promotion bans",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-tobacco-t3"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 4 - Smoke-free environments",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-tobacco-t4"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 5 - Mass media campaigns",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-tobacco-t5"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 6 - Cessation support services",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-tobacco-t6"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 7 - Pharmacological cessation aids",
+      "matched_parameter_count": 2,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Population In Need",
+        "Oral Prednisolone Population In Need"
+      ],
+      "scenario_id": "copd-tobacco-t7"
+    }
+  ],
+  "schema": "ncd-module-component.v1",
+  "source_model": "public/models/ncd-copd/model.json",
+  "source_model_sha256": "d600016bdb6240e5e2f252af4cdf5ee8038e33b811b9fd02810ea7e526a91a8a"
+}

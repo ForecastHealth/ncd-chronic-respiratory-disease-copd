@@ -1,0 +1,368 @@
+{
+  "component_id": "clinical-inhaled-salbutamol",
+  "component_signature_sha256": "3663debf75a78f810b7f39b5f3eb0d82ab7ee44f212d56290914e411612f79e3",
+  "contract_summary": "Intervention-specific graph and scenario boundary. The current executable graph applies any changed scenario parameters by materialising them into the monolithic model.",
+  "execution_mode": "compiled_together_current_graph_boundary",
+  "independently_executable_now": false,
+  "label": "Clinical Inhaled Salbutamol",
+  "limitations": [
+    "This is not yet a separately executable module. It is a component record for a boundary inside the current graph."
+  ],
+  "matched_links": {
+    "count": 9,
+    "sample": [
+      {
+        "id": "cpORh46w",
+        "label": "InhaledSalbutamol_Coverage -> InhaledSalbutamol_Calculated_Coverage",
+        "source": "lrsnalk2",
+        "target": "lrst0woc"
+      },
+      {
+        "id": "g71GXNvq",
+        "label": "InhaledSalbutamol_StartingCoverage -> InhaledSalbutamol_Calculated_Coverage",
+        "source": "lrso22do",
+        "target": "lrst0woc"
+      },
+      {
+        "id": "QFKsJ7KA",
+        "label": "InhaledSalbutamol_PIN -> InhaledSalbutamol_Disability_Effect",
+        "source": "lrsnavq2",
+        "target": "lrst79uc"
+      },
+      {
+        "id": "R4Vwfikm",
+        "label": "InhaledSalbutamol_Calculated_Coverage -> InhaledSalbutamol_Disability_Effect",
+        "source": "lrst0woc",
+        "target": "lrst79uc"
+      },
+      {
+        "id": "u3I26S1y",
+        "label": "InhaledSalbutamol_Disability_Impact -> InhaledSalbutamol_Disability_Effect",
+        "source": "lrsnjkmt",
+        "target": "lrst79uc"
+      },
+      {
+        "id": "tgy0fCCF",
+        "label": "InhaledSalbutamol_Disability_Effect -> Disability_Effect_Transform",
+        "source": "lrst79uc",
+        "target": "lrwz1ikj"
+      },
+      {
+        "id": "ResourceAbs_InhaledSalbutamol_Base_1",
+        "label": "COPDEpsd -> ResourcePopulationReached-InhaledSalbutamol",
+        "source": "COPDEpsd",
+        "target": "ResourcePopulationReached_InhaledSalbutamol"
+      },
+      {
+        "id": "ResourceAbs_InhaledSalbutamol_PIN",
+        "label": "InhaledSalbutamol_PIN -> ResourcePopulationReached-InhaledSalbutamol",
+        "source": "lrsnavq2",
+        "target": "ResourcePopulationReached_InhaledSalbutamol"
+      },
+      {
+        "id": "ResourceAbs_InhaledSalbutamol_Coverage",
+        "label": "InhaledSalbutamol_Coverage -> ResourcePopulationReached-InhaledSalbutamol",
+        "source": "lrsnalk2",
+        "target": "ResourcePopulationReached_InhaledSalbutamol"
+      }
+    ]
+  },
+  "matched_nodes": {
+    "count": 8,
+    "sample": [
+      {
+        "id": "lrst0woc",
+        "label": "InhaledSalbutamol_Calculated_Coverage",
+        "node_type": "FUNCTION"
+      },
+      {
+        "id": "lrst79uc",
+        "label": "InhaledSalbutamol_Disability_Effect",
+        "node_type": "FUNCTION"
+      },
+      {
+        "id": "lrsnjkmt",
+        "label": "InhaledSalbutamol_Disability_Impact",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "lrsnalk2",
+        "label": "InhaledSalbutamol_Coverage",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "lrso22do",
+        "label": "InhaledSalbutamol_StartingCoverage",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "lrsnavq2",
+        "label": "InhaledSalbutamol_PIN",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "U37bYeyB",
+        "label": "PopulationReached-InhaledSalbutamol",
+        "node_type": null
+      },
+      {
+        "id": "ResourcePopulationReached_InhaledSalbutamol",
+        "label": "ResourcePopulationReached-InhaledSalbutamol",
+        "node_type": null
+      }
+    ]
+  },
+  "matched_scenario_parameters": [
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Inhaled Salbutamol Target Coverage",
+          "scenario_value": 0
+        }
+      ],
+      "label": "COPD - Null Scenario",
+      "scenario_id": "copd-null"
+    },
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Inhaled Salbutamol Target Coverage",
+          "scenario_value": 0.95
+        }
+      ],
+      "label": "Appendix 3 - CR4 Scenario",
+      "scenario_id": "copd-cr4"
+    }
+  ],
+  "matching_rule": "Case-insensitive match against node id, node label, node tags, link id, link label, link endpoints, generated data fetcher blocks, and scenario parameter names.",
+  "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+  "model_slug": "ncd-copd",
+  "outputs_or_handoffs": [
+    "Uses or publishes in-graph node balances and generated values.",
+    "Uses or publishes in-graph edge values and transfer events.",
+    "Has scenario parameter changes relative to the baseline scenario in the client bundle."
+  ],
+  "patterns": [
+    "inhaled salbutamol",
+    "salbutamol",
+    "inhaled salbutamol"
+  ],
+  "role": "Clinical intervention",
+  "scenario_parameter_changes_relative_to_baseline": [
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Inhaled Salbutamol Target Coverage",
+          "scenario_value": 0
+        }
+      ],
+      "label": "COPD - Null Scenario",
+      "scenario_id": "copd-null"
+    },
+    {
+      "changed_parameter_count": 1,
+      "changed_parameters_sample": [
+        {
+          "baseline_value": 0.05,
+          "parameter": "Inhaled Salbutamol Target Coverage",
+          "scenario_value": 0.95
+        }
+      ],
+      "label": "Appendix 3 - CR4 Scenario",
+      "scenario_id": "copd-cr4"
+    }
+  ],
+  "scenario_parameter_presence": [
+    {
+      "label": "COPD - Null Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-null"
+    },
+    {
+      "label": "COPD - Baseline Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-baseline"
+    },
+    {
+      "label": "Appendix 3 - CR2 Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-cr2"
+    },
+    {
+      "label": "Appendix 3 - CR4 Scenario",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-cr4"
+    },
+    {
+      "label": "Clinical Intervention - Inhaled Salbutamol",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-inhaled-salbutamol"
+    },
+    {
+      "label": "Clinical Intervention - Ipratropium Inhaler",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-ipratropium-inhaler"
+    },
+    {
+      "label": "Clinical Intervention - Oral Prednisolone",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-oral-prednisolone"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 1 - Increase excise taxes and prices",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "01K2RRSHWA0P1T2XS0V3T99P6E"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 2 - Warning labels and standardized packaging",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t2"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 3 - Advertising and promotion bans",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t3"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 4 - Smoke-free environments",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t4"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 5 - Mass media campaigns",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t5"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 6 - Cessation support services",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t6"
+    },
+    {
+      "label": "Appendix 3 - Tobacco 7 - Pharmacological cessation aids",
+      "matched_parameter_count": 6,
+      "matched_parameters_sample": [
+        "Inhaled Salbutamol Baseline Coverage",
+        "Inhaled Salbutamol Target Coverage",
+        "Inhaled Salbutamol Scale-Up Start Year",
+        "Inhaled Salbutamol Scale-Up Final Year",
+        "Inhaled Salbutamol Population In Need",
+        "Inhaled Salbutamol Disability Impact"
+      ],
+      "scenario_id": "copd-tobacco-t7"
+    }
+  ],
+  "schema": "ncd-module-component.v1",
+  "source_model": "public/models/ncd-copd/model.json",
+  "source_model_sha256": "d600016bdb6240e5e2f252af4cdf5ee8038e33b811b9fd02810ea7e526a91a8a"
+}

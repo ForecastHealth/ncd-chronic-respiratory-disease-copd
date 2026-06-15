@@ -1,0 +1,580 @@
+{
+  "artefact_groups": {
+    "cards": [
+      {
+        "migration_source": {
+          "source_relative_path": "model-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/model-card.pdf",
+        "sha256": "696165dee2982411a7f67ea24d2dede492b22e4b7009c86d332e86363134abde",
+        "size_bytes": 56124
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "model-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/model-card.v1.json",
+        "sha256": "306235cc149e2f3a3113ff0d2177dd00608ec4c8180ca718345472398d24929b",
+        "size_bytes": 4078
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "run-certificate.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/run-certificate.pdf",
+        "sha256": "fac457d00e99a186c24ee4b48d9c1bc8c5f8e7f4d4e8fba5e969099fbed4453e",
+        "size_bytes": 61474
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "run-certificate.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/run-certificate.v1.json",
+        "sha256": "4ec49f4a7be0504c610b40ab7a4d64bea0821dacd5cf02d284895207e4f8d157",
+        "size_bytes": 79093
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/01K2RRSHWA0P1T2XS0V3T99P6E.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/01K2RRSHWA0P1T2XS0V3T99P6E.scenario-card.pdf",
+        "sha256": "5821eb191db409548029435e1adf269ad5865b04ae91e2969ee3b0c043c17742",
+        "size_bytes": 59950
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/01K2RRSHWA0P1T2XS0V3T99P6E.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/01K2RRSHWA0P1T2XS0V3T99P6E.scenario-card.v1.json",
+        "sha256": "2bae6025322858da1e0435801cb08c5ac17908464b9a5ee07efd5f1f8260cb49",
+        "size_bytes": 4184
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-baseline.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-baseline.scenario-card.pdf",
+        "sha256": "40e70909d1567c7274ae6ecb6cb8b0b82a921ac2c7e08c5d1b6f4b1708d8c91c",
+        "size_bytes": 58014
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-baseline.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-baseline.scenario-card.v1.json",
+        "sha256": "cc4dd1ccf3fd0e6dd7c006e39bd5d74a71f73db4c4ee02281705355e360ffcfb",
+        "size_bytes": 4681
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-cr2.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-cr2.scenario-card.pdf",
+        "sha256": "4a81763a42be8e25e7c974baf67d4cf0158cb8efcf3dd554d9b83c8d73fdb38b",
+        "size_bytes": 58631
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-cr2.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-cr2.scenario-card.v1.json",
+        "sha256": "9c5ac7a405ca1bda4f3144ee61aac82d5167ca5505b65a400eb09700e8898f84",
+        "size_bytes": 4873
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-cr4.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-cr4.scenario-card.pdf",
+        "sha256": "699de1d53f27e9c4bb0c4d1f11b5a67fb76a639cd2e411f9f6fd8f1d5e77ce76",
+        "size_bytes": 58801
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-cr4.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-cr4.scenario-card.v1.json",
+        "sha256": "6642880de0626f02bb7b44c1dff8c669997c2f4861864d0522d08d255faa358b",
+        "size_bytes": 5080
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-inhaled-salbutamol.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-inhaled-salbutamol.scenario-card.pdf",
+        "sha256": "f2244b5bb2a64ed461d0859299adda6e63cedb6cb55bee1b33afa0c0633304e0",
+        "size_bytes": 57486
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-inhaled-salbutamol.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-inhaled-salbutamol.scenario-card.v1.json",
+        "sha256": "602e75ffd776ac61c8546a9777afe5a0932a70501afa371e40dd6d59b4c3b935",
+        "size_bytes": 4256
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-ipratropium-inhaler.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-ipratropium-inhaler.scenario-card.pdf",
+        "sha256": "1107c093c97827aa87bfb9141c1eec3b5b28d989936449dc00a7c198515705ba",
+        "size_bytes": 57349
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-ipratropium-inhaler.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-ipratropium-inhaler.scenario-card.v1.json",
+        "sha256": "ec9e0823ed47f97a13e3939c80b6605c7a2ae8cbae09818872901b2f91aa7d92",
+        "size_bytes": 4441
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-null.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-null.scenario-card.pdf",
+        "sha256": "192d4392521461052f54af65afa5635ad25d4a48ce08c13602b068238fae0be6",
+        "size_bytes": 58207
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-null.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-null.scenario-card.v1.json",
+        "sha256": "483e78afbc486bace4a5c8be237032f98cfc330549c5641c137a2a6bcc9cd5fc",
+        "size_bytes": 4628
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-oral-prednisolone.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-oral-prednisolone.scenario-card.pdf",
+        "sha256": "6567768a34c7b23e76bd0f47b1e7e35f020062d0816dd0332fb1afa4e232922c",
+        "size_bytes": 57265
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-oral-prednisolone.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-oral-prednisolone.scenario-card.v1.json",
+        "sha256": "4ce08db70fa1e1a4393d730c9148ae1a40dc7d97546fd4e0ef8c88eea3f80764",
+        "size_bytes": 4266
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t2.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t2.scenario-card.pdf",
+        "sha256": "c9b2027d617e5e3b095d48a5d273f33815b8eaac2acdf66998f386d4a64a32cb",
+        "size_bytes": 57832
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t2.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t2.scenario-card.v1.json",
+        "sha256": "d5f33b05ea0eecf1250b2c6ef2c4e2d004d6e80e249b0e6d242c97904a676e07",
+        "size_bytes": 4205
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t3.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t3.scenario-card.pdf",
+        "sha256": "9bbde2855ff06daf8299b6cab62e5c3d05092b6044c76b4798cc527db0b738e6",
+        "size_bytes": 57446
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t3.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t3.scenario-card.v1.json",
+        "sha256": "8535e7a7088cc4e334b2c598b717e8b61b55e983d32dc129f8d5190b01f6004f",
+        "size_bytes": 4219
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t4.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t4.scenario-card.pdf",
+        "sha256": "acb8af1f16924d3d102b7dbd1cef2a7b34d41892f33f0821d9c5d36ce0a55eb8",
+        "size_bytes": 57841
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t4.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t4.scenario-card.v1.json",
+        "sha256": "e18a8f8f5459fd61b64d83fa789d35b21de3ededd802713d10e2985876512782",
+        "size_bytes": 4185
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t5.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t5.scenario-card.pdf",
+        "sha256": "c4480a31aa68243354db1f8c74152853b04c1ddcb1c280dfd6dea4607e019c56",
+        "size_bytes": 57608
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t5.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t5.scenario-card.v1.json",
+        "sha256": "efb47d1380377d57ba0067052fe3f6251ff49d396f929884fe630bba6c9da2b4",
+        "size_bytes": 4167
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t6.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t6.scenario-card.pdf",
+        "sha256": "5e99935046fbd16c1c01c96ee7a91d79bef8830506ba1fef25d9d9350f480e30",
+        "size_bytes": 57526
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t6.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t6.scenario-card.v1.json",
+        "sha256": "bc123109123f2d6d7eca712193cc9fee967ed6831e3c059b724f13317a4a8f66",
+        "size_bytes": 4197
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t7.scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t7.scenario-card.pdf",
+        "sha256": "1db38ee4416cc0f10b555382d6923f54ce4dbb25ed2a198fdd65e5a76e1209e4",
+        "size_bytes": 57479
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-cards/copd-tobacco-t7.scenario-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/cards/scenario-cards/copd-tobacco-t7.scenario-card.v1.json",
+        "sha256": "d5c5725893c4daf74851b8a7feb091492e0aa13c103068a2f02b9359baf831af",
+        "size_bytes": 4211
+      }
+    ],
+    "current_parameter_snapshots": [
+      {
+        "migration_source": {
+          "source_relative_path": "current-parameter-snapshot.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/current-parameter-snapshots/current-parameter-snapshot.v1.json",
+        "sha256": "8d006c470bbfea53cf640c7325dc49ead011efecb5645cbf9bdac500cde7ab5c",
+        "size_bytes": 92210
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "reference-parameter-set.synthetic-v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/current-parameter-snapshots/reference-parameter-set.synthetic-v1.json",
+        "sha256": "0dbde5bd12dd9576e1833d5c769c8d9911dd82171fe42418991c9ab1fee64035",
+        "size_bytes": 95425
+      }
+    ],
+    "materialized_models": [
+      {
+        "migration_source": {
+          "source_relative_path": "current-reference-eth.model.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/materialized-models/current-reference-eth.model.json",
+        "sha256": "49f4714fba19c52f5a8862e2cbbad6221b3cc53a590f0adbd1a9dd39c0089ba8",
+        "size_bytes": 91601
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "synthetic-reference.model.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/materialized-models/synthetic-reference.model.json",
+        "sha256": "22f30edb2968be15873dc60c62f903b84636280273e1d3f192e8d4153fb777fa",
+        "size_bytes": 91601
+      }
+    ],
+    "modules": [
+      {
+        "migration_source": {
+          "source_relative_path": "components/burden-metrics.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/burden-metrics.component.v1.json",
+        "sha256": "495d0248f3e50ac06969608c471ce2ffc72bd043b55ad74342424ac4290daac5",
+        "size_bytes": 5932
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/clinical-inhaled-salbutamol.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/clinical-inhaled-salbutamol.component.v1.json",
+        "sha256": "c353a479bc307b6fcb9ee456014c421dc7a5425bb9ef9e8124ce32b22d5499c3",
+        "size_bytes": 12769
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/clinical-ipratropium-inhaler.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/clinical-ipratropium-inhaler.component.v1.json",
+        "sha256": "049181b599c98e9e3f60f6e4904a5f9331fea766d30636402a5e02b671295d46",
+        "size_bytes": 12166
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/clinical-oral-prednisolone.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/clinical-oral-prednisolone.component.v1.json",
+        "sha256": "3f3cd3f30328c41a22cd539ade14eb9a5897d04042644469ae62312a30d3fe2b",
+        "size_bytes": 9548
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/demographic-substrate.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/demographic-substrate.component.v1.json",
+        "sha256": "91dd4343a17b3ad8202756fc2834c9fb5db1ef52bb36fc97855c04f0f74b7d81",
+        "size_bytes": 8459
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/disease-epidemiology-core.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/disease-epidemiology-core.component.v1.json",
+        "sha256": "2b96f5e5ce474cf31baadffb0826d35fad41ab2551804a6416dcf43d6554d01c",
+        "size_bytes": 5988
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/economic-metrics.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/economic-metrics.component.v1.json",
+        "sha256": "6ab9feb43f5efce3d9acec31c25632dadcd1204d43c7324bd244aafa09462db0",
+        "size_bytes": 1768
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "components/tobacco-risk-factor.component.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/components/tobacco-risk-factor.component.v1.json",
+        "sha256": "faae9943e7430edd2061221672086781f0de22adca6bba0d75d986963083dcc1",
+        "size_bytes": 20102
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "composition-record.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/composition-record.v1.json",
+        "sha256": "c93015c6b8fece96d605455f5d9809399e8a4cf25cc74a8e70ffb9ecd4bddc58",
+        "size_bytes": 4620
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "index.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "assurance/modules/index.v1.json",
+        "sha256": "c921456ef097fa8807836a2dbc0de9357d3c50bfe915c72cbd4e1b4fd9e9ee56",
+        "size_bytes": 3458
+      }
+    ],
+    "scenario_registries": [
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-materialization-compatibility.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/scenario-registries/scenario-materialization-compatibility.v1.json",
+        "sha256": "358fdcb14ee33d4b8973234e5317b526089354cd20fce7f045cda91e9410c49a",
+        "size_bytes": 5554
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "scenario-registry.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/scenario-registries/scenario-registry.v1.json",
+        "sha256": "3ad319013dcd9146e612184e372174f46d8824597dba489907f67a7eb4514cb0",
+        "size_bytes": 552615
+      }
+    ],
+    "synthetic_cards": [
+      {
+        "migration_source": {
+          "source_relative_path": "model-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/cards/model-card.pdf",
+        "sha256": "1b154e3e03664c159fb826d2d1b9ebab96ea671a0684e43730c1274c27559f2e",
+        "size_bytes": 55659
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "model-card.tex",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/cards/model-card.tex",
+        "sha256": "5db04984e6d5bce2628690e6d8d88a7fa114ff7ed92b9cf31a82aec7d1b52c5a",
+        "size_bytes": 3357
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "sample-scenario-card.pdf",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/cards/sample-scenario-card.pdf",
+        "sha256": "72f54d78ff9befd05c5d3d2f9cdcc40fe222b61682460d9b4adc40d466d3c259",
+        "size_bytes": 52414
+      },
+      {
+        "migration_source": {
+          "source_relative_path": "sample-scenario-card.tex",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "synthetic-parameters/cards/sample-scenario-card.tex",
+        "sha256": "d405268e9887347c59631d0d1a3bcb9278c3b41ca1c23aec30cec9671db168f3",
+        "size_bytes": 2101
+      }
+    ],
+    "validation_run_synthetic-parameter-fixture-20260603": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-fixture-20260603/run-card.v1.json",
+        "sha256": "1ab4c4bd2c5bc1b24813d33738e37fae3d1e33d8dee68ad3b00b94a0fa633a6b",
+        "size_bytes": 3636
+      }
+    ],
+    "validation_run_synthetic-parameter-fixture-20260603b": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-fixture-20260603b/run-card.v1.json",
+        "sha256": "e1fd1a51bdea206db303a6dd36efc46a851ad865105ca4cd73e41279934df2cd",
+        "size_bytes": 3649
+      }
+    ],
+    "validation_run_synthetic-parameter-fixture-20260603c": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-fixture-20260603c/run-card.v1.json",
+        "sha256": "2c78fffe19ebd83cde0bc76e7471034447fe9505c5b111c0a3505a119d376b9b",
+        "size_bytes": 5627
+      }
+    ],
+    "validation_run_synthetic-parameter-fixture-smoke-20260603": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-fixture-smoke-20260603/run-card.v1.json",
+        "sha256": "aa68f5aac38e9b7080bd8f90e24376100533fc9729e861077aef4821956190d8",
+        "size_bytes": 393
+      }
+    ],
+    "validation_run_synthetic-parameter-reference-20260603b": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-reference-20260603b/run-card.v1.json",
+        "sha256": "b38315ddb82fde3118782d8a682f2e354bff749062ad4e3cfc9ef3072f026dd1",
+        "size_bytes": 2268
+      }
+    ],
+    "validation_run_synthetic-parameter-reference-20260603c": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-reference-20260603c/run-card.v1.json",
+        "sha256": "7676b05984147f7d045901efd5162286b168f8dfd3d28df4b9cf8d8af07148bb",
+        "size_bytes": 2268
+      }
+    ],
+    "validation_run_synthetic-parameter-reference-20260603d": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-reference-20260603d/run-card.v1.json",
+        "sha256": "3390913f8917fd7c01f11d9e098f0b9383cf02fa6553c12060387b8848b73982",
+        "size_bytes": 2268
+      }
+    ],
+    "validation_run_synthetic-parameter-smoke-20260603": [
+      {
+        "migration_source": {
+          "source_relative_path": "run-card.v1.json",
+          "source_surface": "historical temporary assurance migration input"
+        },
+        "path": "validation-runs/synthetic-parameter-smoke-20260603/run-card.v1.json",
+        "sha256": "a9c6a977eadec49d3a010410d4b155797b523c41966b6b106333735ca7cc9b4e",
+        "size_bytes": 393
+      }
+    ]
+  },
+  "generated_at": "2026-06-15T01:31:57.438701+00:00",
+  "model": "ncd-copd",
+  "repo_head_at_migration": "d3dfa5123f8c042d28118d561b72b1e69a1dda7c",
+  "schema": "forecast-health.model-repo-assurance-index.v1",
+  "source": {
+    "migration_source": "historical temporary assurance directory and generated NCD client state where applicable",
+    "purpose": "Make model-specific assurance artefacts owned by the model repository."
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "composition_record_id": "composition:ncd-copd:client-manifest-current:v1",
+  "model_card_id": "model-card:ncd-copd:client-manifest-current:v1",
+  "parameter_count": 45,
+  "parameter_values": [
+    [
+      "Country",
+      "AFG"
+    ],
+    [
+      "Inhaled Salbutamol Baseline Coverage",
+      0.05
+    ],
+    [
+      "Inhaled Salbutamol Target Coverage",
+      0.05
+    ],
+    [
+      "Inhaled Salbutamol Scale-Up Start Year",
+      0
+    ],
+    [
+      "Inhaled Salbutamol Scale-Up Final Year",
+      1
+    ],
+    [
+      "Inhaled Salbutamol Population In Need",
+      1
+    ],
+    [
+      "Inhaled Salbutamol Disability Impact",
+      0.148
+    ],
+    [
+      "Ipratropium Inhaler Baseline Coverage",
+      0.05
+    ],
+    [
+      "Ipratropium Inhaler Target Coverage",
+      0.05
+    ],
+    [
+      "Ipratropium Inhaler Scale-Up Start Year",
+      0
+    ],
+    [
+      "Ipratropium Inhaler Scale-Up Final Year",
+      1
+    ],
+    [
+      "Ipratropium Inhaler Disability Impact",
+      0.169
+    ],
+    [
+      "Oral Prednisolone Baseline Coverage",
+      0.05
+    ],
+    [
+      "Oral Prednisolone Target Coverage",
+      0.95
+    ],
+    [
+      "Oral Prednisolone Scale-Up Start Year",
+      0
+    ],
+    [
+      "Oral Prednisolone Scale-Up Final Year",
+      1
+    ],
+    [
+      "Oral Prednisolone Population In Need",
+      0.12
+    ],
+    [
+      "Oral Prednisolone Disability Impact",
+      0.337
+    ],
+    [
+      "Start Year",
+      2020
+    ],
+    [
+      "End Year",
+      2121
+    ],
+    [
+      "Baseline Coverage Tobacco Ban",
+      0.05
+    ],
+    [
+      "Target Coverage Tobacco Ban",
+      0.05
+    ],
+    [
+      "Scale-Up Start Year Tobacco Ban",
+      0
+    ],
+    [
+      "Scale-Up Final Year Tobacco Ban",
+      1
+    ],
+    [
+      "Baseline Coverage Tobacco Massmedia",
+      0.05
+    ],
+    [
+      "Target Coverage Tobacco Massmedia",
+      0.05
+    ],
+    [
+      "Scale-Up Start Year Tobacco Massmedia",
+      0
+    ],
+    [
+      "Scale-Up Final Year Tobacco Massmedia",
+      1
+    ],
+    [
+      "Baseline Coverage Tobacco Protect",
+      0.05
+    ],
+    [
+      "Target Coverage Tobacco Protect",
+      0.05
+    ],
+    [
+      "Scale-Up Start Year Tobacco Protect",
+      0
+    ],
+    [
+      "Scale-Up Final Year Tobacco Protect",
+      1
+    ],
+    [
+      "Baseline Coverage Tobacco Quitbrief",
+      0.05
+    ],
+    [
+      "Target Coverage Tobacco Quitbrief",
+      0.05
+    ],
+    [
+      "Scale-Up Start Year Tobacco Quitbrief",
+      0
+    ],
+    [
+      "Scale-Up Final Year Tobacco Quitbrief",
+      1
+    ],
+    [
+      "Baseline Coverage Tobacco Quitcessation",
+      0.05
+    ],
+    [
+      "Target Coverage Tobacco Quitcessation",
+      0.05
+    ],
+    [
+      "Scale-Up Start Year Tobacco Quitcessation",
+      0
+    ],
+    [
+      "Scale-Up Final Year Tobacco Quitcessation",
+      1
+    ],
+    [
+      "Price Difference Tobacco Tax",
+      0.0
+    ],
+    [
+      "Baseline Coverage Tobacco Warnlabel",
+      0.05
+    ],
+    [
+      "Target Coverage Tobacco Warnlabel",
+      0.05
+    ],
+    [
+      "Scale-Up Start Year Tobacco Warnlabel",
+      0
+    ],
+    [
+      "Scale-Up Final Year Tobacco Warnlabel",
+      1
+    ]
+  ],
+  "scenario_card_id": "scenario-card:ncd-copd:copd-cr2:client-manifest-current:v1",
+  "scenario_card_signature_sha256": "56a28c050b7036a90cfd8cf6afb4fec6fe41f011dd0b68bfd666da5544908a6c",
+  "scenario_id": "copd-cr2",
+  "scenario_sha256": "948dca5da6d61c7e620491159f6db7b1ae9aec83c4f06684b6c5daa52fb3cd62",
+  "scenario_source": "public/models/ncd-copd/scenarios/copd_cr2.json",
+  "schema": "scenario-card.v1",
+  "scope_statement": "This is a manifest-level scenario card. If the scenario file contains a Country value, that value is the scenario authoring default; the run certificate records the countries actually materialised and executed.",
+  "summary": "Acute treatment of COPD exacerbations with inhaled bronchodilators and oral steroids.\nThis scenario exposes the parameters for the Inhaled Salbutamol, Ipratropium Inhaler, and Oral Prednisolone interventions.\nThis was the mapping for the CR2 Scenario in Appendix 3 simulations.\nInhaled Salbutamol reduces the disability weight of persons living with COPD by 14.8%, providing bronchodilation for symptom relief.\nIpratropium Inhaler continues at baseline coverage.\nOral Prednisolone reduces the disability weight by 33.7% for severe COPD exacerbations, targeting 12% of the COPD population who experience acute worsening.\nOral Prednisolone remains at baseline coverage for the first projection year and then increases to ninety-five percent coverage for the rest of the projection.\nThis should typically be run as a comparison scenario, with the baseline scenario being the COPD Baseline, or modified versions with different target coverage levels for acute treatment protocols.\n",
+  "title": "Appendix 3 - CR2 Scenario"
+}

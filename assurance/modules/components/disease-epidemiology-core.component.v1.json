@@ -1,0 +1,217 @@
+{
+  "component_id": "disease-epidemiology-core",
+  "component_signature_sha256": "0b475939ca0bab902b1f21a7f06be93aed36507e8f66a1562f378a679738c765",
+  "contract_summary": "Disease states, incidence, mortality, complication or post-acute transfers, and synchronous transfer mechanics.",
+  "execution_mode": "compiled_together_current_graph_boundary",
+  "independently_executable_now": false,
+  "label": "Disease epidemiology core",
+  "limitations": [],
+  "matched_links": {
+    "count": 20,
+    "sample": [
+      {
+        "id": "eBRm4kvr",
+        "label": "COPDEpsd -> Births",
+        "source": "COPDEpsd",
+        "target": "Births"
+      },
+      {
+        "id": "WALgwDoi",
+        "label": "COPDEpsd -> COPDEpsd",
+        "source": "COPDEpsd",
+        "target": "COPDEpsd"
+      },
+      {
+        "id": "HmI3Gkua",
+        "label": "Prevalence DsFreeSus -> COPDEpsd",
+        "source": "DsFreeSus",
+        "target": "COPDEpsd"
+      },
+      {
+        "id": "FlHvd7e4",
+        "label": "COPDEpsd_CFR -> COPDEpsd Mortality",
+        "source": "lrso81aw",
+        "target": "lrstce6u"
+      },
+      {
+        "id": "5djuaIfD",
+        "label": "COPDEpsd -> COPDEpsd HYL",
+        "source": "COPDEpsd",
+        "target": "lrwzsau5"
+      },
+      {
+        "id": "Fnn2J6Fz",
+        "label": "COPDEpsd HYL -> Healthy Years Lived",
+        "source": "lrwzsau5",
+        "target": "Disability"
+      },
+      {
+        "id": "XNyqqSsC",
+        "label": "COPDEpsd -> COPDEpsd Mortality",
+        "source": "COPDEpsd",
+        "target": "lrstce6u"
+      },
+      {
+        "id": "0xQNQRAT",
+        "label": "COPDEpsd Mortality -> Deceased",
+        "source": "lrstce6u",
+        "target": "q0kGTdmQ"
+      },
+      {
+        "id": "s2aCngF5",
+        "label": "Disability_Effect_Transform -> COPD_Disability_Weight",
+        "source": "lrwz1ikj",
+        "target": "lrso7mga"
+      },
+      {
+        "id": "cz2LeDKw",
+        "label": "Background Mortality COPDEpsd",
+        "source": "COPDEpsd",
+        "target": "q0kGTdmQ"
+      },
+      {
+        "id": "uSWdM5kH",
+        "label": "COPDEpsd_Incidence_Rate -> COPDEpsd Incidence",
+        "source": "Mn5YBbsp",
+        "target": "cXtHHFW2"
+      },
+      {
+        "id": "5Ol05axR",
+        "label": "DsFreeSus -> COPDEpsd Incidence",
+        "source": "DsFreeSus",
+        "target": "cXtHHFW2"
+      },
+      {
+        "id": "2jjgV7Dx",
+        "label": "COPDEpsd Incidence -> COPDEpsd",
+        "source": "cXtHHFW2",
+        "target": "COPDEpsd"
+      },
+      {
+        "id": "YSoRbOKl",
+        "label": null,
+        "source": "COPDEpsd",
+        "target": "UKfKgMd7"
+      },
+      {
+        "id": "tJkWGHk3",
+        "label": null,
+        "source": "COPDEpsd",
+        "target": "8kLiklUp"
+      },
+      {
+        "id": "sS2uov2j",
+        "label": null,
+        "source": "COPDEpsd",
+        "target": "jWfqJ3Yv"
+      },
+      {
+        "id": "ee0hmMQf",
+        "label": null,
+        "source": "COPDEpsd",
+        "target": "U37bYeyB"
+      },
+      {
+        "id": "ResourceAbs_InhaledSalbutamol_Base_1",
+        "label": "COPDEpsd -> ResourcePopulationReached-InhaledSalbutamol",
+        "source": "COPDEpsd",
+        "target": "ResourcePopulationReached_InhaledSalbutamol"
+      },
+      {
+        "id": "ResourceAbs_OralPrednisolone_Base_1",
+        "label": "COPDEpsd -> ResourcePopulationReached-OralPrednisolone",
+        "source": "COPDEpsd",
+        "target": "ResourcePopulationReached_OralPrednisolone"
+      },
+      {
+        "id": "ResourceAbs_IpratropiumInhaler_Base_1",
+        "label": "COPDEpsd -> ResourcePopulationReached-IpratropiumInhaler",
+        "source": "COPDEpsd",
+        "target": "ResourcePopulationReached_IpratropiumInhaler"
+      }
+    ]
+  },
+  "matched_nodes": {
+    "count": 12,
+    "sample": [
+      {
+        "id": "lrstce6u",
+        "label": "COPDEpsd Mortality",
+        "node_type": "SURROGATE"
+      },
+      {
+        "id": "lrwzsau5",
+        "label": "COPDEpsd HYL",
+        "node_type": "SURROGATE"
+      },
+      {
+        "id": "lrso81aw",
+        "label": "COPDEpsd_CFR",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "COPDEpsd",
+        "label": "COPDEpsd",
+        "node_type": "STATE"
+      },
+      {
+        "id": "lrso7mga",
+        "label": "COPD_Disability_Weight",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "lrsni0s5",
+        "label": "IpratropiumInhaler_PIN",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "cigutJvD",
+        "label": "COPD_HYL",
+        "node_type": "FUNCTION"
+      },
+      {
+        "id": "Mn5YBbsp",
+        "label": "COPDEpsd_Incidence_Rate",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "cXtHHFW2",
+        "label": "COPDEpsd Incidence",
+        "node_type": "SURROGATE"
+      },
+      {
+        "id": "UJon4r9l",
+        "label": "relative-risk-tobacco-copd",
+        "node_type": "CONSTANT"
+      },
+      {
+        "id": "BdJB5CiG",
+        "label": "YLL-COPDEpsd",
+        "node_type": null
+      },
+      {
+        "id": "UKfKgMd7",
+        "label": "YLD-COPDEpsd",
+        "node_type": null
+      }
+    ]
+  },
+  "matched_scenario_parameters": [],
+  "matching_rule": "Case-insensitive match against node id, node label, node tags, link id, link label, link endpoints, generated data fetcher blocks, and scenario parameter names.",
+  "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+  "model_slug": "ncd-copd",
+  "outputs_or_handoffs": [
+    "Uses or publishes in-graph node balances and generated values.",
+    "Uses or publishes in-graph edge values and transfer events."
+  ],
+  "patterns": [
+    "copd",
+    "COPDEpsd"
+  ],
+  "role": "Disease state and transfer mechanics",
+  "scenario_parameter_changes_relative_to_baseline": [],
+  "scenario_parameter_presence": [],
+  "schema": "ncd-module-component.v1",
+  "source_model": "public/models/ncd-copd/model.json",
+  "source_model_sha256": "d600016bdb6240e5e2f252af4cdf5ee8038e33b811b9fd02810ea7e526a91a8a"
+}

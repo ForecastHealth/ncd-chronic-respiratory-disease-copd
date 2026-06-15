@@ -1,0 +1,55 @@
+{
+  "component_id": "economic-metrics",
+  "component_signature_sha256": "49e285527d4f19ca7440130676fa39a355a8778fbd0cc9097f841b8814bc5bda",
+  "contract_summary": "Economic value and labour-force style outputs currently emitted by the disease graph.",
+  "execution_mode": "downstream_metric_current_graph_boundary",
+  "independently_executable_now": false,
+  "label": "Economic metrics",
+  "limitations": [
+    "The current assurance goal excludes costs and does not validate costing outputs."
+  ],
+  "matched_links": {
+    "count": 0,
+    "sample": []
+  },
+  "matched_nodes": {
+    "count": 3,
+    "sample": [
+      {
+        "id": "DXhAVyOP",
+        "label": "Economic Value",
+        "node_type": null
+      },
+      {
+        "id": "HaYRxeQQ",
+        "label": "GDP Per Capita",
+        "node_type": null
+      },
+      {
+        "id": "mrGezI4c",
+        "label": "Labour Force Participation",
+        "node_type": null
+      }
+    ]
+  },
+  "matched_scenario_parameters": [],
+  "matching_rule": "Case-insensitive match against node id, node label, node tags, link id, link label, link endpoints, generated data fetcher blocks, and scenario parameter names.",
+  "model_id": "01K2RRSCN3A1GPTBHJZE3GZB7M",
+  "model_slug": "ncd-copd",
+  "outputs_or_handoffs": [
+    "Uses or publishes in-graph node balances and generated values."
+  ],
+  "patterns": [
+    "economic",
+    "\\bgdp\\b",
+    "labour force",
+    "labor force",
+    "productivity"
+  ],
+  "role": "Economic output metrics",
+  "scenario_parameter_changes_relative_to_baseline": [],
+  "scenario_parameter_presence": [],
+  "schema": "ncd-module-component.v1",
+  "source_model": "public/models/ncd-copd/model.json",
+  "source_model_sha256": "d600016bdb6240e5e2f252af4cdf5ee8038e33b811b9fd02810ea7e526a91a8a"
+}

@@ -1,0 +1,74 @@
+{
+  "component_count": 8,
+  "components": [
+    {
+      "component_id": "demographic-substrate",
+      "component_ref": "components/demographic-substrate.component.v1.json",
+      "component_signature_sha256": "6b5c6a9579561c8715d69cb24d792785566e85cd63e400b3dbfeabda60e04d03",
+      "execution_mode": "compiled_together_current_graph_boundary",
+      "label": "Demographic substrate",
+      "role": "Population substrate"
+    },
+    {
+      "component_id": "disease-epidemiology-core",
+      "component_ref": "components/disease-epidemiology-core.component.v1.json",
+      "component_signature_sha256": "0b475939ca0bab902b1f21a7f06be93aed36507e8f66a1562f378a679738c765",
+      "execution_mode": "compiled_together_current_graph_boundary",
+      "label": "Disease epidemiology core",
+      "role": "Disease state and transfer mechanics"
+    },
+    {
+      "component_id": "burden-metrics",
+      "component_ref": "components/burden-metrics.component.v1.json",
+      "component_signature_sha256": "e46bd94b70273a8c406eca4355a45bb19b1aa35f602dccbcdd92dcd386a7eacb",
+      "execution_mode": "compiled_together_current_graph_boundary",
+      "label": "Burden metrics",
+      "role": "Health-output metrics"
+    },
+    {
+      "component_id": "economic-metrics",
+      "component_ref": "components/economic-metrics.component.v1.json",
+      "component_signature_sha256": "49e285527d4f19ca7440130676fa39a355a8778fbd0cc9097f841b8814bc5bda",
+      "execution_mode": "downstream_metric_current_graph_boundary",
+      "label": "Economic metrics",
+      "role": "Economic output metrics"
+    },
+    {
+      "component_id": "tobacco-risk-factor",
+      "component_ref": "components/tobacco-risk-factor.component.v1.json",
+      "component_signature_sha256": "dbbf4423478255f8d29fbc44e3c9f40e82755c26d5440fc50cc477a7319df000",
+      "execution_mode": "link_then_inject_bundle_candidate_current_graph_boundary",
+      "label": "Tobacco Risk Factor",
+      "role": "Risk-factor modifier"
+    },
+    {
+      "component_id": "clinical-inhaled-salbutamol",
+      "component_ref": "components/clinical-inhaled-salbutamol.component.v1.json",
+      "component_signature_sha256": "3663debf75a78f810b7f39b5f3eb0d82ab7ee44f212d56290914e411612f79e3",
+      "execution_mode": "compiled_together_current_graph_boundary",
+      "label": "Clinical Inhaled Salbutamol",
+      "role": "Clinical intervention"
+    },
+    {
+      "component_id": "clinical-ipratropium-inhaler",
+      "component_ref": "components/clinical-ipratropium-inhaler.component.v1.json",
+      "component_signature_sha256": "b4a28f75d5abd2f251a062cd5cb4be84c83746f2c7198f06db5cbcb018ca4ed2",
+      "execution_mode": "compiled_together_current_graph_boundary",
+      "label": "Clinical Ipratropium Inhaler",
+      "role": "Clinical intervention"
+    },
+    {
+      "component_id": "clinical-oral-prednisolone",
+      "component_ref": "components/clinical-oral-prednisolone.component.v1.json",
+      "component_signature_sha256": "8e39a2e92f8d23f338ee4b4e3d884c775c6d42b6d1819f209d7c6f9726d84600",
+      "execution_mode": "compiled_together_current_graph_boundary",
+      "label": "Clinical Oral Prednisolone",
+      "role": "Clinical intervention"
+    }
+  ],
+  "composition_record": "composition-record.v1.json",
+  "created_at": "2026-06-02T15:51:32+00:00",
+  "index_signature_sha256": "a796cd2266ba615dfd293d3e877c10144e318c1cdfd2e7d1342cf59354972a54",
+  "model_slug": "ncd-copd",
+  "schema": "ncd-module-index.v1"
+}
