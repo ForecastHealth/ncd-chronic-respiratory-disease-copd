@@ -11,7 +11,7 @@ build/
 │   ├── copd_clinical_inhaled_salbutamol.json
 │   ├── copd_clinical_ipratropium_inhaler.json
 │   ├── copd_clinical_oral_prednisolone.json
-│   └── copd_tobacco_interventions.json
+│   └── copd_clinical_oral_prednisolone.json
 ├── configs/                       # YAML configuration files for scenarios
 │   ├── copd_baseline.yml
 │   └── copd_null.yml
@@ -41,10 +41,6 @@ python3 build_scenario.py --all
   - Ipratropium Inhaler (anticholinergic for 21% of patients)
   - Oral Prednisolone (corticosteroid for severe cases, 12% of patients)
 
-- **Tobacco Interventions**: 
-  - Protection, cessation counseling, warning labels, mass media, advertising bans
-  - Unique tobacco tax parameter for price increases
-
 ## Configuration Format
 
 Each YAML configuration file specifies:
@@ -66,7 +62,6 @@ components:
   - copd_clinical_inhaled_salbutamol.json
   - copd_clinical_ipratropium_inhaler.json
   - copd_clinical_oral_prednisolone.json
-  - copd_tobacco_interventions.json
 
 overrides: {}
 
@@ -93,8 +88,7 @@ output: ../scenarios/copd_baseline.json
      - copd_clinical_inhaled_salbutamol.json
      - copd_clinical_ipratropium_inhaler.json
      - copd_clinical_oral_prednisolone.json
-     - copd_tobacco_interventions.json
-   
+      
    overrides:
      "Inhaled Salbutamol Target Coverage":
        value: 0.80

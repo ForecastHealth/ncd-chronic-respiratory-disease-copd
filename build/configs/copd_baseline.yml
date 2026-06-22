@@ -5,7 +5,6 @@ metadata:
     A scenario where there is no change in the coverage of any intervention.
     This baseline scenario includes all available COPD interventions at their default coverage levels of five percent.
     Interventions included are Inhaled Salbutamol (14.8% disability reduction), Ipratropium Inhaler (16.9% disability reduction for 21% of population), and Oral Prednisolone (33.7% disability reduction for 12% of population with severe exacerbations).
-    Also includes comprehensive tobacco control interventions (protection policies, cessation programs, warning labels, mass media campaigns, advertising bans, and taxation).
     This baseline scenario is useful when you're interested in varying multiple interventions at the same time or establishing a reference point for comparison scenarios.
   authors: []
 
@@ -15,13 +14,6 @@ components:
   - copd_inhaled_salbutamol.json
   - copd_ipratropium_inhaler.json
   - copd_oral_prednisolone.json
-  - tobacco_protect.json
-  - tobacco_quitbrief.json
-  - tobacco_quitcessation.json
-  - tobacco_warnlabel.json
-  - tobacco_massmedia.json
-  - tobacco_ban.json
-  - tobacco_tax.json
 
 # No overrides needed for baseline
 overrides: {}

@@ -1,9 +1,0 @@
-{
-  "created_at": "2026-06-03T13:23:20+00:00",
-  "model_slug": "ncd-copd",
-  "reference_parameter_set_id": "reference-parameter-set:ncd-copd:synthetic-v1",
-  "runs": {},
-  "scenario_registry_id": "scenario-registry:ncd-copd:reference-synthetic-v1",
-  "schema": "reference-parameter-validation-run.v1",
-  "signature_sha256": "ec59545c621730b5dbf13032c37d9a0cdd7d5d39e796c0d55e5502263656f00b"
-}
