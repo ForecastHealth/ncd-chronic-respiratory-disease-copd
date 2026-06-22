@@ -1,9 +1,19 @@
 {
-  "component_counts": {},
+  "component_counts": {
+    "boundary_links": 17,
+    "compiled_internal_links": 49,
+    "components": 7,
+    "generated_first_pass_boundary": 7,
+    "internal_links": 49,
+    "nodes": 53,
+    "subroutines": 31,
+    "upstream_intervention_internal_links": 0
+  },
   "components": [
     {
       "component_id": "burden-metrics",
       "internal_links": 14,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 15,
       "path": "components/burden-metrics.component.v1.json",
       "runtime_role": "downstream_handoff"
@@ -11,13 +21,15 @@
     {
       "component_id": "economic-metrics",
       "internal_links": 2,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 3,
       "path": "components/economic-metrics.component.v1.json",
       "runtime_role": "downstream_handoff"
     },
     {
       "component_id": "epidemiology-core",
-      "internal_links": 7,
+      "internal_links": 6,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 6,
       "path": "components/epidemiology-core.component.v1.json",
       "runtime_role": "compiled_together"
@@ -25,6 +37,7 @@
     {
       "component_id": "intervention-inhaledsalbutamol",
       "internal_links": 9,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 8,
       "path": "components/intervention-inhaledsalbutamol.component.v1.json",
       "runtime_role": "compiled_together"
@@ -32,6 +45,7 @@
     {
       "component_id": "intervention-ipratropiuminhaler",
       "internal_links": 9,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 8,
       "path": "components/intervention-ipratropiuminhaler.component.v1.json",
       "runtime_role": "compiled_together"
@@ -39,6 +53,7 @@
     {
       "component_id": "intervention-oralprednisolone",
       "internal_links": 9,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 8,
       "path": "components/intervention-oralprednisolone.component.v1.json",
       "runtime_role": "compiled_together"
@@ -46,6 +61,7 @@
     {
       "component_id": "metrics-and-helpers",
       "internal_links": 0,
+      "module_type": "generated_first_pass_boundary",
       "nodes": 5,
       "path": "components/metrics-and-helpers.component.v1.json",
       "runtime_role": "compiled_together"

@@ -656,24 +656,6 @@
         "method": "yll_weights",
         "parameters": {}
       },
-      "id": "vreXoNZj",
-      "remove_value_from_source": false,
-      "source": "Deceased",
-      "target": "DSVPggeh",
-      "trigger": {
-        "method": "inflow",
-        "parameters": {
-          "value_to_use": "inflow"
-        }
-      },
-      "value_to_target_operator": "add"
-    },
-    {
-      "generate_array": {
-        "data_fetcher_label": "fhdb",
-        "method": "yll_weights",
-        "parameters": {}
-      },
       "id": "nILTBj4D",
       "remove_value_from_source": false,
       "source": "q0kGTdmQ",
@@ -1087,17 +1069,6 @@
       "node_type": "FUNCTION",
       "x": -105.52,
       "y": 20.22
-    },
-    {
-      "balance_type": "array",
-      "color": "#FB6375",
-      "description": "The state of being dead",
-      "flush": true,
-      "id": "Deceased",
-      "label": "Deceased-DsFreeSus",
-      "node_type": "STATE",
-      "x": 140.45,
-      "y": 26.43
     },
     {
       "ageing": true,
@@ -2080,7 +2051,6 @@
       "batch": false,
       "included_source_nodes": [
         "Disability",
-        "Deceased",
         "q0kGTdmQ",
         "BdJB5CiG",
         "DSVPggeh",
