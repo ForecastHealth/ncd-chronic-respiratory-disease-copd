@@ -120,16 +120,6 @@
       "flush": true
     },
     {
-      "id": "Births",
-      "x": 5.95,
-      "y": -13.46,
-      "label": "Births",
-      "description": "Store of the number of births in the population",
-      "balance_type": "array",
-      "flush": true,
-      "color": "#EB7FEF"
-    },
-    {
       "id": "lrste7nj",
       "x": -27.25,
       "y": 23.75,
@@ -560,45 +550,6 @@
       "flush": true
     },
     {
-      "id": "BXOLckIN",
-      "x": 198.53,
-      "y": -39.59,
-      "label": "paf-denom-t",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "flush": true
-    },
-    {
-      "id": "oGP2Nze1",
-      "x": 151.84,
-      "y": -36.78,
-      "label": "paf-denom-0",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "flush": true
-    },
-    {
-      "id": "PjHF9FHh",
-      "x": 122.98,
-      "y": -28.13,
-      "label": "rf-all",
-      "flush": true,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
       "id": "igyhM1ma",
       "x": 204.28,
       "y": 98.9,
@@ -672,50 +623,6 @@
       "label": "PopulationReached-IpratropiumInhaler",
       "color": "#FFB255",
       "flush": true
-    },
-    {
-      "id": "DXhAVyOP",
-      "x": -59.83,
-      "y": 33.36,
-      "label": "Economic Value",
-      "color": "#FFB255",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 0
-        }
-      },
-      "flush": true
-    },
-    {
-      "id": "HaYRxeQQ",
-      "x": -77.56,
-      "y": 13.91,
-      "label": "GDP Per Capita",
-      "color": "#06B4E1",
-      "generate_array": {
-        "data_fetcher_label": "fhdb",
-        "method": "wb_gdp_per_capita",
-        "parameters": {
-          "country": "AFG"
-        },
-        "fetch_once": true
-      }
-    },
-    {
-      "id": "mrGezI4c",
-      "x": -84.55,
-      "y": 23.53,
-      "label": "Labour Force Participation",
-      "color": "#06B4E1",
-      "generate_array": {
-        "data_fetcher_label": "fhdb",
-        "method": "ilo_labour_force_participation_rate",
-        "parameters": {
-          "country": "AFG"
-        },
-        "fetch_once": true
-      }
     },
     {
       "id": "ResourcePopulationReached_InhaledSalbutamol",
@@ -1140,7 +1047,7 @@
           "negative": true
         }
       },
-      "label": "Asthma_Disability_Weight -> Asthma_HYL"
+      "label": "COPD_Disability_Weight -> COPD_HYL"
     },
     {
       "id": "Sayp6xhP",
@@ -1175,7 +1082,7 @@
           "value": 1
         }
       },
-      "label": "Asthma_HYL -> Combined_HYL"
+      "label": "COPD_HYL -> Combined_HYL"
     },
     {
       "id": "6Ei2mkxO",
@@ -1260,7 +1167,7 @@
           "value": 1
         }
       },
-      "label": "Modified_HYL -> AsthmaEpsd HYL"
+      "label": "Modified_HYL -> COPDEpsd HYL"
     },
     {
       "id": "s2aCngF5",
@@ -1287,14 +1194,11 @@
       "requires_source_balance": true,
       "remove_value_from_source": true,
       "value_to_target_operator": "add",
-      "generate_array": {
-        "data_fetcher_label": "fhdb",
-        "method": "mortality",
-        "parameters": {
-          "country": "AFG"
-        }
-      },
-      "label": "Background Mortality COPDEpsd"
+      "label": "Background Mortality COPDEpsd",
+      "compiler_binding": {
+        "kind": "declared_input",
+        "note": "Compiler lowers demographic background_mortality_rate onto the COPD episode state."
+      }
     },
     {
       "id": "uSWdM5kH",
@@ -1310,7 +1214,12 @@
           "value": 1
         }
       },
-      "label": "COPDEpsd_Incidence_Rate -> COPDEpsd Incidence"
+      "label": "COPDEpsd_Incidence_Rate -> COPDEpsd Incidence",
+      "compiler_binding": {
+        "kind": "declared_input",
+        "channel_id": "incidence_modifier",
+        "note": "Optional source-owned risk-factor relationships can lower an incidence modifier onto this COPD incidence-rate-to-incidence surrogate link."
+      }
     },
     {
       "id": "2jjgV7Dx",
@@ -1326,20 +1235,6 @@
         }
       },
       "label": "COPDEpsd Incidence -> COPDEpsd"
-    },
-    {
-      "id": "8g0Xnawu",
-      "source": "PjHF9FHh",
-      "target": "cXtHHFW2",
-      "value_to_target_operator": "multiply",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "remove_value_from_source": false,
-      "label": "rf-all -> surrogate"
     },
     {
       "id": "Ki96tupa",
@@ -1571,45 +1466,6 @@
       }
     },
     {
-      "id": "pfDEgvPv",
-      "source": "HaYRxeQQ",
-      "target": "DXhAVyOP",
-      "value_to_target_operator": "multiply",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
-      "id": "B48YPJzw",
-      "source": "mrGezI4c",
-      "target": "DXhAVyOP",
-      "value_to_target_operator": "multiply",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
-      "id": "DbLhgNYh",
-      "source": "Disability",
-      "target": "DXhAVyOP",
-      "value_to_target_operator": "add",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
       "id": "ResourceAbs_InhaledSalbutamol_Base_1",
       "source": "COPDEpsd",
       "target": "ResourcePopulationReached_InhaledSalbutamol",
@@ -1745,30 +1601,12 @@
     {
       "method": "generate_balance",
       "batch": false,
-      "narration": "All Constants and Functions are initialised",
-      "included_source_nodes": [
-        "BXOLckIN",
-        "oGP2Nze1",
-        "PjHF9FHh"
-      ]
-    },
-    {
-      "method": "generate_balance",
-      "batch": false,
       "narration": "Generate the base values of the surrogate nodes",
       "included_source_nodes": [
         "lrstce6u",
         "lrste7nj",
         "lrwzsau5",
         "cXtHHFW2"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Modify surrogate",
-      "included_edges": [
-        "8g0Xnawu"
       ]
     },
     {
@@ -1787,8 +1625,7 @@
         "wdcNK6r7",
         "2yj2qyPv",
         "btLpjBIQ",
-        "OxzcOhs4",
-        "DXhAVyOP"
+        "OxzcOhs4"
       ]
     },
     {
@@ -1811,9 +1648,7 @@
         "lrso71jf",
         "lrso7mga",
         "lrso81aw",
-        "Mn5YBbsp",
-        "HaYRxeQQ",
-        "mrGezI4c"
+        "Mn5YBbsp"
       ]
     },
     {
@@ -1995,21 +1830,6 @@
     },
     {
       "method": "push_balance_to_edges",
-      "narration": "Initialise Economic Value with HYL",
-      "included_edges": [
-        "DbLhgNYh"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "narration": "Scale Economic Value by GDP per capita and LFP rate",
-      "included_edges": [
-        "pfDEgvPv",
-        "B48YPJzw"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
       "narration": "Add YLLs, YLDs to DALYs",
       "batch": false,
       "included_edges": [
@@ -2058,7 +1878,6 @@
         "8kLiklUp",
         "jWfqJ3Yv",
         "COPDEpsd",
-        "DXhAVyOP",
         "ResourcePopulationReached_InhaledSalbutamol",
         "ResourcePopulationReached_IpratropiumInhaler",
         "ResourcePopulationReached_OralPrednisolone"

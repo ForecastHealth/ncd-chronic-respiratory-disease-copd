@@ -1,0 +1,26 @@
+{
+  "schema": "botech.scenario-template.v1",
+  "module_id": "copd_epidemiology_core",
+  "owner": {
+    "repo_id": "ncd-copd",
+    "repo_ref": "/Users/rory/Models/ncd-copd",
+    "module_contract_ref": "interface/copd-epidemiology-core.module.contract.v1.json"
+  },
+  "version": "v1",
+  "parameter_registry_ref": "parameters/registry.v1.json",
+  "provenance": {
+    "source_refs": [
+      "parameters/registry.v1.json"
+    ],
+    "assumption_refs": []
+  },
+  "validation_rules": [
+    "all_parameter_ids_must_resolve_in_parameter_registry_ref",
+    "template_must_not_set_country_runtime_or_upstream_risk_factor_parameters"
+  ],
+  "template_id": "copd_baseline",
+  "label": "COPD baseline",
+  "description": "Baseline COPD template. It applies no overrides; baseline values come from the COPD parameter registry and current module graph.",
+  "template_role": "baseline",
+  "parameter_values": []
+}

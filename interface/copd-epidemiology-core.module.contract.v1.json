@@ -1,0 +1,370 @@
+{
+  "schema": "botech.module-contract.v1",
+  "module_id": "copd_epidemiology_core",
+  "module_type": "disease_epidemiology",
+  "owner": {
+    "repo_id": "ncd-copd",
+    "repo_ref": "/Users/rory/Models/ncd-copd"
+  },
+  "version": "v1",
+  "runtime_role": "compiled_together",
+  "owned_parameters": [
+    {
+      "parameter_id": "inhaled_salbutamol_baseline_coverage",
+      "meaning": "Baseline coverage for inhaled salbutamol treatment for COPD symptom relief.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrso22do')].generate_array.parameters.value",
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.start_value",
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.fill_before"
+      ]
+    },
+    {
+      "parameter_id": "inhaled_salbutamol_target_coverage",
+      "meaning": "Target comparison coverage for inhaled salbutamol treatment for COPD symptom relief.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_value",
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.fill_after"
+      ]
+    },
+    {
+      "parameter_id": "inhaled_salbutamol_scale_up_start_index",
+      "meaning": "Runtime index where inhaled salbutamol coverage scale-up starts.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.start_index"
+      ]
+    },
+    {
+      "parameter_id": "inhaled_salbutamol_scale_up_end_index",
+      "meaning": "Runtime index where inhaled salbutamol coverage scale-up reaches target.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_index"
+      ]
+    },
+    {
+      "parameter_id": "inhaled_salbutamol_population_in_need",
+      "meaning": "Share of people with COPD episodes eligible for inhaled salbutamol.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnavq2')].generate_array.parameters.value"
+      ]
+    },
+    {
+      "parameter_id": "inhaled_salbutamol_disability_impact",
+      "meaning": "Proportional disability-weight reduction from inhaled salbutamol treatment.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnjkmt')].generate_array.parameters.value"
+      ]
+    },
+    {
+      "parameter_id": "oral_prednisolone_baseline_coverage",
+      "meaning": "Baseline coverage for oral prednisolone treatment for severe COPD exacerbations.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrso28l8')].generate_array.parameters.value",
+        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.start_value",
+        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.fill_before"
+      ]
+    },
+    {
+      "parameter_id": "oral_prednisolone_target_coverage",
+      "meaning": "Target comparison coverage for oral prednisolone treatment for severe COPD exacerbations.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.end_value",
+        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.fill_after"
+      ]
+    },
+    {
+      "parameter_id": "oral_prednisolone_scale_up_start_index",
+      "meaning": "Runtime index where oral prednisolone coverage scale-up starts.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.start_index"
+      ]
+    },
+    {
+      "parameter_id": "oral_prednisolone_scale_up_end_index",
+      "meaning": "Runtime index where oral prednisolone coverage scale-up reaches target.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.end_index"
+      ]
+    },
+    {
+      "parameter_id": "oral_prednisolone_population_in_need",
+      "meaning": "Share of people with COPD episodes eligible for oral prednisolone.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsngte4')].generate_array.parameters.value"
+      ]
+    },
+    {
+      "parameter_id": "oral_prednisolone_disability_impact",
+      "meaning": "Proportional disability-weight reduction from oral prednisolone treatment.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnjnt3')].generate_array.parameters.value"
+      ]
+    },
+    {
+      "parameter_id": "ipratropium_inhaler_baseline_coverage",
+      "meaning": "Baseline coverage for ipratropium inhaler maintenance treatment for COPD.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnhyyd')].generate_array.parameters.value",
+        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.start_value",
+        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.fill_before"
+      ]
+    },
+    {
+      "parameter_id": "ipratropium_inhaler_target_coverage",
+      "meaning": "Target comparison coverage for ipratropium inhaler maintenance treatment for COPD.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_value",
+        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.fill_after"
+      ]
+    },
+    {
+      "parameter_id": "ipratropium_inhaler_scale_up_start_index",
+      "meaning": "Runtime index where ipratropium inhaler coverage scale-up starts.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.start_index"
+      ]
+    },
+    {
+      "parameter_id": "ipratropium_inhaler_scale_up_end_index",
+      "meaning": "Runtime index where ipratropium inhaler coverage scale-up reaches target.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_index"
+      ]
+    },
+    {
+      "parameter_id": "ipratropium_inhaler_disability_impact",
+      "meaning": "Proportional disability-weight reduction from ipratropium inhaler treatment.",
+      "scope": "module_owned",
+      "shape": "scalar",
+      "json_paths": [
+        "$.nodes[?(@.id=='lrsnjr1s')].generate_array.parameters.value"
+      ]
+    }
+  ],
+  "declared_inputs": [
+    {
+      "channel_id": "population_at_risk_opening",
+      "meaning": "Opening COPD-local population at risk, seeded from the demographic substrate and COPD prevalence.",
+      "shape": "2x101",
+      "units": "people",
+      "required": true,
+      "owner_module_id": "demographic_substrate"
+    },
+    {
+      "channel_id": "background_mortality_rate",
+      "meaning": "All-cause background mortality rate supplied by the demographic substrate.",
+      "shape": "2x101",
+      "units": "rate",
+      "required": true,
+      "owner_module_id": "demographic_substrate",
+      "binding": {
+        "legacy_lowering_ref": "$.links[?(@.id=='cz2LeDKw')].compiler_binding"
+      }
+    },
+    {
+      "channel_id": "incidence_modifier",
+      "meaning": "Optional source-owned risk-factor modifier applied to COPD incidence.",
+      "shape": "yearly_2x101_or_scalar",
+      "units": "multiplier",
+      "required": false,
+      "binding": {
+        "legacy_lowering_ref": "$.links[?(@.id=='uSWdM5kH')].compiler_binding"
+      }
+    }
+  ],
+  "published_outputs": [
+    {
+      "channel_id": "copd_episode_population",
+      "meaning": "People currently in the COPD episode state.",
+      "shape": "2x101",
+      "units": "people",
+      "required": true,
+      "binding": {
+        "node_id": "COPDEpsd"
+      }
+    },
+    {
+      "channel_id": "copd_incidence_flow",
+      "meaning": "New COPD episode flow.",
+      "shape": "2x101",
+      "units": "people",
+      "required": true,
+      "binding": {
+        "node_id": "cXtHHFW2"
+      }
+    },
+    {
+      "channel_id": "copd_mortality_flow",
+      "meaning": "COPD-specific mortality flow.",
+      "shape": "2x101",
+      "units": "people",
+      "required": true,
+      "binding": {
+        "node_id": "lrstce6u"
+      }
+    },
+    {
+      "channel_id": "healthy_years_lived",
+      "meaning": "Healthy years lived metric emitted by the COPD model.",
+      "shape": "yearly_scalar_or_2x101",
+      "units": "years",
+      "required": false,
+      "binding": {
+        "node_id": "Disability"
+      }
+    },
+    {
+      "channel_id": "copd_dalys",
+      "meaning": "COPD disability-adjusted life years metric.",
+      "shape": "yearly_scalar_or_2x101",
+      "units": "years",
+      "required": false,
+      "binding": {
+        "node_id": "igyhM1ma"
+      }
+    },
+    {
+      "channel_id": "copd_population_reached",
+      "meaning": "Population reached by COPD clinical interventions.",
+      "shape": "yearly_scalar_or_2x101",
+      "units": "people",
+      "required": false,
+      "binding": {
+        "node_ids": [
+          "U37bYeyB",
+          "8kLiklUp",
+          "jWfqJ3Yv"
+        ]
+      }
+    }
+  ],
+  "state_initialization": {
+    "mode": "solver_required",
+    "recipe_ref": "data/copd-opening-balance-seed.recipe.v1.json",
+    "targets": [
+      "COPDEpsd"
+    ]
+  },
+  "runtime_data_requirements": [
+    {
+      "data_type": "epidemiology",
+      "parameters": {
+        "country": "ISO3",
+        "disease": "COPD",
+        "measure": "prevalence"
+      },
+      "required_for": [
+        "state_initialization"
+      ]
+    },
+    {
+      "data_type": "epidemiology",
+      "parameters": {
+        "country": "ISO3",
+        "disease": "COPD",
+        "measure": "incidence"
+      },
+      "required_for": [
+        "copd_incidence_flow"
+      ]
+    },
+    {
+      "data_type": "epidemiology",
+      "parameters": {
+        "country": "ISO3",
+        "disease": "COPD",
+        "measure": "deaths"
+      },
+      "required_for": [
+        "copd_mortality_flow"
+      ]
+    },
+    {
+      "data_type": "copd.get_observation",
+      "parameters": {
+        "country": "ISO3",
+        "observation": "COPDEpsd -> Disability"
+      },
+      "required_for": [
+        "copd_disability_weight"
+      ]
+    },
+    {
+      "data_type": "copd.get_observation",
+      "parameters": {
+        "country": "ISO3",
+        "observation": "IpratropiumInhaler -> PIN"
+      },
+      "required_for": [
+        "ipratropium_inhaler_population_in_need"
+      ]
+    },
+    {
+      "data_type": "healthy_disability",
+      "parameters": {
+        "country": "ISO3"
+      },
+      "required_for": [
+        "healthy_years_lived"
+      ]
+    },
+    {
+      "data_type": "yll_weights",
+      "parameters": {},
+      "required_for": [
+        "years_of_life_lost"
+      ]
+    }
+  ],
+  "cards": {},
+  "provenance": {
+    "default_sources": [
+      {
+        "source_id": "spectrum_onehealth_copd",
+        "use": "COPD epidemiology and intervention defaults"
+      },
+      {
+        "source_id": "current_module_cleanup",
+        "use": "Contract-era COPD module surface cleanup"
+      }
+    ],
+    "unresolved": []
+  },
+  "validation": {
+    "internal_validity_tests": [
+      "python scripts/validate_module_contract.py"
+    ],
+    "face_validity_checks": []
+  }
+}
