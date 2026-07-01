@@ -1,0 +1,386 @@
+{
+  "schema": "botech.legacy-monolith-reference.provenance.v1",
+  "disease_slug": "ncd-copd",
+  "target_repo_path": "/Users/rory/Models/ncd-copd",
+  "artifact_warning": "This is a legacy reference specimen for audit and parity work only. It is not an active COPD module surface, and it is not an architectural pattern to preserve. Demography, risk factors, and cross-module behavior should be re-expressed through current module contracts and compiler lowering rather than restored inside COPD.",
+  "recovered_model": {
+    "path": "monolith-reference/model.json",
+    "sha256": "6de71fb2e75c34042b6b1490338da5ccc2251d2ebc02f38e5983c165edebcd24",
+    "source": {
+      "repo_path": "/Users/rory/Models/ncd-copd",
+      "commit": "0db2aa1d4329d938a056cc64a093fb6c2773c00f",
+      "commit_date": "2025-09-01T17:11:07+08:00",
+      "branches_containing_commit": [
+        "investment-case",
+        "ncd-handoff-20260601-103910",
+        "remotes/origin/investment-case"
+      ],
+      "source_path": "model.json",
+      "commit_subject": "Added additional arguments to effect-size-tobacco-tax"
+    },
+    "model_shape": {
+      "metadata": {
+        "name": "COPD",
+        "description": "The rebuild of the Spectrum COPD Disease Model",
+        "file_id": "COPD",
+        "version": "2.5",
+        "user": "appendix_3"
+      },
+      "runtime": {
+        "startYear": 2020,
+        "endYear": 2120,
+        "synchronous_iterations": 10
+      },
+      "node_count": 87,
+      "link_count": 110,
+      "subroutine_count": 46,
+      "required_top_level_keys_present": [
+        "metadata",
+        "runtime",
+        "nodes",
+        "links",
+        "subroutines"
+      ],
+      "monolith_indicators": [
+        {
+          "id": "Births",
+          "label": "Births"
+        },
+        {
+          "id": "BXOLckIN",
+          "label": "paf-denom-t"
+        },
+        {
+          "id": "oGP2Nze1",
+          "label": "paf-denom-0"
+        },
+        {
+          "id": "PjHF9FHh",
+          "label": "rf-all"
+        },
+        {
+          "id": "j8mr17a2",
+          "label": "paf-tobacco-delta"
+        },
+        {
+          "id": "zxPMOyBk",
+          "label": "paf-tobacco-0"
+        },
+        {
+          "id": "o1hbxc1R",
+          "label": "excess-risk-0-tobacco"
+        },
+        {
+          "id": "h6Dd182n",
+          "label": "paf-tobacco-t"
+        },
+        {
+          "id": "xFQ7WDDN",
+          "label": "excess-risk-t-tobacco"
+        },
+        {
+          "id": "UJon4r9l",
+          "label": "relative-risk-tobacco-copd"
+        },
+        {
+          "id": "HvEhBiqV",
+          "label": "prevalence-0-tobacco"
+        },
+        {
+          "id": "OujFYFdY",
+          "label": "prevalence-t-tobacco"
+        },
+        {
+          "id": "DsMKQaMl",
+          "label": "total-prevalence-reduction-tobacco"
+        },
+        {
+          "id": "yeUjLivi",
+          "label": "effect-size-tobacco-protect"
+        },
+        {
+          "id": "Rw3STfqr",
+          "label": "delta-coverage-tobacco-protect"
+        },
+        {
+          "id": "f2zVbmFC",
+          "label": "target-coverage-tobacco-protect"
+        },
+        {
+          "id": "kmOgayPc",
+          "label": "baseline-coverage-tobacco-protect"
+        },
+        {
+          "id": "dhCjk23F",
+          "label": "effect-size-tobacco-quitbrief"
+        },
+        {
+          "id": "c6rmN2fs",
+          "label": "delta-coverage-tobacco-quitbrief"
+        },
+        {
+          "id": "Go1VxQNw",
+          "label": "target-coverage-tobacco-quitbrief"
+        },
+        {
+          "id": "iSPWJd93",
+          "label": "baseline-coverage-tobacco-quitbrief"
+        },
+        {
+          "id": "UW8uObpi",
+          "label": "effect-size-tobacco-quitcessation"
+        },
+        {
+          "id": "b1QqmB9J",
+          "label": "delta-coverage-tobacco-quitcessation"
+        },
+        {
+          "id": "ACrnBpRW",
+          "label": "target-coverage-tobacco-quitcessation"
+        },
+        {
+          "id": "exp5DafX",
+          "label": "baseline-coverage-tobacco-quitcessation"
+        },
+        {
+          "id": "c7kD60U5",
+          "label": "effect-size-tobacco-warnlabel"
+        },
+        {
+          "id": "CpV9O9hQ",
+          "label": "delta-coverage-tobacco-warnlabel"
+        },
+        {
+          "id": "Sr0tR2ig",
+          "label": "target-coverage-tobacco-warnlabel"
+        },
+        {
+          "id": "jVgKAsq8",
+          "label": "baseline-coverage-tobacco-warnlabel"
+        },
+        {
+          "id": "RFyZaSPm",
+          "label": "effect-size-tobacco-massmedia"
+        },
+        {
+          "id": "z8dEXLS9",
+          "label": "delta-coverage-tobacco-massmedia"
+        },
+        {
+          "id": "lFeWKUSt",
+          "label": "target-coverage-tobacco-massmedia"
+        },
+        {
+          "id": "kH5YhKYM",
+          "label": "baseline-coverage-tobacco-massmedia"
+        },
+        {
+          "id": "cahejWW9",
+          "label": "effect-size-tobacco-ban"
+        },
+        {
+          "id": "llX00Ofj",
+          "label": "delta-coverage-tobacco-ban"
+        },
+        {
+          "id": "a6OhDhjp",
+          "label": "target-coverage-tobacco-ban"
+        },
+        {
+          "id": "zUseZJKK",
+          "label": "baseline-coverage-tobacco-ban"
+        },
+        {
+          "id": "wdoGuxrz",
+          "label": "effect-size-tobacco-tax"
+        },
+        {
+          "id": "bdg7vh5J",
+          "label": "price-change-tobacco-tax"
+        },
+        {
+          "id": "DXhAVyOP",
+          "label": "Economic Value"
+        },
+        {
+          "id": "HaYRxeQQ",
+          "label": "GDP Per Capita"
+        },
+        {
+          "id": "mrGezI4c",
+          "label": "Labour Force Participation"
+        }
+      ]
+    }
+  },
+  "why_this_is_a_defensible_reference_monolith": [
+    "The selected file is a complete botech model with metadata, runtime, nodes, links, and subroutines, and has the old COPD monolith scale: 87 nodes, 110 links, and 46 subroutines.",
+    "It is the last COPD model commit found immediately before the upload repository records the COPD analytics file analytics_results_20250902_112330.csv in SOURCE_FILES on 2025-09-02.",
+    "The selected commit changed tobacco-tax effect-size wiring, and the recovered model contains tobacco intervention nodes, demography-like Births wiring, economic value inputs, and resource population reached outputs that belong to the old working monolith rather than the cleaned module surface.",
+    "It is more defensible for Saving Lives, Spending Less parity archaeology than later 2026 transfer or cleanup snapshots, because the upload workflow evidence is from September 2025."
+  ],
+  "saving_lives_spending_less_result_stitching_evidence": [
+    {
+      "repo_path": "/Users/rory/Documents/who-global-ncd-investment-case-uploads",
+      "commit": "17a817a4",
+      "commit_full": "17a817a4d8b17e3790790da00f4059bf39298738",
+      "commit_date": "2025-09-02T12:11:34+08:00",
+      "commit_subject": "New reuslts",
+      "path": "SOURCE_FILES",
+      "line_evidence": "/home/rory/Models/ncd-copd/results/analytics_results_20250902_112330.csv",
+      "evidence": "SOURCE_FILES line 2 is attributed to this commit and lists the COPD analytics result file used by the result-processing workflow.",
+      "strength": "strong path evidence for the COPD output file used by the upload workflow; it does not itself record the exact COPD model commit used to produce that CSV."
+    },
+    {
+      "repo_path": "/Users/rory/Documents/who-global-ncd-investment-case-uploads",
+      "path": "process_csv_files.py",
+      "commit_evidence": {
+        "commit": "a8d3e8af5cf4fb04d3a871314eb53512fd5a6e52",
+        "commit_date": "2025-09-03T15:36:50+08:00",
+        "commit_subject": "Additional scripting to calculate lung cancer"
+      },
+      "evidence": "The processing script reads SOURCE_FILES, copies each listed CSV, loads them, and concatenates them into the combined result set before downstream filtering.",
+      "strength": "strong workflow evidence for how the listed COPD output entered the stitched results."
+    },
+    {
+      "repo_path": "/Users/rory/Documents/who-global-ncd-investment-case-uploads",
+      "path": "create_summary_sheet.py",
+      "commit_evidence": {
+        "commit": "63073d7b46fa25f1a7e078d37406eb97dd5a3c67",
+        "commit_date": "2025-09-17T13:06:50-04:00",
+        "commit_subject": "Updated to disaggregate MIC to LMIC+UMIC"
+      },
+      "evidence": "The summary-sheet generator categorizes copd_cr scenarios as Chronic respiratory disease and produces combined case, health, death, cost, and economic-benefit metrics.",
+      "strength": "strong downstream aggregation evidence for COPD/CRD categories, not exact model provenance."
+    },
+    {
+      "repo_path": "/Users/rory/Documents/who-global-ncd-investment-case-uploads",
+      "path": "INSTRUCTIONS_FOR_TOBACCO_CANCER_CALCULATIONS.md",
+      "commit_evidence": {
+        "commit": "014fbe1dac3b0fb9c48a3ba1cd587b47be4ee767",
+        "commit_date": "2025-09-03T13:33:25+08:00",
+        "commit_subject": "Finalised instructions for tobacco lung cancer"
+      },
+      "evidence": "The method note states that the repository collects system-dynamics outputs from CVD, Diabetes, Asthma, and COPD repositories through SOURCE_FILES for tobacco intervention calculations.",
+      "strength": "strong workflow intent evidence for the model family; not an exact model commit manifest."
+    },
+    {
+      "repo_path": "/Users/rory/Documents/who-global-ncd-investment-case-uploads",
+      "path": "LUNG_CANCER_IMPLEMENTATION_SUMMARY.md",
+      "commit_evidence": {
+        "commit": "9213f9690ff91d6cf1afe1ea7ffc539b3724c6ff",
+        "commit_date": "2025-09-03T15:36:37+08:00",
+        "commit_subject": "Markdown files"
+      },
+      "evidence": "The implementation summary states that existing system-dynamics models captured tobacco impacts on cardiovascular disease, diabetes, asthma, and COPD, and that the pipeline was process_csv_files.py to calculate_lung_cancer_tobacco.py to create_summary_sheet.py.",
+      "strength": "supporting narrative evidence for result stitching; not a direct source manifest."
+    },
+    {
+      "path": "all_results_20250903_160122.csv",
+      "commit_evidence": {
+        "commit": "5b69902388ce7d8a1f7de4e5e55e79526c961029",
+        "commit_date": "2025-09-03T16:11:31+08:00",
+        "commit_subject": "New results with lung cancer tobacco addition"
+      },
+      "total_rows": 348183,
+      "copd_rows": 49192,
+      "copd_scenarios": [
+        "copd_cr2",
+        "copd_cr4",
+        "tobacco_t1",
+        "tobacco_t2",
+        "tobacco_t3",
+        "tobacco_t4",
+        "tobacco_t5",
+        "tobacco_t6"
+      ],
+      "copd_metrics": [
+        "deaths averted",
+        "economic benefit",
+        "healthy years lived",
+        "incremental costs"
+      ],
+      "copd_year_range": [
+        2025,
+        2035
+      ]
+    },
+    {
+      "path": "all_results_20250903_162424.csv",
+      "commit_evidence": {
+        "commit": "9c38587631d085f3774dc7beac378e0ac480e23c",
+        "commit_date": "2025-09-03T16:29:15+08:00",
+        "commit_subject": "New results"
+      },
+      "total_rows": 348183,
+      "copd_rows": 49192,
+      "copd_scenarios": [
+        "copd_cr2",
+        "copd_cr4",
+        "tobacco_t1",
+        "tobacco_t2",
+        "tobacco_t3",
+        "tobacco_t4",
+        "tobacco_t5",
+        "tobacco_t6"
+      ],
+      "copd_metrics": [
+        "deaths averted",
+        "economic benefit",
+        "healthy years lived",
+        "incremental costs"
+      ],
+      "copd_year_range": [
+        2025,
+        2035
+      ]
+    }
+  ],
+  "model_assurance_evidence": [
+    {
+      "repo_path": "/Users/rory/Documents/model-assurance",
+      "paths_inspected": [
+        "synthetic-parameters/validation-runs/synthetic-parameter-fixture-20260603/ncd-copd/run-card.v1.json",
+        "synthetic-parameters/current-parameter-snapshots/ncd-copd/current-parameter-snapshot.v1.json"
+      ],
+      "evidence": "June 2026 assurance files reference ncd-copd, COPD synthetic parameter sets, scenario registries, and a client model path, but the inspected files are later synthetic assurance context and do not prove the September 2025 monolith commit.",
+      "strength": "context only; not used as the deciding source for the recovered monolith."
+    }
+  ],
+  "uncertainty": [
+    "No manifest found in the upload repository records the exact COPD git commit that produced analytics_results_20250902_112330.csv. The selected model is defended by temporal proximity, branch history, file shape, and workflow linkage rather than a direct commit-to-output checksum.",
+    "The upload repository stores stitched outputs and workflow scripts, not the COPD model JSON itself.",
+    "The selected monolith contains behavior that should be audited for parity, but it should not be treated as evidence that COPD should own demography, tobacco, economic, or cross-module internals under the current module contract."
+  ],
+  "rejected_alternatives": [
+    {
+      "commit": "5d504cc",
+      "reason": "A plausible earlier monolith, but it predates the 2025-09-01 tobacco-tax argument update selected here."
+    },
+    {
+      "commit": "cef86bf",
+      "reason": "A later machine-transfer snapshot labelled unreviewed, with changed runtime horizon and weaker connection to the September 2025 upload evidence."
+    },
+    {
+      "commit": "74a3674",
+      "reason": "A 2026 handoff runtime-horizon change, useful for later transfer archaeology but less direct for Saving Lives, Spending Less result stitching."
+    },
+    {
+      "commit": "a63a100",
+      "reason": "Already a cleaned COPD ownership surface rather than the old monolithic reference specimen."
+    },
+    {
+      "commit": "e6cf57a",
+      "reason": "Current cleaned module surface, not a legacy monolith."
+    }
+  ],
+  "adversarial_check": {
+    "is_monolithic_botech_model_with_runtime_nodes_links_subroutines": true,
+    "provenance_supports_choice": "moderate-to-strong for choosing this family and date; moderate for exact commit-to-output linkage because no output manifest records the generating COPD commit.",
+    "allowed_files_only": [
+      "monolith-reference/model.json",
+      "monolith-reference/provenance.json"
+    ],
+    "overstatement_guard": "The evidence supports this as a defensible legacy reference specimen for parity archaeology, not as a proven exact build artifact for the September 2025 CSV and not as an active module contract."
+  }
+}
