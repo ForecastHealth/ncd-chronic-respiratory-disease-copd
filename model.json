@@ -135,17 +135,6 @@
       "flush": true
     },
     {
-      "id": "Disability",
-      "x": -50.36,
-      "y": 43.83,
-      "label": "Healthy Years Lived",
-      "description": "A store of disability adjusted life years",
-      "node_type": "STATE",
-      "balance_type": "array",
-      "color": "#FFB255",
-      "flush": true
-    },
-    {
       "id": "lrst7n8a",
       "x": -140.73,
       "y": 66.49,
@@ -964,21 +953,6 @@
       }
     },
     {
-      "id": "nvUzLVjD",
-      "source": "lrste7nj",
-      "target": "Disability",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "label": "DsFreeSus HYL -> Healthy Years Lived"
-    },
-    {
       "id": "5djuaIfD",
       "source": "COPDEpsd",
       "target": "lrwzsau5",
@@ -988,21 +962,6 @@
       "requires_source_balance": true,
       "remove_value_from_source": false,
       "label": "COPDEpsd -> COPDEpsd HYL"
-    },
-    {
-      "id": "Fnn2J6Fz",
-      "source": "lrwzsau5",
-      "target": "Disability",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "label": "COPDEpsd HYL -> Healthy Years Lived"
     },
     {
       "id": "XNyqqSsC",
@@ -1867,7 +1826,6 @@
       "batch": false,
       "narration": "Record ECHO values",
       "included_source_nodes": [
-        "Disability",
         "q0kGTdmQ",
         "BdJB5CiG",
         "DSVPggeh",
