@@ -235,16 +235,6 @@
       }
     },
     {
-      "channel_id": "healthy_years_lived",
-      "meaning": "Healthy years lived metric emitted by the COPD model.",
-      "shape": "yearly_scalar_or_2x101",
-      "units": "years",
-      "required": false,
-      "binding": {
-        "node_id": "Disability"
-      }
-    },
-    {
       "channel_id": "copd_dalys",
       "meaning": "COPD disability-adjusted life years metric.",
       "shape": "yearly_scalar_or_2x101",
