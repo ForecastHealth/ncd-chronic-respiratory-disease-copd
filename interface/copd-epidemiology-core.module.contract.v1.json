@@ -8,170 +8,7 @@
   },
   "version": "v1",
   "runtime_role": "compiled_together",
-  "owned_parameters": [
-    {
-      "parameter_id": "inhaled_salbutamol_baseline_coverage",
-      "meaning": "Baseline coverage for inhaled salbutamol treatment for COPD symptom relief.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrso22do')].generate_array.parameters.value",
-        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.start_value",
-        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.fill_before"
-      ]
-    },
-    {
-      "parameter_id": "inhaled_salbutamol_target_coverage",
-      "meaning": "Target comparison coverage for inhaled salbutamol treatment for COPD symptom relief.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_value",
-        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.fill_after"
-      ]
-    },
-    {
-      "parameter_id": "inhaled_salbutamol_scale_up_start_index",
-      "meaning": "Runtime index where inhaled salbutamol coverage scale-up starts.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.start_index"
-      ]
-    },
-    {
-      "parameter_id": "inhaled_salbutamol_scale_up_end_index",
-      "meaning": "Runtime index where inhaled salbutamol coverage scale-up reaches target.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnalk2')].generate_array.parameters.end_index"
-      ]
-    },
-    {
-      "parameter_id": "inhaled_salbutamol_population_in_need",
-      "meaning": "Share of people with COPD episodes eligible for inhaled salbutamol.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnavq2')].generate_array.parameters.value"
-      ]
-    },
-    {
-      "parameter_id": "inhaled_salbutamol_disability_impact",
-      "meaning": "Proportional disability-weight reduction from inhaled salbutamol treatment.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnjkmt')].generate_array.parameters.value"
-      ]
-    },
-    {
-      "parameter_id": "oral_prednisolone_baseline_coverage",
-      "meaning": "Baseline coverage for oral prednisolone treatment for severe COPD exacerbations.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrso28l8')].generate_array.parameters.value",
-        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.start_value",
-        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.fill_before"
-      ]
-    },
-    {
-      "parameter_id": "oral_prednisolone_target_coverage",
-      "meaning": "Target comparison coverage for oral prednisolone treatment for severe COPD exacerbations.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.end_value",
-        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.fill_after"
-      ]
-    },
-    {
-      "parameter_id": "oral_prednisolone_scale_up_start_index",
-      "meaning": "Runtime index where oral prednisolone coverage scale-up starts.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.start_index"
-      ]
-    },
-    {
-      "parameter_id": "oral_prednisolone_scale_up_end_index",
-      "meaning": "Runtime index where oral prednisolone coverage scale-up reaches target.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsngpv8')].generate_array.parameters.end_index"
-      ]
-    },
-    {
-      "parameter_id": "oral_prednisolone_population_in_need",
-      "meaning": "Share of people with COPD episodes eligible for oral prednisolone.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsngte4')].generate_array.parameters.value"
-      ]
-    },
-    {
-      "parameter_id": "oral_prednisolone_disability_impact",
-      "meaning": "Proportional disability-weight reduction from oral prednisolone treatment.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnjnt3')].generate_array.parameters.value"
-      ]
-    },
-    {
-      "parameter_id": "ipratropium_inhaler_baseline_coverage",
-      "meaning": "Baseline coverage for ipratropium inhaler maintenance treatment for COPD.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnhyyd')].generate_array.parameters.value",
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.start_value",
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.fill_before"
-      ]
-    },
-    {
-      "parameter_id": "ipratropium_inhaler_target_coverage",
-      "meaning": "Target comparison coverage for ipratropium inhaler maintenance treatment for COPD.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_value",
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.fill_after"
-      ]
-    },
-    {
-      "parameter_id": "ipratropium_inhaler_scale_up_start_index",
-      "meaning": "Runtime index where ipratropium inhaler coverage scale-up starts.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.start_index"
-      ]
-    },
-    {
-      "parameter_id": "ipratropium_inhaler_scale_up_end_index",
-      "meaning": "Runtime index where ipratropium inhaler coverage scale-up reaches target.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrso24ss')].generate_array.parameters.end_index"
-      ]
-    },
-    {
-      "parameter_id": "ipratropium_inhaler_disability_impact",
-      "meaning": "Proportional disability-weight reduction from ipratropium inhaler treatment.",
-      "scope": "module_owned",
-      "shape": "scalar",
-      "json_paths": [
-        "$.nodes[?(@.id=='lrsnjr1s')].generate_array.parameters.value"
-      ]
-    }
-  ],
+  "owned_parameters": [],
   "declared_inputs": [
     {
       "channel_id": "population_at_risk_opening",
@@ -243,20 +80,6 @@
       "binding": {
         "node_id": "igyhM1ma"
       }
-    },
-    {
-      "channel_id": "copd_population_reached",
-      "meaning": "Population reached by COPD clinical interventions.",
-      "shape": "yearly_scalar_or_2x101",
-      "units": "people",
-      "required": false,
-      "binding": {
-        "node_ids": [
-          "U37bYeyB",
-          "8kLiklUp",
-          "jWfqJ3Yv"
-        ]
-      }
     }
   ],
   "state_initialization": {
@@ -311,16 +134,6 @@
       ]
     },
     {
-      "data_type": "copd.get_observation",
-      "parameters": {
-        "country": "ISO3",
-        "observation": "IpratropiumInhaler -> PIN"
-      },
-      "required_for": [
-        "ipratropium_inhaler_population_in_need"
-      ]
-    },
-    {
       "data_type": "healthy_disability",
       "parameters": {
         "country": "ISO3"
@@ -342,11 +155,11 @@
     "default_sources": [
       {
         "source_id": "spectrum_onehealth_copd",
-        "use": "COPD epidemiology and intervention defaults"
+        "use": "COPD epidemiology defaults"
       },
       {
         "source_id": "current_module_cleanup",
-        "use": "Contract-era COPD module surface cleanup"
+        "use": "Contract-era COPD module surface cleanup and intervention extraction"
       }
     ],
     "unresolved": []
@@ -356,5 +169,18 @@
       "python scripts/validate_module_contract.py"
     ],
     "face_validity_checks": []
-  }
+  },
+  "intervention_extension_points": [
+    {
+      "channel_id": "copd_disability_effect_transform",
+      "meaning": "Target-side transform node where component-owned COPD clinical intervention disability effects are multiplied into the COPD disability weight.",
+      "endpoint_role": "target",
+      "node_id": "lrwz1ikj",
+      "shape": "scalar",
+      "units": "proportion",
+      "binding": {
+        "node_id": "lrwz1ikj"
+      }
+    }
+  ]
 }

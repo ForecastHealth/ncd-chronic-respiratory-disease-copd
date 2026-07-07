@@ -152,6 +152,18 @@ def validate() -> list[str]:
             fail(errors, f"COPD model still contains stale asthma text: {text_value}")
             break
 
+    intervention_tokens = ("Salbutamol", "Prednisolone", "Ipratropium", "salbutamol", "prednisolone", "ipratropium")
+    for text_value in strings_in(model):
+        if any(token in text_value for token in intervention_tokens):
+            fail(errors, f"COPD model still contains extracted intervention text: {text_value}")
+            break
+    extracted_nodes = set(['8kLiklUp', 'ResourcePopulationReached_InhaledSalbutamol', 'ResourcePopulationReached_IpratropiumInhaler', 'ResourcePopulationReached_OralPrednisolone', 'U37bYeyB', 'jWfqJ3Yv', 'lrsnalk2', 'lrsnavq2', 'lrsngpv8', 'lrsngte4', 'lrsnhyyd', 'lrsni0s5', 'lrsnjkmt', 'lrsnjnt3', 'lrsnjr1s', 'lrso22do', 'lrso24ss', 'lrso28l8', 'lrst0woc', 'lrst14z6', 'lrst1pq2', 'lrst79uc', 'lrst7n8a', 'lrst7nh0'])
+    extracted_links = set(['2UnmNJH5', '2cqXSWkb', '6aVqOh7C', '9Fe9k1UV', 'EfuyA2u1', 'FNrIUP2V', 'LIyy1ky9', 'MnpPqwz9', 'OvOhBeTK', 'QFKsJ7KA', 'R4Vwfikm', 'RFqzZF5Z', 'ResourceAbs_InhaledSalbutamol_Base_1', 'ResourceAbs_InhaledSalbutamol_Coverage', 'ResourceAbs_InhaledSalbutamol_PIN', 'ResourceAbs_IpratropiumInhaler_Base_1', 'ResourceAbs_IpratropiumInhaler_Coverage', 'ResourceAbs_IpratropiumInhaler_PIN', 'ResourceAbs_OralPrednisolone_Base_1', 'ResourceAbs_OralPrednisolone_Coverage', 'ResourceAbs_OralPrednisolone_PIN', 'TjND1e9T', 'WE3nlFuI', 'cpORh46w', 'ee0hmMQf', 'g71GXNvq', 'gO6Yvodp', 'gwDbhWLO', 'lZsxgkeD', 'plB7iwsy', 'rSVQNns4', 'sS2uov2j', 'tJkWGHk3', 'tgy0fCCF', 'u3I26S1y', 'ydn35Gq6'])
+    if extracted_nodes & node_set:
+        fail(errors, f"COPD model still contains extracted intervention nodes: {sorted(extracted_nodes & node_set)}")
+    if extracted_links & link_set:
+        fail(errors, f"COPD model still contains extracted intervention links: {sorted(extracted_links & link_set)}")
+
     background_link = next((link for link in model.get("links", []) if link.get("id") == "cz2LeDKw"), None)
     if not background_link:
         fail(errors, "Missing COPD background mortality link cz2LeDKw")
@@ -199,6 +211,12 @@ def validate() -> list[str]:
     for node_id in published_bindings:
         if node_id not in node_set:
             fail(errors, f"Published output binds to missing node {node_id}")
+    for extension in module.get("intervention_extension_points", []):
+        node_id = extension.get("node_id") or (extension.get("binding") or {}).get("node_id")
+        if node_id not in node_set:
+            fail(errors, f"Intervention extension point binds to missing node {node_id}")
+        if extension.get("channel_id") == "copd_disability_effect_transform" and node_id != "lrwz1ikj":
+            fail(errors, "COPD disability intervention extension point does not bind lrwz1ikj")
     declared_data_requirements = set()
     for requirement in module.get("runtime_data_requirements", []):
         data_type = requirement.get("data_type")
@@ -257,6 +275,14 @@ def validate() -> list[str]:
         fail(errors, "COPD registry contains tobacco-owned parameter ids")
     if any(parameter_id in {"country", "start_year", "end_year"} for parameter_id in registry_set):
         fail(errors, "Runtime context appears as scenario-editable registry parameters")
+
+    for parameter_id in registry_set:
+        if any(token in str(parameter_id) for token in ("salbutamol", "prednisolone", "ipratropium")):
+            fail(errors, f"COPD registry still contains extracted intervention parameter {parameter_id}")
+    for text in strings_in(registry):
+        if any(token in text for token in ("Salbutamol", "Prednisolone", "Ipratropium", "salbutamol", "prednisolone", "ipratropium")):
+            fail(errors, f"Parameter registry still references extracted intervention surface: {text}")
+            break
     for text in strings_in(registry):
         if any(token in text for token in ("build/", "scenarios/", "scenario-templates", "modular-composition")):
             fail(errors, f"Parameter registry still references removed source: {text}")
@@ -270,7 +296,7 @@ def validate() -> list[str]:
 
     template_root = REPO_ROOT / "parameters" / "templates"
     template_files = sorted(template_root.glob("*.template.v1.json"))
-    required_templates = {"copd_baseline", "copd_cr2", "copd_cr4"}
+    required_templates = {"copd_baseline"}
     template_ids = set()
     if not template_files:
         fail(errors, "Missing parameters/templates/*.template.v1.json")
@@ -278,6 +304,9 @@ def validate() -> list[str]:
         template = load(template_file)
         template_id = template.get("template_id")
         template_ids.add(template_id)
+
+        if template_id in {"copd_cr2", "copd_cr4"}:
+            fail(errors, f"{template_file} is an extracted intervention template and should not remain source-owned")
         if template.get("schema") != "botech.scenario-template.v1":
             fail(errors, f"{template_file} has wrong template schema")
         if template.get("module_id") != module_id:

@@ -19,8 +19,6 @@ DEFAULT_TEMPLATE_ID = "copd_baseline"
 TEMPLATE_ALIASES = {
     "baseline": "copd_baseline",
     "default": "copd_baseline",
-    "cr2": "copd_cr2",
-    "cr4": "copd_cr4",
 }
 JSON_PATH_RE = re.compile(r"^\$\.(nodes|links)\[\?\(@\.id=='([^']+)'\)\]\.(.+)$")
 
@@ -285,7 +283,7 @@ def main() -> None:
     templates_parser = subparsers.add_parser("templates", help="Emit the template list.")
     templates_parser.add_argument("--output", help="Optional output JSON path.")
     materialize_parser = subparsers.add_parser("materialize", help="Materialize one named template into a template-applied COPD module model.")
-    materialize_parser.add_argument("--template-id", required=True, help="Template id from parameters/templates, for example copd_baseline, copd_cr2, or copd_cr4.")
+    materialize_parser.add_argument("--template-id", required=True, help="Template id from parameters/templates, for example copd_baseline.")
     materialize_parser.add_argument("--scenario-id", default=None, help="Scenario id to record in the materialized artifact.")
     materialize_parser.add_argument("--country", default="AFG")
     materialize_parser.add_argument("--start-year", type=int, default=2025)
