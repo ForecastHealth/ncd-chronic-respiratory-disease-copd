@@ -96,8 +96,8 @@
                 "link_id": "gCrgZvg7",
                 "operator": "multiply",
                 "postprocessing": null,
-                "source_label": "Combined_DW",
-                "source_node_id": "OxzcOhs4",
+                "source_label": "COPD_Disability_Weight",
+                "source_node_id": "lrso7mga",
                 "subroutines": [
                   {
                     "index": 21,
@@ -221,24 +221,20 @@
           "health_weight_inputs": [
             {
               "generator_kind": "generator:single_value",
-              "label": "Healthy_HYL -> DsFreeSus_HYL",
-              "link_id": "wpXhLEit",
-              "operator": "add",
-              "postprocessing": null,
-              "source_label": "Healthy_HYL",
-              "source_node_id": "2yj2qyPv",
-              "subroutines": [
-                {
-                  "index": 13,
-                  "method": "push_balance_to_edges",
-                  "narration": "Calculate DsFreeSus Disability Surrogate"
-                }
-              ],
-              "target_label": "DsFreeSus HYL",
-              "target_node_id": "lrste7nj"
+              "label": "Healthy_Disability_Weight",
+              "source_label": "Healthy_Disability_Weight",
+              "source_node_id": "lrso71jf"
             }
           ],
           "method": "avenir_blended_health_weight",
+          "simple_health_weight_inputs": [
+            {
+              "generator_kind": "generator:single_value",
+              "label": "Healthy_Disability_Weight",
+              "source_label": "Healthy_Disability_Weight",
+              "source_node_id": "lrso71jf"
+            }
+          ],
           "state_inputs": [
             {
               "generator_kind": "compiler_generated_demographic_residual_population",
@@ -261,24 +257,32 @@
           "health_weight_inputs": [
             {
               "generator_kind": "generator:single_value",
-              "label": "Modified_HYL -> COPDEpsd HYL",
-              "link_id": "ynJLmSBG",
-              "operator": "add",
-              "postprocessing": null,
-              "source_label": "Modified_HYL",
-              "source_node_id": "btLpjBIQ",
-              "subroutines": [
-                {
-                  "index": 14,
-                  "method": "push_balance_to_edges",
-                  "narration": "Calculate COPD HYL Surrogate"
-                }
-              ],
-              "target_label": "COPDEpsd HYL",
-              "target_node_id": "lrwzsau5"
+              "label": "Healthy_Disability_Weight",
+              "source_label": "Healthy_Disability_Weight",
+              "source_node_id": "lrso71jf"
+            },
+            {
+              "generator_kind": "generator:single_value",
+              "label": "COPD_Disability_Weight",
+              "source_label": "COPD_Disability_Weight",
+              "source_node_id": "lrso7mga"
             }
           ],
           "method": "avenir_blended_health_weight",
+          "simple_health_weight_inputs": [
+            {
+              "generator_kind": "generator:single_value",
+              "label": "Healthy_Disability_Weight",
+              "source_label": "Healthy_Disability_Weight",
+              "source_node_id": "lrso71jf"
+            },
+            {
+              "generator_kind": "generator:single_value",
+              "label": "COPD_Disability_Weight",
+              "source_label": "COPD_Disability_Weight",
+              "source_node_id": "lrso7mga"
+            }
+          ],
           "state_inputs": [
             {
               "generator_kind": "runtime_pending_weight_or_unweighted_transfer",
@@ -301,7 +305,7 @@
           ]
         }
       ],
-      "method_boundary": "The metric module calculates HYL from state population and health-weight inputs. Disease graphs still contain legacy contribution machinery until parity-driven removal is complete.",
+      "method_boundary": "The metric module calculates HYL from state population and raw disability-weight inputs. Simple HYL uses raw disability weights; Avenir clinical-effect triples are still pending explicit declarations where interventions alter disability.",
       "method_id": "healthy_years_lived"
     }
   },
