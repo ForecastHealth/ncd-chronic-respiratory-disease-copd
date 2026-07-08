@@ -202,8 +202,31 @@
             "output_node_id": "BdJB5CiG"
           },
           {
-            "death_inputs": [],
-            "life_lost_weight_rule": [],
+            "death_inputs": [
+              {
+                "generator_kind": "data_fetcher:fhdb.yll_weights",
+                "label": null,
+                "link_id": "vreXoNZj",
+                "operator": "add",
+                "postprocessing": null,
+                "source_label": "Deceased-DsFreeSus",
+                "source_node_id": "Deceased",
+                "subroutines": [],
+                "target_label": "YLL-DsFreeSus",
+                "target_node_id": "DSVPggeh"
+              }
+            ],
+            "life_lost_weight_rule": [
+              {
+                "generator": {
+                  "data_fetcher_label": "fhdb",
+                  "method": "yll_weights",
+                  "parameters": {}
+                },
+                "generator_kind": "data_fetcher:fhdb.yll_weights",
+                "link_id": "vreXoNZj"
+              }
+            ],
             "output_label": "YLL-DsFreeSus",
             "output_node_id": "DSVPggeh"
           }
