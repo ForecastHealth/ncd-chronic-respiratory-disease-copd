@@ -28,21 +28,6 @@
       "flush": true
     },
     {
-      "id": "lrwzsau5",
-      "x": -63.48,
-      "y": 23.5,
-      "label": "COPDEpsd HYL",
-      "node_type": "SURROGATE",
-      "color": "#7038E1",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 0
-        }
-      },
-      "flush": true
-    },
-    {
       "id": "lrso81aw",
       "x": 43.25,
       "y": 82.65,
@@ -120,85 +105,10 @@
       "flush": true
     },
     {
-      "id": "lrste7nj",
-      "x": -27.25,
-      "y": 23.75,
-      "label": "DsFreeSus HYL",
-      "node_type": "SURROGATE",
-      "color": "#7038E1",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 0
-        }
-      },
-      "flush": true
-    },
-    {
-      "id": "cigutJvD",
-      "x": -90.22,
-      "y": -36.5,
-      "label": "COPD_HYL",
-      "color": "#06B4E1",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "flush": true,
-      "node_type": "FUNCTION"
-    },
-    {
-      "id": "2yj2qyPv",
-      "x": -26.52,
-      "y": -34.28,
-      "label": "Healthy_HYL",
-      "color": "#06B4E1",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "flush": true,
-      "node_type": "FUNCTION"
-    },
-    {
-      "id": "wdcNK6r7",
-      "x": -62.48,
-      "y": -23.96,
-      "label": "Combined_HYL",
-      "color": "#06B4E1",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "flush": true,
-      "node_type": "FUNCTION"
-    },
-    {
       "id": "OxzcOhs4",
       "x": -62.91,
       "y": -9.76,
       "label": "Combined_DW",
-      "color": "#06B4E1",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "flush": true,
-      "node_type": "FUNCTION"
-    },
-    {
-      "id": "btLpjBIQ",
-      "x": -63.18,
-      "y": 3.94,
-      "label": "Modified_HYL",
       "color": "#06B4E1",
       "generate_array": {
         "method": "single_value",
@@ -243,46 +153,6 @@
       "flush": true
     },
     {
-      "id": "igyhM1ma",
-      "x": 204.28,
-      "y": 98.9,
-      "color": "#FFB255",
-      "label": "DALYs",
-      "flush": true
-    },
-    {
-      "id": "BdJB5CiG",
-      "x": 153.07,
-      "y": 67.33,
-      "color": "#FFB255",
-      "label": "YLL-COPDEpsd",
-      "flush": true
-    },
-    {
-      "id": "DSVPggeh",
-      "x": 181.78,
-      "y": 54,
-      "color": "#FFB255",
-      "label": "YLL-DsFreeSus",
-      "flush": true
-    },
-    {
-      "id": "UKfKgMd7",
-      "x": 131.5,
-      "y": 118.52,
-      "color": "#FFB255",
-      "label": "YLD-COPDEpsd",
-      "flush": true
-    },
-    {
-      "id": "Yav8dlAY",
-      "x": 129.5,
-      "y": 107.51,
-      "color": "#FFB255",
-      "label": "YLD-DsFreeSus",
-      "flush": true
-    },
-    {
       "id": "q0kGTdmQ",
       "x": 111.19,
       "y": 46.13,
@@ -312,17 +182,6 @@
       "label": "COPDEpsd_CFR -> COPDEpsd Mortality"
     },
     {
-      "id": "5djuaIfD",
-      "source": "COPDEpsd",
-      "target": "lrwzsau5",
-      "edge_type": "transition",
-      "set_by_surrogate": true,
-      "value_to_target_operator": "add",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "label": "COPDEpsd -> COPDEpsd HYL"
-    },
-    {
       "id": "XNyqqSsC",
       "source": "COPDEpsd",
       "target": "lrstce6u",
@@ -347,145 +206,6 @@
         }
       },
       "label": "COPDEpsd Mortality -> Deceased"
-    },
-    {
-      "id": "qWTVoxqS",
-      "source": "lrso7mga",
-      "target": "cigutJvD",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        },
-        "postprocessing": {
-          "negative": true
-        }
-      },
-      "label": "COPD_Disability_Weight -> COPD_HYL"
-    },
-    {
-      "id": "Sayp6xhP",
-      "source": "lrso71jf",
-      "target": "2yj2qyPv",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        },
-        "postprocessing": {
-          "negative": true
-        }
-      },
-      "label": "Healthy_Disability_Weight -> Healthy_HYL"
-    },
-    {
-      "id": "fmnbjGOh",
-      "source": "cigutJvD",
-      "target": "wdcNK6r7",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "multiply",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "label": "COPD_HYL -> Combined_HYL"
-    },
-    {
-      "id": "6Ei2mkxO",
-      "source": "2yj2qyPv",
-      "target": "wdcNK6r7",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "multiply",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "label": "Healthy_HYL -> Combined_HYL"
-    },
-    {
-      "id": "wpXhLEit",
-      "source": "2yj2qyPv",
-      "target": "lrste7nj",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "label": "Healthy_HYL -> DsFreeSus_HYL"
-    },
-    {
-      "id": "NCs51br5",
-      "source": "wdcNK6r7",
-      "target": "OxzcOhs4",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        },
-        "postprocessing": {
-          "negative": true
-        }
-      },
-      "label": "Combined_HYL -> Combined_DW"
-    },
-    {
-      "id": "VmiA6H36",
-      "source": "OxzcOhs4",
-      "target": "btLpjBIQ",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        },
-        "postprocessing": {
-          "negative": true
-        }
-      },
-      "label": "Combined_DW -> Modified_HYL"
-    },
-    {
-      "id": "ynJLmSBG",
-      "source": "btLpjBIQ",
-      "target": "lrwzsau5",
-      "edge_type": "projection",
-      "requires_source_balance": true,
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "label": "Modified_HYL -> COPDEpsd HYL"
     },
     {
       "id": "s2aCngF5",
@@ -553,115 +273,6 @@
         }
       },
       "label": "COPDEpsd Incidence -> COPDEpsd"
-    },
-    {
-      "id": "Ki96tupa",
-      "source": "BdJB5CiG",
-      "target": "igyhM1ma",
-      "value_to_target_operator": "add",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
-      "id": "I5KhJeeN",
-      "source": "DSVPggeh",
-      "target": "igyhM1ma",
-      "value_to_target_operator": "add",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
-      "id": "SFYPt8Al",
-      "source": "UKfKgMd7",
-      "target": "igyhM1ma",
-      "value_to_target_operator": "add",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
-      "id": "5zPdYBgw",
-      "source": "Yav8dlAY",
-      "target": "igyhM1ma",
-      "value_to_target_operator": "add",
-      "remove_value_from_source": false,
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      }
-    },
-    {
-      "id": "nILTBj4D",
-      "source": "q0kGTdmQ",
-      "target": "BdJB5CiG",
-      "value_to_target_operator": "add",
-      "remove_value_from_source": false,
-      "trigger": {
-        "method": "inflow",
-        "parameters": {
-          "value_to_use": "inflow"
-        }
-      },
-      "generate_array": {
-        "data_fetcher_label": "fhdb",
-        "method": "yll_weights",
-        "parameters": {}
-      }
-    },
-    {
-      "id": "kgTS8XSv",
-      "source": "lrso71jf",
-      "target": "Yav8dlAY",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "remove_value_from_source": false,
-      "value_to_target_operator": "multiply"
-    },
-    {
-      "id": "YSoRbOKl",
-      "source": "COPDEpsd",
-      "target": "UKfKgMd7",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "remove_value_from_source": false,
-      "value_to_target_operator": "add"
-    },
-    {
-      "id": "gCrgZvg7",
-      "source": "OxzcOhs4",
-      "target": "UKfKgMd7",
-      "generate_array": {
-        "method": "single_value",
-        "parameters": {
-          "value": 1
-        }
-      },
-      "remove_value_from_source": false,
-      "value_to_target_operator": "multiply"
     }
   ],
   "subroutines": [
@@ -676,8 +287,6 @@
       "narration": "Generate the base values of the surrogate nodes",
       "included_source_nodes": [
         "lrstce6u",
-        "lrste7nj",
-        "lrwzsau5",
         "cXtHHFW2"
       ]
     },
@@ -686,11 +295,7 @@
       "batch": false,
       "narration": "Generate the base values of the nodes that use constants",
       "included_source_nodes": [
-        "cigutJvD",
         "lrwz1ikj",
-        "wdcNK6r7",
-        "2yj2qyPv",
-        "btLpjBIQ",
         "OxzcOhs4"
       ]
     },
@@ -724,52 +329,14 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
-      "narration": "Calculate Healthy and COPD HYL",
-      "included_edges": [
-        "qWTVoxqS",
-        "Sayp6xhP"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Calculate Combined HYL",
-      "included_edges": [
-        "fmnbjGOh",
-        "6Ei2mkxO"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
       "narration": "Calculate Combined DW",
-      "included_edges": [
-        "NCs51br5"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Calculate Modified HYL",
-      "included_edges": [
-        "VmiA6H36"
-      ]
+      "included_edges": []
     },
     {
       "method": "push_balance_to_edges",
       "batch": false,
       "narration": "Calculate DsFreeSus Disability Surrogate",
-      "included_edges": [
-        "wpXhLEit"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Calculate COPD HYL Surrogate",
-      "included_edges": [
-        "ynJLmSBG"
-      ]
+      "included_edges": []
     },
     {
       "method": "push_balance_to_edges",
@@ -796,52 +363,11 @@
       "batch": false
     },
     {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Add prevalence to YLD nodes",
-      "included_edges": [
-        "YSoRbOKl"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Multiply YLDs by Disability Weights",
-      "included_edges": [
-        "kgTS8XSv",
-        "gCrgZvg7"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "batch": false,
-      "narration": "Record HYL",
-      "included_edges": [
-        "5djuaIfD"
-      ]
-    },
-    {
-      "method": "push_balance_to_edges",
-      "narration": "Add YLLs, YLDs to DALYs",
-      "batch": false,
-      "included_edges": [
-        "Ki96tupa",
-        "I5KhJeeN",
-        "SFYPt8Al",
-        "5zPdYBgw"
-      ]
-    },
-    {
       "method": "echo",
       "batch": false,
       "narration": "Record ECHO values",
       "included_source_nodes": [
         "q0kGTdmQ",
-        "BdJB5CiG",
-        "DSVPggeh",
-        "UKfKgMd7",
-        "Yav8dlAY",
-        "igyhM1ma",
         "COPDEpsd"
       ]
     }

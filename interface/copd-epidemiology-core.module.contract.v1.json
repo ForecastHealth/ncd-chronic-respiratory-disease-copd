@@ -70,16 +70,6 @@
       "binding": {
         "node_id": "lrstce6u"
       }
-    },
-    {
-      "channel_id": "copd_dalys",
-      "meaning": "COPD disability-adjusted life years metric.",
-      "shape": "yearly_scalar_or_2x101",
-      "units": "years",
-      "required": false,
-      "binding": {
-        "node_id": "igyhM1ma"
-      }
     }
   ],
   "state_initialization": {
@@ -182,5 +172,8 @@
         "node_id": "lrwz1ikj"
       }
     }
+  ],
+  "implementation_notes": [
+    "HYL, YLL, YLD and DALY calculations are owned by metric modules, not by this disease graph. This disease module publishes raw disease rows needed by those metric modules."
   ]
 }
