@@ -112,32 +112,6 @@
       "required_for": [
         "copd_mortality_flow"
       ]
-    },
-    {
-      "data_type": "copd.get_observation",
-      "parameters": {
-        "country": "ISO3",
-        "observation": "COPDEpsd -> Disability"
-      },
-      "required_for": [
-        "copd_disability_weight"
-      ]
-    },
-    {
-      "data_type": "healthy_disability",
-      "parameters": {
-        "country": "ISO3"
-      },
-      "required_for": [
-        "healthy_years_lived"
-      ]
-    },
-    {
-      "data_type": "yll_weights",
-      "parameters": {},
-      "required_for": [
-        "years_of_life_lost"
-      ]
     }
   ],
   "cards": {},
@@ -160,19 +134,7 @@
     ],
     "face_validity_checks": []
   },
-  "intervention_extension_points": [
-    {
-      "channel_id": "copd_disability_effect_transform",
-      "meaning": "Target-side transform node where component-owned COPD clinical intervention disability effects are multiplied into the COPD disability weight.",
-      "endpoint_role": "target",
-      "node_id": "lrwz1ikj",
-      "shape": "scalar",
-      "units": "proportion",
-      "binding": {
-        "node_id": "lrwz1ikj"
-      }
-    }
-  ],
+  "intervention_extension_points": [],
   "implementation_notes": [
     "HYL, YLL, YLD and DALY calculations are owned by metric modules, not by this disease graph. This disease module publishes raw disease rows needed by those metric modules."
   ]
