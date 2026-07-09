@@ -162,6 +162,21 @@
       "balance_type": "array",
       "color": "#FB6375",
       "flush": true
+    },
+    {
+      "id": "YLL_Weight",
+      "x": 35.92,
+      "y": -44.84,
+      "label": "YLL_Weight",
+      "color": "#06B4E1",
+      "generate_array": {
+        "fetch_once": true,
+        "data_fetcher_label": "fhdb",
+        "method": "yll_weights",
+        "parameters": {}
+      },
+      "node_type": "CONSTANT",
+      "flush": true
     }
   ],
   "links": [
