@@ -172,6 +172,7 @@
   },
   "compiler_composition": {
     "schema": "forecast-health.botech-disease-composition.v1",
+    "target_key": "copd",
     "model_slug": "ncd-copd",
     "label": "COPD",
     "baseline_template_id": "copd_baseline",
