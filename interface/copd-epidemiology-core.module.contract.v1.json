@@ -220,7 +220,8 @@
           "id": "compiler::copd::incidence_from_disease_free_population",
           "label": "COPD incidence from disease-free population",
           "target_surrogate": "cXtHHFW2",
-          "target_state": "COPDEpsd"
+          "target_state": "COPDEpsd",
+          "target_transition_edge_id": "2jjgV7Dx"
         }
       ],
       "disable_subroutine_edges": [
