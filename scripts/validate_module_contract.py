@@ -10,7 +10,6 @@ from typing import Any
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CONTRACT_ROOT = Path("/Users/rory/Documents/botech-modular-structure/contracts")
 STALE_PATHS = (
     "build",
     "scenarios",
@@ -369,8 +368,6 @@ def validate() -> list[str]:
             if payload.get("schema") != expected_schema:
                 fail(errors, f"Command surface `{command}` emitted schema {payload.get('schema')} not {expected_schema}")
 
-    if not CONTRACT_ROOT.exists():
-        fail(errors, "Cannot find botech-modular-structure contract root")
     return errors
 
 
