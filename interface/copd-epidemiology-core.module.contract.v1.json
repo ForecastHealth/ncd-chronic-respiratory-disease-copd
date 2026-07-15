@@ -263,6 +263,11 @@
       "units": "proportion",
       "binding": {
         "node_id": "lrwz1ikj"
+      },
+      "composition_semantics": {
+        "combination_rule": "additive_disability_reduction_contributions",
+        "neutral_value": 1,
+        "selection_guard": "Only explicitly selected COPD intervention components contribute to the shared disability transform."
       }
     }
   ],
