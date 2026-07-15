@@ -3,7 +3,7 @@
   "module_id": "copd_epidemiology_core",
   "owner": {
     "repo_id": "ncd-copd",
-    "repo_ref": "/Users/rory/Models/ncd-copd",
+    "repo_ref": "ncd-copd",
     "module_contract_ref": "interface/copd-epidemiology-core.module.contract.v1.json"
   },
   "version": "v1",

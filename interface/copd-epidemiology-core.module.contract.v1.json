@@ -4,7 +4,7 @@
   "module_type": "disease_epidemiology",
   "owner": {
     "repo_id": "ncd-copd",
-    "repo_ref": "/Users/rory/Models/ncd-copd"
+    "repo_ref": "ncd-copd"
   },
   "version": "v1",
   "runtime_role": "compiled_together",
