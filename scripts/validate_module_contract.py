@@ -215,6 +215,11 @@ def validate() -> list[str]:
             errors,
             "copd_incidence_flow must bind the compiler-generated disease-free-population-to-incidence edge",
         )
+    mortality_output = published_outputs.get("copd_mortality_flow", {})
+    if mortality_output.get("units") != "people":
+        fail(errors, "copd_mortality_flow must be published in people")
+    if mortality_output.get("binding") != {"edge_id": "XNyqqSsC"}:
+        fail(errors, "copd_mortality_flow must bind the COPD episode-to-mortality transition edge")
     for output in module.get("published_outputs", []):
         binding = output.get("binding", {})
         if "node_id" in binding:
