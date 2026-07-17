@@ -58,7 +58,7 @@
       "units": "people",
       "required": true,
       "binding": {
-        "node_id": "cXtHHFW2"
+        "edge_id": "compiler::copd::incidence_from_disease_free_population"
       }
     },
     {

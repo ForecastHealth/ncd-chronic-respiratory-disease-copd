@@ -201,6 +201,20 @@ def validate() -> list[str]:
         elif channel_id == "incidence_modifier" and bound_link.get("compiler_binding", {}).get("channel_id") != "incidence_modifier":
             fail(errors, "COPD incidence modifier compiler binding does not name the incidence_modifier channel")
     published_bindings = []
+    published_outputs = {
+        item.get("channel_id"): item
+        for item in module.get("published_outputs", [])
+    }
+    incidence_output = published_outputs.get("copd_incidence_flow", {})
+    if incidence_output.get("units") != "people":
+        fail(errors, "copd_incidence_flow must be published in people")
+    if incidence_output.get("binding") != {
+        "edge_id": "compiler::copd::incidence_from_disease_free_population"
+    }:
+        fail(
+            errors,
+            "copd_incidence_flow must bind the compiler-generated disease-free-population-to-incidence edge",
+        )
     for output in module.get("published_outputs", []):
         binding = output.get("binding", {})
         if "node_id" in binding:
