@@ -9,9 +9,9 @@ Current comparison templates or intervention templates to review:
 - `copd_cr4`
 
 Existing intervention repos beside this source module:
-- `/Users/rory/Models/ncd-copd-inhaledsalbutamol`
-- `/Users/rory/Models/ncd-copd-ipratropiuminhaler`
-- `/Users/rory/Models/ncd-copd-oralprednisolone`
+- `/Users/rory/Botech/library/ncd-copd-inhaledsalbutamol`
+- `/Users/rory/Botech/library/ncd-copd-ipratropiuminhaler`
+- `/Users/rory/Botech/library/ncd-copd-oralprednisolone`
 
 Known route or target context from the current compiler catalogue:
 - target `copd`
@@ -34,9 +34,9 @@ The disease or risk-factor source module should stop owning intervention-specifi
 
 For example, asthma CR3 is now made from three intervention repos:
 
-- `/Users/rory/Models/ncd-asthma-lowdosebeclom`
-- `/Users/rory/Models/ncd-asthma-highdosebeclom`
-- `/Users/rory/Models/ncd-asthma-inhaledshortactingbeta`
+- `/Users/rory/Botech/library/ncd-asthma-lowdosebeclom`
+- `/Users/rory/Botech/library/ncd-asthma-highdosebeclom`
+- `/Users/rory/Botech/library/ncd-asthma-inhaledshortactingbeta`
 
 Each repo owns one Botech component graph slice, its own intervention contract, and its own parameter placements. The client compiler assembles those three modules with `ncd-asthma` when the user selects CR3.
 
@@ -64,7 +64,7 @@ Start from the real source evidence. Read the current source module, the recover
 
 For each intervention, identify the exact old graph slice. This means the nodes, links, and subroutine order that changed when the old template was applied. Include upstream coverage, target coverage, scale-up year, effect size, population in need, intermediate calculation nodes, final outputs, and any resource-population output that already existed in the graph.
 
-Create or repair the intervention repo under `/Users/rory/Models/<source-module-slug>-<intervention-slug>`. Use the same ownership shape as the CR3 intervention repos. Do not keep intervention graph logic in the disease or risk-factor module just because it is easier.
+Create or repair the intervention repo under `/Users/rory/Botech/library/<source-module-slug>-<intervention-slug>`. Use the same ownership shape as the CR3 intervention repos. Do not keep intervention graph logic in the disease or risk-factor module just because it is easier.
 
 Write the intervention contract so the compiler can consume it without private knowledge. The contract should say what graph component to insert, which target module it is for, what parameters the baseline uses, what parameters the comparison uses, what outputs are published, and what execution-order metadata the compiler must preserve.
 
@@ -92,7 +92,7 @@ Run the source module validator after removing the old intervention-owned surfac
 
 Run the compiler bundle sync in `ncd-client` so the intervention repo is copied into `compiler-inputs/module-release-bundle.v1/modules`.
 
-Compile the baseline and comparison through `scripts/canonical_botech_compiler.py`. The receipt must cite the intervention repo contracts from the synced module bundle, not local `/Users/rory/Models` paths.
+Compile the baseline and comparison through `scripts/canonical_botech_compiler.py`. The receipt must cite the intervention repo contracts from the synced module bundle, not local `/Users/rory/Botech/library` paths.
 
 Run the compiled model through the current Botech WASM or Rust runtime with hosted unified API data. Baseline must not receive comparison values. Comparison must receive the selected intervention values. The output should move in the expected direction unless there is a documented data or method reason it cannot.
 

@@ -1,13 +1,13 @@
 {
   "schema": "botech.legacy-monolith-reference.provenance.v1",
   "disease_slug": "ncd-copd",
-  "target_repo_path": "/Users/rory/Models/ncd-copd",
+  "target_repo_path": "/Users/rory/Botech/library/ncd-copd",
   "artifact_warning": "This is a legacy reference specimen for audit and parity work only. It is not an active COPD module surface, and it is not an architectural pattern to preserve. Demography, risk factors, and cross-module behavior should be re-expressed through current module contracts and compiler lowering rather than restored inside COPD.",
   "recovered_model": {
     "path": "monolith-reference/model.json",
     "sha256": "6de71fb2e75c34042b6b1490338da5ccc2251d2ebc02f38e5983c165edebcd24",
     "source": {
-      "repo_path": "/Users/rory/Models/ncd-copd",
+      "repo_path": "/Users/rory/Botech/library/ncd-copd",
       "commit": "0db2aa1d4329d938a056cc64a093fb6c2773c00f",
       "commit_date": "2025-09-01T17:11:07+08:00",
       "branches_containing_commit": [
