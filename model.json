@@ -23,6 +23,11 @@
         "method": "single_value",
         "parameters": {
           "value": 0
+        },
+        "display": {
+          "label": "COPD episode mortality",
+          "units": "annual probability",
+          "source": "Module calculation"
         }
       },
       "flush": true
@@ -40,6 +45,11 @@
           "country": "AFG",
           "disease": "COPD",
           "measure": "deaths"
+        },
+        "display": {
+          "label": "COPD episode case-fatality probability",
+          "units": "annual probability",
+          "source": "Global Burden of Disease via Spectrum/OneHealth NCD defaults"
         }
       },
       "flush": true,
@@ -57,6 +67,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "Disability Effect adjustment",
+          "units": "multiplier",
+          "source": "Module calculation"
         }
       },
       "node_type": "FUNCTION"
@@ -82,6 +97,11 @@
         "method": "healthy_disability",
         "parameters": {
           "country": "AFG"
+        },
+        "display": {
+          "label": "Background disability weight",
+          "units": "disability weight",
+          "source": "Spectrum/GBD disability-weight defaults"
         }
       },
       "node_type": "CONSTANT"
@@ -99,6 +119,11 @@
         "parameters": {
           "country": "AFG",
           "observation": "COPDEpsd -> Disability"
+        },
+        "display": {
+          "label": "COPD disability weight",
+          "units": "disability weight",
+          "source": "Spectrum/OneHealth disease association file"
         }
       },
       "node_type": "CONSTANT",
@@ -114,6 +139,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "Combined disability weight",
+          "units": "disability weight",
+          "source": "Module calculation"
         }
       },
       "flush": true,
@@ -133,6 +163,11 @@
           "country": "AFG",
           "disease": "COPD",
           "measure": "incidence"
+        },
+        "display": {
+          "label": "COPD episode incidence rate",
+          "units": "cases per person per year",
+          "source": "Global Burden of Disease via Spectrum/OneHealth NCD defaults"
         }
       },
       "flush": true
@@ -148,6 +183,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "COPD episode incidence",
+          "units": "people per year",
+          "source": "Module calculation"
         }
       },
       "flush": true
@@ -175,7 +215,12 @@
         "parameters": {
           "country": "AFG"
         },
-        "generate_once": true
+        "generate_once": true,
+        "display": {
+          "label": "Years of life lost by age",
+          "units": "years",
+          "source": "Platform calculation using an 80-year life-expectancy limit"
+        }
       },
       "node_type": "CONSTANT",
       "flush": true
@@ -194,6 +239,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "COPD episode case-fatality probability to COPD episode mortality",
+          "units": "multiplier",
+          "source": "Module calculation"
         }
       },
       "label": "COPDEpsd_CFR -> COPDEpsd Mortality"
@@ -220,6 +270,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "COPD episode mortality to Deceased",
+          "units": "multiplier",
+          "source": "Module calculation"
         }
       },
       "label": "COPDEpsd Mortality -> Deceased"
@@ -236,6 +291,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "Disability Effect adjustment to COPD disability weight",
+          "units": "multiplier",
+          "source": "Module calculation"
         }
       },
       "label": "Disability_Effect_Transform -> COPD_Disability_Weight"
@@ -267,6 +327,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "COPD episode incidence rate to COPD episode incidence",
+          "units": "multiplier",
+          "source": "Module calculation"
         }
       },
       "label": "COPDEpsd_Incidence_Rate -> COPDEpsd Incidence",
@@ -287,6 +352,11 @@
         "method": "single_value",
         "parameters": {
           "value": 1
+        },
+        "display": {
+          "label": "COPD episode incidence to COPD episode",
+          "units": "multiplier",
+          "source": "Module calculation"
         }
       },
       "label": "COPDEpsd Incidence -> COPDEpsd"
