@@ -1,0 +1,29 @@
+{
+  "schema": "forecast-health.impact-view.v1",
+  "module_id": "ncd-copd",
+  "scope": "disease",
+  "scope_id": "ncd-copd",
+  "label": "COPD",
+  "show_headline": true,
+  "charts": [
+    {
+      "id": "copd-population",
+      "series_id": "ncd-health-states-over-time",
+      "title": "People living with COPD",
+      "description": "People living with chronic obstructive pulmonary disease in each year.",
+      "element_ids": ["COPDEpsd"]
+    },
+    {
+      "id": "copd-deaths",
+      "series_id": "ncd-mortality-over-time",
+      "title": "Deaths from COPD",
+      "description": "COPD-specific deaths in each year."
+    },
+    {
+      "id": "copd-healthy-years",
+      "series_id": "ncd-result-query-hyl-simple-over-time",
+      "title": "Healthy years lived after accounting for COPD disability",
+      "description": "Healthy years lived after accounting for disability from chronic obstructive pulmonary disease in each year."
+    }
+  ]
+}
