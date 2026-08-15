@@ -2,7 +2,7 @@
 title: Chronic obstructive pulmonary disease epidemiology
 module_identifier: ncd-copd
 owner: Forecast Health
-last_updated: 2026-07-19
+last_updated: 2026-08-15
 status: Executable source module
 ---
 
@@ -47,8 +47,8 @@ The demographic module supplies canonical population and background mortality. `
 
 ## Assumptions and limitations
 
-The disease-free state is a local residual, not an additional population. The model is a marginal COPD estimate and must be reconciled to the canonical population. Clinical resource requirements and health metrics remain outside this disease module.
+The disease-free state is a local residual, not an additional population. The model is a marginal COPD estimate and must be reconciled to the canonical population. Routine-care declarations use the preserved Spectrum/OneHealth-derived salbutamol and oral-prednisolone resource quantities. Ipratropium maintenance care remains visible as source under review because the current evidence does not provide a stable eligible-share default. Health metrics remain outside this disease module.
 
 ## Status
 
-The disease graph, compiler contract, baseline template, and intervention extension points are implemented. The source graph requires compiler lowering and is not a standalone national model.
+The disease graph, compiler contract, baseline template, intervention extension points, and routine-care declarations are implemented. The source graph requires compiler lowering and is not a standalone national model.

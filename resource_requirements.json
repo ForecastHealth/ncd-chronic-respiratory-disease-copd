@@ -1,0 +1,444 @@
+{
+  "schema": "forecast-health.intervention-resource-requirements.v1",
+  "intervention_id": "ncd-copd-routine-care",
+  "owner_module": "ncd-copd",
+  "resource_blocks": [
+    {
+      "id": "cr2-inhaled-salbutamol",
+      "label": "COPD symptom relief with inhaled salbutamol",
+      "source_package_ref": "/Users/rory/Botech/clients/ncd-client/public/models/ncd-copd/resources/package.json",
+      "source_graph_ref": "/models/ncd-copd/resources/graphs/cr2_inhaled_salbutamol.json",
+      "entry_node_id": "ResourcePopulationReached_InhaledSalbutamol",
+      "parameter_bindings": [
+        {
+          "key": "Outpatient visit: Share",
+          "category": "Visits",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-visit-outpatient-visit",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Outpatient visit: Visits per person",
+          "category": "Visits",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-visit-outpatient-visit",
+            "parameter": "number-of-visits"
+          }
+        },
+        {
+          "key": "Outpatient visit: Visit cost per day",
+          "category": "Visit Cost",
+          "cost_item": {
+            "id": "cost-item.visit-outpatient-visit.cost-per-day",
+            "label": "Outpatient visit cost per day"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-visit-outpatient-visit",
+            "parameter": "cost-per-day"
+          },
+          "country_cost_lookup": {
+            "category": "facilities",
+            "setting": "outpatient",
+            "facility_level": "health_centre_no_beds"
+          }
+        },
+        {
+          "key": "Generalist/Primary care doctor: Share",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-generalist-primary-care-doctor",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Generalist/Primary care doctor: Minutes per person",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-generalist-primary-care-doctor",
+            "parameter": "number-of-minutes"
+          }
+        },
+        {
+          "key": "Generalist/Primary care doctor: Salary per minute",
+          "category": "Workforce Cost",
+          "cost_item": {
+            "id": "cost-item.workforce-generalist-primary-care-doctor.salary-per-minute",
+            "label": "Generalist/Primary care doctor salary per minute"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-workforce-generalist-primary-care-doctor",
+            "parameter": "salary-per-minute"
+          },
+          "country_cost_lookup": {
+            "category": "workforce",
+            "cadre": 4
+          }
+        },
+        {
+          "key": "Nurse: Share",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-nurse",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Nurse: Minutes per person",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-nurse",
+            "parameter": "number-of-minutes"
+          }
+        },
+        {
+          "key": "Nurse: Salary per minute",
+          "category": "Workforce Cost",
+          "cost_item": {
+            "id": "cost-item.workforce-nurse.salary-per-minute",
+            "label": "Nurse salary per minute"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-workforce-nurse",
+            "parameter": "salary-per-minute"
+          },
+          "country_cost_lookup": {
+            "category": "workforce",
+            "cadre": 3
+          }
+        },
+        {
+          "key": "Salbutamol inhaler, 100 mcg: Share",
+          "category": "Drugs and Supplies",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-pin-supply-salbutamol-inhaler-100-mcg",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Salbutamol inhaler, 100 mcg: Units per day",
+          "category": "Drugs and Supplies",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-units-supply-salbutamol-inhaler-100-mcg",
+            "parameter": "units-per-day"
+          }
+        },
+        {
+          "key": "Salbutamol inhaler, 100 mcg: Days per case",
+          "category": "Drugs and Supplies",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-units-supply-salbutamol-inhaler-100-mcg",
+            "parameter": "number-of-days"
+          }
+        },
+        {
+          "key": "Salbutamol inhaler, 100 mcg: Unit cost",
+          "category": "Unit Cost",
+          "cost_item": {
+            "id": "cost-item.salbutamol-inhaler-100-mcg.unit-cost",
+            "label": "Salbutamol inhaler, 100 mcg"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-supply-salbutamol-inhaler-100-mcg",
+            "parameter": "unit_cost"
+          }
+        }
+      ],
+      "projection_source": {
+        "nodeId": "COPDEpsd",
+        "label": "COPDEpsd",
+        "eventType": "ECHO"
+      },
+      "default_costing_method": "visit_based",
+      "source_status": "declared",
+      "evidence": {
+        "source_module": "ncd-copd-inhaledsalbutamol",
+        "source_workbook": "Spec5/ModData/IC/ICModData.xlsx",
+        "source_sheet": "Treatment Inputs rows 2251-2254; Drug and Supply Prices row 592",
+        "meaning": "Routine-care resource quantities preserved from the existing Spectrum/OneHealth-derived treatment costing structure."
+      },
+      "service_accounting": {
+        "method": "disease_population_times_eligible_share_times_coverage",
+        "service_role": "ordinary_care_and_scale_up",
+        "supported_model_slugs": [
+          "ncd-copd"
+        ],
+        "population_in_need": {
+          "parameter_id": "cr2_inhaled_salbutamol_routine_care_population_in_need",
+          "default": 1.0
+        },
+        "coverage": {
+          "baseline_parameter_id": "cr2_inhaled_salbutamol_routine_care_baseline_coverage",
+          "baseline_default": 0.05,
+          "target_parameter_id": "cr2_inhaled_salbutamol_routine_care_target_coverage",
+          "target_default": 0.05,
+          "scale_up_start_index_parameter_id": "cr2_inhaled_salbutamol_routine_care_scale_up_start_index",
+          "scale_up_start_index_default": 1,
+          "scale_up_end_index_parameter_id": "cr2_inhaled_salbutamol_routine_care_scale_up_end_index",
+          "scale_up_end_index_default": 2
+        }
+      }
+    },
+    {
+      "id": "copd-ipratropium-maintenance",
+      "label": "COPD maintenance therapy with ipratropium inhaler — Source under review",
+      "projection_sources": [
+        {
+          "nodeId": "COPDEpsd",
+          "label": "COPDEpsd",
+          "eventType": "ECHO"
+        }
+      ],
+      "entry_node_id": "ResourcePopulationReached_copd_ipratropium_maintenance",
+      "default_costing_method": "visit_based",
+      "source_status": "source_under_review",
+      "evidence": {
+        "meaning": "The resource quantities are declared, but the eligible-share input is not yet available as a stable module default."
+      },
+      "service_accounting": {
+        "method": "disease_population_times_eligible_share_times_coverage",
+        "service_role": "ordinary_care_and_scale_up",
+        "supported_model_slugs": [
+          "ncd-copd"
+        ],
+        "population_in_need": {
+          "parameter_id": "copd_ipratropium_maintenance_routine_care_population_in_need",
+          "default": 0
+        },
+        "coverage": {
+          "baseline_parameter_id": "copd_ipratropium_maintenance_routine_care_baseline_coverage",
+          "baseline_default": 0,
+          "target_parameter_id": "copd_ipratropium_maintenance_routine_care_target_coverage",
+          "target_default": 0,
+          "scale_up_start_index_parameter_id": "copd_ipratropium_maintenance_routine_care_scale_up_start_index",
+          "scale_up_start_index_default": 1,
+          "scale_up_end_index_parameter_id": "copd_ipratropium_maintenance_routine_care_scale_up_end_index",
+          "scale_up_end_index_default": 2
+        }
+      },
+      "parameter_bindings": [],
+      "graph": {
+        "metadata": {
+          "name": "COPD maintenance therapy with ipratropium inhaler",
+          "notes": "The resource quantities are declared, but the eligible-share input is not yet available as a stable module default."
+        },
+        "nodes": [
+          {
+            "id": "ResourcePopulationReached_copd_ipratropium_maintenance",
+            "label": "COPD maintenance therapy with ipratropium inhaler",
+            "type": "pin",
+            "node_type": "pin",
+            "balance_type": "array",
+            "flush": true,
+            "ageing": false,
+            "color": "#808080",
+            "is_projection_entry": true
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "id": "cr2-oral-prednisolone",
+      "label": "COPD exacerbation treatment with oral prednisolone",
+      "source_package_ref": "/Users/rory/Botech/clients/ncd-client/public/models/ncd-copd/resources/package.json",
+      "source_graph_ref": "/models/ncd-copd/resources/graphs/cr2_oral_prednisolone.json",
+      "entry_node_id": "ResourcePopulationReached_OralPrednisolone",
+      "parameter_bindings": [
+        {
+          "key": "Outpatient visit: Share",
+          "category": "Visits",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-visit-outpatient-visit",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Outpatient visit: Visits per person",
+          "category": "Visits",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-visit-outpatient-visit",
+            "parameter": "number-of-visits"
+          }
+        },
+        {
+          "key": "Outpatient visit: Visit cost per day",
+          "category": "Visit Cost",
+          "cost_item": {
+            "id": "cost-item.visit-outpatient-visit.cost-per-day",
+            "label": "Outpatient visit cost per day"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-visit-outpatient-visit",
+            "parameter": "cost-per-day"
+          },
+          "country_cost_lookup": {
+            "category": "facilities",
+            "setting": "outpatient",
+            "facility_level": "health_centre_no_beds"
+          }
+        },
+        {
+          "key": "Generalist/Primary care doctor: Share",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-generalist-primary-care-doctor",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Generalist/Primary care doctor: Minutes per person",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-generalist-primary-care-doctor",
+            "parameter": "number-of-minutes"
+          }
+        },
+        {
+          "key": "Generalist/Primary care doctor: Salary per minute",
+          "category": "Workforce Cost",
+          "cost_item": {
+            "id": "cost-item.workforce-generalist-primary-care-doctor.salary-per-minute",
+            "label": "Generalist/Primary care doctor salary per minute"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-workforce-generalist-primary-care-doctor",
+            "parameter": "salary-per-minute"
+          },
+          "country_cost_lookup": {
+            "category": "workforce",
+            "cadre": 4
+          }
+        },
+        {
+          "key": "Nurse: Share",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-nurse",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Nurse: Minutes per person",
+          "category": "Workforce",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-workforce-nurse",
+            "parameter": "number-of-minutes"
+          }
+        },
+        {
+          "key": "Nurse: Salary per minute",
+          "category": "Workforce Cost",
+          "cost_item": {
+            "id": "cost-item.workforce-nurse.salary-per-minute",
+            "label": "Nurse salary per minute"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-workforce-nurse",
+            "parameter": "salary-per-minute"
+          },
+          "country_cost_lookup": {
+            "category": "workforce",
+            "cadre": 3
+          }
+        },
+        {
+          "key": "Prednisolone, tablet, 20 mg: Share",
+          "category": "Drugs and Supplies",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-pin-supply-prednisolone-tablet-20-mg",
+            "parameter": "pin"
+          }
+        },
+        {
+          "key": "Prednisolone, tablet, 20 mg: Units per day",
+          "category": "Drugs and Supplies",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-units-supply-prednisolone-tablet-20-mg",
+            "parameter": "units-per-day"
+          }
+        },
+        {
+          "key": "Prednisolone, tablet, 20 mg: Days per case",
+          "category": "Drugs and Supplies",
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-units-supply-prednisolone-tablet-20-mg",
+            "parameter": "number-of-days"
+          }
+        },
+        {
+          "key": "Prednisolone, tablet, 20 mg: Unit cost",
+          "category": "Unit Cost",
+          "cost_item": {
+            "id": "cost-item.prednisolone-tablet-20-mg.unit-cost",
+            "label": "Prednisolone, tablet, 20 mg"
+          },
+          "target": {
+            "type": "edge_parameter",
+            "edgeId": "to-cost-supply-prednisolone-tablet-20-mg",
+            "parameter": "unit_cost"
+          }
+        }
+      ],
+      "projection_source": {
+        "nodeId": "COPDEpsd",
+        "label": "COPDEpsd",
+        "eventType": "ECHO"
+      },
+      "default_costing_method": "visit_based",
+      "source_status": "declared",
+      "evidence": {
+        "source_module": "ncd-copd-oralprednisolone",
+        "source_workbook": "Spec5/ModData/IC/ICModData.xlsx",
+        "source_sheet": "Treatment Inputs rows 2267-2270; Drug and Supply Prices row 595",
+        "meaning": "Routine-care resource quantities preserved from the existing Spectrum/OneHealth-derived treatment costing structure."
+      },
+      "service_accounting": {
+        "method": "disease_population_times_eligible_share_times_coverage",
+        "service_role": "ordinary_care_and_scale_up",
+        "supported_model_slugs": [
+          "ncd-copd"
+        ],
+        "population_in_need": {
+          "parameter_id": "cr2_oral_prednisolone_routine_care_population_in_need",
+          "default": 0.12
+        },
+        "coverage": {
+          "baseline_parameter_id": "cr2_oral_prednisolone_routine_care_baseline_coverage",
+          "baseline_default": 0.05,
+          "target_parameter_id": "cr2_oral_prednisolone_routine_care_target_coverage",
+          "target_default": 0.05,
+          "scale_up_start_index_parameter_id": "cr2_oral_prednisolone_routine_care_scale_up_start_index",
+          "scale_up_start_index_default": 1,
+          "scale_up_end_index_parameter_id": "cr2_oral_prednisolone_routine_care_scale_up_end_index",
+          "scale_up_end_index_default": 2
+        }
+      }
+    }
+  ]
+}
