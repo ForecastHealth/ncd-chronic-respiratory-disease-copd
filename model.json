@@ -4,7 +4,8 @@
     "name": "COPD",
     "description": "The rebuild of the Spectrum COPD Disease Model",
     "file_id": "COPD",
-    "version": "2.5"
+    "version": "2.5",
+    "module_id": "ncd-copd"
   },
   "runtime": {
     "startYear": 2025,
@@ -366,11 +367,13 @@
     {
       "method": "flush",
       "batch": false,
+      "subroutine_id": "flush-unneeded-values",
       "narration": "Flush unneeded values"
     },
     {
       "method": "generate_balance",
       "batch": false,
+      "subroutine_id": "generate-the-base-values-of-the-surrogate-nodes",
       "narration": "Generate the base values of the surrogate nodes",
       "included_source_nodes": [
         "lrstce6u",
@@ -380,6 +383,7 @@
     {
       "method": "generate_balance",
       "batch": false,
+      "subroutine_id": "generate-the-base-values-of-the-nodes-that-use-constants",
       "narration": "Generate the base values of the nodes that use constants",
       "included_source_nodes": [
         "lrwz1ikj",
@@ -389,6 +393,7 @@
     {
       "method": "generate_balance",
       "batch": false,
+      "subroutine_id": "generate-the-values-of-the-constants",
       "narration": "Generate the values of the constants",
       "included_source_nodes": [
         "lrso71jf",
@@ -400,6 +405,7 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "subroutine_id": "calculate-incidence-surrogate",
       "narration": "Calculate Incidence Surrogate",
       "included_edges": [
         "uSWdM5kH"
@@ -408,6 +414,7 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "subroutine_id": "modify-copd-disability-weight-with-intervention-effects",
       "narration": "Modify COPD disability weight with intervention effects",
       "included_edges": [
         "s2aCngF5"
@@ -416,18 +423,21 @@
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "subroutine_id": "calculate-combined-dw",
       "narration": "Calculate Combined DW",
       "included_edges": []
     },
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "subroutine_id": "calculate-dsfreesus-disability-surrogate",
       "narration": "Calculate DsFreeSus Disability Surrogate",
       "included_edges": []
     },
     {
       "method": "push_balance_to_edges",
       "batch": false,
+      "subroutine_id": "add-cfr-to-surrogate",
       "narration": "Add CFR to Surrogate",
       "included_edges": [
         "FlHvd7e4"
@@ -436,6 +446,7 @@
     {
       "method": "transition_system",
       "batch": true,
+      "subroutine_id": "main-routine",
       "narration": "Main Routine",
       "included_edges": [
         "XNyqqSsC"
@@ -443,6 +454,7 @@
     },
     {
       "method": "push_balance_to_edges",
+      "subroutine_id": "background-mortality",
       "narration": "Background Mortality",
       "included_edges": [
         "cz2LeDKw"
@@ -452,6 +464,7 @@
     {
       "method": "echo",
       "batch": false,
+      "subroutine_id": "record-echo-values",
       "narration": "Record ECHO values",
       "included_source_nodes": [
         "q0kGTdmQ",

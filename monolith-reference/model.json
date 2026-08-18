@@ -4,7 +4,10 @@
     "name": "COPD",
     "description": "The rebuild of the Spectrum COPD Disease Model",
     "file_id": "COPD",
-    "version": "2.5"
+    "version": "2.5",
+    "module_id": "ncd-copd-monolith-reference",
+    "artifact_type": "monolith_reference_snapshot",
+    "superseded_by": "ncd-copd"
   },
   "runtime": {
     "startYear": 2020,

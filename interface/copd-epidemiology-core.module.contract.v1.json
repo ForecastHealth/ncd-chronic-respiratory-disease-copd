@@ -26,7 +26,8 @@
       "required": true,
       "owner_module_id": "demographic_substrate",
       "binding": {
-        "legacy_lowering_ref": "$.links[?(@.id=='cz2LeDKw')].compiler_binding"
+        "legacy_lowering_ref": "$.links[?(@.id=='cz2LeDKw')].compiler_binding",
+        "target_link_id": "cz2LeDKw"
       }
     },
     {
@@ -36,7 +37,8 @@
       "units": "multiplier",
       "required": false,
       "binding": {
-        "legacy_lowering_ref": "$.links[?(@.id=='uSWdM5kH')].compiler_binding"
+        "legacy_lowering_ref": "$.links[?(@.id=='uSWdM5kH')].compiler_binding",
+        "target_link_id": "uSWdM5kH"
       }
     }
   ],
@@ -195,7 +197,7 @@
     "phases": [
       {
         "phase_id": "main_disease_transitions",
-        "subroutine_narration": "Main Routine",
+        "subroutine_id": "main-routine",
         "allocation_basis": "phase_opening_balance",
         "method": "continuous_hazard_transition_system",
         "source_removing_link_ids": [
@@ -204,7 +206,7 @@
       },
       {
         "phase_id": "background_mortality",
-        "subroutine_narration": "Background Mortality",
+        "subroutine_id": "background-mortality",
         "allocation_basis": "current_balance_after_prior_phases",
         "method": "sequential_transfer",
         "source_removing_link_ids": [
