@@ -12,7 +12,7 @@
   "declared_inputs": [
     {
       "channel_id": "population_at_risk_opening",
-      "meaning": "Opening COPD-local population at risk, seeded from the demographic substrate and COPD prevalence.",
+      "meaning": "COPD-local population at risk derived at each model-year opening from the canonical population and the declared COPD state.",
       "shape": "2x101",
       "units": "people",
       "required": true,
@@ -84,11 +84,11 @@
       ],
       "residual_state_node_id": "DsFreeSus",
       "residual_state_semantics": {
-        "classification": "derived_marginal_residual",
+        "classification": "derived_population_at_risk",
         "authoritative_population": false,
         "meaning": "People in the canonical population who are not in the declared COPD state in this marginal disease process.",
         "opening_calculation": "canonical_population_minus_declared_non_residual_states",
-        "annual_calculation": "carried as the incidence source inside the marginal process, then rebased with all living COPD states to canonical survivors"
+        "annual_calculation": "At each model-year opening, canonical population minus the declared non-residual COPD states, by age and sex"
       }
     },
     "cause_specific_mortality": {
@@ -262,8 +262,7 @@
       "age_states": [
         "COPDEpsd"
       ],
-      "birth_sources": [
-        "DsFreeSus",
+      "migration_state_node_ids": [
         "COPDEpsd"
       ],
       "living_state_nodes": [

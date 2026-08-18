@@ -25,7 +25,7 @@ This module models chronic obstructive pulmonary disease (COPD) incidence, preva
 
 ## Method
 
-COPD is a marginal disease process with a COPD episode state and a derived disease-free residual. Observed COPD prevalence informs the opening episode population. The residual state receives the remaining demographic population. During each model year, incidence moves people into the COPD episode state. Disease transitions use a continuous-hazard competing-transition calculation. Background mortality is then applied to the remaining living population.
+COPD is a marginal disease process with a COPD episode state and a derived disease-free residual. At each model-year opening, the coordinator sets the residual to the canonical population minus the COPD episode population, by age and sex. During the year, incidence moves people into the COPD episode state. Disease transitions use a continuous-hazard competing-transition calculation. Background mortality then applies to the COPD episode state.
 
 Clinical intervention components can reduce COPD disability through the disease-owned transform. A risk-factor module can modify COPD incidence. The COPD graph publishes raw state and mortality results for post-run health metrics.
 
