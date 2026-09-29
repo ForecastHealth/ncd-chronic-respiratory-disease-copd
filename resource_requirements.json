@@ -395,8 +395,8 @@
           "key": "Prednisolone, tablet, 20 mg: Unit cost",
           "category": "Unit Cost",
           "cost_item": {
-            "id": "cost-item.prednisolone-tablet-20-mg.unit-cost",
-            "label": "Prednisolone, tablet, 20 mg"
+            "id": "cost-item.prednisolone-tablet-50-mg.unit-cost",
+            "label": "Prednisolone, tablet, 50 mg"
           },
           "target": {
             "type": "edge_parameter",

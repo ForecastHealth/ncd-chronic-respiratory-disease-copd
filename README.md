@@ -2,7 +2,7 @@
 title: Chronic obstructive pulmonary disease epidemiology
 module_identifier: ncd-copd
 owner: Forecast Health
-last_updated: 2026-08-15
+last_updated: 2026-09-29
 status: Executable source module
 ---
 
@@ -40,6 +40,8 @@ The source module exposes only `copd_baseline`. The disease parameter registry i
 ## Data and evidence
 
 [`model.json`](model.json) is the executable disease graph. The [module contract](interface/copd-epidemiology-core.module.contract.v1.json) defines composition and runtime semantics. The opening-state recipe defines baseline initialization. The contract identifies Spectrum/OneHealth COPD material and the current module cleanup as default provenance.
+
+The CR2 oral prednisolone routine-care block in [`resource_requirements.json`](resource_requirements.json) prices prednisolone as `cost-item.prednisolone-tablet-50-mg.unit-cost`, the same item as the CR2 and asthma CR1 intervention modules. It costs 0.2628 US dollars per tablet, the OneHealth price for `IC_DS_PrednisoloneTablet20Mg`.
 
 ## Relationships
 
