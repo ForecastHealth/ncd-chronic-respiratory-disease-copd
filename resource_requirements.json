@@ -68,8 +68,10 @@
           "key": "Generalist/Primary care doctor: Salary per minute",
           "category": "Workforce Cost",
           "cost_item": {
-            "id": "cost-item.workforce-generalist-primary-care-doctor.salary-per-minute",
-            "label": "Generalist/Primary care doctor salary per minute"
+            "id": "cost-item.workforce-salary.skill-level-4",
+            "label": "Skill level 4 staff (professionals and managers, doctors, specialists)",
+            "unit": "FTE-year",
+            "minutes_per_unit": 126720
           },
           "target": {
             "type": "edge_parameter",
@@ -78,8 +80,10 @@
           },
           "country_cost_lookup": {
             "category": "workforce",
-            "cadre": 4
-          }
+            "cadre": 4,
+            "value": "annual_salary"
+          },
+          "cost_item_conversion": "per_minute"
         },
         {
           "key": "Nurse: Share",
@@ -103,8 +107,10 @@
           "key": "Nurse: Salary per minute",
           "category": "Workforce Cost",
           "cost_item": {
-            "id": "cost-item.workforce-nurse.salary-per-minute",
-            "label": "Nurse salary per minute"
+            "id": "cost-item.workforce-salary.skill-level-3",
+            "label": "Skill level 3 staff (technicians and officers, nurses, therapists)",
+            "unit": "FTE-year",
+            "minutes_per_unit": 126720
           },
           "target": {
             "type": "edge_parameter",
@@ -113,8 +119,10 @@
           },
           "country_cost_lookup": {
             "category": "workforce",
-            "cadre": 3
-          }
+            "cadre": 3,
+            "value": "annual_salary"
+          },
+          "cost_item_conversion": "per_minute"
         },
         {
           "key": "Salbutamol inhaler, 100 mcg: Share",
@@ -316,8 +324,10 @@
           "key": "Generalist/Primary care doctor: Salary per minute",
           "category": "Workforce Cost",
           "cost_item": {
-            "id": "cost-item.workforce-generalist-primary-care-doctor.salary-per-minute",
-            "label": "Generalist/Primary care doctor salary per minute"
+            "id": "cost-item.workforce-salary.skill-level-4",
+            "label": "Skill level 4 staff (professionals and managers, doctors, specialists)",
+            "unit": "FTE-year",
+            "minutes_per_unit": 126720
           },
           "target": {
             "type": "edge_parameter",
@@ -326,8 +336,10 @@
           },
           "country_cost_lookup": {
             "category": "workforce",
-            "cadre": 4
-          }
+            "cadre": 4,
+            "value": "annual_salary"
+          },
+          "cost_item_conversion": "per_minute"
         },
         {
           "key": "Nurse: Share",
@@ -351,8 +363,10 @@
           "key": "Nurse: Salary per minute",
           "category": "Workforce Cost",
           "cost_item": {
-            "id": "cost-item.workforce-nurse.salary-per-minute",
-            "label": "Nurse salary per minute"
+            "id": "cost-item.workforce-salary.skill-level-3",
+            "label": "Skill level 3 staff (technicians and officers, nurses, therapists)",
+            "unit": "FTE-year",
+            "minutes_per_unit": 126720
           },
           "target": {
             "type": "edge_parameter",
@@ -361,8 +375,10 @@
           },
           "country_cost_lookup": {
             "category": "workforce",
-            "cadre": 3
-          }
+            "cadre": 3,
+            "value": "annual_salary"
+          },
+          "cost_item_conversion": "per_minute"
         },
         {
           "key": "Prednisolone, tablet, 20 mg: Share",

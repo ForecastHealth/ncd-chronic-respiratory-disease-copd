@@ -43,6 +43,8 @@ The source module exposes only `copd_baseline`. The disease parameter registry i
 
 The CR2 oral prednisolone routine-care block in [`resource_requirements.json`](resource_requirements.json) prices prednisolone as `cost-item.prednisolone-tablet-50-mg.unit-cost`, the same item as the CR2 and asthma CR1 intervention modules. It costs 0.2628 US dollars per tablet, the OneHealth price for `IC_DS_PrednisoloneTablet20Mg`.
 
+Staff time is priced from one shared salary item per skill level, `cost-item.workforce-salary.skill-level-<n>`. Doctors and specialists are skill level 4, nurses and therapists are skill level 3, and counsellors are skill level 2. The item is the country's WHO-CHOICE annual salary from the data service. A staff minute costs that salary divided by 126,720 working minutes a year (8 hours, 22 days a month, 12 months). The data service uses this convention for its WHO-CHOICE cost per minute, and every clinical staff cost has used it. The per-minute values in the resource graphs are defaults for use without a country. Tobacco policy programme lines price staff from the same item, so one salary edit changes both.
+
 ## Relationships
 
 The demographic module supplies canonical population and background mortality. `opening-state-reconciliation` creates the baseline disease partition. Separate repositories own oral prednisolone, inhaled salbutamol, and ipratropium inhaler components. Tobacco and other risk-factor modules can bind to the incidence modifier.
