@@ -503,7 +503,14 @@
         },
         "coverage": {
           "baseline_parameter_id": "copd_salbutamol_symptom_relief_baseline_coverage",
-          "baseline_default": 0.05
+          "baseline_default": {
+            "country_default": {
+              "route": "/api/data/baseline-coverage/inhaled_salbutamol_baseline_coverage",
+              "value_field": "baseline_coverage",
+              "source_field": "source"
+            },
+            "source_ref": "README.md"
+          }
         }
       }
     },
@@ -535,9 +542,18 @@
         },
         "coverage": {
           "baseline_parameter_id": "copd_ipratropium_maintenance_routine_care_baseline_coverage",
-          "baseline_default": 0,
+          "baseline_default": {
+            "country_default": {
+              "route": "/api/data/baseline-coverage/ipratropium_inhaler_baseline_coverage",
+              "value_field": "baseline_coverage",
+              "source_field": "source"
+            },
+            "source_ref": "README.md"
+          },
           "target_parameter_id": "copd_ipratropium_maintenance_routine_care_target_coverage",
-          "target_default": 0,
+          "target_default": {
+            "same_as_parameter_id": "copd_ipratropium_maintenance_routine_care_baseline_coverage"
+          },
           "scale_up_start_index_parameter_id": "copd_ipratropium_maintenance_routine_care_scale_up_start_index",
           "scale_up_start_index_default": 1,
           "scale_up_end_index_parameter_id": "copd_ipratropium_maintenance_routine_care_scale_up_end_index",
@@ -1066,7 +1082,14 @@
         },
         "coverage": {
           "baseline_parameter_id": "copd_oral_prednisolone_exacerbation_baseline_coverage",
-          "baseline_default": 0.05
+          "baseline_default": {
+            "country_default": {
+              "route": "/api/data/baseline-coverage/copd_oral_prednisolone_baseline_coverage",
+              "value_field": "baseline_coverage",
+              "source_field": "source"
+            },
+            "source_ref": "README.md"
+          }
         }
       }
     }
