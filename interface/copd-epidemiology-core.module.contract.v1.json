@@ -151,16 +151,6 @@
       ]
     },
     {
-      "data_type": "copd.get_observation",
-      "parameters": {
-        "country": "ISO3",
-        "observation": "COPDEpsd -> Disability"
-      },
-      "required_for": [
-        "copd_disability_weight"
-      ]
-    },
-    {
       "data_type": "healthy_disability",
       "parameters": {
         "country": "ISO3"
