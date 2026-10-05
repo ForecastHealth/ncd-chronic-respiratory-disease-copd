@@ -31,7 +31,7 @@ Clinical intervention components can reduce COPD disability through the disease-
 
 ### Calibration to observed deaths
 
-The [opening-state contract](data/copd-opening-state.contract.v3.json) declares a rate calibration that the shared `opening-state-reconciliation` preflight applies before the first model year, with one result for baseline and every comparison. The COPD fatality input is scaled by sex and single age so the opening year's COPD deaths equal WHO Global Health Estimates 2021 COPD death rates applied to the opening population, distributed within each GHE age band by the GBD age pattern. Prevalence after the opening year is not a calibration target.
+The [opening-state contract](data/copd-opening-state.contract.v3.json) declares a rate calibration that the shared `opening-state-reconciliation` preflight applies before the first model year, with one result for baseline and every comparison. The COPD fatality input is scaled by sex and single age so the opening year's COPD deaths equal WHO Global Health Estimates 2021 COPD death rates applied to the opening population, distributed within each GHE age band by the GBD age pattern. People with COPD also die of other causes at a fitted multiple of the partition's other-cause rate, by age band within 1 to 4, which keeps observed prevalence stationary. These deaths are not COPD deaths.
 
 ## Inputs and outputs
 
