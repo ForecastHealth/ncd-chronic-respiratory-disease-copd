@@ -115,16 +115,14 @@
       "color": "#06B4E1",
       "generate_array": {
         "generate_once": true,
-        "data_fetcher_label": "copd",
-        "method": "get_observation",
+        "method": "single_value",
         "parameters": {
-          "country": "AFG",
-          "observation": "COPDEpsd -> Disability"
+          "value": 0.093
         },
         "display": {
           "label": "COPD disability weight",
           "units": "disability weight",
-          "source": "Spectrum/OneHealth disease association file"
+          "source": "GBD 2019 disability weights (IHME); mapping in README"
         }
       },
       "node_type": "CONSTANT",
@@ -163,7 +161,8 @@
         "parameters": {
           "country": "AFG",
           "disease": "COPD",
-          "measure": "incidence"
+          "measure": "incidence",
+          "min_age": 15
         },
         "display": {
           "label": "COPD episode incidence rate",

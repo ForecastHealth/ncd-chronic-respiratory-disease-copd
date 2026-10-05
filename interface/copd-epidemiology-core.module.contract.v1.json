@@ -122,7 +122,8 @@
       "parameters": {
         "country": "ISO3",
         "disease": "COPD",
-        "measure": "prevalence"
+        "measure": "prevalence",
+        "min_age": 15
       },
       "required_for": [
         "state_initialization"
@@ -133,7 +134,8 @@
       "parameters": {
         "country": "ISO3",
         "disease": "COPD",
-        "measure": "incidence"
+        "measure": "incidence",
+        "min_age": 15
       },
       "required_for": [
         "copd_incidence_flow"
@@ -148,16 +150,6 @@
       },
       "required_for": [
         "copd_mortality_flow"
-      ]
-    },
-    {
-      "data_type": "copd.get_observation",
-      "parameters": {
-        "country": "ISO3",
-        "observation": "COPDEpsd -> Disability"
-      },
-      "required_for": [
-        "copd_disability_weight"
       ]
     },
     {
@@ -242,7 +234,8 @@
           "method": "epidemiology",
           "parameters": {
             "disease": "COPD",
-            "measure": "prevalence"
+            "measure": "prevalence",
+            "min_age": 15
           }
         }
       },
