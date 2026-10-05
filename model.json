@@ -161,7 +161,8 @@
         "parameters": {
           "country": "AFG",
           "disease": "COPD",
-          "measure": "incidence"
+          "measure": "incidence",
+          "min_age": 15
         },
         "display": {
           "label": "COPD episode incidence rate",

@@ -55,6 +55,10 @@ A model state that holds one GBD health state takes that state's weight. A state
 
 Until October 2026 the weight was read from the data service observation `COPDEpsd -> Disability`, a Spectrum/OneHealth value by region and age (0.097 to 0.217) without a cited source. Clinical interventions still reduce the weight through `Disability_Effect_Transform`. Sources: GBD 2019 Diseases and Injuries Collaborators, *Lancet* 2020;396:1204–22, appendix 1 (the disability-weight table in each cause section) and appendix 2, table S18 (global prevalence and years lived with disability, 2019); the IHME GBD 2019 disability-weights table; Salomon JA et al., *Lancet Glob Health* 2015;3:e712–23, where the weights were estimated.
 
+### Onset age
+
+COPD incidence and opening prevalence are 0 below age 15. The GBD input is non-zero from birth, at about 1.5e-4 a year for ages 0 to 14 in nearly every country, which is a model floor rather than observed childhood COPD. The incidence node (`Mn5YBbsp`) and the opening-prevalence source ask the data service for `min_age` 15, and the registry declares it as `minimum_onset_age`. From October 2026 the current-smoking relative risk the tobacco module applies to COPD (10.8 men, 12.3 women, the CPS-II mortality ratio from adults aged 30 and over) is 1 below 30; it was applied from 15, and 45% of the COPD cases averted in an Indonesia T1 audit were at ages 15 to 29. Whether an incidence relative risk should replace the mortality ratio is a tobacco-module method question that remains open.
+
 ## Relationships
 
 The demographic module supplies canonical population and background mortality. `opening-state-reconciliation` creates the baseline disease partition. Separate repositories own oral prednisolone, inhaled salbutamol, and ipratropium inhaler components. Tobacco and other risk-factor modules can bind to the incidence modifier.

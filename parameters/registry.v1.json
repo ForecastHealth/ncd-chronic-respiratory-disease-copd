@@ -34,6 +34,33 @@
       "provenance_refs": [
         "source:gbd-2019-disability-weights"
       ]
+    },
+    {
+      "parameter_id": "minimum_onset_age",
+      "label": "Minimum onset age",
+      "meaning": "First age of COPD in this module. GBD's COPD incidence and prevalence are non-zero from birth (about 1.5e-4 a year at ages 0-14, nearly the same in every country, a model floor); COPD is an adult disease and its smoking evidence is adult. Ages below are 0 in the incidence fetch and the opening prevalence.",
+      "ownership_scope": "module_owned",
+      "value_type": "integer",
+      "editable_in_scenario": false,
+      "shape": "scalar",
+      "units": "years",
+      "default": {
+        "value": 15,
+        "source_ref": "decision 2026-10-05 (team lead for Rory)"
+      },
+      "allowed_range": {
+        "min": 0,
+        "max": 100
+      },
+      "placement_refs": [
+        {
+          "kind": "json_path",
+          "ref": "$.nodes[?(@.id=='Mn5YBbsp')].generate_array.parameters.min_age"
+        }
+      ],
+      "provenance_refs": [
+        "source:module-method"
+      ]
     }
   ],
   "provenance": {
