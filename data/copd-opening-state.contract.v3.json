@@ -17,7 +17,7 @@
       "status": "authorized",
       "recorded_date": "2026-10-05",
       "authority": "Rory Watts and Robert Totanes (WHO) approved disease-model calibration. Rory delegated the method decisions of 5 October 2026 to the team lead, who adopted WHO GHE 2021 cause-specific deaths as the death target, a 28-day per-episode reading of acute case fatality with acute deaths capped at half of target deaths, and cohort-consistent opening complication shares.",
-      "scope": "Opening-year attributed deaths only. Prevalence after the opening year is not a target of this method version."
+      "scope": "Opening-year attributed deaths, and stationary prevalence through declared remission or other-cause relative mortality fits."
     },
     "states": [
       "DsFreeSus",
@@ -140,8 +140,81 @@
     ],
     "assumptions": [
       "The COPD fatality input is scaled by sex and age so year-one COPD deaths equal WHO GHE 2021 COPD deaths.",
-      "Prevalence after the opening year is not fitted in this method version.",
-      "Other-cause mortality is the demographic all-cause rate less modelled disease deaths, applied at the annual rebase."
-    ]
+      "Other-cause deaths are the demographic all-cause deaths less this disease's deaths. The annual rebase removes them from each state in proportion to its size times its fitted other-cause relative mortality, which is 1 for the disease-free state."
+    ],
+    "other_cause_relative_mortality": {
+      "all_cause_probability_source": {
+        "data_type": "fhdb.mortality",
+        "parameters": {
+          "country": "$country"
+        }
+      },
+      "groups": [
+        {
+          "group_id": "copd",
+          "states": [
+            "COPDEpsd"
+          ],
+          "prevalent_states": [
+            "COPDEpsd"
+          ]
+        }
+      ],
+      "age_bands": [
+        [
+          0,
+          4
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          20,
+          24
+        ],
+        [
+          25,
+          29
+        ],
+        [
+          30,
+          39
+        ],
+        [
+          40,
+          49
+        ],
+        [
+          50,
+          59
+        ],
+        [
+          60,
+          69
+        ],
+        [
+          70,
+          79
+        ],
+        [
+          80,
+          100
+        ]
+      ],
+      "bounds": [
+        1.0,
+        4.0
+      ],
+      "meaning": "Fitted by GBD age band, within 1 to 4, so the year's transitions and the annual rebase carry observed prevalence forward unchanged. People with the disease die of other causes at this multiple of the partition's other-cause rate; these deaths are not attributed to the disease."
+    }
   }
 }
