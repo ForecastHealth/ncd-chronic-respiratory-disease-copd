@@ -2,7 +2,7 @@
 title: Chronic obstructive pulmonary disease epidemiology
 module_identifier: ncd-copd
 owner: Forecast Health
-last_updated: 2026-10-10
+last_updated: 2026-10-11
 status: Executable source module
 ---
 
@@ -83,16 +83,16 @@ $$
 
 ### Treatment packages
 
-Three treatment modules act on this model: inhaled salbutamol (`ncd-copd-inhaledsalbutamol`), the ipratropium inhaler (`ncd-copd-ipratropiuminhaler`) and oral prednisolone (`ncd-copd-oralprednisolone`). They belong to two interventions in Appendix 3 of the WHO Global Action Plan for the Prevention and Control of Noncommunicable Diseases, the WHO menu of recommended interventions. CR2 is acute treatment of COPD exacerbations with an inhaled bronchodilator (salbutamol) and oral steroids. CR4 is long-term management of COPD with inhaled bronchodilators.
+Three treatment modules act on this model: inhaled salbutamol (`ncd-copd-inhaledsalbutamol`), the ipratropium inhaler (`ncd-copd-ipratropiuminhaler`) and oral prednisolone (`ncd-copd-oralprednisolone`). They belong to two interventions in Appendix 3 of the WHO Global Action Plan for the Prevention and Control of Noncommunicable Diseases, the WHO menu of recommended interventions. In WHO's wording, CR2 is "acute treatment of COPD exacerbations with inhaled bronchodilators and oral steroids", and CR4 is "long-term management of COPD with inhaled bronchodilator".
 
-The compiler is the platform component that assembles the selected modules into one runnable model. It builds a code's package from the treatment contracts that name that package in their `appendix3_package` field. The client catalogue takes its lists from the Appendix 3 template registry, which supplies names and labels only. The compiler's package decides what runs and what is costed.
+The compiler is the platform component that assembles the selected modules into one runnable model. It builds a code's package from the treatment contracts that name that package, in their `appendix3_package` field or, for a module in more than one package, in `appendix3_packages`. The client catalogue takes its names and labels from the Appendix 3 template registry, which lists the same modules.
 
-| Code | Compiler package | Modules the compiler runs and costs | Modules the client catalogue names |
-|---|---|---|---|
-| CR2 | `ncd-copd-cr2` | `ncd-copd-oralprednisolone` | inhaled salbutamol, oral prednisolone |
-| CR4 | `ncd-copd-cr4` | `ncd-copd-inhaledsalbutamol`, `ncd-copd-ipratropiuminhaler` | inhaled salbutamol, ipratropium inhaler, oral prednisolone |
+| Code | Compiler package | Modules the compiler runs and costs |
+|---|---|---|
+| CR2 | `ncd-copd-cr2` | `ncd-copd-inhaledsalbutamol`, `ncd-copd-oralprednisolone` |
+| CR4 | `ncd-copd-cr4` | `ncd-copd-inhaledsalbutamol`, `ncd-copd-ipratropiuminhaler` |
 
-A CR2 analysis therefore contains oral prednisolone alone, and a CR4 analysis contains salbutamol and ipratropium but not prednisolone. The United Nations Development Programme (UNDP) costing workbook (`Model_Costing_V3-CRD.xlsx`) defines CR2 as salbutamol and prednisolone and CR4 as salbutamol and ipratropium. The compiled CR4 matches the workbook, and the compiled CR2 lacks salbutamol.
+CR2 is the inhaled bronchodilator salbutamol with the oral steroid prednisolone. CR4 is salbutamol with the inhaled bronchodilator ipratropium. These are also the packages of the United Nations Development Programme (UNDP) costing workbook (`Model_Costing_V3-CRD.xlsx`). Salbutamol belongs to both. When CR2 and CR4 are selected together, the compiler runs and costs salbutamol once, at the one target coverage both packages give it.
 
 ### Effect of treatment on disability
 
@@ -115,7 +115,7 @@ The treatments change disability only. They do not change COPD incidence, deaths
 | Treatment module | Appendix 3 code | Share in need $n_j$ | Disability reduction $d_j$ | Current coverage $c_{j,0}$ |
 |---|---|---|---|---|
 | `ncd-copd-oralprednisolone` | CR2 | 0.12 | 0.337 | country value, `/api/data/baseline-coverage/copd_oral_prednisolone_baseline_coverage` |
-| `ncd-copd-inhaledsalbutamol` | CR4 | 1 | 0.148 | country value, `/api/data/baseline-coverage/inhaled_salbutamol_baseline_coverage` |
+| `ncd-copd-inhaledsalbutamol` | CR2 and CR4 | 1 | 0.148 | country value, `/api/data/baseline-coverage/inhaled_salbutamol_baseline_coverage` |
 | `ncd-copd-ipratropiuminhaler` | CR4 | country value from the data service | 0.169 | country value, `/api/data/baseline-coverage/ipratropium_inhaler_baseline_coverage` |
 
 Each treatment module's README gives its coverage source and resource quantities. COPD oral prednisolone coverage is a separate parameter from asthma oral prednisolone coverage (`asthma_oral_prednisolone_baseline_coverage`), so each disease keeps its own current coverage.
@@ -190,7 +190,7 @@ Opening-year COPD deaths equal the WHO GHE 2021 target by construction, except i
 - The disability weight is one global average. It does not vary by country or by the severity mix of a country's COPD.
 - The treatments reduce disability only. The model has no route by which treatment lowers COPD deaths, so the deaths averted by CR2 and CR4 are zero by construction.
 - The treatment effect sizes (0.148, 0.169 and 0.337) and the prednisolone share in need (0.12) are taken from the Spectrum/OneHealth COPD model. The modules cite no primary study for them.
-- The compiled CR2 and CR4 packages differ from the client catalogue and from the costing workbook, as set out under Treatment packages. A CR2 result omits the effect and cost of salbutamol, and a CR4 result omits prednisolone.
+- Salbutamol is one module with one effect and one resource declaration, the CR2 acute-exacerbation course, in both packages. A CR4 analysis therefore costs salbutamol as that course, not as daily long-term use.
 - Routine ipratropium maintenance carries no cost because its share in need is 0.
 
 ## Relationships
@@ -203,4 +203,4 @@ The three treatment modules described under Method insert their components into 
 
 ## Status
 
-The disease graph, compiler contract, baseline template, calibration declaration, treatment extension points and routine-care declarations are implemented. The source graph needs compiler lowering and is not a standalone national model. The packaging of CR2 and CR4 does not match the Appendix 3 registry.
+The disease graph, compiler contract, baseline template, calibration declaration, treatment extension points and routine-care declarations are implemented. The source graph needs compiler lowering and is not a standalone national model. CR2 runs salbutamol and prednisolone, and CR4 runs salbutamol and ipratropium, as WHO and the costing workbook define them.
